@@ -1,0 +1,22 @@
+{
+  "name": "sass-clone-instagram",
+  "version": "1.0.0",
+  "description": "Copy of Instagram styles using sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nachomontoya/sass-clone-instagram.git"
+  },
+  "author": "Nacho Montoya, Ethan Alfaro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nachomontoya/sass-clone-instagram/issues"
+  },
+  "homepage": "https://github.com/Nachomontoya/sass-clone-instagram#readme",
+  "dependencies": {
+    "sass": "^1.32.12"
+  }
+}
