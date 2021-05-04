@@ -1,15 +1,23 @@
-@import "./colors";
-@import "./elements";
+@use "./colors";
+@use "./elements";
 
 //Login Page
-
+* {
+  margin: 0;
+}
 main {
   background: $instagramBackground;
+  @include flexCenter();
+  height: 85vh;
+  width: 100%;
 }
 .parentMain {
-  @include flexCenter();
-  height: 935px;
-  width: 722px;
-  background-color: black;
-  border: 1px black solid;
+  background-color: beige;
+  height: 722px;
+  width: 935px;
+}
+.loginFooter {
+  height: 15vh;
+  // background: $instagramBackground;
+  background-color: aquamarine;
 }
