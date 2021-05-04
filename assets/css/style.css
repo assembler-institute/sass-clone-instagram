@@ -1,0 +1,14 @@
+main {
+  background: #fafafa;
+}
+
+.parentMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 935px;
+  width: 722px;
+  background-color: black;
+  border: 1px black solid;
+}
+/*# sourceMappingURL=style.css.map */

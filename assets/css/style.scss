@@ -1,0 +1,15 @@
+@import "./colors";
+@import "./elements";
+
+//Login Page
+
+main {
+  background: $instagramBackground;
+}
+.parentMain {
+  @include flexCenter();
+  height: 935px;
+  width: 722px;
+  background-color: black;
+  border: 1px black solid;
+}
