@@ -45,7 +45,7 @@ main .rightContainer .loginForm {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 60%;
-  height: 75%;
+  height: 45%;
   margin: 5%;
   margin-top: 20%;
   border: 2px #DBDBDB solid;
@@ -109,7 +109,35 @@ main .rightContainer .loginForm button ::placeholder {
   /* Firefox */
 }
 
+main .rightContainer .downloadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .rightContainer .downloadBox .downloadButton {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 25px;
+}
+
 main .rightContainer #alternativeLogin {
   margin-top: 3%;
+}
+
+main .rightContainer .registerForm {
+  margin: 5%;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 28%;
+  border: 2px #DBDBDB solid;
+  width: 60%;
+  height: 10%;
 }
 /*# sourceMappingURL=main.css.map */
