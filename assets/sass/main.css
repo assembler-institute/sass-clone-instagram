@@ -16,7 +16,12 @@ main {
 main .leftContainer {
   width: 50%;
   height: 800px;
-  background-color: yellowgreen;
+  background-color: #FAFAFA;
+  padding-top: 5%;
+}
+
+main .leftContainer #leftImage {
+  margin-left: 34%;
 }
 
 main .rightContainer {
@@ -24,14 +29,6 @@ main .rightContainer {
   height: 800px;
   background-color: #FFFFFF;
   text-align: center;
-}
-
-main .rightContainer .loginHeader {
-  margin-top: 10%;
-}
-
-main .rightContainer .loginHeader .logoHeader {
-  height: 100px;
 }
 
 main .rightContainer .loginForm {
@@ -45,10 +42,18 @@ main .rightContainer .loginForm {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 60%;
-  height: 45%;
+  height: 50%;
   margin: 5%;
-  margin-top: 20%;
+  margin-top: 16%;
   border: 2px #DBDBDB solid;
+}
+
+main .rightContainer .loginForm .loginHeader {
+  margin-top: 10%;
+}
+
+main .rightContainer .loginForm .loginHeader .logoHeader {
+  height: 80px;
 }
 
 main .rightContainer .loginForm .input {
@@ -128,7 +133,9 @@ main .rightContainer .downloadBox .downloadButton {
 }
 
 main .rightContainer #alternativeLogin {
-  margin-top: 3%;
+  cursor: pointer;
+  margin-top: 8%;
+  color: darkblue;
 }
 
 main .rightContainer .registerForm {
