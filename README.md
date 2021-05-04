@@ -10,6 +10,28 @@
 >
 > The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
 
+## SASS introductory questions
+
+· What is SASS? What does SASS stand for?
+· What is a CSS pre-processor?
+· What does a pre-processor have to do with SASS?
+· Why use SASS?
+· SASS has disadvantages? Which are?
+· What is a SASS Variable? Explain why are useful
+· Explain the SASS variables property with an example.
+· What is a mixin? Why is it important? Give an example
+· What is SCSS? Give an example
+· What is SASS? Give an example
+· What is the difference between .scss and .sass syntax.
+· In which cases would we use SCSS? And in which cases would we use SASS?
+· Explain how traditional CSS and Preprocessed CSS workflows are different.
+· Can we create functions with SASS? If it is true, give an example.
+· What is nesting? Is it useful? Give an example of nesting
+· Difference between @use & @import? Give an example
+· How can we import other CSS/SASS files in SASS? Give an example
+· Explain the concept of inheritance in SASS.
+· Why use @extend? Give an example
+
 ## Index <!-- omit in toc -->
 
 - [Requirements](#requirements)
@@ -24,14 +46,6 @@
 - You must use nesting.
 - You must use inheritance at least once in the project.
 - You cannot use third party libraries for the development of this pill
-
-## Repository
-
-First of all you must fork this project into your GitHub account.
-
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
-
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
 
 ### Installing
 
@@ -65,8 +79,14 @@ To deliver this project you must follow the steps indicated in the document:
 
 ## Resources
 
+- [Trello board](https://trello.com/b/cyoR9OKh/instagram-clone)
 - [SASS documentation](https://sass-lang.com/)
 - [W3S SASS](https://www.w3schools.com/sass/)
 - [SASS Guidelines](https://sass-guidelin.es/es/)
 - [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
 - [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+
+## Collaborators
+
+👤 Kendra Lambillon
+👤 Ricard Garcia
