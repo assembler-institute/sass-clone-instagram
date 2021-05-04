@@ -1,0 +1,115 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+}
+
+main .leftContainer {
+  width: 50%;
+  height: 800px;
+  background-color: yellowgreen;
+}
+
+main .rightContainer {
+  width: 50%;
+  height: 800px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+main .rightContainer .loginHeader {
+  margin-top: 10%;
+}
+
+main .rightContainer .loginHeader .logoHeader {
+  height: 100px;
+}
+
+main .rightContainer .loginForm {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  height: 75%;
+  margin: 5%;
+  margin-top: 20%;
+  border: 2px #DBDBDB solid;
+}
+
+main .rightContainer .loginForm .input {
+  border-radius: 6px;
+  border: 2px #DBDBDB solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+  width: 74%;
+  margin-left: 13%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40px;
+}
+
+main .rightContainer .loginForm button {
+  border: 5px 2px #DBDBDB solid solid;
+  border-radius: 5px;
+  width: 70%;
+  margin-top: 4%;
+  background-color: #B2DFFC;
+}
+
+main .rightContainer .loginForm button ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+main .rightContainer .loginForm button :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+main .rightContainer .loginForm button ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+main .rightContainer .loginForm button ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+main .rightContainer #alternativeLogin {
+  margin-top: 3%;
+}
+/*# sourceMappingURL=main.css.map */
