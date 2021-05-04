@@ -1,5 +1,240 @@
 @use 'scss/colors';
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid red !important;
+}
+
 body {
   background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+header div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header div #logo {
+  width: 39%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header div #logo img {
+  min-height: 25px;
+}
+
+header div #buscador {
+  width: 22%;
+}
+
+header div #buscador input {
+  width: 100%;
+}
+
+header div #menu {
+  width: 39%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header div #menu div {
+  width: 12%;
+  min-height: 40px;
+}
+
+header div #menu div svg path {
+  background-color: #000;
+}
+
+main {
+  margin-top: 6rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main div .stories {
+  background-color: #fff;
+  width: 100%;
+  height: 7rem;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+}
+
+main div .stories .more-less-stories {
+  position: absolute;
+  top: 40%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #485375;
+  -webkit-box-shadow: 0px 0px 20px -5px #485375;
+          box-shadow: 0px 0px 20px -5px #485375;
+  background-color: #fff;
+}
+
+main div .stories .prev-stories {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 1%;
+}
+
+main div .stories .post-stories {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 95%;
+}
+
+main div .stories article {
+  display: inline-block;
+  position: relative;
+  left: -3.3rem;
+  width: 5rem;
+  height: 100%;
+}
+
+main div .posts {
+  margin-top: 2rem;
+}
+
+main div .posts article {
+  background-color: #fff;
+  min-height: 800px;
+  margin-bottom: 4rem;
+}
+
+main div .posts article div {
+  width: 100%;
+}
+
+main div .posts article .post-title {
+  min-height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main div .posts article .post-title .profile-img {
+  min-width: 10%;
+}
+
+main div .posts article .post-title .profile-user {
+  min-width: 80%;
+}
+
+main div .posts article .post-title .profile-more {
+  min-width: 10%;
+}
+
+main div .posts article .post-photo {
+  min-height: 48rem;
+}
+
+main div .posts article .post-actions {
+  min-height: 2.5rem;
+}
+
+main div .posts article .post-likes {
+  min-height: 2rem;
+}
+
+main div .posts article .post-description {
+  min-height: 2.5rem;
+}
+
+main div .posts article .post-comment-counter {
+  min-height: 2rem;
+}
+
+main div .posts article .post-comments {
+  min-height: 6rem;
+}
+
+main div .posts article .post-comment-timer {
+  min-height: 1.5rem;
+}
+
+main div .posts article .post-add-comment {
+  min-height: 3rem;
+}
+
+main aside {
+  width: 35%;
 }
 /*# sourceMappingURL=styles.css.map */

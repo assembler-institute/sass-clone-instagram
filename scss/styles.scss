@@ -3,7 +3,197 @@
 $white: #fff;
 $black: #000;
 $bg: #fafafa;
+$border: #e0e0e0;
+$buttonsTextColor: #485375;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red !important;
+}
 
 body{
   background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+
+  div{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    #logo {
+      width: 39%;
+      display: flex;
+      justify-content: flex-start;
+  
+      img {
+        min-height: 25px;
+      }
+    }
+  
+    #buscador {
+      width: 22%;
+      
+      input {
+        width: 100%;
+      }
+    }
+  
+    #menu {
+      width: 39%;
+      display: flex;
+      justify-content: flex-end;
+
+      div {
+        width:12%;
+        min-height: 40px;
+
+        svg {
+          path {
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 6rem;
+  width: 50%;
+  display: flex;
+
+  div {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+    .stories {
+      background-color: $white;
+      width: 100%;
+      height: 7rem;
+      overflow: hidden;
+      overflow-x: auto;
+      white-space: nowrap;
+      position: relative;
+
+      .more-less-stories {
+        position: absolute;
+        top: 40%;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: none;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: $buttonsTextColor;
+        box-shadow: 0px 0px 20px -5px $buttonsTextColor;
+        background-color: $white;
+      }
+
+      .prev-stories {
+        position: sticky;
+        left: 1%;
+      }
+
+      .post-stories {
+        position: sticky;
+        left: 95%;
+      }
+
+      article {
+        display:inline-block;
+        position: relative;
+        left: -3.3rem;
+        width: 5rem;
+        height: 100%;
+      }
+    }
+
+    .posts{
+      margin-top: 2rem;
+      article {
+        background-color: $white;
+        min-height: 800px;
+        margin-bottom: 4rem;
+
+        div {
+          width: 100%;
+        }
+
+        .post-title {
+          min-height: 3.5rem;
+          display: flex;
+          flex-direction: row;
+
+          .profile-img {
+            min-width: 10%;
+          }
+
+          .profile-user {
+            min-width: 80%;
+          }
+
+          .profile-more {
+            min-width: 10%;
+          }
+        }
+
+        .post-photo {
+          min-height: 48rem;
+        }
+
+        .post-actions {
+          min-height: 2.5rem;
+        }
+
+        .post-likes {
+          min-height: 2rem;
+        }
+
+        .post-description {
+          min-height: 2.5rem;
+        }
+
+        .post-comment-counter {
+          min-height: 2rem;
+        }
+
+        .post-comments {
+          min-height: 6rem;
+        }
+
+        .post-comment-timer {
+          min-height: 1.5rem;
+        }
+
+        .post-add-comment {
+          min-height: 3rem;
+        }
+      }
+    }
+  }
+
+  aside {
+    width: 35%;
+  }
 }
