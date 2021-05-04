@@ -1,0 +1,13 @@
+.stories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  img {
+    border: 3px solid $borderColorStory;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    overflow: hidden;
+  }
+}

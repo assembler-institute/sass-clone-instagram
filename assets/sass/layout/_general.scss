@@ -1,10 +1,10 @@
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-%display-flex{
+%display-flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;  
+  justify-content: space-around;
+  align-items: center;
 }

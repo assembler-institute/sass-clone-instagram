@@ -1,21 +1,15 @@
-%display-flex{
+header {
+  @extend %display-flex;
+  border-bottom: $thinBorder;
+  height: 4rem;
+
+  ul {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;  
-  }
 
-header{
-    @extend %display-flex;
-    // align-items: baseline;
-    height: 80px;
-
-    ul{
-        list-style-type: none;
-        display: flex;
-
-        li{
-            margin-left: 2.5rem;
-            font-size: 1.4rem;
-        }
+    li {
+      margin-left: 2.5rem;
+      font-size: 1.4rem;
     }
+  }
 }
