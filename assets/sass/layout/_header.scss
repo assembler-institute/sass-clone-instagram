@@ -1,0 +1,21 @@
+%display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  }
+
+header{
+    @extend %display-flex;
+    // align-items: baseline;
+    height: 80px;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+
+        li{
+            margin-left: 2.5rem;
+            font-size: 1.4rem;
+        }
+    }
+}
