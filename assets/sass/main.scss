@@ -1,0 +1,5 @@
+@use "./globlal";
+@use './mainLogin';
+@forward './mainHome';
+@forward './headerHome';
+@forward './foterLogin';
