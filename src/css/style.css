@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
   /*outline: solid 2px white*/
+  font-size: 12px;
 }
 
 body {
@@ -10,7 +12,6 @@ body {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   background-color: #FAFAFA;
 }
@@ -29,16 +30,14 @@ section.right {
   /*background-color: blue*/
   width: 100%;
   height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
   width: 50%;
-  height: 100%;
-  padding: 0.5rem;
+  height: 70%;
 }
 
 div.login {
@@ -59,7 +58,7 @@ div.login__img {
   align-items: center;
 }
 
-img {
+.logo {
   width: 60%;
 }
 
@@ -74,15 +73,15 @@ form.login__form {
 }
 
 form.login__form input {
-  width: 100%;
+  width: 80%;
   border: 1px solid #DBDBDB;
   padding: 0.5rem;
   margin-bottom: 0.4rem;
   color: #8E8E9C;
 }
 
-form.login__form input[type=submit] {
-  width: 100%;
+form.login__form button {
+  width: 22rem;
   border: 1px solid #DBDBDB;
   padding: 0.4rem 0;
   margin-bottom: 0.4rem;
@@ -90,7 +89,7 @@ form.login__form input[type=submit] {
   font-weight: bold;
   border: none;
   border-radius: 4px;
-  background-color: #90CCFC;
+  background-color: rgba(0, 149, 246, 0.3);
 }
 
 div.create {
@@ -102,8 +101,62 @@ div.create {
 }
 
 div.download {
-  width: 50%;
-  height: 20%;
+  width: 100%;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: grey;
+}
+
+#leftLine {
+  margin-right: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+#rightLine {
+  margin-left: 1.5rem;
+  margin-right: 2.5rem;
+}
+
+.passwordForget {
+  color: #385185;
+}
+
+.loginFacebook {
+  display: flex;
+  color: #385185;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.loginFacebook p {
+  margin-left: 5px;
+}
+
+.download p {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create a {
+  text-decoration: none;
 }
 
 /*aa*/
