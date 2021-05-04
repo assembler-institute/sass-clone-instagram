@@ -1,11 +1,42 @@
+//Base
+//Components
+//Layout
+//Letras rem-Fonts
+//Tamaño layout - viewport y %
 .containerLoginAll-class {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: aquamarine;
-  height: 100px;
-  width: 100px;
+  height: 900px;
+  width: 900px;
+}
+
+.row-all-class {
+  display: flex;
+  flex-direction: row;
 }
 
 .containerLeftAll-class {
+  display: flex;
+  align-items: center;
   background-color: rgb(255, 225, 127);
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
+}
+
+.containerRightAll-class {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 138, 127);
+  height: 300px;
+  width: 300px;
+}
+
+.containerDowntAll-class {
+  display: flex;
+  align-items: center;
+  background-color: rgb(127, 255, 155);
+  height: 300px;
+  width: 300px;
 }
