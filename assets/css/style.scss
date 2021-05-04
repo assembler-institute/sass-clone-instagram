@@ -1,6 +1,17 @@
 @use "./colors";
 @use "./elements";
 
+@font-face {
+  font-family: instagramFont;
+  src: url("../fonts/Rene Bieder  Milliard Light.woff");
+}
+/* General Stlyes */
+* {
+  font-family: instagramFont, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
 //Login Page
 * {
   margin: 0;
@@ -11,6 +22,7 @@ main {
   height: 85vh;
   width: 100%;
 }
+
 .parentMain {
   background-color: beige;
   height: 722px;
@@ -20,4 +32,22 @@ main {
   height: 15vh;
   // background: $instagramBackground;
   background-color: aquamarine;
+}
+
+/* FEED -------------------------------------------------------------- */
+
+nav {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px $borderColor solid;
+  height: 54px;
+  width: calc(100vw - 40px);
+}
+
+.main-logo {
+  height: 29px;
+  width: 103px;
 }
