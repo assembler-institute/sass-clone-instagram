@@ -1,11 +1,37 @@
 .containerLoginAll-class {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: aquamarine;
-  height: 100px;
-  width: 100px;
+  height: 900px;
+  width: 900px;
+}
+
+.row-all-class {
+  display: flex;
+  flex-direction: row;
 }
 
 .containerLeftAll-class {
+  display: flex;
+  align-items: center;
   background-color: #ffe17f;
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
+}
+
+.containerRightAll-class {
+  display: flex;
+  align-items: center;
+  background-color: #ff8a7f;
+  height: 300px;
+  width: 300px;
+}
+
+.containerDowntAll-class {
+  display: flex;
+  align-items: center;
+  background-color: #7fff9b;
+  height: 300px;
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */
