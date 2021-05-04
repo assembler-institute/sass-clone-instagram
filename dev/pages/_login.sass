@@ -7,7 +7,7 @@ $color: #8E8E9C
      margin: 0
      padding: 0
      font-family: 'Montserrat', sans-serif
-     /*outline: solid 2px white*/
+     outline: solid 2px red
      font-size: 12px
 
 body
@@ -37,7 +37,7 @@ div.left__mockup
      justify-content: center
 
 div.left__containerImages
-     background-image: url("../src/img/mockup.png")
+     //background-image: url("../src/img/mockup.png")
      margin: 99px 0 0 151px
      position: relative
      height: 500px
@@ -48,7 +48,7 @@ div.left__containerImages
      justify-content: center
 
 div.left__containerImages > img
-     height: 427px
+     height: 427px 
      left: 0
      opacity: 0
      position: absolute
@@ -57,10 +57,8 @@ div.left__containerImages > img
      width: 240px
 
 section.right    
-     /*background-color: blue*/
      width: 50%
      height: 100%
-     text-align: center
      align-items: center
      display: flex
      
@@ -80,14 +78,16 @@ div.login
 div.login__img
      width: auto
      height: auto
-
      display: flex
      flex-direction: column
      justify-content: end
      align-items: center
 
-.logo
+div.login__img > img
      width: 60%
+
+div.logo
+     //width: 60%
 
 form.login__form
      width: auto
@@ -98,15 +98,15 @@ form.login__form
      justify-content: center
      align-items: center
 
-form.login__form input
-     width: 80%
+form.login__form > input
+     width: 100%
      border: $border
      padding: 0.5rem
      margin-bottom: 0.4rem
      color: $color
 
-form.login__form button    
-     width: 22rem
+form.login__form > button    
+     width: 100%
      border: $border
      padding: 0.4rem 0
      margin-bottom: 0.4rem
@@ -122,53 +122,61 @@ div.create
      border: $border
      margin-bottom: 0.5rem
      background-color: $background-container
+     display: flex
+     flex-direction: row
+     justify-content: center
+     align-items: center
 
 div.download
+     display: flex
+     flex-direction: column
+     justify-content: center
+     align-items: center
      width: 100%
 
-.line
-     height: 1px
-     width: 100%
-     background-color: rgb(219,219,219)
-
-.separator
+div.separator
      display: flex
      align-items: center
      align-content: center
      color: grey
 
-#leftLine
+div.line
+     height: 1px
+     width: 100%
+     background-color: rgb(219,219,219)
+
+div#leftLine
      margin-right: 1.5rem
      margin-left: 2.5rem
 
-#rightLine
+div#rightLine
      margin-left: 1.5rem
      margin-right: 2.5rem
 
-.passwordForget
+p.passwordForget
      color: #385185
 
-.loginFacebook 
+div.loginFacebook 
      display: flex
      color: #385185
      font-weight: bold
-     margin-top: 30px
-     margin-bottom: 20px
+     margin: 1rem 0
      justify-content: center
 
-.loginFacebook p
-     margin-left: 5px
+div.loginOptions
+     display: flex
+     flex-direction: column
+     justify-content: end
+     align-items: center
 
-.download p
+div.loginFacebook p
+     margin-left: 0.5rem
+
+div.download p
      margin-bottom: 20px
      margin-top: 15px
 
-.create 
-     display: flex
-     align-items: center
-     justify-content: center
-
-.create a 
+div.create a 
      text-decoration: none
 
 footer
