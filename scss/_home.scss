@@ -1,5 +1,53 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 header {
   height: 54px;
   padding: 0 20px;
-  background-color: blue;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: blue; */
+  .header-search-class {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 215px;
+    min-width: 125px;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    span,
+    .fas {
+      z-index: 3;
+    }
+  }
+  input {
+    background-color: transparent;
+    border: 0px solid #fafafa;
+    width: 90%;
+    position: absolute;
+    outline: none;
+  }
+  img {
+    height: 32px;
+    margin-left: 10px;
+  }
+  .nav-profile-class {
+    height: 32px;
+    width: 32px;
+    border-radius: 25px;
+    background-image: url("../assets/img/user_profile.jpg");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 10px;
+  }
 }

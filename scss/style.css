@@ -1,0 +1,133 @@
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+header {
+  height: 54px;
+  padding: 0 20px;
+  border-bottom: 1px solid #dbdbdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  /* background-color: blue; */
+}
+
+header .header-search-class {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 215px;
+  min-width: 125px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+}
+
+header .header-search-class span,
+header .header-search-class .fas {
+  z-index: 3;
+}
+
+header input {
+  background-color: transparent;
+  border: 0px solid #fafafa;
+  width: 90%;
+  position: absolute;
+  outline: none;
+}
+
+header img {
+  height: 32px;
+  margin-left: 10px;
+}
+
+header .nav-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/user_profile.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.containerLoginAll-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: aquamarine;
+  height: 900px;
+  width: 900px;
+}
+
+.row-all-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.containerLeftAll-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffe17f;
+  height: 300px;
+  width: 300px;
+}
+
+.containerRightAll-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff8a7f;
+  height: 300px;
+  width: 300px;
+}
+
+.containerDowntAll-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #7fff9b;
+  height: 300px;
+  width: 300px;
+}
+/*# sourceMappingURL=style.css.map */
