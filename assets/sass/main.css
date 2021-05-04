@@ -79,9 +79,13 @@ main .rightContainer .loginForm .input {
 }
 
 main .rightContainer .loginForm button {
+  border: none;
+  height: 30px;
+  color: white;
+  font-weight: 400;
   border: 5px 2px #DBDBDB solid solid;
   border-radius: 5px;
-  width: 70%;
+  width: 76%;
   margin-top: 4%;
   background-color: #B2DFFC;
 }
@@ -136,6 +140,12 @@ main .rightContainer #alternativeLogin {
   cursor: pointer;
   margin-top: 8%;
   color: darkblue;
+}
+
+main .rightContainer #passForbidden {
+  color: darkblue;
+  margin-top: 7%;
+  font-size: 14px;
 }
 
 main .rightContainer .registerForm {

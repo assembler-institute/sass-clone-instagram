@@ -69,9 +69,13 @@ main {
                 height: 40px;
             }
                 button{
+                    border: none;
+                    height: 30px;
+                    color: white;
+                    font-weight: 400;
                     border: 5px $globalBorder solid;
                     border-radius: 5px;
-                    width: 70%;
+                    width: 76%;
                     margin-top: 4%;
                     background-color: $inactiveButtonColor;
                    
@@ -100,6 +104,13 @@ main {
             cursor: pointer;
             margin-top: 8%;
             color: $fbTextColor;
+
+        }
+
+        #passForbidden{
+            color: $fbTextColor;
+            margin-top: 7%;
+            font-size: 14px;
         }
 
         .registerForm{
