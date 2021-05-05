@@ -1,0 +1,4 @@
+@mixin circleBorderRadius($borderWidth, $borderColor) {
+  border: $borderWidth solid $borderColor;
+  border-radius: 50%;
+}

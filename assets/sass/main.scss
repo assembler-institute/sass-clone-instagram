@@ -1,13 +1,14 @@
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/variables';
+@import "base/reset";
+@import "base/typography";
+@import "base/mixins";
+@import "base/variables";
 
-@import 'component/buttons';
+@import "component/buttons";
 
-@import 'layout/general';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/responsive';
+@import "layout/general";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/responsive";
 
-@import 'pages/home';
-@import 'pages/login';
+@import "pages/home";
+@import "pages/login";
