@@ -66,12 +66,13 @@ header .nav-profile-class {
 
 main {
   display: flex;
-  width: 640px;
+  justify-content: center;
 }
 
 .article-post-class {
   display: flex;
   flex-direction: column;
+  margin: 25px 0;
 }
 .article-post-class .post-top-class {
   display: flex;
@@ -107,6 +108,17 @@ main {
 }
 .article-post-class img {
   width: 640px;
+}
+
+.description-icons-class {
+  display: flex;
+}
+.description-icons-class img {
+  width: 32px;
+}
+.description-icons-class img:nth-child(4) {
+  width: 28px;
+  justify-self: flex-end;
 }
 
 aside {

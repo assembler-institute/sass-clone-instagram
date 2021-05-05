@@ -70,12 +70,13 @@ header {
 
 main {
   display: flex;
-  width: 640px;
+  justify-content: center;
 }
 
 .article-post-class {
   display: flex;
   flex-direction: column;
+  margin: 25px 0;
   .post-top-class {
     display: flex;
     justify-content: space-between;
@@ -104,6 +105,17 @@ main {
   }
   img {
     width: 640px;
+  }
+}
+
+.description-icons-class {
+  display: flex;
+  img {
+    width: 32px;
+  }
+  img:nth-child(4) {
+    width: 28px;
+    justify-self: flex-end;
   }
 }
 
