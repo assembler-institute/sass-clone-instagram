@@ -1,0 +1,6 @@
+@use "./global" as global;
+
+.aside{
+    @include global.flex(column, top, left, global.$backgroundC, 0px, 100%);
+    border: black solid 1px;
+}

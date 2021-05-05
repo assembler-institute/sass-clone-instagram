@@ -342,4 +342,15 @@ footer {
   height: 20%;
 }
 
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  width: 100%;
+  background-color: #fafafa;
+  border: #dbdbdb 0px solid;
+  border: black solid 1px;
+}
+
 /*# sourceMappingURL=style.css.map */
