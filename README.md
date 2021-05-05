@@ -149,7 +149,7 @@ body {
   background-color: $mainOrange;
   color: $mainBlue;
 ```
-### .In which cases would we use SCSS? And in which cases would we use SASS?
+### In which cases would we use SCSS? And in which cases would we use SASS?
 - SASS is used when we need an original syntax, code syntax is not required
 for SCSS. 
 - SASS follows strict indentation, SCSS has no strict indentation.
@@ -157,9 +157,11 @@ for SCSS.
 resembles more to CSS style and use of semicolons and braces are
 mandatory.
 
+
 ### Explain how traditional CSS and Preprocessed CSS workflows are different.
 CSS > Sent to the browser
 SASS > Compiled to native CSS > Sent to the browser
+
 
 ### Can we create functions with SASS? If it is true, give an example.
 - Functions allow you to define complex operations on SassScript values that you can
@@ -195,6 +197,7 @@ $mainBlue: "#3039FC";
   }
 }
 ```
+
 ### Difference between @use & @import? Give an example
 - The new @use is similar to @import. 
 - But has some notable differences :
@@ -202,6 +205,7 @@ $mainBlue: "#3039FC";
 project.
   * Similarly, @extends will only apply up the chain; extending
 selectors in imported files, but not extending files that import this one.
+
 
 ### How can we import other CSS/SASS files in SASS? Give an example
 - @import "path/to/file";
@@ -226,6 +230,7 @@ button {
     color: button.$mainOrange;
 }
 ```
+
 ### Explain the concept of inheritance in SASS.
 - Using @extend lets you share a set of CSS properties from one selector
 to another. 
@@ -236,6 +241,7 @@ extend, placeholder classes.
 - A placeholder class is a special type of 
 class that only prints when it is extended, and can help keep your
 compiled CSS neat and clean.
+
 
 ### Why use @extend? Give an example
 - Using it lets you share a set of CSS properties from one selector to another. 
