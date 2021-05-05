@@ -15,6 +15,14 @@
   cursor: pointer;
 }
 
+.s8 {
+  font-size: 0.8rem;
+}
+
+.s7 {
+  font-size: 0.7rem;
+}
+
 .home {
   background-color: #fafafa;
   font-family: "Arimo", sans-serif;
@@ -26,6 +34,9 @@ header {
   border-bottom: 1px solid #dbdbdb;
   display: flex;
   justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 header .header-search-class {
   position: relative;
@@ -57,7 +68,7 @@ header .nav-profile-class {
   height: 32px;
   width: 32px;
   border-radius: 25px;
-  background-image: url("../assets/img/user_profile.jpg");
+  background-image: url("../assets/img/profile_photos/user_profile.jpg");
   background-position: center;
   background-size: cover;
   display: inline-block;
@@ -67,6 +78,131 @@ header .nav-profile-class {
 main {
   display: flex;
   justify-content: center;
+}
+
+.stories {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  background-color: white;
+  margin-top: 25px;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.story-profile-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-circle-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  background: linear-gradient(to right, #f99b4a, #c92d8c);
+  border-radius: 50%;
+}
+
+.story-name-class {
+  font-size: 0.7rem;
+  font-weight: 200;
+  margin-top: 5px;
+  width: 62px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.story-profile-class:first-child .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/user_profile_jake.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(2) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/la_veneno.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(3) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/mr_tesla.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(4) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/kurt.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(5) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/rick_morty.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(6) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/ada_lovelace.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(7) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/tree.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(8) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/doraemon.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
 }
 
 .article-post-class {
@@ -93,7 +229,7 @@ main {
   height: 32px;
   width: 32px;
   border-radius: 25px;
-  background-image: url("../assets/img/mishis.jpg");
+  background-image: url("../assets/img/profile_photos/mishis.jpg");
   background-position: center;
   background-size: cover;
   display: inline-block;
@@ -192,7 +328,122 @@ main {
 }
 
 aside {
-  min-width: 240px;
+  min-width: 300px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.aside-user-class {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aside-profile-class {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/user_profile.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.aside-name-class {
+  font-size: 0.9rem;
+}
+.aside-name-class p:first-child {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.aside-name-class p:nth-child(2) {
+  color: gray;
+}
+
+.blue-style {
+  color: #0095f6;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.suggestions-title-class {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.suggestions-title-class h3 {
+  color: gray;
+}
+
+.suggestion-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.suggestion-user-class {
+  display: flex;
+  align-items: center;
+}
+
+.suggestion-class:nth-child(2) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/assembler.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(3) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/scorpio.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(4) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/beer_helping.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(5) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/shadow_bone.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(6) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/cthulhu.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .display-flex {
