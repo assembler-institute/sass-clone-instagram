@@ -1,6 +1,13 @@
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/variables';
 
+@import 'component/buttons';
 
+@import 'layout/general';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/responsive';
 
-
-
-
+@import 'pages/home.scss';
+@import 'pages/login.scss';
