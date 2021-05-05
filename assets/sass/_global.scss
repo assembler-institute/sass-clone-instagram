@@ -1,50 +1,52 @@
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("../fonts/SFProText-Regular.ttf") format("truetype");
-  font-style: normal;
-}
-$font: "SF Pro Text";
+
+$font: 'Ubuntu', sans-serif;
 $backgroundC: #fafafa;
 $boxColor: #ffffff;
 $borderColor: #dbdbdb;
 $postColor: #404040;
 /*__loginVariables___*/
-$flexbox: flex;
-
-$anchor: 100%;
+$flexbox:flex;
+$borderColor:1px solid #dbdbdb;
+$anchor:100%;
 /*_________________*/
 @mixin resetMarginPadding {
-  margin: 0;
-  padding: 0;
-}
-@mixin inputs($color, $top, $bot) {
-  border-radius: 10px;
-  border: none;
-  height: 50px;
-  width: 60%;
-  justify-content: center;
-  align-items: center;
-  background-color: $color;
-  margin-top: $top;
-  margin-bottom: $bot;
-}
-@mixin image($ejeZ) {
-  position: absolute;
-  z-index: $ejeZ;
-  width: 40%;
-}
-@mixin flex($direction, $xPos, $ypos, $color, $borde, $anchor) {
-  display: $flexbox;
-  flex-direction: $direction;
-  justify-content: $xPos;
-  align-items: $ypos;
-  width: $anchor;
-  background-color: $color;
-  border: rgb(209, 207, 207) $borde solid;
-}
+    margin: 0;
+    padding: 0;
+  }
+@mixin inputs($color,$top,$bot){
+    border-radius: 3px;
+    border: $borderColor;
+    height: 40px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: $color;
+    margin-top: $top;
+    margin-bottom: $bot;
+    
+  }
+@mixin image ($ejeZ){
+    position: absolute;
+    z-index: $ejeZ;
+    width: 50%; 
+  }
+@mixin flex ($direction,$xPos,$ypos,$color,$borde,$anchor){
+    display: $flexbox;
+    flex-direction: $direction;  
+    justify-content: $xPos;
+    align-items: $ypos;
+    width: $anchor;
+    background-color: $color;
+    border: #dbdbdb $borde solid;
+  
+  }
 
 body {
-  background-color: $backgroundC;
+    background-color: $backgroundC;
+    font-family: $font;
+    
+
+    @include resetMarginPadding;
 
   @include resetMarginPadding;
 }
