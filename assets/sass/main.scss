@@ -1,13 +1,9 @@
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/variables';
+@use "base";
 
-@import 'component/buttons';
-
-@import 'layout/general';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/responsive';
-
-@import 'pages/home.scss';
-@import 'pages/login.scss';
+// login import
+@use "component/page/login/body/login";
+@use "component/page/login/body/loginForm";
+@use "component/page/login/input";
+@use "component/page/login/loginBttn";
+@use "layout";
+@use "pages";

@@ -1,54 +1,8 @@
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header {
-  height: 80px;
-}
-
-header ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header ul li {
-  margin-left: 2.5rem;
-  font-size: 1.4rem;
-}
+@use "base";
+@use "component/page/login/body/login";
+@use "component/page/login/body/loginForm";
+@use "component/page/login/input";
+@use "component/page/login/loginBttn";
+@use "layout";
+@use "pages";
 /*# sourceMappingURL=main.css.map */
