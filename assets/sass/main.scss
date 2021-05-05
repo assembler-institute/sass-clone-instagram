@@ -14,8 +14,10 @@
 @import "base/variables";
 
 @import "component/input";
-@import "component/loginBttn";
-@import "component/loginForm";
+@import "component/page/login/loginBttn";
+@import "component/page/login/loginForm";
+@import "component/page/login/registerBttn";
+@import "component/page/login/registerForm";
 
 @import "layout/general";
 @import "layout/header";
