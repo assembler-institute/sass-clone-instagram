@@ -1,5 +1,9 @@
 .body {
   background: #fafafa;
+  height: 100vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 * {
@@ -16,7 +20,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 85vh;
+  padding: 5% 20%;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -30,18 +35,21 @@
 
 .container__left {
   outline: auto;
+  height: 100%;
+  min-width: 300px;
 }
 
 .container__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  min-width: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   outline: auto;
-  height: 100%;
 }
 
 .bg__white {
@@ -57,6 +65,20 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+
+.main__logo {
+  background-image: url(/public/assets/img/logos.png);
+  height: 51px;
+  width: 175px;
+  background-position: 0px -130px;
+  background-repeat: no-repeat;
+}
+
+.footers_home {
+  position: relative;
+  height: 15vh;
+  width: 100%;
 }
 
 .ul__footer {
@@ -90,6 +112,11 @@
 }
 
 .img__home {
-  height: 25%;
+  height: 100%;
+}
+
+.login__content__downloadApp > img {
+  height: 40px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=custom.css.map */
