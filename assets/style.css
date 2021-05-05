@@ -250,6 +250,29 @@ section.main {
   height: 55px;
   margin-top: 4px;
   padding: 0px 16px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postContainer .post .footerPost .leftFooter {
+  display: flex;
+  align-items: center;
+}
+.mainHome .main .postContainer .post .footerPost .leftFooter img {
+  height: 30px;
+  padding-right: 16px;
+}
+.mainHome .main .postContainer .post .footerPost .leftFooter img:hover {
+  cursor: pointer;
+}
+.mainHome .main .postContainer .post .footerPost .leftFooter p {
+  color: grey;
+}
+.mainHome .main .postContainer .post .footerPost .rightFooter {
+  font-weight: 600;
+  color: #b3dffc;
 }
 .mainHome .aside {
   width: 300px;

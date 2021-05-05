@@ -109,6 +109,29 @@
           height: 55px;
           margin-top: 4px;
           padding: 0px 16px;
+          border-top: 1px solid global.$borderColor;
+          border-bottom: 1px solid global.$borderColor;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .leftFooter {
+            display: flex;
+            align-items: center;
+            img {
+              height: 30px;
+              padding-right: 16px;
+            }
+            img:hover {
+              cursor: pointer;
+            }
+            p {
+              color: grey;
+            }
+          }
+          .rightFooter {
+            font-weight: 600;
+            color: #b3dffc;
+          }
         }
       }
     }
