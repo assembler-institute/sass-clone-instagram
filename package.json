@@ -1,0 +1,23 @@
+{
+  "name": "sass-clone-instagram",
+  "version": "1.0.0",
+  "description": "`#sass` `#css` `#html` `#master-in-software-engineering`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kirtar/sass-clone-instagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kirtar/sass-clone-instagram/issues"
+  },
+  "homepage": "https://github.com/Kirtar/sass-clone-instagram#readme",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "sass": "^1.32.12"
+  }
+}
