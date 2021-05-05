@@ -25,7 +25,12 @@
     justify-content: space-around;
 }
 
-//Nesting
+//BORDER
+.border-for-building {
+    border: 1px solid rgb(255, 2, 2)
+}
+
+//Containers
 .all-class {
     .containerLoginAll-class {
         background-color: rgb(182, 127, 255);
@@ -53,15 +58,61 @@
 } //all-class
 //Log IN
 .logInAll-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: blue;
-    border: 10px solid black;
+    border: px solid black;
+    //HERE
     .logInForm-class {
+        //HERE
         background-color: rgb(30, 255, 0);
         .logInTitleForm-class {
+            display: flex;
+            justify-content: space-around;
             color: white;
         }
         .form-class {
-            border: 5px solid black;
+            display: flex;
+            flex-direction: column;
+            border: 5px solid rgb(212, 182, 11);
+            width: 70%;
+            margin: 0 auto;
+            .input-user {
+                background-color: yellow;
+                position: relative;
+                width: 100%;
+                margin: 2px 2px 2px 2px;
+                input {
+                    // position: absolute;
+                    width: 100%;
+                    background-color: transparent;
+                    border: 0px solid transparent;
+                }
+            }
+            .input-password {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(211, 145, 24);
+                position: relative;
+                width: 100%;
+                margin: 2px 2px 2px 2px;
+                input {
+                    // position: absolute;
+                    width: 100%;
+                    background-color: transparent;
+                    border: 0px solid transparent;
+                }
+                .my-password-class {
+                    color: rgb(179, 245, 179);
+                    width: 70%;
+                }
+                .show-button-class {
+                    color: rgb(245, 179, 210);
+                    width: 30%;
+                }
+            }
         }
     }
     .accountIg-class {

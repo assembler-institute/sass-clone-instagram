@@ -135,6 +135,10 @@ aside {
   justify-content: space-around;
 }
 
+.border-for-building {
+  border: 1px solid #ff0202;
+}
+
 .all-class .containerLoginAll-class {
   background-color: #b67fff;
   height: 745.32px;
@@ -158,17 +162,59 @@ aside {
 }
 
 .logInAll-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: blue;
-  border: 10px solid black;
+  border: px solid black;
 }
 .logInAll-class .logInForm-class {
   background-color: #1eff00;
 }
 .logInAll-class .logInForm-class .logInTitleForm-class {
+  display: flex;
+  justify-content: space-around;
   color: white;
 }
 .logInAll-class .logInForm-class .form-class {
-  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #d4b60b;
+  width: 70%;
+  margin: 0 auto;
+}
+.logInAll-class .logInForm-class .form-class .input-user {
+  background-color: yellow;
+  position: relative;
+  width: 100%;
+  margin: 2px 2px 2px 2px;
+}
+.logInAll-class .logInForm-class .form-class .input-user input {
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+.logInAll-class .logInForm-class .form-class .input-password {
+  display: flex;
+  flex-direction: row;
+  background-color: #d39118;
+  position: relative;
+  width: 100%;
+  margin: 2px 2px 2px 2px;
+}
+.logInAll-class .logInForm-class .form-class .input-password input {
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+.logInAll-class .logInForm-class .form-class .input-password .my-password-class {
+  color: #b3f5b3;
+  width: 70%;
+}
+.logInAll-class .logInForm-class .form-class .input-password .show-button-class {
+  color: #f5b3d2;
+  width: 30%;
 }
 .logInAll-class .accountIg-class {
   background-color: crimson;
