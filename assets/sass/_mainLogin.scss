@@ -1,4 +1,5 @@
 @use "./global" as global;
 body {
   background-color: global.$backgroundC;
+  // @include global.resetMarginPadding;
 }

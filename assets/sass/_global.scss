@@ -1,3 +1,21 @@
-$font: inherit;
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+$font: "SF Pro Text";
 $backgroundC: #fafafa;
 $boxColor: #ffffff;
+$borderColor: #dbdbdb;
+@mixin resetMarginPadding {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $backgroundC;
+  @include resetMarginPadding;
+  font-family: "SF Pro Text";
+}
+* {
+  //   outline: 2px solid black;
+}

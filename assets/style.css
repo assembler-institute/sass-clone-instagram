@@ -1,5 +1,137 @@
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Regular.ttf") format("truetype");
+  font-style: normal;
+}
 body {
   background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Text";
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.mainHome {
+  margin: 30px 19%;
+  height: 1500px;
+  display: flex;
+}
+.mainHome .main {
+  margin-right: 28px;
+  flex-grow: 1;
+}
+.mainHome .main .storiesContainer {
+  width: 100%;
+  height: 85px;
+  margin-bottom: 25px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+}
+.mainHome .main .postContainer {
+  width: 100%;
+  height: 1000px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+}
+.mainHome .main .postContainer .headerPost {
+  height: 32px;
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postContainer .headerPost .postTitle {
+  display: flex;
+  align-items: center;
+}
+.mainHome .main .postContainer .headerPost .postTitle img:hover {
+  cursor: pointer;
+}
+.mainHome .main .postContainer .headerPost .postTitle .postUser {
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  font-weight: 700;
+}
+.mainHome .main .postContainer .headerPost .postTitle .postUser:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainHome .main .postContainer .headerPost .postOption {
+  font-size: 16px;
+}
+.mainHome .main .postContainer .headerPost .postOption:hover {
+  cursor: pointer;
+}
+.mainHome .main .postContainer .picturePost img {
+  width: 100%;
+}
+.mainHome .main .postContainer .iconPost {
+  height: 40px;
+  margin-top: 4px;
+  padding: 0px 16px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postContainer .iconPost .imgIcon {
+  height: 24px;
+  padding: 6px;
+}
+.mainHome .main .postContainer .iconPost .imgIcon:hover {
+  cursor: pointer;
+}
+.mainHome .main .postContainer .likePost {
+  height: 18px;
+  margin-bottom: 8px;
+  padding: 0px 16px;
+}
+.mainHome .main .postContainer .likePost p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.mainHome .main .postContainer .commentsPost {
+  height: 104px;
+  padding: 0px 16px;
+}
+.mainHome .main .postContainer .timePost {
+  height: 18px;
+  margin-bottom: 4px;
+  padding: 0px 16px;
+}
+.mainHome .main .postContainer .footerPost {
+  height: 55px;
+  margin-top: 4px;
+  padding: 0px 16px;
+}
+.mainHome .aside {
+  width: 300px;
+  height: 1000px;
+}
+
+.headerHome {
+  padding: 10px 19%;
+  height: 35px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerHome .imgLogo {
+  height: 29px;
+  margin-top: 8px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
