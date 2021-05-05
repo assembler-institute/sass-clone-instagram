@@ -1,0 +1,14 @@
+@use "base/mixins" as *;
+
+.downloadBox {
+  box-sizing: content-box;
+  display: flex;
+  width: boxWidth();
+  flex-direction: row;
+  white-space: nowrap;
+  font-size: 15px;
+  #downloadText {
+    transform: translateX(170px);
+    font-weight: 600;
+  }
+}
