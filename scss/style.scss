@@ -68,6 +68,7 @@
     .logInForm-class {
         //HERE
         background-color: rgb(30, 255, 0);
+        text-align: center;
         .logInTitleForm-class {
             display: flex;
             justify-content: space-around;
@@ -80,15 +81,21 @@
             width: 70%;
             margin: 0 auto;
             .input-user {
+                display: flex;
+                flex-direction: row;
                 background-color: yellow;
                 position: relative;
-                width: 100%;
+                width: 98%;
                 margin: 2px 2px 2px 2px;
                 input {
                     // position: absolute;
-                    width: 100%;
+                    width: 95%;
                     background-color: transparent;
                     border: 0px solid transparent;
+                }
+                .empty {
+                    width: 4%;
+                    background-color: rgb(14, 171, 219);
                 }
             }
             .input-password {
@@ -97,7 +104,6 @@
                 background-color: rgb(211, 145, 24);
                 position: relative;
                 width: 100%;
-                margin: 2px 2px 2px 2px;
                 input {
                     // position: absolute;
                     width: 100%;
@@ -106,12 +112,27 @@
                 }
                 .my-password-class {
                     color: rgb(179, 245, 179);
-                    width: 70%;
+                    width: 73%;
                 }
                 .show-button-class {
                     color: rgb(245, 179, 210);
-                    width: 30%;
+                    width: 25%;
                 }
+            }
+            .logIn-button-class {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                width: 100%;
+                button {
+                    // position: absolute;
+                    width: 100%;
+                }
+            }
+            .other-options-class {
+                display: flex;
+                justify-content: space-around;
+                background-color: yellowgreen;
             }
         }
     }

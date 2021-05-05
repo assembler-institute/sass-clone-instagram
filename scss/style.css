@@ -171,6 +171,7 @@ aside {
 }
 .logInAll-class .logInForm-class {
   background-color: #1eff00;
+  text-align: center;
 }
 .logInAll-class .logInForm-class .logInTitleForm-class {
   display: flex;
@@ -185,15 +186,21 @@ aside {
   margin: 0 auto;
 }
 .logInAll-class .logInForm-class .form-class .input-user {
+  display: flex;
+  flex-direction: row;
   background-color: yellow;
   position: relative;
-  width: 100%;
+  width: 98%;
   margin: 2px 2px 2px 2px;
 }
 .logInAll-class .logInForm-class .form-class .input-user input {
-  width: 100%;
+  width: 95%;
   background-color: transparent;
   border: 0px solid transparent;
+}
+.logInAll-class .logInForm-class .form-class .input-user .empty {
+  width: 4%;
+  background-color: #0eabdb;
 }
 .logInAll-class .logInForm-class .form-class .input-password {
   display: flex;
@@ -201,7 +208,6 @@ aside {
   background-color: #d39118;
   position: relative;
   width: 100%;
-  margin: 2px 2px 2px 2px;
 }
 .logInAll-class .logInForm-class .form-class .input-password input {
   width: 100%;
@@ -210,11 +216,25 @@ aside {
 }
 .logInAll-class .logInForm-class .form-class .input-password .my-password-class {
   color: #b3f5b3;
-  width: 70%;
+  width: 73%;
 }
 .logInAll-class .logInForm-class .form-class .input-password .show-button-class {
   color: #f5b3d2;
-  width: 30%;
+  width: 25%;
+}
+.logInAll-class .logInForm-class .form-class .logIn-button-class {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+.logInAll-class .logInForm-class .form-class .logIn-button-class button {
+  width: 100%;
+}
+.logInAll-class .logInForm-class .form-class .other-options-class {
+  display: flex;
+  justify-content: space-around;
+  background-color: yellowgreen;
 }
 .logInAll-class .accountIg-class {
   background-color: crimson;
