@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -110,13 +112,83 @@ main {
 
 .description-icons-class {
   display: flex;
+  align-items: center;
+  padding: 5px 0;
 }
 .description-icons-class img {
   width: 32px;
 }
 .description-icons-class img:nth-child(4) {
+  margin-left: auto;
+  width: 26px;
+}
+
+.post-description-class {
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.description-likes-class {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.description-text-class {
+  margin-bottom: 5px;
+}
+.description-text-class h3 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.description-comments-class span {
+  color: gray;
+}
+.description-comments-class h3 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+.description-comments-class p {
+  margin: 5px 0;
+}
+
+.description-hour-class {
+  font-size: 0.7rem;
+  color: gray;
+  margin: 10px 0;
+}
+
+.post-addComment-class {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  border-radius: 0 0 3px 3px;
+  padding: 10px;
+}
+.post-addComment-class img {
   width: 28px;
-  justify-self: flex-end;
+  margin-right: 10px;
+}
+
+.add-comment-class {
+  color: gray;
+  font-size: 0.9rem;
+  position: relative;
+}
+.add-comment-class input {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid transparent;
+  outline: transparent;
 }
 
 aside {
@@ -167,4 +239,6 @@ aside {
   background-color: #7fff9b;
   height: 98.32px;
   width: 1079.49px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
