@@ -1,0 +1,97 @@
+@use "../common" as c;
+
+* {
+    font-family: c.$font-family;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 53px;
+    border-bottom: c.$box-border;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    height: 54px;
+}
+
+.logo-container {
+    width: 360px;
+}
+
+.instagram-logo {
+    margin-top: 11px;
+    width: 103px;
+    height: 29px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 213px;
+    height: 26px;
+    font-size: 14px;
+    color: c.$s-text-color;
+    border: c.$box-border;
+    border-radius: 3px;
+    background-color: c.$main-bg-color;
+}
+
+.search-icon {
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png);
+    background-size: 440px 411px;
+    background-position: -428px -241px;
+    width: 10px;
+    height: 10px;
+    margin-top: 2px;
+    margin-right: 6px;
+}
+
+.search-text {
+    font-weight: 300;
+    width: 39px;
+    height: 18px;
+}
+
+.nav-options-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 360px;
+}
+
+.options-box-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 198px;
+    height: 22px;
+    margin-left: 24px;
+}
+
+.option-nav {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.profile-picture-nav {
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+main {
+    flex-grow: 1;
+    background-color: c.$main-bg-color;
+}
