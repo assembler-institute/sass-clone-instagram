@@ -4,11 +4,17 @@ $backgroundC: #fafafa;
 $boxColor: #ffffff;
 $borderColor: #dbdbdb;
 $postColor: #404040;
-/*__loginVariables___*/
 $flexbox:flex;
 $borderColor:1px solid #dbdbdb;
 $anchor:100%;
 /*_________________*/
+@mixin grid3($cell1,$cell2,$cell3,$gap) {
+  display: grid;
+  grid-template-columns: $cell1 $cell2 $cell3;
+  column-gap: $gap;
+  justify-content: left;
+  align-content: flex-start;
+}
 @mixin resetMarginPadding {
     margin: 0;
     padding: 0;
@@ -30,6 +36,15 @@ $anchor:100%;
     z-index: $ejeZ;
     width: 50%; 
   }
+@mixin backimag ($ejeX,$ejeY,$bordeR,$url){
+  height: $ejeX;
+  width: $ejeY;
+  border-radius: $bordeR;
+  margin: 5px;
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
 @mixin flex ($direction,$xPos,$ypos,$color,$borde,$anchor){
     display: $flexbox;
     flex-direction: $direction;  
@@ -40,6 +55,15 @@ $anchor:100%;
     border: #dbdbdb $borde solid;
   
   }
+@mixin aHref ($color,$fonts){
+  text-decoration: none;
+  color: $color;
+  font-weight: 700;
+  font-family: $fonts;
+  justify-self: center;
+    align-self: center;
+  
+}
 
 body {
     background-color: $backgroundC;

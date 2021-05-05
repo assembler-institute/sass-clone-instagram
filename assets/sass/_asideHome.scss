@@ -2,5 +2,80 @@
 
 .aside{
     @include global.flex(column, top, left, global.$backgroundC, 0px, 100%);
-    border: black solid 1px;
+    min-width: 300px;
+}
+.currentUser{
+    @include global.grid3(0.5fr,1.5fr,1fr,5px);
+    font-size: 12px;
+    font-family: global.$font;
+    max-height: 70px;
+
+}
+.suggest{
+    @include global.grid3(0.5fr,2fr,1fr,5px);
+    font-size: 12px;
+    font-family: global.$font;
+    max-height: 70px;
+}
+.suggestText{
+    @include global.flex (column,left,left,none,none,none);
+}
+.suggest a{
+    @include global.aHref (rgb(106, 193, 243),global.$font);
+    
+}
+.currentUser a{
+    @include global.aHref (rgb(106, 193, 243),global.$font);
+    
+}
+.suggestText p{
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.suggestText span{
+    color: rgb(173, 169, 169);
+}
+.suggesTitle{
+    @include global.grid3(3fr,1fr,0fr,5px);
+    font-family: global.$font;
+    font-size: 12px;
+    
+}
+.suggesTitle p{
+   justify-self: left;
+   color: rgb(173, 169, 169);
+   margin: 10px;
+}
+.suggesTitle span{
+   align-self: center;
+   justify-self: center;
+   @include global.aHref (rgb(106, 193, 243),global.$font);
+
+   
+}
+.imag1{
+    @include global.backimag (30px,30px,15px,"./img/cara1.png")
+}
+.imag2{
+    @include global.backimag (30px,30px,15px,"./img/cara2.png")
+}
+.imag3{
+    @include global.backimag (30px,30px,15px,"./img/cara3.png")
+}
+.imag4{
+    @include global.backimag (30px,30px,15px,"./img/cara4.png")
+}
+.imag5{
+    @include global.backimag (30px,30px,15px,"./img/cara5.png")
+}
+.user{
+    @include global.backimag (60px,60px,30px,"./img/userface.png");
+    margin:10px;
+}
+.extra{
+    font-family: global.$font;
+    font-size: 10px;
+    color: rgb(173, 169, 169);
+    margin: 20px;
+    line-height: 200%;
 }
