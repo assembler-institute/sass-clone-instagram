@@ -87,7 +87,7 @@ header {
   align-items: center;
 }
 header #headerWrapper {
-  width: 975px;
+  width: 940px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -122,12 +122,12 @@ header #headerWrapper #iconsWrapper #headerPhoto {
 
 main {
   max-height: 886px;
-  width: 975px;
+  width: 1000px;
   margin: auto;
   padding-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   /*--------------------------LEFT------------------------------*/
   /*--------------------------RIGHT------------------------------*/
@@ -206,6 +206,7 @@ main #mainLeft #postsContainer .post .post-header .header-left {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 main #mainLeft #postsContainer .post .post-header img {
   width: 32px;
@@ -235,6 +236,7 @@ main #mainLeft #postsContainer .post .post-text .post-icons {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 main #mainLeft #postsContainer .post .post-text .post-icons .post-icons-left {
   width: 120px;
@@ -242,6 +244,7 @@ main #mainLeft #postsContainer .post .post-text .post-icons .post-icons-left {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 main #mainLeft #postsContainer .post .description-block {
   display: flex;
@@ -265,6 +268,7 @@ main #mainLeft #postsContainer .post .description-block .desc-wrapper {
 main #mainLeft #postsContainer .post .description-block .user {
   display: inline-block;
   margin-right: 5px;
+  cursor: pointer;
 }
 main #mainLeft #postsContainer .post .description-block .comment-left {
   flex-grow: 1;
@@ -302,6 +306,7 @@ main #mainRight {
 }
 main #mainRight .sidebar-user {
   margin-bottom: 3px;
+  cursor: pointer;
 }
 main #mainRight #sidebarTop {
   height: 116px;
@@ -321,9 +326,10 @@ main #mainRight #sidebarTop #sidebarProfile {
 main #mainRight #sidebarTop #sidebarProfile #sidebarPhoto {
   width: 56px;
   height: 56px;
-  border: 1px solid #8e8e8e;
+  border: 1px solid #c7c7c7;
   border-radius: 50%;
   margin-right: 12px;
+  cursor: pointer;
 }
 main #mainRight #sidebarTop #sidebarSuggTitle {
   display: flex;
@@ -347,10 +353,14 @@ main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggesti
   border: 1px solid #8e8e8e;
   border-radius: 50%;
   margin-right: 12px;
+  cursor: pointer;
 }
 main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggestion-text {
   flex-grow: 1;
   margin-right: 20px;
+}
+main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .follow-text {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

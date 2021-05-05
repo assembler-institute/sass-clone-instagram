@@ -2,10 +2,10 @@
 
 main {
   max-height: 886px;
-  width: g.$mainWidth;
+  width: 1000px;
   margin: auto;
   padding-top: 30px;
-  @include g.flexDistribution(row, flex-start, flex-start);
+  @include g.flexDistribution(row, center, flex-start);
 
   /*--------------------------LEFT------------------------------*/
   #mainLeft {
@@ -59,6 +59,7 @@ main {
 
           .header-left {
             @include g.flexDistribution(row, flex-start, center);
+            cursor: pointer;
           }
 
           img {
@@ -79,10 +80,12 @@ main {
             height: 24px;
             margin-bottom: 16px;
             @include g.flexDistribution(row, space-between, center);
+            cursor: pointer;
 
             .post-icons-left {
               width: 120px;
               @include g.flexDistribution(row, space-between, center);
+              cursor: pointer;
             }
           }
         }
@@ -103,11 +106,13 @@ main {
           .user {
             display: inline-block;
             margin-right: 5px;
+            cursor: pointer;
           }
 
           .comment-left {
             flex-grow: 1;
           }
+
           .post-time {
             margin-top: 3px;
           }
@@ -142,6 +147,7 @@ main {
 
     .sidebar-user {
       margin-bottom: 3px;
+      cursor: pointer;
     }
 
     #sidebarTop {
@@ -154,8 +160,9 @@ main {
         margin-bottom: 30px;
 
         #sidebarPhoto {
-          @include g.roundedElement(56px, 1px, g.$darkGray);
+          @include g.roundedElement(56px, 1px, g.$lightGray);
           margin-right: 12px;
+          cursor: pointer;
         }
       }
 
@@ -173,10 +180,14 @@ main {
           .suggestion-photo {
             @include g.roundedElement(32px, 1px, g.$darkGray);
             margin-right: 12px;
+            cursor: pointer;
           }
           .suggestion-text {
             flex-grow: 1;
             margin-right: 20px;
+          }
+          .follow-text {
+            cursor: pointer;
           }
         }
       }
