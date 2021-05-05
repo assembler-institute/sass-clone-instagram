@@ -128,6 +128,10 @@ footerFirst footer footerSecond {
   height: 100px;
 }
 
+.loginForm #loginSeparator {
+  margin-top: 5%;
+}
+
 #registerButton {
   font-weight: 600;
   cursor: pointer;

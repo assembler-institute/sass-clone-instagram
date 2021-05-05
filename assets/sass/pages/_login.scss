@@ -26,23 +26,6 @@ main {
     text-align: center;
   }
 
-  .downloadBox {
-    display: flex;
-    width: 120px;
-    flex-direction: row;
-    white-space: nowrap;
-
-    #downloadText{
-      
-    }
-    .downloadButton {
-      display: flex;
-      flex-direction: row;
-      margin-top: 25px;
-      flex-grow: 2;
-      height: 35px;
-    }
-  }
 
   #alternativeLogin {
     cursor: pointer;
@@ -52,7 +35,7 @@ main {
 
   #passForbidden {
     color: $fbTextColor;
-    margin-top: 7%;
+    margin-top: 3%;
     font-size: 14px;
   }
 
