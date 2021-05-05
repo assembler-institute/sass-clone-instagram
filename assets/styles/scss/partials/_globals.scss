@@ -26,7 +26,6 @@ $instaGradient: linear-gradient(
   font-family: "SF";
   src: url("../../../font/SF-Pro-Text-Regular.otf") format("truetype");
   font-weight: 400;
-  font-display: swap;
   font-style: normal;
 }
 
@@ -35,8 +34,55 @@ $instaGradient: linear-gradient(
   font-family: "SF";
   src: url("../../../font/SF-Pro-Text-Bold.otf") format("truetype");
   font-weight: 800;
-  font-display: swap;
   font-style: normal;
+}
+
+$largeText: 14px;
+$largeLH: 18px;
+
+$mediumText: 12px;
+$mediumLH: 14px;
+
+$smallText: 11px;
+$smallLH: 13px;
+
+.bold-text {
+  font-weight: 800;
+}
+
+.regular-text {
+  font-weight: 400;
+}
+
+.blue-disabled-text {
+  color: $diabledBlue;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.light-gray-text {
+  color: $lightGray;
+}
+
+.dark-gray-text {
+  color: $darkGray;
+}
+
+.large-text {
+  font-size: $largeText;
+  line-height: $largeLH;
+}
+
+.medium-text {
+  font-size: $mediumText;
+  line-height: $mediumLH;
+}
+
+.small-text {
+  font-size: $smallText;
+  line-height: $smallLH;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -64,11 +110,19 @@ body {
   background-color: $darkWhite;
 }
 
-@mixin roundedElement($property, $color) {
-  width: $property;
-  height: $property;
-  border: 1px solid $color;
+@mixin roundedElement($diameter, $borderWidth, $color) {
+  width: $diameter;
+  height: $diameter;
+  border: $borderWidth solid $color;
   border-radius: 50%;
+}
+
+@mixin backgroundGradient($diameter) {
+  position: absolute;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  background-image: $instaGradient;
 }
 
 @mixin flexDistribution($direction, $justify, $align) {
@@ -78,8 +132,9 @@ body {
   align-items: $align;
 }
 
-@mixin formatedText($size, $weight, $color) {
-  font-size: $size;
-  font-weight: $weight;
-  color: $color;
+@mixin topContainer {
+  height: 116px;
+  padding: 16px 0 16px 16px;
+  width: 100%;
+  margin-bottom: 24px;
 }

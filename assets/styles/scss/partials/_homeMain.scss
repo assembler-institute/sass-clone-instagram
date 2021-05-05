@@ -3,23 +3,20 @@
 main {
   height: 100vh;
   min-height: fit-content;
-  overflow: scroll;
   width: g.$mainWidth;
   margin: auto;
-  margin-top: 30px;
+  padding-top: 30px;
+  @include g.flexDistribution(row, flex-start, flex-start);
 
   #mainLeft {
+    overflow: scroll;
     width: 614px;
     margin-right: 28px;
 
     #storiesContainer {
       @include g.flexDistribution(row, flex-start, center);
       @include g.elementBorder;
-
-      height: 116px;
-      padding: 16px 0 16px 16px;
-      width: 100%;
-      margin-bottom: 24px;
+      @include g.topContainer;
       overflow: scroll;
 
       .story-wrapper {
@@ -29,20 +26,19 @@ main {
         position: relative;
 
         .story-photo-wrapper {
-          width: 66px;
-          height: 66px;
+          @include g.flexDistribution(row, center, center);
+          width: 64px;
+          height: 64px;
+          margin-bottom: 5px;
+
           img {
-            @include g.roundedElement(inherit, none);
-            padding: 3px;
+            @include g.roundedElement(60px, 2px, white);
             position: absolute;
             z-index: 2;
           }
+
           .story-gradient {
-            position: absolute;
-            width: inherit;
-            height: inherit;
-            @include g.roundedElement(inherit, none);
-            background-image: g.$instaGradient;
+            @include g.backgroundGradient(inherit);
           }
         }
       }
@@ -56,5 +52,48 @@ main {
   }
 
   #mainRight {
+    width: 293px;
+
+    .sidebar-user {
+      margin-bottom: 3px;
+    }
+
+    #sidebarTop {
+      @include g.topContainer;
+      padding-left: 0;
+      width: 100%;
+
+      #sidebarProfile {
+        @include g.flexDistribution(row, flex-start, center);
+        margin-bottom: 30px;
+
+        #sidebarPhoto {
+          @include g.roundedElement(56px, 1px, g.$darkGray);
+          margin-right: 12px;
+        }
+      }
+
+      #sidebarSuggTitle {
+        @include g.flexDistribution(row, space-between, center);
+      }
+    }
+
+    #sidebarBottom {
+      height: fit-content;
+      #suggestions {
+        .sidebar-suggestion {
+          @include g.flexDistribution(row, flex-start, center);
+          margin-bottom: 16px;
+          .suggestion-photo {
+            @include g.roundedElement(32px, 1px, g.$darkGray);
+            margin-right: 12px;
+          }
+          .suggestion-text {
+            flex-grow: 1;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
   }
 }
