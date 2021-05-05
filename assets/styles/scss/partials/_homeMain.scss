@@ -1,15 +1,16 @@
 @use "globals" as g;
 
 main {
-  height: 100vh;
-  min-height: fit-content;
+  max-height: 886px;
   width: g.$mainWidth;
   margin: auto;
   padding-top: 30px;
   @include g.flexDistribution(row, flex-start, flex-start);
 
+  /*--------------------------LEFT------------------------------*/
   #mainLeft {
     overflow: scroll;
+    max-height: inherit;
     width: 614px;
     margin-right: 28px;
 
@@ -45,12 +46,70 @@ main {
     }
 
     #postsContainer {
-      height: 1400px;
       width: 100%;
-      @include g.elementBorder;
+
+      .post {
+        @include g.elementBorder;
+        height: fit-content;
+        margin-bottom: 60px;
+        .post-header {
+          padding: 16px;
+          @include g.flexDistribution(row, space-between, center);
+          height: 59px;
+
+          .header-left {
+            @include g.flexDistribution(row, flex-start, center);
+          }
+
+          img {
+            @include g.roundedElement(32px, 1px, g.$darkGray);
+            margin-right: 14px;
+          }
+        }
+        .post-photo {
+          @include g.photoBlock(1px);
+        }
+
+        .post-text {
+          padding: 16px;
+          @include g.flexDistribution(column, space-between, flex-start);
+
+          .post-icons {
+            width: 100%;
+            height: 24px;
+            margin-bottom: 16px;
+            @include g.flexDistribution(row, space-between, center);
+
+            .post-icons-left {
+              width: 120px;
+              @include g.flexDistribution(row, space-between, center);
+            }
+          }
+        }
+        .post-comment {
+          @include g.commentBlock(1px);
+          @include g.flexDistribution(row, flex-start, center);
+
+          .smiley {
+            margin-left: 16px;
+            margin-right: 16px;
+          }
+
+          .comment-placeholder {
+            flex-grow: 1;
+            border: none;
+            background-color: g.$darkWhite;
+          }
+
+          .post-text {
+            margin-right: 16px;
+          }
+        }
+      }
     }
   }
 
+  /*--------------------------RIGHT------------------------------*/
   #mainRight {
     width: 293px;
 
