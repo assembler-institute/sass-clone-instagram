@@ -1,5 +1,5 @@
-@use "./colors";
-@use "./elements";
+@use "./colors" as *;
+@use "./elements" as *;
 
 @font-face {
   font-family: instagramFont;
@@ -10,12 +10,13 @@
   font-family: instagramFont, sans-serif;
   padding: 0px;
   margin: 0px;
+  // outline: 1px black solid;
+  box-sizing: border-box;
 }
-
+body {
+  background-color: $instagramBackground;
+}
 //Login Page
-* {
-  margin: 0;
-}
 main {
   background: $instagramBackground;
   @include flexCenter();
@@ -24,14 +25,197 @@ main {
 }
 
 .parentMain {
-  background-color: beige;
+  display: flex;
+  background-color: $instagramBackground;
   height: 722px;
-  width: 935px;
+  width: 800px;
+  max-width: 935;
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+.parentLeft {
+  position: relative;
+  @include flexCenter();
+  @include parentbyMiddle();
+}
+.animationBox {
+  position: absolute;
+  right: 34px;
+  bottom: 130px;
+  height: 427px;
+  width: 240px;
+}
+.imageStyle {
+  background-image: url(/assets/img/mobilImg1.jpg);
+  height: 429px;
+  width: 240px;
+
+  animation-name: instagramPictures;
+  animation-duration: 10s;
+  // animation-delay: 2s;
+  animation-iteration-count: infinite;
+  //animation-direction: alternate;
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes instagramPictures {
+  0%,
+  30%,
+  100% {
+    background-image: url(/assets/img/mobilImg1.jpg);
+  }
+  33%,
+  63% {
+    background-image: url(/assets/img/instagramImg2.jpg);
+  }
+  66%,
+  96% {
+    background-image: url(/assets/img/mobilimg3.jpg);
+  }
+}
+.parentRight {
+  @include flexCenter();
+  @include parentbyMiddle();
+  background-color: $instagramBackground;
+}
+.loginBox {
+  @include flexCenter();
+  width: 350px;
+  height: 380px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  background-color: #ffff;
+  border: 1px solid $borderColor;
+}
+.instagramLogoLogin {
+  width: 175px;
+  height: 51px;
+  margin: 22px 86.5px 12px;
+}
+.formBox {
+  @include flexCenter();
+  width: 348px;
+  height: 213px;
+  margin: 24px 0 0;
+}
+input {
+  @include inputBoxes();
+  background-color: $instagramBackground;
+  font-size: 12px;
+  &:focus {
+    border: 1px darkgray solid;
+    color: black;
+  }
+}
+.loginBtn {
+  @include inputBoxes();
+  margin: 8px 40px 20px;
+  background-color: #b2dffc;
+  color: #ffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.breakPoint {
+  @include flexCenterRow();
+}
+.divLine {
+  @include divLines();
+  background-color: $borderColor;
+}
+.orBox {
+  font-size: 13px;
+  margin: 0 18px;
+  color: #958e95;
+}
+.facebookLogin {
+  @include flexCenterRow();
+  font-size: 14px;
+  font-weight: bold;
+  width: 268px;
+  height: 20px;
+  margin-top: 20px;
+  color: #385185;
+  cursor: pointer;
+}
+.facebookPng {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+.forgotPassword {
+  @include flexCenter();
+  color: #00376b;
+  width: 348px;
+  height: 14px;
+  margin-top: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.signupBox {
+  font-size: 12px;
+  @include flexCenterRow();
+  width: 350px;
+  height: 63px;
+  margin: 0 0 10px 0;
+  background-color: #ffff;
+  border: 1px solid $borderColor;
+}
+.getAppBox {
+  width: 350px;
+  height: 102px;
+  margin-top: 10px;
+  background-color: $instagramBackground;
+}
+.textBox {
+  @include flexCenter();
+  margin: 10px 20px;
+  font-size: 14px;
+}
+.signuptext {
+  color: #5ac6fb;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.appStoreIcons {
+  @include flexCenterRow();
+}
+.appStoreImg,
+.googlePlayImg {
+  @include playStoreImg();
 }
 .loginFooter {
-  height: 15vh;
-  // background: $instagramBackground;
-  background-color: aquamarine;
+  @include flexCenter();
+  width: 100%;
+  height: 99px;
+  background: $instagramBackground;
+  margin-bottom: 40px;
+}
+.aboutParent {
+  @include flexCenter();
+  font-size: 12px;
+  word-spacing: 5px;
+  color: #8e8e8e;
+}
+.firstLine,
+.secondLine {
+  @include lineMargin();
+}
+.thirdLine {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 800px) {
+  .parentMain {
+    @include flexCenter;
+  }
+  .parentLeft {
+    display: none;
+  }
+  .aboutParent {
+    @include flexCenter;
+  }
 }
 
 /* FEED -------------------------------------------------------------- */

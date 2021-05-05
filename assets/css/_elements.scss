@@ -2,4 +2,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+@mixin flexCenterRow() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@mixin parentbyMiddle() {
+  height: 100%;
+  width: 50%;
+}
+@mixin inputBoxes() {
+  width: 258px;
+  height: 36px;
+  padding: 9px 0 7px 8px;
+  margin: 0 40px 6px;
+  outline: none;
+  border: 1px solid rgb(219, 219, 219);
+}
+@mixin divLines() {
+  width: 107.05px;
+  height: 1px;
+}
+@mixin playStoreImg() {
+  width: 136px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+@mixin lineMargin {
+  margin-bottom: 5px;
 }
