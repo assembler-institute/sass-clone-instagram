@@ -1,4 +1,9 @@
 @import "home";
+//My var's
+$my_background_color_general:white;
+$my_input_text_border:1px solid black;
+$my_div_border:4px solid rgba(117, 116, 116, 0.424);
+$my_input_background:rgba(255, 255, 255, 0.794);
 //My classes
 //FLEX
 .display-flex {
@@ -31,30 +36,27 @@
 }
 
 .border-for-instagram {
-    border: 3px solid rgba(117, 116, 116, 0.424);
+    border: $my_div_border;
 }
 
 //Containers
 .all-class {
     .containerLoginAll-class {
-        background-color: white;
+        background-color: $my_background_color_general;
         height: 745.32px;
         width: 1111.49px;
         .row-all-class {
             .containerLeftAll-class {
-                background-color: white;
                 height: 618px;
                 width: 454px;
             } //containerLeftAll-class 
             .containerRightAll-class {
-                background-color: white;
                 height: 606px;
                 width: 350px;
                 margin-top: 12px;
             } //containerRightAll-class
         } //row-all-class
         .containerDowntAll-class {
-            background-color: white;
             height: 98.32px;
             width: 1079.49px;
         } //containerDowntAll-class
@@ -62,51 +64,36 @@
 } //all-class
 //Log IN
 .logInAll-class {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
     height: 606px;
     width: 220px;
     //HERE
     .logInForm-class {
         //HERE
-        background-color: white;
         text-align: center;
-        //border: 2px solid rgb(117, 116, 116);
-        .logInTitleForm-class {
-            display: flex;
-            justify-content: space-around;
-            color: white;
-        }
+        .logInTitleForm-class {}
         .form-class {
-            display: flex;
-            flex-direction: column;
             width: 70%;
             margin: 0 auto;
             .input-user {
-                display: flex;
-                flex-direction: row;
-                background-color: white;
+                background-color: $my_input_background;
+                border: $my_input_text_border;
                 position: relative;
                 width: 98%;
                 margin: 2px 2px 2px 2px;
                 input {
-                    // position: absolute;
                     width: 95%;
                     background-color: transparent;
                     border: 0px solid transparent;
                 }
                 .empty {
                     width: 4%;
-                    background-color: white;
                 }
             }
             .input-password {
-                display: flex;
-                flex-direction: row;
-                background-color: white;
+                //display: flex;
+                //flex-direction: row;
+                background-color: $my_input_background;
+                border: $my_input_text_border;
                 position: relative;
                 width: 100%;
                 input {
@@ -123,8 +110,6 @@
                 }
             }
             .logIn-button-class {
-                display: flex;
-                flex-direction: row;
                 position: relative;
                 width: 100%;
                 button {
@@ -132,11 +117,7 @@
                     width: 100%;
                 }
             }
-            .other-options-class {
-                display: flex;
-                justify-content: space-around;
-                background-color: white;
-            }
+            .other-options-class {}
             .logInWithFacebook-class {
                 font-size: x-small;
             }
@@ -148,21 +129,15 @@
     .accountIg-class {
         margin-top: 10px;
         text-align: center;
-        background-color: white;
         width: 100%;
         font-size: x-small;
-        //border: 5px solid rgb(212, 182, 11);
     }
     .getAppIg-class {
-        display: flex;
-        flex-direction: column;
         text-align: center;
         margin-top: 20px;
-        background-color: white;
         font-size: x-small;
         width: 100%;
         .download-app-img-class {
-            background-color: white;
             width: 100%;
             height: 100px;
             margin-top: 20px;
