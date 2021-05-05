@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -7,13 +13,17 @@
   cursor: pointer;
 }
 
+.home {
+  background-color: #fafafa;
+  font-family: "Arimo", sans-serif;
+}
+
 header {
   height: 54px;
   padding: 0 20px;
   border-bottom: 1px solid #dbdbdb;
   display: flex;
   justify-content: space-evenly;
-  /* background-color: blue; */
 }
 header .header-search-class {
   position: relative;
@@ -50,6 +60,55 @@ header .nav-profile-class {
   background-size: cover;
   display: inline-block;
   margin-left: 10px;
+}
+
+main {
+  display: flex;
+  width: 640px;
+}
+
+.article-post-class {
+  display: flex;
+  flex-direction: column;
+}
+.article-post-class .post-top-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 640px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 3px 3px 0 0;
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+}
+.article-post-class .post-top-class .post-user-class {
+  justify-content: space-between;
+}
+.article-post-class .post-top-class .post-user-class .post-user-profile-class-1 {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/mishis.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 15px;
+}
+.article-post-class .post-top-class .post-user-class h2 {
+  font-size: 0.9rem;
+}
+.article-post-class .post-top-class span {
+  font-size: 2rem;
+  margin-top: -10px;
+}
+.article-post-class img {
+  width: 640px;
+}
+
+aside {
+  min-width: 240px;
 }
 
 .display-flex {

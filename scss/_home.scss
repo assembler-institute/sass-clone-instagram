@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -7,13 +15,27 @@
   cursor: pointer;
 }
 
+@mixin postsProfile($profileUrl) {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url($profileUrl);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.home {
+  background-color: #fafafa;
+  font-family: "Arimo", sans-serif;
+}
+
 header {
   height: 54px;
   padding: 0 20px;
   border-bottom: 1px solid #dbdbdb;
   display: flex;
   justify-content: space-evenly;
-  /* background-color: blue; */
   .header-search-class {
     position: relative;
     display: flex;
@@ -41,13 +63,50 @@ header {
     margin-left: 10px;
   }
   .nav-profile-class {
-    height: 32px;
-    width: 32px;
-    border-radius: 25px;
-    background-image: url("../assets/img/user_profile.jpg");
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
+    @include postsProfile("../assets/img/user_profile.jpg");
     margin-left: 10px;
   }
+}
+
+main {
+  display: flex;
+  width: 640px;
+}
+
+.article-post-class {
+  display: flex;
+  flex-direction: column;
+  .post-top-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 640px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 3px 3px 0 0;
+    border-top: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    .post-user-class {
+      justify-content: space-between;
+      .post-user-profile-class-1 {
+        @include postsProfile("../assets/img/mishis.jpg");
+        margin-right: 15px;
+      }
+      h2 {
+        font-size: 0.9rem;
+      }
+    }
+    span {
+      font-size: 2rem;
+      margin-top: -10px;
+    }
+  }
+  img {
+    width: 640px;
+  }
+}
+
+aside {
+  min-width: 240px;
 }
