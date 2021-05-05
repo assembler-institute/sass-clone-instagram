@@ -1,0 +1,16 @@
+@use "./global" as global;
+.headerHome {
+  padding: 10px 19%;
+  height: 35px;
+  background-color: white;
+  border-bottom: 1px solid global.$borderColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .imgLogo {
+    height: 29px;
+    margin-top: 8px;
+    cursor: pointer;
+    @include global.resetMarginPadding;
+  }
+}
