@@ -139,6 +139,10 @@ aside {
   border: 1px solid #ff0202;
 }
 
+.border-for-instagram {
+  border: 3px solid rgba(117, 116, 116, 0.424);
+}
+
 .all-class .containerLoginAll-class {
   background-color: white;
   height: 745.32px;
@@ -167,7 +171,8 @@ aside {
   align-items: center;
   justify-content: center;
   background-color: white;
-  border: px solid black;
+  height: 606px;
+  width: 220px;
 }
 .logInAll-class .logInForm-class {
   background-color: white;
@@ -181,7 +186,6 @@ aside {
 .logInAll-class .logInForm-class .form-class {
   display: flex;
   flex-direction: column;
-  border: 5px solid #d4b60b;
   width: 70%;
   margin: 0 auto;
 }
@@ -215,11 +219,9 @@ aside {
   border: 0px solid transparent;
 }
 .logInAll-class .logInForm-class .form-class .input-password .my-password-class {
-  color: #b3f5b3;
   width: 73%;
 }
 .logInAll-class .logInForm-class .form-class .input-password .show-button-class {
-  color: #f5b3d2;
   width: 25%;
 }
 .logInAll-class .logInForm-class .form-class .logIn-button-class {
@@ -236,17 +238,25 @@ aside {
   justify-content: space-around;
   background-color: white;
 }
+.logInAll-class .logInForm-class .form-class .logInWithFacebook-class {
+  font-size: x-small;
+}
+.logInAll-class .logInForm-class span {
+  font-size: x-small;
+}
 .logInAll-class .accountIg-class {
   margin-top: 10px;
   text-align: center;
   background-color: white;
   width: 100%;
   font-size: x-small;
-  border: 5px solid #d4b60b;
 }
 .logInAll-class .getAppIg-class {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: #dcd914;
+  margin-top: 20px;
+  background-color: white;
   font-size: x-small;
   width: 100%;
 }
@@ -254,4 +264,5 @@ aside {
   background-color: white;
   width: 100%;
   height: 100px;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
