@@ -3,11 +3,12 @@
   src: url("../fonts/SFProText-Regular.ttf") format("truetype");
   font-style: normal;
 }
+/*__loginVariables___*/
+/*_________________*/
 body {
   background-color: #fafafa;
   margin: 0;
   padding: 0;
-  font-family: "SF Pro Text";
 }
 
 section.main {
@@ -137,10 +138,6 @@ section.main {
   margin-bottom: none;
 }
 
-footer {
-  height: 20%;
-}
-
 .mainHome {
   margin: 30px 19%;
   height: 1500px;
@@ -184,6 +181,7 @@ footer {
   padding: 0;
   margin-left: 16px;
   font-weight: 700;
+  color: #404040;
 }
 .mainHome .main .postContainer .headerPost .postTitle .postUser:hover {
   cursor: pointer;
@@ -259,6 +257,10 @@ footer {
   cursor: pointer;
   margin: 0;
   padding: 0;
+}
+
+footer {
+  height: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
