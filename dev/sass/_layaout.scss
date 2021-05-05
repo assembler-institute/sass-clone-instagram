@@ -1,45 +1,50 @@
 @import "colors";
+@import "images";
 $borderInitial: $facebookBlue 1px solid;
 
 .body {
-    background: $notWhite;
+  height: 100vh;
+  width: fit-content;
+  background: $notWhite;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    // outline: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // outline: auto;
 }
-
 .container__home {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    outline: auto;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  outline: auto;
+  position: relative;
+  padding: 5% 20%;
 }
 .container__left {
-    outline: auto;
+  height: 100%;
+  min-width: 300px;
+  outline: auto;
 }
 
 .container__right {
-    display: flex;
-    flex-direction: column;
-    outline: auto;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  outline: auto;
+  height: 100%;
+  min-width: 300px;
 }
 
 .bg__white {
-    background-color: $white;
+  background-color: $white;
 }
 
 .login__profile {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
