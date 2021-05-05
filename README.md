@@ -42,6 +42,8 @@ Use the $ symbol to declare a variable.
 SASS variable syntax: $variablename: value;
 
 Example:
+
+```
 /_ define color _/
 $first-color: red;
 
@@ -49,6 +51,7 @@ $first-color: red;
 body {
 color: $first-color;
 }
+```
 
 · What is a mixin? Why is it important? Give an example
 Is a directive that let us create CSS code that is to be reused throughout our stylesheet.
@@ -75,7 +78,7 @@ It uses the .scss file extension.
 
 Example:
 @mixin body-list() {
-  @include first-list;
+@include first-list;
 
     display: flex;
     border: 1px solid black;
@@ -90,7 +93,7 @@ It uses indentation instead of {} and ; to describe the format of hte document.
 
 Example:
 @mixin body-list()
-  @include first-list
+@include first-list
 
     display: flex
     border: 1px solid black
@@ -101,6 +104,7 @@ SASS uses indentation
 
 · In which cases would we use SCSS? And in which cases would we use SASS?
 SASS:
+
 - Is a pre-processor scritping language that will be compiled/interpreted into CSS.
 - Used when we need a original syntax for the development.
 - Follows strict indentation.
@@ -109,6 +113,7 @@ SASS:
 - It supports all the versions of CSS.
 
 SCSS:
+
 - Is the main syntax for the SASS which builds on top of the existing CSS syntax.
 - Extension of the syntax CSS.
 - Used when there is no requirement about the code syntax used.
@@ -118,7 +123,6 @@ SCSS:
 · Explain how traditional CSS and Preprocessed CSS workflows are different.
 CSS preprocessors are the demand of the day. They give us the benefit of Variables, Partials and Nesting.
 
-
 · Can we create functions with SASS? If it is true, give an example.
 Yes, they are parsed function calls, resolved to plain CSS functions, and compiled as-is to CSS.
 There are few exceptions. All special function calls return unquoted strings.
@@ -127,43 +131,44 @@ Example:
 $padding: 15px
 
 .sidebar
-  padding-left: max($padding, 30px)
+padding-left: max($padding, 30px)
   padding-right: max($padding, 30px)
-
 
 · What is nesting? Is it useful? Give an example of nesting
 Allows us to write selectors that mimic the structure of our HTML.
 This allows us to use shortcuts to create our CSS.
 
 nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  li {
-    display: inline-block;
-  }
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+li {
+display: inline-block;
+}
 }
 
 · Difference between @use & @import? Give an example
 @use:
+
 - Combines CSS from multiple stylesheets together.
 - Stylesheets loaded by @use are called: modules.
 - The file is only imported once.
 
 Example:
-_color.scss
+\_color.scss
 -color.scss
 
 @import:
+
 - Has the ability to import SASS and CSS stylesheets
 - Provide acces to mixins, functions, variables and combine multiple stylesheets together.
 - Handled entirely during compilation.
 - Include the content of ioone file in another.
 
 Example:
-_color.scss
+\_color.scss
 
 · How can we import other CSS/SASS files in SASS? Give an example
 
@@ -175,12 +180,12 @@ Is useful if we want have almost identically styled elements that only differ so
 
 Exemple:
 .button-basic {
-  cursor: pointer;
-  font-size: 20px;
+cursor: pointer;
+font-size: 20px;
 }
-.button-report  {
-  @extend .button-basic;
-  background-color: red;
+.button-report {
+@extend .button-basic;
+background-color: red;
 }
 
 ## Index <!-- omit in toc -->
@@ -236,8 +241,10 @@ To deliver this project you must follow the steps indicated in the document:
 - [SASS Guidelines](https://sass-guidelin.es/es/)
 - [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
 - [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+- [Unsplash photo library](https://unsplash.com/)
 
 ## Collaborators
 
 👤 Kendra Lambillon
+
 👤 Ricard Garcia
