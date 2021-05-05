@@ -9,18 +9,28 @@
   margin: 0px;
 }
 
-main {
-  background-color: #fafafa;
+* {
+  margin: 0;
 }
 
-.parentMain {
+main {
+  background: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 935px;
-  width: 722px;
-  background-color: black;
-  border: 1px black solid;
+  height: 85vh;
+  width: 100%;
+}
+
+.parentMain {
+  background-color: beige;
+  height: 722px;
+  width: 935px;
+}
+
+.loginFooter {
+  height: 15vh;
+  background-color: aquamarine;
 }
 
 /* FEED -------------------------------------------------------------- */
