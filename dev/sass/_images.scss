@@ -1,3 +1,12 @@
+
+@mixin img__round {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
 .img__home {
     height: 100%;
     object-fit: cover;
