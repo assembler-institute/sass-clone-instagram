@@ -4,41 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dev/sass/custom.css" />
     <title>Instagram</title>
   </head>
-  <body>
-    <header>
-      <h1>header</h1>
-    </header>
+  <body class="body">
+    <header></header>
     <main>
       <section class="container__home">
-        <div class="container__left">izquierda</div>
-        <div class="container__right">derecha</div>
+        <div class="container__left">
+          <img
+            class="img__home"
+            src="/public/assets/img/mobileBackground.png"
+            alt="instagram"
+          />
+        </div>
+        <div class="container__right">
+          <div class="bg__white login__profile">
+            <h3>Instagram</h3>
+            <label for="user">
+              <input type="text" />
+            </label>
+            <label for="password">
+              <input type="text" />
+            </label>
+            <button>log in</button>
+            <span>or</span>
+            <span>log in with facebook</span>
+            <span>forgot password?</span>
+          </div>
+          <div class="bg__white">
+            Don't have an account? Sign up
+          </div>
+          <div>
+            Get The app
+            app store
+            google play
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <div class="footers_home">
-        <ul>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Jobs</li>
-          <li>Help</li>
-          <li>API</li>
-          <li>Privacy</li>
-          <li>Terms</li>
-          <li>Top Accounts</li>
-          <li>Hashtags</li>
-          <li>Locations</li>
-          <li>Beuty</li>
-          <li>Dance&Performance</li>
-          <li>Fitness</li>
-          <li>Fodd & Drink</li>
-          <li>Home & Garden</li>
-          <li>Music</li>
-          <li>Visual Arts</li>
-          <li>English</li>
-          <li>2021 Instagram from Facebook</li>
-        </ul>
+        <div>
+          <ul class="ul__footer">
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+            <li>Help</li>
+            <li>API</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Top Accounts</li>
+            <li>Hashtags</li>
+            <li>Locations</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ul__footer">
+            <li>Beuty</li>
+            <li>Dance&Performance</li>
+            <li>Fitness</li>
+            <li>Fodd & Drink</li>
+            <li>Home & Garden</li>
+            <li>Music</li>
+            <li>Visual Arts</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ul__footer">
+            <li>English</li>
+            <li>2021 Instagram from Facebook</li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

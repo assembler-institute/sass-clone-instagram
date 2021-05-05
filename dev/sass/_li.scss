@@ -1,0 +1,16 @@
+.ul__footer {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 20px;
+    cursor: pointer;
+    // margin-bottom: 10px;
+}
+
+.footers_home {
+    display: flex;
+    flex-direction: column;
+}
