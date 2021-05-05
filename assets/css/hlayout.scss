@@ -1,0 +1,206 @@
+@use "./hroot.scss" as hroot;
+.navBar {
+  background-color: hroot.$bg;
+  height: 54px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @include hroot.borders-bottom();
+}
+.navContent {
+  display: flex;
+  padding-top: 8px;
+  box-sizing: border-box;
+  .logo {
+    width: 103px;
+    height: 29px;
+    background-image: url("../img/logoInsta.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 15vw;
+  }
+  .search {
+    width: 215px;
+    height: 28px;
+    padding: 9px;
+    box-sizing: border-box;
+  }
+  ::placeholder {
+    color: rgb(160, 160, 160);
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  .icons {
+    width: 225px;
+    height: 25px;
+    margin-left: 9vw;
+    display: flex;
+    .icon {
+      width: 22px;
+      height: 22px;
+      padding: 0px 0px 0px 24px;
+      border: 0;
+    }
+    .user-icon {
+      width: 22px;
+      height: 22px;
+      border: 1px solid grey;
+      border-radius: 12px;
+      margin: 0px 0px 0px 24px;
+    }
+  }
+}
+.container {
+  width: 935px;
+  margin: 0 auto;
+  height: auto;
+  margin-top: hroot.$mt-containers;
+  display: flex;
+}
+.left-section {
+  width: 600px;
+  height: auto;
+  .stories {
+    width: 95%;
+    height: 100px;
+    margin-left: 2.5%;
+    display: flex;
+
+    @include hroot.borders();
+    @include hroot.story(11px);
+    .story-user {
+      width: 66px;
+      height: 13px;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+  }
+  .posts {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    @include hroot.borders();
+    margin-top: hroot.$mt-containers;
+    .postUser {
+      width: 100%;
+      height: 60px;
+      @include hroot.borders-bottom();
+      @include hroot.story(0px);
+    }
+    .post {
+      width: 100%;
+      height: 613px;
+    }
+    .postFoot {
+      width: 100%;
+      height: 190px;
+      @include hroot.borders();
+    }
+  }
+}
+.right-section {
+  width: 335px;
+  height: auto;
+  .my-user-suggestions {
+    width: 325px;
+    height: 56px;
+    display: flex;
+    margin-top: hroot.$mt-containers - 14px;
+    margin-left: hroot.$mt-containers / 2;
+    @include hroot.story(0px);
+    .my-user-info {
+      width: 186px;
+      height: 56px;
+      justify-content: center;
+      margin-left: 2%;
+      display: flex;
+      flex-direction: column;
+      .info {
+        margin-bottom: 3px;
+      }
+      .info2 {
+        color: grey;
+      }
+    }
+    .change-user {
+      width: 50px;
+      justify-content: center;
+      p {
+        margin-top: 48%;
+        font-size: 12px;
+        color: rgb(0, 140, 255);
+      }
+    }
+  }
+  .suggestions {
+    width: 325px;
+    height: 300px;
+    margin-top: hroot.$mt-containers - 5px;
+    margin-left: hroot.$mt-containers / 2;
+    @include hroot.borders();
+    .sugg {
+      width: 325px;
+      height: 20px;
+      display: flex;
+      .sfy {
+        width: 246px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+        color: grey;
+      }
+      .see {
+        width: 46px;
+        height: 20px;
+        margin-right: 15px;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+    .user-suggestion {
+      width: 320px;
+      height: 48px;
+      .user {
+        width: 279px;
+        height: 42px;
+        display: flex;
+        margin-left: 21px;
+        margin-top: 8px;
+        .image-cont {
+          width: 42px;
+          height: 42px;
+          background-color: hotpink;
+          .user-image {
+            width: 32px;
+            height: 32px;
+            margin-top: 5px;
+            margin-left: 5px;
+            border-radius: 16px;
+            background-color: rgb(255, 255, 255);
+          }
+        }
+        .user-info {
+          width: 202px;
+          height: 42px;
+          background-color: indigo;
+        }
+        .follow {
+          width: 35px;
+          height: 42px;
+          background-color: lightcoral;
+        }
+      }
+    }
+  }
+  .information {
+    width: 300px;
+    height: 120px;
+    margin-top: hroot.$mt-containers - 5px;
+    margin-left: hroot.$mt-containers / 2;
+    @include hroot.borders();
+  }
+}
