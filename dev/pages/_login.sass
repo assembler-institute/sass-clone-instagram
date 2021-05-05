@@ -5,7 +5,6 @@ $color: #8E8E9C
 
 
 
-
 // SASS LOGIN.HTML
 
 *
@@ -187,7 +186,7 @@ div.create a
 
 div.stores
      display: flex
-     flex-container: row
+     flex-direction: row
 
 div.stores > a > img 
      width: 135px 
@@ -222,13 +221,28 @@ footer > div > div > div
 //SASS MAIN.HTML
 header
      width: 100%
-     height: 10%
+     height: 8%
      background-color: $background-container
      border-bottom: solid 1px #DBDBDB
      margin: 0 0 2.5rem 0
+     display: flex
+     flex-direction: row
+     justify-content: space-around
+     align-items: center
+
+div.main__header--logo
+     width: auto
+     height: auto
+     display: flex
+     flex-direction: row
+     
+div.main__header--logo > img
+     max-width: 140px
+     height: auto
+     padding: 0 0 0 1rem 
 main.main__main
      width: 100%
-     height: 90%
+     height: 92%
      background-color: red
      display: flex
      flex-direction: row
@@ -241,22 +255,130 @@ section.stories
      flex-direction: column
      justify-content: flex-start
      align-items: center
+     margin-left: 18rem
+
 section.recommendations
      width: 30%
      height: 100%
      background-color: $background-main
-
+     margin-right: 18rem
 div.main__stories
-     width: 80%
+     width: 90%
      height: 10%
      background-color: $background-container
      margin: 0 0 2.5rem 0
      border: $border
      
 div.main__posts
-     width: 80%
-     height: 10%
+     width: 90%
+     height: 75%
      background-color: $background-container
      border: $border
 
+div.main__posts--container
+     width: 100%
+     height: 90%
 
+div.main__posts--user
+     width: auto
+     height: 10%
+     display: flex
+     flex-direction: row
+     justify-content: space-between
+     align-items: center
+     padding: 0 2rem
+
+div.main__posts--userName
+     display: flex
+     flex-direction: row
+     justify-content: center
+     align-items: center
+div.main__posts--userImg
+     margin: 0 1rem 0 0
+     width: 30px
+     height: 30px
+     //border: solid 1px
+     //border: 2px solid linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%)
+     border-radius: 20px 
+     display: flex
+     flex-direction: row
+     justify-content: center
+     align-items: center
+div.main__posts--userImg > img
+     width: inherit
+     max-width: 100%
+     height: inherit
+     max-height: 100%
+     border-radius: 20px 
+div.main__posts--userOption
+
+div.main__posts--img
+     width: 100%
+     height: 70%
+     background-color: red
+     display: flex
+     flex-direction: row
+
+div.main__posts--img > img
+     width: inherit
+     display:block
+     margin:auto
+
+div.main__posts--content
+     width: 100%
+     height: 20%
+div.main__posts--contentIcons
+     width: auto
+     display: flex 
+     flex-direction: row
+     justify-content: space-between
+     margin: 0.5rem 1rem
+div.main__posts--contentIcons > div > i
+     font-size: 1.5rem
+div.main__posts--playback
+     display: flex 
+     flex-direction: row
+     justify-content: end
+     margin: 0.5rem 1rem
+
+span.main__posts--generalBold
+     margin: 0 0.5rem 0 0
+     font-weight: bold
+div.main__posts--userTitle
+     display: flex 
+     flex-direction: row
+     justify-content: end
+     margin: 0 1rem
+     width: auto
+     height: auto
+
+div.main__posts--coments
+     width: 100%
+     height: 10%
+     border-top: $border
+div.main__posts--coments > div
+     display: flex
+     flex-direction: row
+     height: auto
+     width: auto
+     padding: 0.5rem 1rem
+     justify-content: flex-start
+     align-items: center
+     
+div.main__posts--coments > div > i
+     font-size: 1.5rem
+
+input.main__posts--comentsInput
+     width:  100%
+     height: 20%
+     padding: 0.5rem
+     margin: 0 0 0 0.5rem
+     border-top: 0
+     border-left: 0
+     border-right: 0
+     border-bottom: $border
+
+
+//@mixin bg-gradient($angle: 180deg, $color: #0bd, $amount: 20%) 
+     //background: linear-gradient($angle, $color, adjust-hue($color, $amount)) fixed;
+     //background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)
