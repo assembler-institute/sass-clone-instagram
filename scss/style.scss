@@ -1,5 +1,6 @@
 @import "home";
-//My class
+//My classes
+//FLEX
 .display-flex {
     display: flex;
 }
@@ -26,35 +27,18 @@
 
 //Nesting
 .all-class {
-    //display: flex;
-    //justify-content: center;
     .containerLoginAll-class {
-        // display: flex;
-        // align-items: center;
-        //flex-direction: column;
-        //justify-content: center;
         background-color: rgb(182, 127, 255);
         height: 745.32px;
         width: 1111.49px;
         .row-all-class {
-            //display: flex;
-            //flex-direction: row;
             .containerLeftAll-class {
-                //display: flex;
-                //align-items: center;
-                //justify-content: space-around;
                 background-color: rgb(255, 225, 127);
                 height: 618px;
                 width: 454px;
-                .logInAll-class {
-                    //display: flex;
-                    //flex-direction: column;
-                }
+                .logInAll-class {}
             } //containerLeftAll-class 
             .containerRightAll-class {
-                //display: flex;
-                //align-items: center;
-                //justify-content: space-around;
                 background-color: rgb(255, 138, 127);
                 height: 606px;
                 width: 350px;
@@ -62,9 +46,6 @@
             } //containerRightAll-class
         } //row-all-class
         .containerDowntAll-class {
-            //display: flex;
-            //justify-content: center;
-            //justify-content: space-around;
             background-color: rgb(127, 255, 155);
             height: 98.32px;
             width: 1079.49px;
