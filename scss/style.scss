@@ -1,4 +1,10 @@
 @import "home";
+//General Layout
+.all-class {
+    display: flex;
+    justify-content: center;
+}
+
 .containerLoginAll-class {
     display: flex;
     align-items: center;
@@ -17,6 +23,7 @@
 .containerLeftAll-class {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     background-color: rgb(255, 225, 127);
     height: 618px;
     width: 454px;
@@ -25,6 +32,7 @@
 .containerRightAll-class {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     background-color: rgb(255, 138, 127);
     height: 606px;
     width: 350px;
@@ -34,7 +42,14 @@
 .containerDowntAll-class {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     background-color: rgb(127, 255, 155);
     height: 98.32px;
     width: 1079.49px;
+}
+
+//Inner Layout - .containerRightAll-class
+.logInAll-class {
+    display: flex;
+    flex-direction: column;
 }

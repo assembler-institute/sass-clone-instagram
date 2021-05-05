@@ -52,6 +52,11 @@ header .nav-profile-class {
   margin-left: 10px;
 }
 
+.all-class {
+  display: flex;
+  justify-content: center;
+}
+
 .containerLoginAll-class {
   display: flex;
   align-items: center;
@@ -70,6 +75,7 @@ header .nav-profile-class {
 .containerLeftAll-class {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #ffe17f;
   height: 618px;
   width: 454px;
@@ -78,6 +84,7 @@ header .nav-profile-class {
 .containerRightAll-class {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #ff8a7f;
   height: 606px;
   width: 350px;
@@ -87,7 +94,13 @@ header .nav-profile-class {
 .containerDowntAll-class {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
   background-color: #7fff9b;
   height: 98.32px;
   width: 1079.49px;
+}
+
+.logInAll-class {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
