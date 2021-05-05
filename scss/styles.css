@@ -1,3 +1,12 @@
+/* Profiles */
+/* Marc */
+/* Mathias */
+/* Pau */
+/* Manu */
+/* Hayk */
+/* Nacho */
+/* Hugo */
+/* Oriol */
 * {
   margin: 0;
   padding: 0;
@@ -86,14 +95,15 @@ main div .stories {
   width: 100%;
   height: 7rem;
   overflow: hidden;
-  overflow-x: auto;
+  overflow-x: hidden;
   white-space: nowrap;
   position: relative;
   border: 1px solid #e0e0e0;
+  padding: 1rem;
 }
 main div .stories .more-less-stories {
   position: absolute;
-  top: 40%;
+  top: 30%;
   width: 1.5rem;
   height: 1.5rem;
   border: none;
@@ -119,16 +129,42 @@ main div .stories article {
   width: 5rem;
   height: 100%;
 }
-main div .stories article div {
+main div .stories article .stories-profile {
+  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #e0e0e0;
+  border: 2px solid #fff;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
+}
+main div .stories article .have-storie {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: -5px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right top, #fa9c4b, #ca308f);
+}
+main div .stories article p {
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.8rem;
 }
 main div .posts {
   margin-top: 2rem;
+}
+main div .posts a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+main div .posts .more {
+  color: #929292;
 }
 main div .posts article {
   background-color: #fff;
@@ -156,7 +192,7 @@ main div .posts article .post-title .profile-img div {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #fff;
   align-items: center;
   justify-content: center;
 }
@@ -235,11 +271,6 @@ main div .posts article .post-likes {
   flex-direction: row;
   align-items: center;
 }
-main div .posts article .post-likes a {
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-}
 main div .posts article .post-likes .profile {
   width: 1.5rem;
   height: 1.5rem;
@@ -253,28 +284,243 @@ main div .posts article .post-likes p {
 }
 main div .posts article .post-description {
   min-height: 2.5rem;
+  padding: 0rem 1rem;
 }
 main div .posts article .post-comment-counter {
   min-height: 2rem;
+  padding: 0rem 1rem;
 }
 main div .posts article .post-comments {
-  min-height: 6rem;
+  max-height: 6rem;
+  padding: 0rem 1rem;
+}
+main div .posts article .post-comments .comment {
+  flex-direction: row;
+}
+main div .posts article .post-comments .comment p {
+  width: 90%;
+}
+main div .posts article .post-comments .comment div {
+  width: 10%;
+  align-items: flex-end;
+}
+main div .posts article .post-comments .comment div svg {
+  width: 12px;
 }
 main div .posts article .post-comment-timer {
   min-height: 1.5rem;
+  padding: 0rem 1rem;
+}
+main div .posts article .post-comment-timer span {
+  font-size: 0.6rem;
 }
 main div .posts article .post-add-comment {
-  min-height: 3rem;
+  min-height: 4rem;
+  padding: 0rem 1rem;
   border-style: solid;
   border-color: #e0e0e0;
   border-width: 1px 0px;
+  flex-direction: row;
+}
+main div .posts article .post-add-comment div {
+  align-items: center;
+  justify-content: center;
+}
+main div .posts article .post-add-comment .comment-smile {
+  width: 5%;
+  align-items: flex-start;
+}
+main div .posts article .post-add-comment .comment-input {
+  width: 85%;
+}
+main div .posts article .post-add-comment .comment-input textarea {
+  width: 100%;
+  height: 80%;
+  color: #929292;
+  border: 0;
+  text-decoration: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+main div .posts article .post-add-comment .comment-public {
+  width: 10%;
+  font-weight: bold;
+  color: #0095f6;
 }
 main aside {
   width: 35%;
+  position: relative;
+  padding: 0 1rem;
+}
+main aside .aside-profile {
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+}
+main aside .aside-profile-img {
+  width: 15%;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://pbs.twimg.com/profile_images/1355306722429181966/4fYyGC3D.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+main aside .aside-profile-name {
+  width: 65%;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+main aside .aside-change {
+  width: 20%;
+  justify-content: center;
+  align-items: flex-end;
+  color: #0095f6;
+}
+main aside .aside-username {
+  font-weight: bold;
+}
+main aside .aside-fullname {
+  color: #929292;
+}
+main aside .aside-suggest-title {
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+}
+main aside .aside-suggest-title p:first-child {
+  width: 84%;
+  text-align: start;
+  font-weight: bold;
+  color: #929292;
+}
+main aside .aside-suggest-title p {
+  color: #000;
+}
+main aside .aside-small-profile-img {
+  width: 15%;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: center;
+}
+main aside .aside-small-profile-name {
+  width: 70%;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+main aside .aside-follow {
+  width: 15%;
+  align-items: flex-end;
+  justify-content: center;
+  color: #0095f6;
+}
+main aside .aside-extra-info {
+  width: 100%;
+  color: #929292;
+  margin-top: 2rem;
+}
+main aside .aside-extra-info p {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.5;
 }
 
 .profile-img-1 {
+  background-image: url("https://pbs.twimg.com/profile_images/1355306722429181966/4fYyGC3D.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-2 {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-3 {
+  background-image: url("https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-4 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-5 {
+  background-image: url("https://midu.dev/images/tags/node.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-6 {
+  background-image: url("../img/marc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-7 {
+  background-image: url("../img/mathias.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-8 {
+  background-image: url("../img/pau.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-9 {
+  background-image: url("../img/manu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-10 {
+  background-image: url("../img/hayk.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-11 {
+  background-image: url("../img/nacho.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-12 {
+  background-image: url("../img/hugo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.profile-img-13 {
+  background-image: url("../img/oriol.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
