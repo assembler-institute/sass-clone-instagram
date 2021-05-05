@@ -1,11 +1,7 @@
+@use "../helpers/variables" as *;
+
 main {
   max-width: 1200px;
   margin: 0 auto;
   background-color: $backgroundColor;
-}
-
-%display-flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }

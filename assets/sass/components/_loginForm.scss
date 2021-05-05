@@ -1,0 +1,26 @@
+@use "../helpers/variables" as *;
+
+.loginForm {
+  background-color: white;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 50%;
+  margin: 5%;
+  margin-top: 16%;
+  border: $globalBorder;
+
+  .loginHeader {
+    margin-top: 5%;
+    .logoHeader {
+      height: 100px;
+    }
+  }
+
+  #loginSeparator{
+    margin-right: 3%;
+    margin-top: 5%;
+
+  }
+}

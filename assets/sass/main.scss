@@ -1,30 +1,28 @@
-// @use "base";
+@use "base";
+@use "components";
+@use "layout";
 
-// // login import
-// @use "component/page/login/body/login";
-// @use "component/page/login/body/loginForm";
-// @use "component/page/login/input";
-// @use "component/page/login/loginBttn";
-// @use "layout";
-// @use "pages";
+// @import "base/reset";
+// @import "base/typography";
+// @import "base/mixins";
+// @import "base/variables";
 
-@import "base/reset";
-@import "base/typography";
-@import "base/mixins";
-@import "base/variables";
+// @import "component/input";
+// @import "component/loginBttn";
+// @import "component/loginForm";
 
-@import "component/input";
-@import "component/page/login/footer";
-@import "component/page/login/main/loginForm/loginBttn";
-@import "component/page/login/main/loginForm/loginForm";
-@import "component/page/login/main/signup/registerBttn";
-@import "component/page/login/main/signup/registerForm";
-@import "component/page/login/main/download/downloadBttn";
-@import "component/page/login/main/download/downloadBox";
+// @import "layout/general";
+// @import "layout/header";
+// @import "layout/footer";
 
-@import "layout/general";
-@import "layout/header";
-@import "layout/footer";
+// @import "component/input";
+// @import "component/page/login/footer";
+// @import "component/page/login/main/loginForm/loginBttn";
+// @import "component/page/login/main/loginForm/loginForm";
+// @import "component/page/login/main/signup/registerBttn";
+// @import "component/page/login/main/signup/registerForm";
+// @import "component/page/login/main/download/downloadBttn";
+// @import "component/page/login/main/download/downloadBox";
 
-@import "pages/home";
-@import "pages/login";
+// @import "pages/home";
+// @import "pages/login";

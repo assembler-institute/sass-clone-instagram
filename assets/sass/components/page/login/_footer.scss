@@ -1,0 +1,15 @@
+footer {
+  color: grey;
+  margin-left: 29%;
+  margin-bottom: 2%;
+  display: flex;
+  text-justify: distribute;
+  text-align: center;
+  font-size: 12px;
+  width: 40%;
+  flex-direction: column;
+
+  footerFirst & footerSecond {
+    color: green;
+  }
+}

@@ -1,8 +1,11 @@
+@use "../../helpers/variables" as *;
 
 
 main {
 
   font-family: 'Roboto', sans-serif;
+}
+.mainLogin {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -14,11 +17,15 @@ main {
   .leftContainer {
     width: 50%;
     height: 800px;
+    // max-width: 100%;
     background-color: $backgroundColor;
     padding-top: 5%;
-    #leftImage {
-      margin-left: 30%;
-    }
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    // #leftImage {
+    //   margin-left: 30%;
+    // }
   }
 
   .rightContainer {
@@ -27,7 +34,6 @@ main {
     background-color: $backgroundColor;
     text-align: center;
   }
-
 
   #alternativeLogin {
     cursor: pointer;
@@ -40,6 +46,3 @@ main {
     margin-top: 3%;
     font-size: 14px;
   }
-
-  
-}
