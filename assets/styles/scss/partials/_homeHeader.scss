@@ -4,15 +4,11 @@ header {
   height: 54px;
   background-color: g.$lightWhite;
   border-bottom: 1px solid g.$lightGray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include g.flexDistribution(row, center, center);
 
   #headerWrapper {
-    width: 975px;
-    display: inherit;
-    justify-content: space-between;
-    align-items: inherit;
+    width: g.$mainWidth;
+    @include g.flexDistribution(row, space-between, inherit);
 
     #logotype {
       width: 103px;
@@ -27,14 +23,12 @@ header {
     }
 
     #iconsWrapper {
-      display: inherit;
-      justify-content: space-between;
-      align-items: inherit;
+      @include g.flexDistribution(row, space-between, inherit);
       width: 198px;
       height: 22px;
 
       #headerPhoto {
-        @include g.profilePhoto(20px);
+        @include g.roundedElement(20px, g.$lightGray);
       }
     }
   }

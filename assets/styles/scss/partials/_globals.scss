@@ -10,13 +10,34 @@ $blue: rgb(61, 149, 239);
 $diabledBlue: rgb(197, 222, 250);
 
 $instaGradient: linear-gradient(
-  90deg,
+  45deg,
   #feda75,
   #fa7e1e,
   #d62976,
   #962fbf,
   #4f5bd5
 );
+
+/* -------------------------------------------------------------------------- */
+/*                                    FONTS                                   */
+/* -------------------------------------------------------------------------- */
+/* San Francisco Regular */
+@font-face {
+  font-family: "SF";
+  src: url("../../../font/SF-Pro-Text-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* San Francisco Bold */
+@font-face {
+  font-family: "SF";
+  src: url("../../../font/SF-Pro-Text-Bold.otf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                MEASUREMENTS                                */
@@ -27,7 +48,8 @@ $mainWidth: 975px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 2px solid red;
+  font-family: "SF", sans-serif;
+  // outline: 2px solid red;
 }
 
 body {
@@ -42,9 +64,22 @@ body {
   background-color: $darkWhite;
 }
 
-@mixin profilePhoto($property) {
+@mixin roundedElement($property, $color) {
   width: $property;
   height: $property;
-  border: 1px solid $lightGray;
+  border: 1px solid $color;
   border-radius: 50%;
+}
+
+@mixin flexDistribution($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin formatedText($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
 }

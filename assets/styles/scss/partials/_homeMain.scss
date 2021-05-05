@@ -1,0 +1,60 @@
+@use "globals" as g;
+
+main {
+  height: 100vh;
+  min-height: fit-content;
+  overflow: scroll;
+  width: g.$mainWidth;
+  margin: auto;
+  margin-top: 30px;
+
+  #mainLeft {
+    width: 614px;
+    margin-right: 28px;
+
+    #storiesContainer {
+      @include g.flexDistribution(row, flex-start, center);
+      @include g.elementBorder;
+
+      height: 116px;
+      padding: 16px 0 16px 16px;
+      width: 100%;
+      margin-bottom: 24px;
+      overflow: scroll;
+
+      .story-wrapper {
+        @include g.flexDistribution(column, center, center);
+        margin-right: 8px;
+        padding: 4px;
+        position: relative;
+
+        .story-photo-wrapper {
+          width: 66px;
+          height: 66px;
+          img {
+            @include g.roundedElement(inherit, none);
+            padding: 3px;
+            position: absolute;
+            z-index: 2;
+          }
+          .story-gradient {
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            @include g.roundedElement(inherit, none);
+            background-image: g.$instaGradient;
+          }
+        }
+      }
+    }
+
+    #postsContainer {
+      height: 1400px;
+      width: 100%;
+      @include g.elementBorder;
+    }
+  }
+
+  #mainRight {
+  }
+}
