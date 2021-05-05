@@ -245,6 +245,32 @@ main #mainLeft #postsContainer .post .post-text .post-icons .post-icons-left {
   justify-content: space-between;
   align-items: center;
 }
+main #mainLeft #postsContainer .post .description-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+main #mainLeft #postsContainer .post .description-block .likes {
+  width: 100%;
+  margin-bottom: 12px;
+}
+main #mainLeft #postsContainer .post .description-block .desc-wrapper {
+  margin-bottom: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main #mainLeft #postsContainer .post .description-block .user {
+  display: inline-block;
+  margin-right: 5px;
+}
+main #mainLeft #postsContainer .post .description-block .comment-left {
+  flex-grow: 1;
+}
 main #mainLeft #postsContainer .post .post-comment {
   display: flex;
   flex-direction: row;

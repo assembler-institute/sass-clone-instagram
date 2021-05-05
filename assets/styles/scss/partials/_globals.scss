@@ -155,3 +155,9 @@ body {
   height: 59px;
   border-top: $borderWidth solid $lightGray;
 }
+
+@mixin bottomPostElement {
+  margin-bottom: 6px;
+  width: 100%;
+  @include flexDistribution(row, flex-start, center);
+}
