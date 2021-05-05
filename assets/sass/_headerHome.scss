@@ -13,4 +13,25 @@
     cursor: pointer;
     @include global.resetMarginPadding;
   }
+  .searching {
+    img {
+      height: 29px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+  .navbar {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        padding-left: 24px;
+        list-style-type: none;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }

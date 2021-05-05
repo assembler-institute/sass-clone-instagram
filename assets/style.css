@@ -293,6 +293,23 @@ section.main {
   margin: 0;
   padding: 0;
 }
+.headerHome .searching img {
+  height: 29px;
+}
+.headerHome .searching img:hover {
+  cursor: pointer;
+}
+.headerHome .navbar ul {
+  display: flex;
+  align-items: center;
+}
+.headerHome .navbar ul li {
+  padding-left: 24px;
+  list-style-type: none;
+}
+.headerHome .navbar ul li:hover {
+  cursor: pointer;
+}
 
 footer {
   height: 20%;
