@@ -1,0 +1,21 @@
+@use "base/variables";
+
+@mixin logButton{
+    border: none;
+    height: 30px;
+    color: white;
+    font-weight: 400;
+    border: 5px $globalBorder solid;
+    border-radius: 5px;
+    width: 76%;
+    margin-top: 4%;
+    background-color: $inactiveButtonColor;
+
+}
+
+
+
+
+button{
+
+}

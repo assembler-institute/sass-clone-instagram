@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *,
 *::after,
 *::before {
@@ -133,4 +134,13 @@ header ul li {
   padding: 0.6rem 1.5rem;
   opacity: 0.6;
 }
+=======
+@use "base";
+@use "component/page/login/body/login";
+@use "component/page/login/body/loginForm";
+@use "component/page/login/input";
+@use "component/page/login/loginBttn";
+@use "layout";
+@use "pages";
+>>>>>>> 1a1d9ca5400587f65cae0f2d126b4487bea96cd5
 /*# sourceMappingURL=main.css.map */
