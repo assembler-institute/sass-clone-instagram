@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -125,57 +123,48 @@ aside {
   min-width: 240px;
 }
 
-.all-class {
+.display-flex {
   display: flex;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-content-center {
   justify-content: center;
 }
 
-.containerLoginAll-class {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+.flex-content-space-around {
+  justify-content: space-around;
+}
+
+.all-class .containerLoginAll-class {
   background-color: aquamarine;
   height: 745.32px;
   width: 1111.49px;
 }
-
-.row-all-class {
-  display: flex;
-  flex-direction: row;
-}
-
-.containerLeftAll-class {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.all-class .containerLoginAll-class .row-all-class .containerLeftAll-class {
   background-color: #ffe17f;
   height: 618px;
   width: 454px;
 }
-
-.containerRightAll-class {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.all-class .containerLoginAll-class .row-all-class .containerRightAll-class {
   background-color: #ff8a7f;
   height: 606px;
   width: 350px;
   margin-top: 12px;
 }
-
-.containerDowntAll-class {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
+.all-class .containerLoginAll-class .containerDowntAll-class {
   background-color: #7fff9b;
   height: 98.32px;
   width: 1079.49px;
-}
-
-.logInAll-class {
-  display: flex;
-  flex-direction: column;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
