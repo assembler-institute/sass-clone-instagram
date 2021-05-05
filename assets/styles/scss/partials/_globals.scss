@@ -1,4 +1,13 @@
-$myColor: yellow;
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+$lightWhite: rgb(255, 255, 255);
+$darkWhite: rgb(250, 250, 250);
+$lightGray: rgb(199, 199, 199);
+$darkGray: rgb(142, 142, 142);
+$fbBlue: rgb(60, 81, 129);
+$blue: rgb(61, 149, 239);
+$diabledBlue: rgb(197, 222, 250);
 
 $instaGradient: linear-gradient(
   90deg,
@@ -8,3 +17,25 @@ $instaGradient: linear-gradient(
   #962fbf,
   #4f5bd5
 );
+
+body {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: $darkWhite;
+}
+
+@mixin elementBorder {
+  border-radius: 3px;
+  border: 1px solid $lightGray;
+  background-color: $darkWhite;
+}
+
+@mixin profilePhoto($property) {
+  width: $property;
+  height: $property;
+  border: 1px solid $lightGray;
+  border-radius: 50%;
+}

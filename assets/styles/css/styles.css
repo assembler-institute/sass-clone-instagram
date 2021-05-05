@@ -1,3 +1,53 @@
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+body {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #fafafa;
+}
 
+header {
+  height: 54px;
+  background-color: white;
+  border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #headerWrapper {
+  width: 975px;
+  display: inherit;
+  justify-content: space-between;
+  align-items: inherit;
+}
+header #headerWrapper #logotype {
+  width: 103px;
+  height: auto;
+}
+header #headerWrapper input {
+  text-align: center;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+  border: 1px solid #c7c7c7;
+  background-color: #fafafa;
+}
+header #headerWrapper #iconsWrapper {
+  display: inherit;
+  justify-content: space-between;
+  align-items: inherit;
+  width: 198px;
+  height: 22px;
+}
+header #headerWrapper #iconsWrapper #headerPhoto {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c7c7c7;
+  border-radius: 50%;
+}
 
 /*# sourceMappingURL=styles.css.map */
