@@ -155,4 +155,24 @@ aside {
   background-color: #7fff9b;
   height: 98.32px;
   width: 1079.49px;
+}
+
+.logInAll-class {
+  background-color: blue;
+  border: 10px solid black;
+}
+.logInAll-class .logInForm-class {
+  background-color: #1eff00;
+}
+.logInAll-class .logInForm-class .logInTitleForm-class {
+  color: white;
+}
+.logInAll-class .logInForm-class .form-class {
+  border: 5px solid black;
+}
+.logInAll-class .accountIg-class {
+  background-color: crimson;
+}
+.logInAll-class .getAppIg-class {
+  background-color: #dcd914;
 }/*# sourceMappingURL=style.css.map */

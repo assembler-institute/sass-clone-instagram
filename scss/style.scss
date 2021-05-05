@@ -36,7 +36,6 @@
                 background-color: rgb(255, 225, 127);
                 height: 618px;
                 width: 454px;
-                .logInAll-class {}
             } //containerLeftAll-class 
             .containerRightAll-class {
                 background-color: rgb(255, 138, 127);
@@ -52,3 +51,23 @@
         } //containerDowntAll-class
     } //containerLoginAll-class
 } //all-class
+//Log IN
+.logInAll-class {
+    background-color: blue;
+    border: 10px solid black;
+    .logInForm-class {
+        background-color: rgb(30, 255, 0);
+        .logInTitleForm-class {
+            color: white;
+        }
+        .form-class {
+            border: 5px solid black;
+        }
+    }
+    .accountIg-class {
+        background-color: crimson;
+    }
+    .getAppIg-class {
+        background-color: rgb(220, 217, 20);
+    }
+}
