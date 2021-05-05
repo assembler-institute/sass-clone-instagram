@@ -7,7 +7,7 @@ $lightGray: rgb(199, 199, 199);
 $darkGray: rgb(142, 142, 142);
 $fbBlue: rgb(60, 81, 129);
 $blue: rgb(61, 149, 239);
-$diabledBlue: rgb(197, 222, 250);
+$disabledBlue: rgb(197, 222, 250);
 $instaGradient: linear-gradient(
   45deg,
   #feda75,
@@ -54,7 +54,7 @@ $smallLH: 13px;
 }
 
 .blue-disabled-text {
-  color: $diabledBlue;
+  color: $disabledBlue;
 }
 
 .blue-text {

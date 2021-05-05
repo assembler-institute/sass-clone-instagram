@@ -31,6 +31,7 @@
 
       #loginTopRight {
         margin-top: 20px;
+        margin-bottom: 10px;
         width: 100%;
         height: 378px;
         padding-top: 30px;
@@ -55,9 +56,25 @@
             height: 30px;
             outline: none;
             border: none;
-            background-color: g.$diabledBlue;
+            background-color: g.$disabledBlue;
             color: white;
           }
+        }
+      }
+
+      #loginMediumRight {
+        @include g.elementBorder;
+        @include g.flexDistribution(row, center, center);
+        width: 100%;
+        height: 61px;
+        margin-bottom: 20px;
+
+        .no-account {
+          display: inline-block;
+        }
+
+        .sign-in-login {
+          color: g.$blue;
         }
       }
     }
