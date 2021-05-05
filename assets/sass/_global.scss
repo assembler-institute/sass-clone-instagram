@@ -8,7 +8,7 @@ $backgroundC: #fafafa;
 $boxColor: #ffffff;
 /*__loginVariables___*/
 $flexbox:flex;
-
+$borderColor:#dbdbdb;
 $anchor:100%;
 /*_________________*/
 @mixin resetMarginPadding {
@@ -39,7 +39,7 @@ $anchor:100%;
     align-items: $ypos;
     width: $anchor;
     background-color: $color;
-    border: rgb(209, 207, 207) $borde solid;
+    border: #dbdbdb $borde solid;
   
   }
 

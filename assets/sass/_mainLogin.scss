@@ -41,7 +41,7 @@ section.main{
   margin :15px;
 }
 .inp{
-   @include global.flex(column,center,center,global.$boxColor,0.5px,80%);
+   @include global.flex(column,center,center,global.$boxColor,1px,80%);
    margin-bottom: 30px;
    
    padding:10px;  
@@ -57,11 +57,11 @@ section.main{
   color: #385185;
 }
 .sing{
-  @include global.flex(row,center,center,global.$boxColor,0.5px,80%);
+  @include global.flex(row,center,center,global.$boxColor,1px,80%);
   
 }
 .apps{
-  @include global.flex(row,center,center,global.$boxColor,0.5px,80%);
+  @include global.flex(row,center,center,global.$boxColor,1px,80%);
 }
 .inps{
  @include global.inputs(global.$backgroundC,none,5%);

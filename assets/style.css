@@ -1,18 +1,265 @@
-/* Error: Undefined variable.
- *    ,
- * 13 |       border: 1px solid global.$borderColor;
- *    |                         ^^^^^^^^^^^^^^^^^^^
- *    '
- *   _mainHome.scss 13:25  @forward
- *   main.scss 3:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502        border: 1px solid global.$borderColor;\a    \2502                          ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   _mainHome.scss 13:25  @forward\a   main.scss 3:1         root stylesheet";
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Regular.ttf") format("truetype");
+  font-style: normal;
 }
+/*__loginVariables___*/
+/*_________________*/
+body {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+section.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+  margin-top: 100px;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background-color: #fafafa;
+}
+
+.im1 {
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  right: 40px;
+}
+
+.im2 {
+  position: absolute;
+  z-index: 0;
+  width: 40%;
+  top: 5%;
+}
+
+.instagram {
+  width: 40%;
+  margin: 10px;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #fafafa;
+  border: #dbdbdb 0px solid;
+  padding-right: 50px;
+}
+
+.or {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: none;
+  border: #dbdbdb 0px solid;
+  color: rgba(68, 68, 68, 0.6);
+  margin: 15px;
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #ffffff;
+  border: #dbdbdb 1px solid;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.contr {
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.face {
+  color: #385185;
+}
+
+.sing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #ffffff;
+  border: #dbdbdb 1px solid;
+}
+
+.apps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #ffffff;
+  border: #dbdbdb 1px solid;
+}
+
+.inps {
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  margin-top: none;
+  margin-bottom: 5%;
+}
+
+.sub {
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  background-color: #b9dffc;
+  margin-top: 20px;
+  margin-bottom: none;
+}
+
+.mainHome {
+  margin: 30px 19%;
+  height: 1500px;
+  display: flex;
+}
+.mainHome .main {
+  margin-right: 28px;
+  flex-grow: 1;
+}
+.mainHome .main .storiesContainer {
+  width: 100%;
+  height: 85px;
+  margin-bottom: 25px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+}
+.mainHome .main .postContainer {
+  width: 100%;
+  height: 1000px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+}
+.mainHome .main .postContainer .headerPost {
+  height: 32px;
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postContainer .headerPost .postTitle {
+  display: flex;
+  align-items: center;
+}
+.mainHome .main .postContainer .headerPost .postTitle img:hover {
+  cursor: pointer;
+}
+.mainHome .main .postContainer .headerPost .postTitle .postUser {
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  font-weight: 700;
+}
+.mainHome .main .postContainer .headerPost .postTitle .postUser:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainHome .main .postContainer .headerPost .postOption {
+  font-size: 16px;
+}
+.mainHome .main .postContainer .headerPost .postOption:hover {
+  cursor: pointer;
+}
+.mainHome .main .postContainer .picturePost img {
+  width: 100%;
+}
+.mainHome .main .postContainer .iconPost {
+  height: 40px;
+  margin-top: 4px;
+  padding: 0px 16px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postContainer .iconPost .imgIcon {
+  height: 24px;
+  padding: 6px;
+}
+.mainHome .main .postContainer .iconPost .imgIcon:hover {
+  cursor: pointer;
+}
+.mainHome .main .postContainer .likePost {
+  height: 18px;
+  margin-bottom: 8px;
+  padding: 0px 16px;
+}
+.mainHome .main .postContainer .likePost p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.mainHome .main .postContainer .commentsPost {
+  height: 104px;
+  padding: 0px 16px;
+}
+.mainHome .main .postContainer .timePost {
+  height: 18px;
+  margin-bottom: 4px;
+  padding: 0px 16px;
+}
+.mainHome .main .postContainer .footerPost {
+  height: 55px;
+  margin-top: 4px;
+  padding: 0px 16px;
+}
+.mainHome .aside {
+  width: 300px;
+  height: 1000px;
+}
+
+.headerHome {
+  padding: 10px 19%;
+  height: 35px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerHome .imgLogo {
+  height: 29px;
+  margin-top: 8px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  height: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */
