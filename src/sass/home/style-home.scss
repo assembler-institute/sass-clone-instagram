@@ -92,6 +92,62 @@ nav {
 }
 
 main {
-    flex-grow: 1;
+    display: flex;
+    justify-content: center;
     background-color: c.$main-bg-color;
 }
+
+.main-section {
+    width: 935px;
+    margin-top: 30px;
+}
+
+.left-main {
+    display: flex;
+    flex-direction: column;
+    width: 614px;
+}
+
+.histories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 116px;
+    border: c.$box-border;
+    border-radius: 3px;
+    background-color: #fff;
+    padding-left: 13px;
+    overflow: hidden;
+}
+
+.profile-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.linear-gradient-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 62px;
+    height: 62px;
+}
+
+.profile-picture-history {
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+}
+
+.profile-user-history {
+    margin-top: 3px;
+    font-size: 12px;
+}
+
