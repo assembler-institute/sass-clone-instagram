@@ -14,10 +14,13 @@
 @import "base/variables";
 
 @import "component/input";
-@import "component/page/login/main/loginBttn";
-@import "component/page/login/main/loginForm";
-@import "component/page/login/main/registerBttn";
-@import "component/page/login/main/registerForm";
+@import "component/page/login/footer";
+@import "component/page/login/main/loginForm/loginBttn";
+@import "component/page/login/main/loginForm/loginForm";
+@import "component/page/login/main/signup/registerBttn";
+@import "component/page/login/main/signup/registerForm";
+@import "component/page/login/main/download/downloadBttn";
+@import "component/page/login/main/download/downloadBox";
 
 @import "layout/general";
 @import "layout/header";
