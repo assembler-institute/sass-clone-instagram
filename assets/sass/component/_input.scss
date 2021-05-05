@@ -1,6 +1,8 @@
 // @use "base/variables";
 
 .input {
+  background-color: $backgroundColor;
+  font-size: 14px;
   border-radius: 6px;
   border: $globalBorder;
   align-items: center;
@@ -14,7 +16,6 @@
 
   ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 10px;
     opacity: 1; /* Firefox */
   }
 }
