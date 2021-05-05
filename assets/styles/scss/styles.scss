@@ -1,6 +1,5 @@
-@use "./partials/colors";
-
-body {
-  height: 100vh;
-  background-image: colors.$instaGradient;
-}
+@use "./partials/globals";
+@use "./partials/loginMain";
+@use "./partials/loginFooter";
+@use "./partials/homeHeader";
+@use "./partials/homeMain";
