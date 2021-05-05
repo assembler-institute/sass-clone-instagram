@@ -33,24 +33,24 @@
 //Containers
 .all-class {
     .containerLoginAll-class {
-        background-color: rgb(182, 127, 255);
+        background-color: white;
         height: 745.32px;
         width: 1111.49px;
         .row-all-class {
             .containerLeftAll-class {
-                background-color: rgb(255, 225, 127);
+                background-color: white;
                 height: 618px;
                 width: 454px;
             } //containerLeftAll-class 
             .containerRightAll-class {
-                background-color: rgb(255, 138, 127);
+                background-color: white;
                 height: 606px;
                 width: 350px;
                 margin-top: 12px;
             } //containerRightAll-class
         } //row-all-class
         .containerDowntAll-class {
-            background-color: rgb(127, 255, 155);
+            background-color: white;
             height: 98.32px;
             width: 1079.49px;
         } //containerDowntAll-class
@@ -62,12 +62,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+    background-color: white;
     border: px solid black;
     //HERE
     .logInForm-class {
         //HERE
-        background-color: rgb(30, 255, 0);
+        background-color: white;
         text-align: center;
         .logInTitleForm-class {
             display: flex;
@@ -83,7 +83,7 @@
             .input-user {
                 display: flex;
                 flex-direction: row;
-                background-color: yellow;
+                background-color: white;
                 position: relative;
                 width: 98%;
                 margin: 2px 2px 2px 2px;
@@ -95,13 +95,13 @@
                 }
                 .empty {
                     width: 4%;
-                    background-color: rgb(14, 171, 219);
+                    background-color: white;
                 }
             }
             .input-password {
                 display: flex;
                 flex-direction: row;
-                background-color: rgb(211, 145, 24);
+                background-color: white;
                 position: relative;
                 width: 100%;
                 input {
@@ -132,14 +132,27 @@
             .other-options-class {
                 display: flex;
                 justify-content: space-around;
-                background-color: yellowgreen;
+                background-color: white;
             }
         }
-    }
+    } //logInForm-class
     .accountIg-class {
-        background-color: crimson;
+        margin-top: 10px;
+        text-align: center;
+        background-color: white;
+        width: 100%;
+        font-size: x-small;
+        border: 5px solid rgb(212, 182, 11);
     }
     .getAppIg-class {
+        text-align: center;
         background-color: rgb(220, 217, 20);
+        font-size: x-small;
+        width: 100%;
+        .download-app-img-class {
+            background-color: white;
+            width: 100%;
+            height: 100px;
+        }
     }
-}
+} //logInAll-class
