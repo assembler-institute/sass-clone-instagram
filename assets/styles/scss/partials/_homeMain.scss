@@ -79,8 +79,8 @@ main {
     }
 
     #sidebarBottom {
-      height: fit-content;
-      #suggestions {
+      #sidebarSuggestions {
+        margin-bottom: 35px;
         .sidebar-suggestion {
           @include g.flexDistribution(row, flex-start, center);
           margin-bottom: 16px;

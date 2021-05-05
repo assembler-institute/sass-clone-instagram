@@ -220,24 +220,24 @@ main #mainRight #sidebarTop #sidebarSuggTitle {
   justify-content: space-between;
   align-items: center;
 }
-main #mainRight #sidebarBottom {
-  height: fit-content;
+main #mainRight #sidebarBottom #sidebarSuggestions {
+  margin-bottom: 35px;
 }
-main #mainRight #sidebarBottom #suggestions .sidebar-suggestion {
+main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
 }
-main #mainRight #sidebarBottom #suggestions .sidebar-suggestion .suggestion-photo {
+main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggestion-photo {
   width: 32px;
   height: 32px;
   border: 1px solid #8e8e8e;
   border-radius: 50%;
   margin-right: 12px;
 }
-main #mainRight #sidebarBottom #suggestions .sidebar-suggestion .suggestion-text {
+main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggestion-text {
   flex-grow: 1;
   margin-right: 20px;
 }
