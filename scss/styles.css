@@ -1,27 +1,17 @@
-@use 'scss/colors';
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: 1px solid red !important;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
 
 body {
   background-color: #fafafa;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -29,93 +19,68 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   padding: 8px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0px;
   z-index: 1;
 }
-
 header div {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 header div #logo {
   width: 39%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
-
 header div #logo img {
   min-height: 25px;
 }
-
 header div #buscador {
   width: 22%;
 }
-
 header div #buscador input {
   width: 100%;
 }
-
 header div #menu {
   width: 39%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-header div #menu div {
-  width: 12%;
+  justify-content: flex-end;
   min-height: 40px;
 }
-
+header div #menu div {
+  width: 12%;
+}
 header div #menu div svg path {
   background-color: #000;
+}
+header div #menu #menu-profile div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://pbs.twimg.com/profile_images/1355306722429181966/4fYyGC3D.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 main {
   margin-top: 6rem;
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 main div {
   width: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 main div .stories {
   background-color: #fff;
   width: 100%;
@@ -124,8 +89,8 @@ main div .stories {
   overflow-x: auto;
   white-space: nowrap;
   position: relative;
+  border: 1px solid #e0e0e0;
 }
-
 main div .stories .more-less-stories {
   position: absolute;
   top: 40%;
@@ -133,30 +98,20 @@ main div .stories .more-less-stories {
   height: 1.5rem;
   border: none;
   border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #485375;
-  -webkit-box-shadow: 0px 0px 20px -5px #485375;
-          box-shadow: 0px 0px 20px -5px #485375;
+  box-shadow: 0px 0px 20px -5px #485375;
   background-color: #fff;
 }
-
 main div .stories .prev-stories {
-  position: -webkit-sticky;
   position: sticky;
   left: 1%;
 }
-
 main div .stories .post-stories {
-  position: -webkit-sticky;
   position: sticky;
   left: 95%;
 }
-
 main div .stories article {
   display: inline-block;
   position: relative;
@@ -164,77 +119,165 @@ main div .stories article {
   width: 5rem;
   height: 100%;
 }
-
+main div .stories article div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: center;
+}
 main div .posts {
   margin-top: 2rem;
 }
-
 main div .posts article {
   background-color: #fff;
   min-height: 800px;
   margin-bottom: 4rem;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 0px 1px;
 }
-
 main div .posts article div {
   width: 100%;
 }
-
 main div .posts article .post-title {
-  min-height: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 1px 0px 0px 0px;
 }
-
 main div .posts article .post-title .profile-img {
-  min-width: 10%;
+  min-width: 5%;
+  padding: 1%;
 }
-
+main div .posts article .post-title .profile-img div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: center;
+}
 main div .posts article .post-title .profile-user {
-  min-width: 80%;
+  min-width: 85%;
+  display: flex;
+  justify-content: center;
 }
-
+main div .posts article .post-title .profile-user div {
+  padding-left: 1rem;
+  font-weight: bold;
+}
 main div .posts article .post-title .profile-more {
-  min-width: 10%;
+  display: flex;
+  justify-content: center;
 }
-
+main div .posts article .post-title .profile-more div {
+  align-items: center;
+}
 main div .posts article .post-photo {
   min-height: 48rem;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 1px 0px;
+  background-image: url("https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-
 main div .posts article .post-actions {
+  display: flex;
+  flex-direction: row;
   min-height: 2.5rem;
 }
-
+main div .posts article .post-actions .buttons {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+}
+main div .posts article .post-actions .buttons div {
+  align-items: center;
+  justify-content: center;
+}
+main div .posts article .post-actions .gallery {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+main div .posts article .post-actions .gallery .buttons {
+  flex-direction: row;
+  max-height: 10px;
+  align-items: center;
+  justify-content: center;
+}
+main div .posts article .post-actions .gallery .buttons div {
+  margin: 0rem 0.2rem;
+}
+main div .posts article .post-actions .gallery .buttons .circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #a8a8a8;
+}
+main div .posts article .post-actions .gallery .buttons .selected {
+  background-color: #0095f6;
+}
+main div .posts article .post-actions .save {
+  width: 20%;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
 main div .posts article .post-likes {
   min-height: 2rem;
+  padding: 0rem 0.5rem;
+  flex-direction: row;
+  align-items: center;
 }
-
+main div .posts article .post-likes a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+main div .posts article .post-likes .profile {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: center;
+}
+main div .posts article .post-likes p {
+  margin-left: 0.5rem;
+}
 main div .posts article .post-description {
   min-height: 2.5rem;
 }
-
 main div .posts article .post-comment-counter {
   min-height: 2rem;
 }
-
 main div .posts article .post-comments {
   min-height: 6rem;
 }
-
 main div .posts article .post-comment-timer {
   min-height: 1.5rem;
 }
-
 main div .posts article .post-add-comment {
   min-height: 3rem;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 1px 0px;
 }
-
 main aside {
   width: 35%;
 }
+
+.profile-img-1 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 /*# sourceMappingURL=styles.css.map */
