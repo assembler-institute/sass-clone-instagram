@@ -1,5 +1,72 @@
 @use "./global" as global;
-body {
-  background-color: global.$backgroundC;
-  // @include global.resetMarginPadding;
+
+section.main{
+  display: global.$flexbox;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+  margin-top: 100px;
+  
 }
+.image{
+  position:relative;
+  width: global.$anchor;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background-color: global.$backgroundC;
+      
+}
+.im1{
+  @include global.image(1);
+  right: 40px;
+  
+}
+.im2{
+  @include global.image(0);
+  top:5%;  
+}
+.instagram{
+  width: 40%;
+  margin: 10px;
+}
+.log{
+  
+ @include global.flex(column,center,center,global.$backgroundC,0px,80%);
+  padding-right: 50px;
+}
+.or{
+  @include global.flex(row,center,center,none,0px,80%);
+  color:  rgba(68, 68, 68,0.6);
+  margin :15px;
+}
+.inp{
+   @include global.flex(column,center,center,global.$boxColor,0.5px,80%);
+   margin-bottom: 30px;
+   
+   padding:10px;  
+}
+.contr{
+  color: rgba(var(--fe0,0,55,107),1);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
+.face{
+  color: #385185;
+}
+.sing{
+  @include global.flex(row,center,center,global.$boxColor,0.5px,80%);
+  
+}
+.apps{
+  @include global.flex(row,center,center,global.$boxColor,0.5px,80%);
+}
+.inps{
+ @include global.inputs(global.$backgroundC,none,5%);
+}
+.sub{
+  @include global.inputs(#b9dffc,20px,none);    
+}
+
