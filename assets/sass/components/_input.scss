@@ -1,6 +1,5 @@
 @use "../helpers/variables" as *;
-
-@use "base/mixins" as *;
+@use "../helpers/mixins" as *;
 
 .input {
   @include generalInput();

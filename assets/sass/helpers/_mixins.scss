@@ -1,9 +1,11 @@
+@use "../helpers/variables" as *;
+
 @mixin circleBorderRadius($borderWidth, $borderColor) {
   border: $borderWidth solid $borderColor;
   border-radius: 50%;
 }
 
-@mixin logButton($globalBorder, $inactiveButtonColor) {
+@mixin logButton {
   //  #loginSubmit {
   border: none;
   height: 30px;
@@ -14,4 +16,13 @@
   width: 76%;
   margin-top: 4%;
   background-color: $inactiveButtonColor;
+}
+
+@mixin generalInput {
+  background-color: $backgroundColor;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 6px;
+  border: $globalBorder;
+  height: 40px;
 }
