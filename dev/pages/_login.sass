@@ -3,8 +3,6 @@ $background-main: #FAFAFA
 $border: 1px solid #DBDBDB
 $color: #8E8E9C
 
-
-
 // SASS LOGIN.HTML
 
 *
@@ -40,7 +38,6 @@ div.left__mockup
      //height: auto
      //width: 50%
      
-
 div.left__mockup > img
      height: 480px
 
@@ -66,6 +63,7 @@ section.right
      width: 100%
      height: 100%
      padding: 0.5rem  
+
 main.login__login
      width: 50%
      max-width: 300px
@@ -83,7 +81,6 @@ div.login
      padding: 1.5rem
      background-color: $background-container
 
-
 div.login__img
      width: auto
      height: auto
@@ -93,7 +90,6 @@ div.login__img
 
 div.login__img > img
      width: 60%
-
 
 form.login__form
      width: auto
@@ -192,6 +188,7 @@ div.stores > a > img
      width: 135px 
      height: 40px
      margin:0.4rem 
+
 footer
      width: 100%
      height: 15%
@@ -221,7 +218,7 @@ footer > div > div > div
 //SASS MAIN.HTML
 header
      width: 100%
-     height: 8%
+     height: 50px
      background-color: $background-container
      border-bottom: solid 1px #DBDBDB
      margin: 0 0 2.5rem 0
@@ -229,7 +226,6 @@ header
      flex-direction: row
      justify-content: space-around
      align-items: center
-
 div.main__header--logo
      width: auto
      height: auto
@@ -238,11 +234,49 @@ div.main__header--logo
      
 div.main__header--logo > img
      max-width: 140px
-     height: auto
-     padding: 0 0 0 1rem 
+     height: 50px
+     margin-left: 11rem
+     padding: 0 0 0 1rem      
+
+div.main__header--search
+     width: 180px
+     padding: 0.2rem
+     border: $border
+     background-color: $background-main
+     display: flex
+     flex-direction: row
+
+     justify-content: center
+div.main__header--search > i 
+     font-size: 1rem 
+div.main__header--search > i > input
+     border: none     
+     padding: 0.5rem
+div.main__header--search > i > input:hover
+     border: none     
+
+div.header__icons
+     display: flex
+     flex-direction: row
+     align-items: center
+     justify-content: center
+     margin-right: 7rem
+header > div > div 
+     display: flex
+     flex-direction: row
+     align-items: center
+header > div > div > img
+     border-radius: 50%
+     width: 2.5em
+     height: 2.5rem
+header > div > div > i
+     font-size: 1.8rem
+     margin-right: 1rem
+     
+
 main.main__main
      width: 100%
-     height: 92%
+     height: #{calc(100vh - 80px)}
      background-color: red
      display: flex
      flex-direction: row
@@ -254,26 +288,57 @@ section.stories
      display: flex
      flex-direction: column
      justify-content: flex-start
-     align-items: center
-     margin-left: 18rem
+     //align-items: center
+     align-items: flex-end
+     overflow-y: scroll
+     overflow-x: hidden
+
 
 section.recommendations
      width: 30%
-     height: 100%
+     height: auto
      background-color: $background-main
-     margin-right: 18rem
+     display: flex
+     flex-direction: column
+     padding: 1rem
+
 div.main__stories
-     width: 90%
-     height: 10%
+     width: inherit
+     height: 100%
      background-color: $background-container
      margin: 0 0 2.5rem 0
      border: $border
+     display: flex
+     align-items: center
+     overflow-x: scroll
+     overflow-y: hidden
+
+div.storie
+     display: flex
+     flex-direction: column
+     align-items: center
+     justify-content: end
+     width: 70px
+     height: 85px
+
+div.main__stories img 
+     border: 1px solid white
+     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255)))
+     background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% )
+     //padding: 2px
+     width: 4rem
+     height: 4rem
+     margin: 0.75rem
+     //margin-bottom: 0.5rem
+     border-radius: 50%
+
      
 div.main__posts
-     width: 90%
-     height: 75%
+     width: inherit
+     max-height: 600px
      background-color: $background-container
      border: $border
+     margin: 0 0 1.5rem 0
 
 div.main__posts--container
      width: 100%
@@ -382,3 +447,63 @@ input.main__posts--comentsInput
 //@mixin bg-gradient($angle: 180deg, $color: #0bd, $amount: 20%) 
      //background: linear-gradient($angle, $color, adjust-hue($color, $amount)) fixed;
      //background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)
+#user
+     font-weight: bold
+
+.recommendations.change__user button
+     border: none
+     background-color: white
+     cursor: pointer
+     margin-left: 1rem
+     color: #0095F6
+     font-weight: bold
+
+div.change__user
+     width: 50%
+     display: flex
+     justify-content: space-between
+     align-items: center
+
+div.change__user img
+     border-radius: 50%
+     width: 2.5rem
+     height: 2.5rem
+
+div.sugerencias
+     margin-top: 3rem
+     display: flex
+     justify-content: space-between
+
+div.sugestedUsers
+     width: 50%
+     display: flex
+     flex-direction: column
+     justify-content: space-between
+
+div.sugerencias h5
+     color: grey
+
+div.sugerencias button
+     border: none
+     cursor: pointer
+     background-color: white
+
+div.sugerencias_users
+     display: flex
+     flex-direction: row
+     justify-content: space-between
+     align-items: center
+     margin-top: 2rem
+
+div.sugerencias_users img
+     border-radius: 50%
+     width: 2.5em
+     height: 2.5rem
+
+div.sugerencias_users button
+     border: none
+     background-color: white
+     cursor: pointer
+     margin-left: 2rem
+     color: #0095F6
+     font-weight: bold
