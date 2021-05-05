@@ -385,7 +385,8 @@ section.main {
 }
 
 footer {
-  height: 20%;
+  margin-bottom: 52px;
+  padding: 0 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
