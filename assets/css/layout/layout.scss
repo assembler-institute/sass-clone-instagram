@@ -1,4 +1,4 @@
-@import "./root.scss";
+@use "../root/root.scss" as root;
 
 .full-height {
   min-height: 100%;
@@ -71,7 +71,7 @@
 }
 
 .line {
-  background-color: $border;
+  background-color: root.$border;
   flex-grow: 1;
   flex-shrink: 1;
   height: 1px;
@@ -80,7 +80,7 @@
 }
 
 .or {
-  color: $grey-font;
+  color: root.$grey-font;
   font-size: 13px;
   font-weight: 600;
   line-height: 15px;
@@ -98,7 +98,7 @@
 }
 
 .blue-ig {
-  color: $blue;
+  color: root.$blue;
 }
 
 .fw600 {

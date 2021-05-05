@@ -294,12 +294,7 @@ a {
 }
 
 .app-store {
-  background-image: url(../img/AppleStore.png);
   margin-right: 8px;
-}
-
-.google-play {
-  background-image: url(../img/googlePlay.png);
 }
 
 .font-prim {

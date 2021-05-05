@@ -1,4 +1,4 @@
-@import "./root.scss";
+@use "../root/root.scss" as root;
 
 .left-login {
   align-self: center;
@@ -24,7 +24,7 @@
 
 .box {
   background-color: white;
-  border: 1px solid $border;
+  border: 1px solid root.$border;
   border-radius: 1px;
   padding: 10px 0;
   margin-bottom: 10px;
@@ -52,7 +52,7 @@
 }
 
 .blue-font {
-  color: $fb;
+  color: root.$fb;
 }
 
 .font14 {
@@ -66,16 +66,11 @@
 }
 
 .app-store {
-  background-image: url(../img/AppleStore.png);
   margin-right: 8px;
 }
 
-.google-play {
-  background-image: url(../img/googlePlay.png);
-}
-
 .font-prim {
-  color: $black-font;
+  color: root.$black-font;
 }
 
 .fw400 {
@@ -100,7 +95,7 @@
 
 .map-foot {
   margin: -2px 8px 9px;
-  color: $grey-font;
+  color: root.$grey-font;
   font-size: 12px;
   line-height: 14px;
   cursor: pointer;
@@ -111,7 +106,7 @@
 }
 
 .legal-foot {
-  color: $grey-font;
+  color: root.$grey-font;
   font-size: 12px;
   line-height: 14px;
 }
