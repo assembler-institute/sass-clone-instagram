@@ -40,6 +40,12 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      @media only screen and (max-width: 856px) {
+        margin: 13px auto 0;
+      }
+      @media only screen and (max-width: 499px) {
+        margin: 0;
+      }
       .loginLeftContainer {
         background-image: url("/assets/images/phone.png");
         background-position: 0 0;
@@ -49,6 +55,9 @@ body {
         height: 618px;
         margin-left: -35px;
         margin-right: -15px;
+        @media only screen and (max-width: 856px) {
+          display: none;
+        }
         .fadeImages {
             margin: 99px 0 0 151px;
             position: relative;
@@ -82,9 +91,17 @@ body {
         justify-content: center;
         margin-top: 32px;
         width: 100%;
-
+        @media only screen and (max-width: 499px) {
+          margin-top: 0;
+          max-width: none;
+        }
         .loginFormContainer {
           @extend %borderContainer;
+          @media only screen and (max-width: 499px) {
+            margin: 0;
+            border-radius: 0;
+            border: none;
+          }
           .imageContainer {
             text-align: center;
             border-radius: 1px;
@@ -104,10 +121,11 @@ body {
 
               .inputContainer {
                 margin: 0 40px 6px;
+                text-align: center;
                 input {
                   font-size: 14px;
                   border: $mainBorder;
-                  width: 258px;
+                  width: 96%;
                   background-color: $mainColor;
                   padding: 9px 0 7px 8px;
                   border-radius: 3px;
@@ -117,6 +135,9 @@ body {
                   &:focus {
                       outline: none;
                       border: 1px solid $mainGray;
+                  }
+                  @media only screen and (max-width: 499px) {
+                    width: 85%;
                   }
                 }
                 .loginButton {
@@ -130,6 +151,9 @@ body {
                   margin-top: 8px;
                   color: #fff;
                   padding: 5px;
+                  @media only screen and (max-width: 499px) {
+                    width: 89%;
+                  }
                 }
               }
               .barContainer {
@@ -174,6 +198,11 @@ body {
           line-height: 18px;
           text-align: center;
           border-radius: 1px;
+          @media only screen and (max-width: 499px) {
+            margin: 0;
+            border-radius: 0;
+            border: none;
+          }
           p {
               margin: 13px;
               font-size: 14px;
@@ -209,6 +238,9 @@ body {
   }
   footer {
       margin: 24px 0 52px 0;
+      @media only screen and (max-width: 856px) {
+        padding: 0 16px;
+      }
       .loginFooterBox {
           display: flex;
           flex-direction: column;
@@ -223,6 +255,9 @@ body {
                   display: flex;
                   flex-direction: row;
                   justify-content: center;
+                  @media only screen and (max-width: 856px) {
+                    flex-wrap: wrap;
+                  }
                   .loginFooterList {
                       margin: 0 8px 8px;
                       select {
