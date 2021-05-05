@@ -269,6 +269,9 @@ main #mainLeft #postsContainer .post .description-block .user {
 main #mainLeft #postsContainer .post .description-block .comment-left {
   flex-grow: 1;
 }
+main #mainLeft #postsContainer .post .description-block .post-time {
+  margin-top: 3px;
+}
 main #mainLeft #postsContainer .post .post-comment {
   display: flex;
   flex-direction: row;
