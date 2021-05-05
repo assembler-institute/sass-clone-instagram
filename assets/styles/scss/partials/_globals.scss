@@ -18,12 +18,21 @@ $instaGradient: linear-gradient(
   #4f5bd5
 );
 
-body {
+/* -------------------------------------------------------------------------- */
+/*                                MEASUREMENTS                                */
+/* -------------------------------------------------------------------------- */
+$mainWidth: 975px;
+
+* {
   padding: 0;
   margin: 0;
-  outline: none;
   box-sizing: border-box;
+  outline: 2px solid red;
+}
+
+body {
   height: 100vh;
+  max-height: 100vh;
   background-color: $darkWhite;
 }
 
