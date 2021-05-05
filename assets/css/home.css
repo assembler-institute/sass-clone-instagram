@@ -155,6 +155,7 @@ button {
 }
 
 .navContent {
+  width: 975px;
   display: flex;
   padding-top: 8px;
   box-sizing: border-box;
