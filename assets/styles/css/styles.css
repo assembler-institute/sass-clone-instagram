@@ -77,6 +77,52 @@ body {
   cursor: pointer;
 }
 
+#loginBody {
+  height: 100vh;
+  background-color: blue;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#loginBody #loginMain {
+  width: 940px;
+  height: 701px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#loginBody #loginMain #loginLeft {
+  background-color: chocolate;
+  width: 454px;
+  height: 100%;
+  margin-right: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#loginBody #loginMain #loginLeft .iphones-photos {
+  width: auto;
+  height: 100%;
+}
+#loginBody #loginMain #loginRight {
+  background-color: darkcyan;
+  width: 350px;
+  height: 100%;
+}
+#loginBody footer {
+  width: 100%;
+  height: 99px;
+  background-color: darkgoldenrod;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
 header {
   height: 54px;
   background-color: white;
@@ -120,7 +166,7 @@ header #headerWrapper #iconsWrapper #headerPhoto {
   border-radius: 50%;
 }
 
-main {
+#homeMain {
   max-height: 886px;
   width: 1000px;
   margin: auto;
@@ -132,11 +178,11 @@ main {
   /*--------------------------LEFT------------------------------*/
   /*--------------------------RIGHT------------------------------*/
 }
-main #mainLeft {
+#homeMain #mainLeft {
   width: 614px;
   margin-right: 28px;
 }
-main #mainLeft #storiesContainer {
+#homeMain #mainLeft #storiesContainer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -150,7 +196,7 @@ main #mainLeft #storiesContainer {
   margin-bottom: 24px;
   overflow: scroll;
 }
-main #mainLeft #storiesContainer .story-wrapper {
+#homeMain #mainLeft #storiesContainer .story-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,7 +205,7 @@ main #mainLeft #storiesContainer .story-wrapper {
   padding: 4px;
   position: relative;
 }
-main #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper {
+#homeMain #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -168,7 +214,7 @@ main #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper {
   height: 64px;
   margin-bottom: 5px;
 }
-main #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper img {
+#homeMain #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper img {
   width: 60px;
   height: 60px;
   border: 2px solid white;
@@ -176,24 +222,24 @@ main #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper img {
   position: absolute;
   z-index: 2;
 }
-main #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper .story-gradient {
+#homeMain #mainLeft #storiesContainer .story-wrapper .story-photo-wrapper .story-gradient {
   position: absolute;
   width: inherit;
   height: inherit;
   border-radius: 50%;
   background-image: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 }
-main #mainLeft #postsContainer {
+#homeMain #mainLeft #postsContainer {
   width: 100%;
 }
-main #mainLeft #postsContainer .post {
+#homeMain #mainLeft #postsContainer .post {
   border-radius: 3px;
   border: 1px solid #c7c7c7;
   background-color: #fafafa;
   height: fit-content;
   margin-bottom: 60px;
 }
-main #mainLeft #postsContainer .post .post-header {
+#homeMain #mainLeft #postsContainer .post .post-header {
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -201,34 +247,34 @@ main #mainLeft #postsContainer .post .post-header {
   align-items: center;
   height: 59px;
 }
-main #mainLeft #postsContainer .post .post-header .header-left {
+#homeMain #mainLeft #postsContainer .post .post-header .header-left {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 }
-main #mainLeft #postsContainer .post .post-header img {
+#homeMain #mainLeft #postsContainer .post .post-header img {
   width: 32px;
   height: 32px;
   border: 1px solid #8e8e8e;
   border-radius: 50%;
   margin-right: 14px;
 }
-main #mainLeft #postsContainer .post .post-photo {
+#homeMain #mainLeft #postsContainer .post .post-photo {
   width: 100%;
   height: auto;
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
 }
-main #mainLeft #postsContainer .post .post-text {
+#homeMain #mainLeft #postsContainer .post .post-text {
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-main #mainLeft #postsContainer .post .post-text .post-icons {
+#homeMain #mainLeft #postsContainer .post .post-text .post-icons {
   width: 100%;
   height: 24px;
   margin-bottom: 16px;
@@ -238,7 +284,7 @@ main #mainLeft #postsContainer .post .post-text .post-icons {
   align-items: center;
   cursor: pointer;
 }
-main #mainLeft #postsContainer .post .post-text .post-icons .post-icons-left {
+#homeMain #mainLeft #postsContainer .post .post-text .post-icons .post-icons-left {
   width: 120px;
   display: flex;
   flex-direction: row;
@@ -246,18 +292,18 @@ main #mainLeft #postsContainer .post .post-text .post-icons .post-icons-left {
   align-items: center;
   cursor: pointer;
 }
-main #mainLeft #postsContainer .post .description-block {
+#homeMain #mainLeft #postsContainer .post .description-block {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
 }
-main #mainLeft #postsContainer .post .description-block .likes {
+#homeMain #mainLeft #postsContainer .post .description-block .likes {
   width: 100%;
   margin-bottom: 12px;
 }
-main #mainLeft #postsContainer .post .description-block .desc-wrapper {
+#homeMain #mainLeft #postsContainer .post .description-block .desc-wrapper {
   margin-bottom: 6px;
   width: 100%;
   display: flex;
@@ -265,18 +311,18 @@ main #mainLeft #postsContainer .post .description-block .desc-wrapper {
   justify-content: flex-start;
   align-items: center;
 }
-main #mainLeft #postsContainer .post .description-block .user {
+#homeMain #mainLeft #postsContainer .post .description-block .user {
   display: inline-block;
   margin-right: 5px;
   cursor: pointer;
 }
-main #mainLeft #postsContainer .post .description-block .comment-left {
+#homeMain #mainLeft #postsContainer .post .description-block .comment-left {
   flex-grow: 1;
 }
-main #mainLeft #postsContainer .post .description-block .post-time {
+#homeMain #mainLeft #postsContainer .post .description-block .post-time {
   margin-top: 3px;
 }
-main #mainLeft #postsContainer .post .post-comment {
+#homeMain #mainLeft #postsContainer .post .post-comment {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -289,26 +335,26 @@ main #mainLeft #postsContainer .post .post-comment {
   justify-content: flex-start;
   align-items: center;
 }
-main #mainLeft #postsContainer .post .post-comment .smiley {
+#homeMain #mainLeft #postsContainer .post .post-comment .smiley {
   margin-left: 16px;
   margin-right: 16px;
 }
-main #mainLeft #postsContainer .post .post-comment .comment-placeholder {
+#homeMain #mainLeft #postsContainer .post .post-comment .comment-placeholder {
   flex-grow: 1;
   border: none;
   background-color: #fafafa;
 }
-main #mainLeft #postsContainer .post .post-comment .post-text {
+#homeMain #mainLeft #postsContainer .post .post-comment .post-text {
   margin-right: 16px;
 }
-main #mainRight {
+#homeMain #mainRight {
   width: 293px;
 }
-main #mainRight .sidebar-user {
+#homeMain #mainRight .sidebar-user {
   margin-bottom: 3px;
   cursor: pointer;
 }
-main #mainRight #sidebarTop {
+#homeMain #mainRight #sidebarTop {
   height: 116px;
   padding: 16px 0 16px 16px;
   width: 100%;
@@ -316,14 +362,14 @@ main #mainRight #sidebarTop {
   padding-left: 0;
   width: 100%;
 }
-main #mainRight #sidebarTop #sidebarProfile {
+#homeMain #mainRight #sidebarTop #sidebarProfile {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
 }
-main #mainRight #sidebarTop #sidebarProfile #sidebarPhoto {
+#homeMain #mainRight #sidebarTop #sidebarProfile #sidebarPhoto {
   width: 56px;
   height: 56px;
   border: 1px solid #c7c7c7;
@@ -331,23 +377,23 @@ main #mainRight #sidebarTop #sidebarProfile #sidebarPhoto {
   margin-right: 12px;
   cursor: pointer;
 }
-main #mainRight #sidebarTop #sidebarSuggTitle {
+#homeMain #mainRight #sidebarTop #sidebarSuggTitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-main #mainRight #sidebarBottom #sidebarSuggestions {
+#homeMain #mainRight #sidebarBottom #sidebarSuggestions {
   margin-bottom: 35px;
 }
-main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion {
+#homeMain #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
 }
-main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggestion-photo {
+#homeMain #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggestion-photo {
   width: 32px;
   height: 32px;
   border: 1px solid #8e8e8e;
@@ -355,11 +401,11 @@ main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggesti
   margin-right: 12px;
   cursor: pointer;
 }
-main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggestion-text {
+#homeMain #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .suggestion-text {
   flex-grow: 1;
   margin-right: 20px;
 }
-main #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .follow-text {
+#homeMain #mainRight #sidebarBottom #sidebarSuggestions .sidebar-suggestion .follow-text {
   cursor: pointer;
 }
 
