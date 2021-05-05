@@ -57,7 +57,7 @@ section.right {
   padding: 0.5rem;
 }
 
-main {
+main.login__login {
   width: 50%;
   max-width: 300px;
   height: 100%;
@@ -229,6 +229,53 @@ footer > div > div {
 
 footer > div > div > div {
   margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: #FFFFFF;
+  border-bottom: solid 1px #DBDBDB;
+  margin: 0 0 2.5rem 0;
+}
+
+main.main__main {
+  width: 100%;
+  height: 90%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+section.stories {
+  width: 70%;
+  height: 100%;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section.recommendations {
+  width: 30%;
+  height: 100%;
+  background-color: #FAFAFA;
+}
+
+div.main__stories {
+  width: 80%;
+  height: 10%;
+  background-color: #FFFFFF;
+  margin: 0 0 2.5rem 0;
+  border: 1px solid #DBDBDB;
+}
+
+div.main__posts {
+  width: 80%;
+  height: 10%;
+  background-color: #FFFFFF;
+  border: 1px solid #DBDBDB;
 }
 
 /*aa*/
