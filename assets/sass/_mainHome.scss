@@ -20,80 +20,96 @@
       border: 1px solid global.$borderColor;
       border-radius: 3px;
       background-color: white;
-      .headerPost {
-        height: 32px;
-        padding: 16px 16px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .postTitle {
+      .post {
+        .headerPost {
+          height: 32px;
+          padding: 16px 16px;
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          img:hover {
+          .postTitle {
+            display: flex;
+            align-items: center;
+            img:hover {
+              cursor: pointer;
+            }
+            .postUser {
+              @include global.resetMarginPadding;
+              margin-left: 16px;
+              font-weight: 700;
+            }
+            .postUser:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+          .postOption {
+            font-size: 16px;
+          }
+          .postOption:hover {
             cursor: pointer;
           }
-          .postUser {
+        }
+        .picturePost {
+          img {
+            width: 100%;
+          }
+        }
+        .iconPost {
+          height: 40px;
+          margin-top: 4px;
+          padding: 0px 16px;
+          padding-left: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .imgIcon {
+            height: 24px;
+            padding: 6px;
+          }
+          .imgIcon:hover {
+            cursor: pointer;
+          }
+        }
+        .likePost {
+          height: 18px;
+          margin-bottom: 8px;
+          padding: 0px 16px;
+          p {
             @include global.resetMarginPadding;
-            margin-left: 16px;
-            font-weight: 700;
-            color: #404040;
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+        .commentsPost {
+          padding: 0px 16px;
+          margin-bottom: 8px;
+          p {
+            display: inline;
+          }
+          .postUser {
+            font-size: 16px;
+            font-weight: 600;
           }
           .postUser:hover {
             cursor: pointer;
             text-decoration: underline;
           }
+          .greyText {
+            color: grey;
+          }
         }
-        .postOption {
-          font-size: 16px;
+        .timePost {
+          height: 18px;
+          padding: 0px 16px;
+          color: grey;
+          font-size: 12px;
         }
-        .postOption:hover {
-          cursor: pointer;
+        .footerPost {
+          height: 55px;
+          margin-top: 4px;
+          padding: 0px 16px;
         }
-      }
-      .picturePost {
-        img {
-          width: 100%;
-        }
-      }
-      .iconPost {
-        height: 40px;
-        margin-top: 4px;
-        padding: 0px 16px;
-        padding-left: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .imgIcon {
-          height: 24px;
-          padding: 6px;
-        }
-        .imgIcon:hover {
-          cursor: pointer;
-        }
-      }
-      .likePost {
-        height: 18px;
-        margin-bottom: 8px;
-        padding: 0px 16px;
-        p {
-          @include global.resetMarginPadding;
-          font-size: 16px;
-          font-weight: 600;
-        }
-      }
-      .commentsPost {
-        height: 104px;
-        padding: 0px 16px;
-      }
-      .timePost {
-        height: 18px;
-        margin-bottom: 4px;
-        padding: 0px 16px;
-      }
-      .footerPost {
-        height: 55px;
-        margin-top: 4px;
-        padding: 0px 16px;
       }
     }
   }
