@@ -1,0 +1,60 @@
+// @use "base/variables";
+
+main {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: $backgroundColor;
+
+  .leftContainer {
+    width: 50%;
+    height: 800px;
+    background-color: $backgroundColor;
+    padding-top: 5%;
+    #leftImage {
+      margin-left: 34%;
+    }
+  }
+
+  .rightContainer {
+    width: 50%;
+    height: 800px;
+    background-color: $boxBackground;
+    text-align: center;
+  }
+
+  .downloadBox {
+    display: flex;
+    width: 100px;
+    flex-direction: row;
+    .downloadButton {
+      flex-grow: 2;
+      height: 25px;
+    }
+  }
+
+  #alternativeLogin {
+    cursor: pointer;
+    margin-top: 8%;
+    color: $fbTextColor;
+  }
+
+  #passForbidden {
+    color: $fbTextColor;
+    margin-top: 7%;
+    font-size: 14px;
+  }
+
+  .registerForm {
+    margin: 5%;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 28%;
+    border: $globalBorder;
+    width: 60%;
+    height: 10%;
+    white-space: nowrap;
+  }
+}

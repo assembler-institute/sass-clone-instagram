@@ -1,0 +1,19 @@
+// @use "base/variables";
+
+.loginForm {
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 50%;
+  margin: 5%;
+  margin-top: 16%;
+  border: $globalBorder;
+
+  .loginHeader {
+    margin-top: 10%;
+    .logoHeader {
+      height: 80px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 *,
 *::after,
 *::before {
@@ -6,6 +6,91 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  font-weight: 500;
+  color: #5295F6;
+  font-size: 15px;
+}
+
+.input {
+  border-radius: 6px;
+  border: 2px #dbdbdb solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+  width: 74%;
+  margin-left: 13%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40px;
+}
+
+.input ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.input :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.input ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.input ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.loginForm {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  height: 50%;
+  margin: 5%;
+  margin-top: 16%;
+  border: 2px #dbdbdb solid;
+}
+
+.loginForm .loginHeader {
+  margin-top: 10%;
+}
+
+.loginForm .loginHeader .logoHeader {
+  height: 80px;
 }
 
 main {
@@ -39,6 +124,18 @@ header ul {
 header ul li {
   margin-left: 2.5rem;
   font-size: 1.4rem;
+}
+
+footer {
+  text-justify: distribute;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer #footerList {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .stories {
@@ -134,13 +231,78 @@ header ul li {
   padding: 0.6rem 1.5rem;
   opacity: 0.6;
 }
-=======
-@use "base";
-@use "component/page/login/body/login";
-@use "component/page/login/body/loginForm";
-@use "component/page/login/input";
-@use "component/page/login/loginBttn";
-@use "layout";
-@use "pages";
->>>>>>> 1a1d9ca5400587f65cae0f2d126b4487bea96cd5
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+main .leftContainer {
+  width: 50%;
+  height: 800px;
+  background-color: #fafafa;
+  padding-top: 5%;
+}
+
+main .leftContainer #leftImage {
+  margin-left: 34%;
+}
+
+main .rightContainer {
+  width: 50%;
+  height: 800px;
+  background-color: white;
+  text-align: center;
+}
+
+main .downloadBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .downloadBox .downloadButton {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 25px;
+}
+
+main #alternativeLogin {
+  cursor: pointer;
+  margin-top: 8%;
+  color: darkblue;
+}
+
+main #passForbidden {
+  color: darkblue;
+  margin-top: 7%;
+  font-size: 14px;
+}
+
+main .registerForm {
+  margin: 5%;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 28%;
+  border: 2px #dbdbdb solid;
+  width: 60%;
+  height: 10%;
+  white-space: nowrap;
+}
 /*# sourceMappingURL=main.css.map */

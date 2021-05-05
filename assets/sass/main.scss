@@ -13,12 +13,13 @@
 @import "base/mixins";
 @import "base/variables";
 
-@import "component/buttons";
+@import "component/input";
+@import "component/loginBttn";
+@import "component/loginForm";
 
 @import "layout/general";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/responsive";
 
 @import "pages/home";
 @import "pages/login";
