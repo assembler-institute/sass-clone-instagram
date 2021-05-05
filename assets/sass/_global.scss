@@ -1,14 +1,10 @@
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("../fonts/SFProText-Regular.ttf") format("truetype");
-  font-style: normal;
-}
-$font: "SF Pro Text";
+
+$font: 'Ubuntu', sans-serif;
 $backgroundC: #fafafa;
 $boxColor: #ffffff;
 /*__loginVariables___*/
 $flexbox:flex;
-$borderColor:#dbdbdb;
+$borderColor:1px solid #dbdbdb;
 $anchor:100%;
 /*_________________*/
 @mixin resetMarginPadding {
@@ -16,10 +12,10 @@ $anchor:100%;
     padding: 0;
   }
 @mixin inputs($color,$top,$bot){
-    border-radius: 10px;
-    border: none;
-    height: 50px;
-    width: 60%;
+    border-radius: 3px;
+    border: $borderColor;
+    height: 40px;
+    width: 80%;
     justify-content: center;
     align-items: center;
     background-color: $color;
@@ -30,7 +26,7 @@ $anchor:100%;
 @mixin image ($ejeZ){
     position: absolute;
     z-index: $ejeZ;
-    width: 40%; 
+    width: 50%; 
   }
 @mixin flex ($direction,$xPos,$ypos,$color,$borde,$anchor){
     display: $flexbox;
@@ -45,6 +41,7 @@ $anchor:100%;
 
 body {
     background-color: $backgroundC;
+    font-family: $font;
     
 
     @include resetMarginPadding;
