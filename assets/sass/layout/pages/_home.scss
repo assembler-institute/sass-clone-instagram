@@ -1,3 +1,6 @@
+@use "../../helpers/variables" as *;
+@use "../../helpers/mixins" as *;
+
 .stories {
   display: flex;
   justify-content: space-around;

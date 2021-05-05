@@ -1,4 +1,4 @@
-// @use "base/variables";
+@use "../helpers/variables" as *;
 
 .input {
   border-radius: 6px;
@@ -13,8 +13,7 @@
   height: 40px;
 
   ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-size: 10px;
-    opacity: 1; /* Firefox */
+    opacity: 1;
   }
 }

@@ -1,3 +1,6 @@
+@use "../helpers/variables" as *;
+@use "../helpers/extension" as *;
+
 header {
   @extend %display-flex;
   border-bottom: $thinBorder;
