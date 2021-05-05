@@ -1,4 +1,4 @@
-@use "./hroot.scss" as hroot;
+@use "../root/hroot.scss" as hroot;
 .navBar {
   background-color: hroot.$bg;
   height: 54px;
