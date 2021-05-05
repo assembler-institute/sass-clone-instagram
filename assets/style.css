@@ -173,36 +173,70 @@ section.main {
   margin-right: 28px;
   flex-grow: 1;
 }
-.mainHome .main .storiesContainer {
+.mainHome .main .storiesSection {
   width: 100%;
-  height: 115px;
+  height: 120px;
   margin-bottom: 25px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   background-color: white;
 }
-.mainHome .main .postContainer .post {
+.mainHome .main .storiesSection .storiesContainer {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+.mainHome .main .storiesSection .storiesContainer .story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+.mainHome .main .storiesSection .storiesContainer .story .gradientBorder {
+  height: 65px;
+  width: 65px;
+  padding: 1px;
+  background: linear-gradient(#ccc, #ccc) padding-box, linear-gradient(to right, #f99c4b, #fb3570) border-box;
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+.mainHome .main .storiesSection .storiesContainer .story .gradientBorder img {
+  height: 65px;
+  border-radius: 50%;
+}
+.mainHome .main .storiesSection .storiesContainer .story p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.mainHome .main .storiesSection .storiesContainer .story:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection {
   width: 100%;
+}
+.mainHome .main .postSection .postContainer .post {
+  margin-bottom: 60px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   background-color: white;
-  margin-bottom: 60px;
 }
-.mainHome .main .postContainer .post .headerPost {
+.mainHome .main .postSection .postContainer .post .headerPost {
   height: 32px;
   padding: 16px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.mainHome .main .postContainer .post .headerPost .postTitle {
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle {
   display: flex;
   align-items: center;
 }
-.mainHome .main .postContainer .post .headerPost .postTitle img:hover {
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle img:hover {
   cursor: pointer;
 }
-.mainHome .main .postContainer .post .headerPost .postTitle .postUser {
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle .postUser {
   margin: 0;
   padding: 0;
   margin-left: 16px;
@@ -210,20 +244,20 @@ section.main {
   font-size: 16px;
   color: #262626;
 }
-.mainHome .main .postContainer .post .headerPost .postTitle .postUser:hover {
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle .postUser:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.mainHome .main .postContainer .post .headerPost .postOption {
+.mainHome .main .postSection .postContainer .post .headerPost .postOption {
   font-size: 16px;
 }
-.mainHome .main .postContainer .post .headerPost .postOption:hover {
+.mainHome .main .postSection .postContainer .post .headerPost .postOption:hover {
   cursor: pointer;
 }
-.mainHome .main .postContainer .post .picturePost img {
+.mainHome .main .postSection .postContainer .post .picturePost img {
   width: 100%;
 }
-.mainHome .main .postContainer .post .iconPost {
+.mainHome .main .postSection .postContainer .post .iconPost {
   height: 40px;
   margin-top: 4px;
   padding: 0px 16px;
@@ -232,55 +266,55 @@ section.main {
   justify-content: space-between;
   align-items: center;
 }
-.mainHome .main .postContainer .post .iconPost .imgIcon {
+.mainHome .main .postSection .postContainer .post .iconPost .imgIcon {
   height: 24px;
   padding: 6px;
 }
-.mainHome .main .postContainer .post .iconPost .imgIcon:hover {
+.mainHome .main .postSection .postContainer .post .iconPost .imgIcon:hover {
   cursor: pointer;
 }
-.mainHome .main .postContainer .post .likePost {
+.mainHome .main .postSection .postContainer .post .likePost {
   height: 18px;
   margin-bottom: 8px;
   padding: 0px 16px;
 }
-.mainHome .main .postContainer .post .likePost p {
+.mainHome .main .postSection .postContainer .post .likePost p {
   margin: 0;
   padding: 0;
   font-size: 14px;
   font-weight: 600;
 }
-.mainHome .main .postContainer .post .likePost p:hover {
+.mainHome .main .postSection .postContainer .post .likePost p:hover {
   cursor: pointer;
 }
-.mainHome .main .postContainer .post .commentsPost {
+.mainHome .main .postSection .postContainer .post .commentsPost {
   padding: 0px 16px;
   margin-bottom: 8px;
 }
-.mainHome .main .postContainer .post .commentsPost p {
+.mainHome .main .postSection .postContainer .post .commentsPost p {
   display: inline;
   font-size: 14px;
 }
-.mainHome .main .postContainer .post .commentsPost p:hover {
+.mainHome .main .postSection .postContainer .post .commentsPost p:hover {
   cursor: pointer;
 }
-.mainHome .main .postContainer .post .commentsPost .postUser {
+.mainHome .main .postSection .postContainer .post .commentsPost .postUser {
   font-weight: 600;
 }
-.mainHome .main .postContainer .post .commentsPost .postUser:hover {
+.mainHome .main .postSection .postContainer .post .commentsPost .postUser:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.mainHome .main .postContainer .post .commentsPost .greyText {
+.mainHome .main .postSection .postContainer .post .commentsPost .greyText {
   color: grey;
 }
-.mainHome .main .postContainer .post .timePost {
+.mainHome .main .postSection .postContainer .post .timePost {
   height: 18px;
   padding: 0px 16px;
   color: grey;
   font-size: 12px;
 }
-.mainHome .main .postContainer .post .footerPost {
+.mainHome .main .postSection .postContainer .post .footerPost {
   height: 55px;
   margin-top: 4px;
   padding: 0px 16px;
@@ -289,26 +323,26 @@ section.main {
   justify-content: space-between;
   align-items: center;
 }
-.mainHome .main .postContainer .post .footerPost .leftFooter {
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter {
   display: flex;
   align-items: center;
 }
-.mainHome .main .postContainer .post .footerPost .leftFooter img {
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter img {
   height: 30px;
   padding-right: 16px;
 }
-.mainHome .main .postContainer .post .footerPost .leftFooter img:hover {
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter img:hover {
   cursor: pointer;
 }
-.mainHome .main .postContainer .post .footerPost .leftFooter p {
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter p {
   color: grey;
   font-size: 14px;
 }
-.mainHome .main .postContainer .post .footerPost .rightFooter {
+.mainHome .main .postSection .postContainer .post .footerPost .rightFooter {
   font-weight: 600;
   color: #b3dffc;
 }
-.mainHome .main .postContainer .post .footerPost .rightFooter:hover {
+.mainHome .main .postSection .postContainer .post .footerPost .rightFooter:hover {
   cursor: pointer;
 }
 .mainHome .aside {
