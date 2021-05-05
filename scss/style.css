@@ -113,13 +113,19 @@ aside {
   min-width: 240px;
 }
 
+.all-class {
+  display: flex;
+  justify-content: center;
+}
+
 .containerLoginAll-class {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   background-color: aquamarine;
-  height: 900px;
-  width: 900px;
+  height: 745.32px;
+  width: 1111.49px;
 }
 
 .row-all-class {
@@ -130,25 +136,34 @@ aside {
 .containerLeftAll-class {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #ffe17f;
-  height: 300px;
-  width: 300px;
+  height: 618px;
+  width: 454px;
 }
 
 .containerRightAll-class {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #ff8a7f;
-  height: 300px;
-  width: 300px;
+  height: 606px;
+  width: 350px;
+  margin-top: 12px;
 }
 
 .containerDowntAll-class {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
   background-color: #7fff9b;
-  height: 300px;
-  width: 300px;
+  height: 98.32px;
+  width: 1079.49px;
+}
+
+.logInAll-class {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
