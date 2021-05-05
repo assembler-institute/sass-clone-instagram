@@ -148,8 +148,12 @@ body {
   overflow-y: scroll;
 }
 
-main {
+.full-height-main {
   height: 100%;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 * {
