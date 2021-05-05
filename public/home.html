@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dev/sass/custom.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <title>Home</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav__home">
-                <div class="nav__home__logo">
-                    logo instagram
-                </div>
+                <a href="index.html" class="nav__home__logo">
+                </a>
                 <div class="nav__home__search">
-                    buscador
+                    <input type="search" class="nav__home__search__bar" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
                 </div>
                 <div class="nav__home__iconos">
                     <ul class="nav__home__iconos__list">
@@ -28,22 +28,21 @@
                             <i class="fas fa-circle"></i>
                         </li>
                     </ul>
-                    iconos
                 </div>
         </nav>
     </header>
     <main class="container__home__home">
         <section class="feed">
             <div class="div__stories">
-                    <article class="stories__item">1</article>
-                    <article class="stories__item">2</article>
-                    <article class="stories__item">3</article>
-                    <article class="stories__item">4</article>
-                    <article class="stories__item">5</article>
-                    <article class="stories__item">6</article>
-                    <article class="stories__item">7</article>
-                    <article class="stories__item">8</article>
-                    <button class="stories__next"><div>></div></button>
+                    <article class="stories__item"></article>
+                    <article class="stories__item"></article>
+                    <article class="stories__item"></article>
+                    <article class="stories__item"></article>
+                    <article class="stories__item"></article>
+                    <article class="stories__item"></article>
+                    <article class="stories__item"></article>
+                    <article class="stories__item"></article>
+                    <button class="stories__next"><div></div></button>
             </div>
             <div class="div__feed">
                 <article class="post">
@@ -52,7 +51,36 @@
                             <img class="img__round"  src="https://images.pexels.com/photos/2777898/pexels-photo-2777898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
                         </div>
                         <div class="post__user__name">noiztbander</div>
-                        <div class="post__user__opts">. . .</div>
+                        <div class="post__user__opts"> <svg
+                  aria-label="More options"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="16"
+                  viewBox="0 0 48 48"
+                  width="16"
+                >
+                  <circle
+                    clip-rule="evenodd"
+                    cx="8"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="24"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="40"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                </svg></div>
                     </div>
                     <img class="img__feed" src="https://images.pexels.com/photos/7291782/pexels-photo-7291782.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="rosa">
                     <div class="container__comments">
@@ -123,9 +151,23 @@
                             mohammadarifdesigner Amazing 🔥🔥🔥
                             gibsoncole3 💷Knowing that my investment is in safe hands got me excited. @Official_charlotte.fxt made that possible with her... más</div>
                         <div class="input__comments">
-                            <i class="far fa-smile"></i>
-                            <input type="text">
-                            <p>Post</p>
+                            <svg
+                aria-label="Emoji"
+                class="_8-yf5"
+                fill="#262626"
+                height="24"
+                viewBox="0 0 48 48"
+                width="24"
+              >
+                <path
+                  d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"
+                ></path>
+                <path
+                  d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"
+                ></path>
+              </svg>
+              <span>Add a comment...</span>
+              <span class="input__comments__span">Post</span>
                         </div>
                     </div>
                 </article>
@@ -135,7 +177,36 @@
                             <img class="img__round"  src="https://images.pexels.com/photos/2777898/pexels-photo-2777898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
                         </div>
                         <div class="post__user__name">noiztbander</div>
-                        <div class="post__user__opts">. . .</div>
+                        <div class="post__user__opts"> <svg
+                  aria-label="More options"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="16"
+                  viewBox="0 0 48 48"
+                  width="16"
+                >
+                  <circle
+                    clip-rule="evenodd"
+                    cx="8"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="24"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="40"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                </svg></div>
                     </div>
                     <img class="img__feed" src="https://images.pexels.com/photos/7291782/pexels-photo-7291782.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="rosa">
                     <div class="container__comments">
@@ -206,9 +277,23 @@
                             mohammadarifdesigner Amazing 🔥🔥🔥
                             gibsoncole3 💷Knowing that my investment is in safe hands got me excited. @Official_charlotte.fxt made that possible with her... más</div>
                         <div class="input__comments">
-                            <i class="far fa-smile"></i>
-                            <input type="text">
-                            <p>Post</p>
+                            <svg
+                aria-label="Emoji"
+                class="_8-yf5"
+                fill="#262626"
+                height="24"
+                viewBox="0 0 48 48"
+                width="24"
+              >
+                <path
+                  d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"
+                ></path>
+                <path
+                  d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"
+                ></path>
+              </svg>
+              <span>Add a comment...</span>
+              <span class="input__comments__span">Post</span>
                         </div>
                     </div>
                 </article>
@@ -218,7 +303,36 @@
                             <img class="img__round"  src="https://images.pexels.com/photos/2777898/pexels-photo-2777898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
                         </div>
                         <div class="post__user__name">noiztbander</div>
-                        <div class="post__user__opts">. . .</div>
+                        <div class="post__user__opts"> <svg
+                  aria-label="More options"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="16"
+                  viewBox="0 0 48 48"
+                  width="16"
+                >
+                  <circle
+                    clip-rule="evenodd"
+                    cx="8"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="24"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="40"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                </svg></div>
                     </div>
                     <img class="img__feed" src="https://images.pexels.com/photos/7291782/pexels-photo-7291782.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="rosa">
                     <div class="container__comments">
@@ -289,9 +403,23 @@
                             mohammadarifdesigner Amazing 🔥🔥🔥
                             gibsoncole3 💷Knowing that my investment is in safe hands got me excited. @Official_charlotte.fxt made that possible with her... más</div>
                         <div class="input__comments">
-                            <i class="far fa-smile"></i>
-                            <input type="text">
-                            <p>Post</p>
+                            <svg
+                aria-label="Emoji"
+                class="_8-yf5"
+                fill="#262626"
+                height="24"
+                viewBox="0 0 48 48"
+                width="24"
+              >
+                <path
+                  d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"
+                ></path>
+                <path
+                  d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"
+                ></path>
+              </svg>
+              <span>Add a comment...</span>
+              <span class="input__comments__span">Post</span>
                         </div>
                     </div>
                 </article>

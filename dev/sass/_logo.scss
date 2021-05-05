@@ -1,0 +1,18 @@
+@mixin nav_logo {
+    margin-top: 15px;
+    background-image: url(/public/assets/img/logos.png);
+    background-size: 253.0857142857px 236.0171428571px;
+    height: 30.0171428571px;
+    width: 103px;
+    cursor: pointer;
+    background-position: 0 -76.5142857143px;
+    background-repeat: no-repeat;
+}
+
+@mixin main_logo {
+    background-image: url(/public/assets/img/logos.png);
+    height: 51px;
+    width: 175px;
+    background-position: 0px -130px;
+    background-repeat: no-repeat;
+}
