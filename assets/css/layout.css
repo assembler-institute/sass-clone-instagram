@@ -1,0 +1,557 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  border: 1px solid grey;
+}
+
+.navBar {
+  background-color: #fafafa;
+  height: 54px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid grey;
+}
+
+.navContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navContent .logo {
+  width: 103px;
+  height: 29px;
+  background-image: url("../img/logoInsta.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 15vw;
+}
+
+.navContent .search {
+  width: 215px;
+  height: 28px;
+  padding: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navContent ::-webkit-input-placeholder {
+  color: #a0a0a0;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.navContent :-ms-input-placeholder {
+  color: #a0a0a0;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.navContent ::-ms-input-placeholder {
+  color: #a0a0a0;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.navContent ::placeholder {
+  color: #a0a0a0;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.navContent .icons {
+  width: 225px;
+  height: 25px;
+  margin-left: 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navContent .icons .icon {
+  width: 22px;
+  height: 22px;
+  padding: 0px 0px 0px 24px;
+  border: 0;
+}
+
+.navContent .icons .user-icon {
+  width: 22px;
+  height: 22px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  margin: 0px 0px 0px 24px;
+}
+
+.container {
+  width: 935px;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-section {
+  width: 600px;
+  height: auto;
+}
+
+.left-section .stories {
+  width: 95%;
+  height: 100px;
+  margin-left: 2.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid grey;
+}
+
+.left-section .stories .story {
+  margin-left: 10px;
+  margin-top: 11px;
+  width: 66px;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.left-section .stories .story .story-border {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background: #f09433;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.left-section .stories .story .story-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 3px;
+  margin-top: 3px;
+  border-radius: 25px;
+  background: #fdfdfd;
+}
+
+.left-section .stories .story-user {
+  width: 66px;
+  height: 13px;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.left-section .posts {
+  width: 95%;
+  height: auto;
+  margin-left: 2.5%;
+  border: 1px solid grey;
+  margin-top: 30px;
+}
+
+.left-section .posts .postUser {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid grey;
+}
+
+.left-section .posts .postUser .story {
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 66px;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.left-section .posts .postUser .story .story-border {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background: #f09433;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.left-section .posts .postUser .story .story-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 3px;
+  margin-top: 3px;
+  border-radius: 25px;
+  background: #fdfdfd;
+}
+
+.left-section .posts .post {
+  width: 100%;
+  height: 613px;
+}
+
+.left-section .posts .postFoot {
+  width: 100%;
+  height: 190px;
+  border: 1px solid grey;
+}
+
+.right-section {
+  width: 335px;
+  height: auto;
+}
+
+.right-section .my-user-suggestions {
+  width: 325px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  margin-left: 15px;
+}
+
+.right-section .my-user-suggestions .story {
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 66px;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.right-section .my-user-suggestions .story .story-border {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background: #f09433;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.right-section .my-user-suggestions .story .story-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 3px;
+  margin-top: 3px;
+  border-radius: 25px;
+  background: #fdfdfd;
+}
+
+.right-section .my-user-suggestions .my-user-info {
+  width: 186px;
+  height: 56px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right-section .my-user-suggestions .my-user-info .info {
+  margin-bottom: 3px;
+}
+
+.right-section .my-user-suggestions .my-user-info .info2 {
+  color: grey;
+}
+
+.right-section .my-user-suggestions .change-user {
+  width: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-section .my-user-suggestions .change-user p {
+  margin-top: 48%;
+  font-size: 12px;
+  color: #008cff;
+}
+
+.right-section .suggestions {
+  width: 325px;
+  height: 300px;
+  margin-top: 25px;
+  margin-left: 15px;
+  border: 1px solid grey;
+}
+
+.right-section .suggestions .sugg {
+  width: 325px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-section .suggestions .sugg .sfy {
+  width: 246px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+  color: grey;
+}
+
+.right-section .suggestions .sugg .see {
+  width: 46px;
+  height: 20px;
+  margin-right: 15px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.right-section .suggestions .user-suggestion {
+  width: 320px;
+  height: 48px;
+}
+
+.right-section .suggestions .user-suggestion .user {
+  width: 279px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 21px;
+  margin-top: 8px;
+}
+
+.right-section .suggestions .user-suggestion .user .image-cont {
+  width: 42px;
+  height: 42px;
+  background-color: hotpink;
+}
+
+.right-section .suggestions .user-suggestion .user .image-cont .user-image {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.right-section .suggestions .user-suggestion .user .user-info {
+  width: 202px;
+  height: 42px;
+  background-color: indigo;
+}
+
+.right-section .suggestions .user-suggestion .user .follow {
+  width: 35px;
+  height: 42px;
+  background-color: lightcoral;
+}
+
+.right-section .information {
+  width: 300px;
+  height: 120px;
+  margin-top: 25px;
+  margin-left: 15px;
+  border: 1px solid grey;
+}
+/*# sourceMappingURL=layout.css.map */
