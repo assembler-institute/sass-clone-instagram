@@ -1,5 +1,5 @@
-@import "./colors";
-@import "./elements";
+@use "./colors" as *;
+@use "./elements" as *;
 
 @font-face {
   font-family: instagramFont;
@@ -15,11 +15,11 @@
 //Login Page
 
 main {
-  background: $instagramBackground;
+  background-color: $instagramBackground;
 }
 
 .parentMain {
-  @include flexCenter();
+  @include flexCenter;
   height: 935px;
   width: 722px;
   background-color: black;
@@ -29,17 +29,61 @@ main {
 /* FEED -------------------------------------------------------------- */
 
 nav {
+  @include flexCenter;
+  $lateralPadding: 40px;
+  justify-content: space-between;
   background-color: white;
-  display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
+  padding: 0px $lateralPadding;
   border-bottom: 1px $borderColor solid;
   height: 54px;
-  width: calc(100vw - 40px);
+  width: calc(100vw - $lateralPadding * 2);
+  color: $instagramBlue;
+  a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
 }
 
 .main-logo {
   height: 29px;
   width: 103px;
+}
+
+.nav-search {
+  input {
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background-color: $instagramBackground;
+    border: 1px solid $borderColor;
+    padding: 7px;
+    text-align: center;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+  }
+  :-ms-input-placeholder {
+    text-align: center;
+  }
+}
+
+.nav-icons {
+  svg {
+    margin-left: 22px;
+  }
+  img {
+    @include circleImg(22px);
+    margin-left: 22px;
+  }
 }

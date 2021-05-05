@@ -2,7 +2,6 @@
   font-family: instagramFont;
   src: url("../fonts/Rene Bieder  Milliard Light.woff");
 }
-
 /* General Stlyes */
 * {
   font-family: instagramFont, sans-serif;
@@ -11,19 +10,13 @@
 }
 
 main {
-  background: #fafafa;
+  background-color: #fafafa;
 }
 
 .parentMain {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 935px;
   width: 722px;
   background-color: black;
@@ -32,25 +25,63 @@ main {
 
 /* FEED -------------------------------------------------------------- */
 nav {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: white;
+  flex-direction: row;
+  padding: 0px 40px;
   border-bottom: 1px #dbdbdb solid;
   height: 54px;
-  width: calc(100vw - 40px);
+  width: calc(100vw - $lateralPadding * 2);
+  color: #0095f6;
+}
+nav a {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .main-logo {
   height: 29px;
   width: 103px;
 }
+
+.nav-search input {
+  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  padding: 7px;
+  text-align: center;
+}
+.nav-search ::-webkit-input-placeholder {
+  text-align: center;
+}
+.nav-search :-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+.nav-search ::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+.nav-search :-ms-input-placeholder {
+  text-align: center;
+}
+
+.nav-icons svg {
+  margin-left: 22px;
+}
+.nav-icons img {
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  overflow: hidden;
+  margin-left: 22px;
+}
+
 /*# sourceMappingURL=style.css.map */

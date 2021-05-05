@@ -1,5 +1,11 @@
-@mixin flexCenter() {
+@mixin flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@mixin circleImg($picSize) {
+  height: $picSize;
+  width: $picSize;
+  border-radius: $picSize/2;
+  overflow: hidden;
 }
