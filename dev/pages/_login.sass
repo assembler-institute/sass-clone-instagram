@@ -244,6 +244,8 @@ div.main__header--search
      border: $border
      background-color: $background-main
      display: flex
+     border-radius: 3px
+     text-align: center
      flex-direction: row
 
      justify-content: center
@@ -252,6 +254,7 @@ div.main__header--search > i
 div.main__header--search > i > input
      border: none     
      padding: 0.5rem
+     text-align: center
 div.main__header--search > i > input:hover
      border: none     
 
@@ -261,22 +264,23 @@ div.header__icons
      align-items: center
      justify-content: center
      margin-right: 7rem
+
 header > div > div 
      display: flex
      flex-direction: row
      align-items: center
+
 header > div > div > img
      border-radius: 50%
      width: 2.5em
      height: 2.5rem
+
 header > div > div > i
      font-size: 1.8rem
-     margin-right: 1rem
-     
+     margin-right: 1.5rem
 
 main.main__main
      width: 100%
-     height: #{calc(100vh - 80px)}
      background-color: red
      display: flex
      flex-direction: row
@@ -295,16 +299,16 @@ section.stories
 
 
 section.recommendations
-     width: 30%
+     width: 40%
      height: auto
      background-color: $background-main
      display: flex
      flex-direction: column
-     padding: 1rem
+     padding: 2rem 0 0 2rem
 
 div.main__stories
      width: inherit
-     height: 100%
+     height: 9rem
      background-color: $background-container
      margin: 0 0 2.5rem 0
      border: $border
@@ -351,7 +355,7 @@ div.main__posts--user
      flex-direction: row
      justify-content: space-between
      align-items: center
-     padding: 0 2rem
+     padding: 1rem 2rem
 
 div.main__posts--userName
      display: flex
@@ -369,13 +373,13 @@ div.main__posts--userImg
      flex-direction: row
      justify-content: center
      align-items: center
+
 div.main__posts--userImg > img
      width: inherit
      max-width: 100%
      height: inherit
      max-height: 100%
      border-radius: 20px 
-div.main__posts--userOption
 
 div.main__posts--img
      width: 100%
@@ -386,8 +390,8 @@ div.main__posts--img
 
 div.main__posts--img > img
      width: inherit
-     display:block
-     margin:auto
+     display: block
+     margin: auto
 
 div.main__posts--content
      width: 100%
@@ -450,6 +454,13 @@ input.main__posts--comentsInput
 #user
      font-weight: bold
 
+.user__name
+     width: 100%
+     white-space: nowrap
+     text-overflow: ellipsis
+     overflow: hidden
+     margin-left: 1rem
+    
 .recommendations.change__user button
      border: none
      background-color: white
@@ -458,16 +469,26 @@ input.main__posts--comentsInput
      color: #0095F6
      font-weight: bold
 
+.containerRecomend
+     width: 85%
+
 div.change__user
-     width: 50%
+     width: 70%
      display: flex
      justify-content: space-between
      align-items: center
 
+div.change__user button
+     border: none
+     background-color: white
+
 div.change__user img
      border-radius: 50%
-     width: 2.5rem
-     height: 2.5rem
+     width: 4.5rem
+     height: 4.5rem
+
+.sugestmentContainer
+     width: 100%
 
 div.sugerencias
      margin-top: 3rem
@@ -475,7 +496,7 @@ div.sugerencias
      justify-content: space-between
 
 div.sugestedUsers
-     width: 50%
+     width: 70%
      display: flex
      flex-direction: column
      justify-content: space-between
@@ -491,19 +512,26 @@ div.sugerencias button
 div.sugerencias_users
      display: flex
      flex-direction: row
-     justify-content: space-between
      align-items: center
      margin-top: 2rem
 
 div.sugerencias_users img
      border-radius: 50%
-     width: 2.5em
-     height: 2.5rem
+     width: 3.2em
+     height: 3.2rem
 
 div.sugerencias_users button
      border: none
      background-color: white
      cursor: pointer
-     margin-left: 2rem
+     margin-left: 4rem
      color: #0095F6
      font-weight: bold
+
+.copy_text
+     color: lightgrey
+     margin-top: 4rem
+
+.copy_text h5
+     font-weight: 500
+     margin-top: 2rem
