@@ -13,25 +13,7 @@
   <main class="mainLogin">
     <div class="leftContainer">
       <img id="leftImage" src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png">
-      
-      <div class="carouselContainer">
-        <img class="carouselSlide" id="slide1" src="https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg"></img>
-        <img class="carouselSlide" id="slide2" src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg"></img>
-        <img class="carouselSlide" id="slide3" src="https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg"></img>
-      </div>
-
     </div>
-
-    <!-- <div class="rightContainer"> -->
-    <!-- login form -->
-    <!-- <div class="loginForm">
-        <div class="loginHeader">
-          <img class="logoHeader" src="https://fontmeme.com/images/instagram-new-logo.png"> </img>
-        </div>
- 
-      </div> -->
-
-
 
     <div class="rightContainer">
       <!-- login form -->
@@ -44,19 +26,19 @@
           <input type="username" placeholder="Phone number, username, or email" class="input"> </input>
           <input type="password" placeholder="Password" class="input"> </input>
         </div>
-        <button id="loginSubmit">
+        <button id="loginSubmit" onclick="goToHome()">
           Log In
         </button>
 
-
         <div class="separator" id="loginSeparator">
-          &boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&nbsp &nbsp &nbsp  OR &nbsp  &nbsp &nbsp  &boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;
+          &boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&nbsp &nbsp &nbsp OR &nbsp &nbsp &nbsp
+          &boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;&boxh;
         </div>
-
 
         <div id="alternativeLogin">
           <div id="loginFB">
-            <img alt="user" id="fbIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1200px-Facebook_icon_2013.svg.png">
+            <img alt="user" id="fbIcon"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1200px-Facebook_icon_2013.svg.png">
             Log in with Facebook
           </div>
 
@@ -66,9 +48,9 @@
         </div>
 
       </div>
-
       <div class="registerForm">
-        <div id="registerText">Don't have an account? <nobr></nobr> <h4 id="registerButton"> Sign up </h4>
+        <div id="registerText">Don't have an account? <nobr></nobr>
+          <h4 id="registerButton"> Sign up </h4>
         </div>
       </div>
 
@@ -82,20 +64,6 @@
           src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_spanish_latinamerica_mexico-es_LA.png/3cd8a27083c0.png">
         </img>
       </div>
-
-      <!-- <div class="registerForm">
-          No tienes una cuenta? <h4> Regístrate </h4>
-        </div>
-
-        <div class="downloadBox">
-          Descargar app
-          <img class="downloadButton"
-            src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_spanish_latinamerica_mexico.png/e2247c4f90de.png">
-          </img>
-          <img class="downloadButton"
-            src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_spanish_latinamerica_mexico-es_LA.png/3cd8a27083c0.png">
-          </img>
-        </div> -->
 
     </div>
 
@@ -134,13 +102,15 @@
     </div>
 
   </footer>
-  <!-- <script>
-   var i= 0;
-   carouselElement = document.getElementsByClassName("carouselSlide");
-   for(i < carouselElement.lenght )
-   {
+  <script>
+    function goToHome() {
+      window.location.pathname = '/home.html'
+    }
 
-   }
+    // var i = 0;
+    // carouselElement = document.getElementsByClassName("carouselSlide");
+    // for (i < carouselElement.lenght) {
 
-} </script> -->
+    // }
+  </script>
 </body>

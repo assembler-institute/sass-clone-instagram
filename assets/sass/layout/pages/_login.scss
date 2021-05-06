@@ -1,10 +1,8 @@
 @use "../../helpers/variables" as *;
 @use "../../helpers/mixins" as *;
 
-
 main {
-
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .mainLogin {
   display: flex;
@@ -15,23 +13,18 @@ main {
   background-color: $backgroundColor;
   font-weight: 600;
 
-
   .leftContainer {
     width: 50%;
     height: 800px;
-    // max-width: 100%;
     background-color: $backgroundColor;
     padding-top: 5%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    // #leftImage {
-    //   margin-left: 30%;
-    // }                       
-    .carouselContainer{
+    .carouselContainer {
       z-index: 11;
     }
-    .leftImage{
+    .leftImage {
       z-index: 10;
     }
   }
