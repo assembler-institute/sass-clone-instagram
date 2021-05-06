@@ -1,0 +1,119 @@
+@import '../base/variables';
+@import '../base/typography';
+
+.mt-30{
+  margin-top: 30px;
+}
+.mt-4{
+  margin-top: 4px;
+}
+.p-2-8{
+  padding: 2px 8px;
+}
+.mb-3{
+  margin-bottom: 3px;
+}
+.ml-14{
+  margin-left: 14px;
+}
+.pl-30{
+  padding-left: 30px;
+}
+.p-8{
+  padding: 8px;
+}
+.p-2-0{
+  padding: 2px 0;
+}
+.fw-600{
+  font-weight: 600;
+}
+.grey{
+  color: $grey;
+}
+.basis-100{
+  flex-basis: 100%;
+}
+
+.d-flex{
+  display: flex;
+}
+.fit{
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+.right-end{
+  position: absolute;
+  right: 16px;
+}
+.align-centered{
+  align-items: center;
+}
+
+.pointer{
+  cursor: pointer;
+}
+.prueba{
+  justify-content: flex-start;
+}
+
+.story{
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 2px;
+  width: 60px;
+  height: 60px;
+  :after{
+    background: linear-gradient(to bottom, #d82b7e, #f57939);
+    position: sticky;
+    display: block;
+    margin-top: -4px;
+    margin-left: -4px;
+    z-index: 2;
+  }
+}
+.p-16{
+  padding: 16px;
+}
+.blue{
+  color: $blue;
+}
+
+.light-font{
+  font-weight: lighter;
+}
+
+.semi-bold-font {
+  font-weight: 600;
+}
+.f-11{
+  font-size: 11px;
+}
+.add-comment{
+  border-top: 1px solid lightgrey;
+}
+.Ypffh {
+  font-family: $appleFont;
+  background: 0 0;
+  border: 0;
+  color: #262626;
+  color: rgba(var(--i1d,38,38,38),1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-size: inherit;
+  height: 18px;
+  max-height: 80px;
+  outline: 0;
+  padding: 0;
+  resize: none;
+  width: 0;
+  overflow: hidden;
+  margin-left: 15px;
+}

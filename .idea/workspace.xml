@@ -1,6 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="796afc10-37d5-46b8-8703-deb5837fca7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/homeLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/nature.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/p2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/pNature.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/base/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/base/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/base/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/base/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/components/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/components/_container.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/components/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/components/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/components/_right-side.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/layouts/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/layouts/_page-home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/layouts/_structure.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/home/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/home/homeStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/home/homeStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/home/base/_base-index.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1s9ZMju0UuEXOl2CfPbyi2CwKfw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/master" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alberto\Desktop\master\sass-clone-instagram\style\home\components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sass-clone-instagram/home.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.home.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="796afc10-37d5-46b8-8703-deb5837fca7b" name="Default Changelist" comment="" />
+      <created>1620286720526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620286720526</updated>
+      <workItem from="1620286726306" duration="13494000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="776" y="354" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620294385206">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="776" y="354" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620294385206" />
+    <state width="2027" height="363" key="GridCell.Tab.0.bottom" timestamp="1620286964876">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964876" />
+    <state width="2027" height="363" key="GridCell.Tab.0.center" timestamp="1620286964876">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964876" />
+    <state width="2027" height="363" key="GridCell.Tab.0.left" timestamp="1620286964876">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964876" />
+    <state width="2027" height="363" key="GridCell.Tab.0.right" timestamp="1620286964876">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964876" />
+    <state width="2027" height="363" key="GridCell.Tab.1.bottom" timestamp="1620286964877">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964877" />
+    <state width="2027" height="363" key="GridCell.Tab.1.center" timestamp="1620286964877">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964877" />
+    <state width="2027" height="363" key="GridCell.Tab.1.left" timestamp="1620286964876">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964876" />
+    <state width="2027" height="363" key="GridCell.Tab.1.right" timestamp="1620286964877">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964877" />
+    <state width="2027" height="363" key="GridCell.Tab.2.bottom" timestamp="1620286964877">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.2.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964877" />
+    <state width="2027" height="363" key="GridCell.Tab.2.center" timestamp="1620286964877">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.2.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964877" />
+    <state width="2027" height="363" key="GridCell.Tab.2.left" timestamp="1620286964877">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.2.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964877" />
+    <state width="2027" height="363" key="GridCell.Tab.2.right" timestamp="1620286964877">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="363" key="GridCell.Tab.2.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620286964877" />
+    <state x="735" y="275" width="577" height="562" key="find.popup" timestamp="1620302736905">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="735" y="275" width="577" height="562" key="find.popup/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1620302736905" />
   </component>
 </project>

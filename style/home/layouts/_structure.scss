@@ -1,0 +1,41 @@
+@import "../base/variables";
+@import "../base/typography";
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $appleFont;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.container{
+  display: flex;
+  background-color: $containerWhite;
+  height: 100%;
+  padding-top: 85px;
+  justify-content: center;
+}
+
+.right-container{
+  width: 293px;
+  min-width: 293px;
+}
+@media (max-width: 940px){
+  .right-container{
+    display: none;
+  }
+}
+
