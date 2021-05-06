@@ -15,6 +15,10 @@
   cursor: pointer;
 }
 
+.s9 {
+  font-size: 0.9rem;
+}
+
 .s8 {
   font-size: 0.8rem;
 }
@@ -123,7 +127,6 @@ main {
 }
 
 .story-name-class {
-  font-size: 0.7rem;
   font-weight: 200;
   margin-top: 5px;
   width: 62px;
@@ -181,34 +184,33 @@ main {
   display: flex;
   flex-direction: column;
   margin: 25px 0;
-  .post-top-class {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 640px;
-    padding: 16px;
-    background-color: white;
-    border-radius: 3px 3px 0 0;
-    border-top: 1px solid #dbdbdb;
-    border-left: 1px solid #dbdbdb;
-    border-right: 1px solid #dbdbdb;
-    .post-user-class {
-      justify-content: space-between;
-      .post-user-profile-class-1 {
-        @include postsProfile("../assets/img/profile_photos/mishis.jpg");
-        margin-right: 15px;
-      }
-      h2 {
-        font-size: 0.9rem;
-      }
-    }
-    span {
-      font-size: 2rem;
-      margin-top: -10px;
-    }
-  }
   img {
     width: 640px;
+  }
+}
+
+.post-top-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 640px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 3px 3px 0 0;
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  span {
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+}
+
+.post-user-class {
+  justify-content: space-between;
+  .post-user-profile-class-1 {
+    @include postsProfile("../assets/img/profile_photos/mishis.jpg");
+    margin-right: 15px;
   }
 }
 
@@ -230,7 +232,6 @@ main {
   border-left: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
   padding: 10px;
-  font-size: 0.9rem;
 }
 .description-likes-class {
   margin-bottom: 10px;
@@ -240,7 +241,6 @@ main {
   margin-bottom: 5px;
   h3 {
     font-weight: 600;
-    font-size: 0.9rem;
     display: inline-block;
   }
 }
@@ -250,7 +250,6 @@ main {
   }
   h3 {
     font-weight: 600;
-    font-size: 0.9rem;
     display: inline-block;
   }
   p {
@@ -258,7 +257,6 @@ main {
   }
 }
 .description-hour-class {
-  font-size: 0.7rem;
   color: gray;
   margin: 10px 0;
 }
@@ -280,7 +278,6 @@ main {
 
 .add-comment-class {
   color: gray;
-  font-size: 0.9rem;
   position: relative;
   input {
     position: absolute;
@@ -312,7 +309,6 @@ aside {
 }
 
 .aside-name-class {
-  font-size: 0.9rem;
   p:first-child {
     font-weight: 600;
     margin-bottom: 3px;
@@ -325,7 +321,6 @@ aside {
 .blue-style {
   color: #0095f6;
   font-weight: 600;
-  font-size: 0.7rem;
 }
 
 .suggestions-title-class {
@@ -352,28 +347,22 @@ aside {
 }
 
 .suggestion-class:nth-child(2) .suggestion-profile-class {
-  @include postsProfileBig("../assets/img/profile_photos/assembler.jpg", 32px);
+  @include postsProfile("../assets/img/profile_photos/assembler.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(3) .suggestion-profile-class {
-  @include postsProfileBig("../assets/img/profile_photos/scorpio.jpg", 32px);
+  @include postsProfile("../assets/img/profile_photos/scorpio.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(4) .suggestion-profile-class {
-  @include postsProfileBig(
-    "../assets/img/profile_photos/beer_helping.jpg",
-    32px
-  );
+  @include postsProfile("../assets/img/profile_photos/beer_helping.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(5) .suggestion-profile-class {
-  @include postsProfileBig(
-    "../assets/img/profile_photos/shadow_bone.jpg",
-    32px
-  );
+  @include postsProfile("../assets/img/profile_photos/shadow_bone.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(6) .suggestion-profile-class {
-  @include postsProfileBig("../assets/img/profile_photos/cthulhu.jpg", 32px);
+  @include postsProfile("../assets/img/profile_photos/cthulhu.jpg");
   margin-right: 10px;
 }

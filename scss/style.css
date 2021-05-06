@@ -15,6 +15,10 @@
   cursor: pointer;
 }
 
+.s9 {
+  font-size: 0.9rem;
+}
+
 .s8 {
   font-size: 0.8rem;
 }
@@ -109,7 +113,6 @@ main {
 }
 
 .story-name-class {
-  font-size: 0.7rem;
   font-weight: 200;
   margin-top: 5px;
   width: 62px;
@@ -210,7 +213,11 @@ main {
   flex-direction: column;
   margin: 25px 0;
 }
-.article-post-class .post-top-class {
+.article-post-class img {
+  width: 640px;
+}
+
+.post-top-class {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -222,10 +229,15 @@ main {
   border-left: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
 }
-.article-post-class .post-top-class .post-user-class {
+.post-top-class span {
+  font-size: 2rem;
+  margin-top: -10px;
+}
+
+.post-user-class {
   justify-content: space-between;
 }
-.article-post-class .post-top-class .post-user-class .post-user-profile-class-1 {
+.post-user-class .post-user-profile-class-1 {
   height: 32px;
   width: 32px;
   border-radius: 25px;
@@ -234,16 +246,6 @@ main {
   background-size: cover;
   display: inline-block;
   margin-right: 15px;
-}
-.article-post-class .post-top-class .post-user-class h2 {
-  font-size: 0.9rem;
-}
-.article-post-class .post-top-class span {
-  font-size: 2rem;
-  margin-top: -10px;
-}
-.article-post-class img {
-  width: 640px;
 }
 
 .description-icons-class {
@@ -264,7 +266,6 @@ main {
   border-left: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
   padding: 10px;
-  font-size: 0.9rem;
 }
 
 .description-likes-class {
@@ -277,7 +278,6 @@ main {
 }
 .description-text-class h3 {
   font-weight: 600;
-  font-size: 0.9rem;
   display: inline-block;
 }
 
@@ -286,7 +286,6 @@ main {
 }
 .description-comments-class h3 {
   font-weight: 600;
-  font-size: 0.9rem;
   display: inline-block;
 }
 .description-comments-class p {
@@ -294,7 +293,6 @@ main {
 }
 
 .description-hour-class {
-  font-size: 0.7rem;
   color: gray;
   margin: 10px 0;
 }
@@ -316,7 +314,6 @@ main {
 
 .add-comment-class {
   color: gray;
-  font-size: 0.9rem;
   position: relative;
 }
 .add-comment-class input {
@@ -351,9 +348,6 @@ aside {
   margin-right: 20px;
 }
 
-.aside-name-class {
-  font-size: 0.9rem;
-}
 .aside-name-class p:first-child {
   font-weight: 600;
   margin-bottom: 3px;
@@ -365,7 +359,6 @@ aside {
 .blue-style {
   color: #0095f6;
   font-weight: 600;
-  font-size: 0.7rem;
 }
 
 .suggestions-title-class {
@@ -394,7 +387,7 @@ aside {
 .suggestion-class:nth-child(2) .suggestion-profile-class {
   height: 32px;
   width: 32px;
-  border-radius: 50%;
+  border-radius: 25px;
   background-image: url("../assets/img/profile_photos/assembler.jpg");
   background-position: center;
   background-size: cover;
@@ -405,7 +398,7 @@ aside {
 .suggestion-class:nth-child(3) .suggestion-profile-class {
   height: 32px;
   width: 32px;
-  border-radius: 50%;
+  border-radius: 25px;
   background-image: url("../assets/img/profile_photos/scorpio.jpg");
   background-position: center;
   background-size: cover;
@@ -416,7 +409,7 @@ aside {
 .suggestion-class:nth-child(4) .suggestion-profile-class {
   height: 32px;
   width: 32px;
-  border-radius: 50%;
+  border-radius: 25px;
   background-image: url("../assets/img/profile_photos/beer_helping.jpg");
   background-position: center;
   background-size: cover;
@@ -427,7 +420,7 @@ aside {
 .suggestion-class:nth-child(5) .suggestion-profile-class {
   height: 32px;
   width: 32px;
-  border-radius: 50%;
+  border-radius: 25px;
   background-image: url("../assets/img/profile_photos/shadow_bone.jpg");
   background-position: center;
   background-size: cover;
@@ -438,7 +431,7 @@ aside {
 .suggestion-class:nth-child(6) .suggestion-profile-class {
   height: 32px;
   width: 32px;
-  border-radius: 50%;
+  border-radius: 25px;
   background-image: url("../assets/img/profile_photos/cthulhu.jpg");
   background-position: center;
   background-size: cover;
