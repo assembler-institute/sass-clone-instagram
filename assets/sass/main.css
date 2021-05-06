@@ -247,6 +247,12 @@ main {
   justify-content: flex-end;
   align-items: flex-start;
 }
+.mainLogin .leftContainer .carouselContainer {
+  z-index: 11;
+}
+.mainLogin .leftContainer .leftImage {
+  z-index: 10;
+}
 .mainLogin .rightContainer {
   width: 50%;
   height: 800px;

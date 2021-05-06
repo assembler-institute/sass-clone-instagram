@@ -1,1 +1,11 @@
 @use "../../../../../helpers/variables" as *;
+
+
+.carouselContainer{
+    position: absolute;
+    z-index: 20;
+    width: 200px;
+    .carouselSlide{
+
+    }
+}
