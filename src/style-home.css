@@ -1,0 +1,334 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.all-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.border {
+  border: 1px solid #dbdbdb;
+}
+
+.border-b {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.border-radius {
+  border-radius: 3px;
+}
+
+.border-circle {
+  border-radius: 100%;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-11 {
+  font-size: 11px;
+}
+
+.f-10 {
+  font-size: 10px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.f-primary {
+  color: #262626;
+}
+
+.f-secundary {
+  color: #8e8e8e;
+}
+
+.f-primary-link {
+  color: #0095f6;
+}
+
+.f-footer {
+  color: #c7c7c7;
+}
+
+/* Background colors classes */
+.main-bg {
+  background-color: #fafafa;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+/* Cursor pointer class */
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+/* Variables used in this scss */
+.linear-gradient-post, .linear-gradient-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  border-radius: 100%;
+}
+
+.space-white-post, .space-white-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+/* Unique styles properties of nav */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 53px;
+}
+
+.container-nav {
+  padding: 0 20px 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 935px;
+  height: 54px;
+}
+
+.logo-container {
+  width: 360px;
+}
+
+.instagram-logo {
+  margin-top: 11px;
+  width: 103px;
+  height: 29px;
+}
+
+.search-box {
+  width: 213px;
+  height: 26px;
+}
+
+.search-icon {
+  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png);
+  background-size: 440px 411px;
+  background-position: -428px -241px;
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+  margin-right: 6px;
+}
+
+.search-text {
+  width: 39px;
+  height: 18px;
+}
+
+.nav-options-container {
+  width: 360px;
+}
+
+.options-box-nav {
+  width: 198px;
+  height: 22px;
+  margin-left: 24px;
+}
+
+/* Unique styles properties of main */
+.main-section {
+  width: 935px;
+  margin-top: 84px;
+}
+
+/* Unique styles properties of left-main side */
+.left-main {
+  width: 614px;
+}
+
+/* Unique styles properties of histories section */
+.histories {
+  height: 116px;
+  padding-left: 13px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.profile-history {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.linear-gradient-history {
+  width: 66px;
+  height: 66px;
+}
+
+.space-white-history {
+  width: 62px;
+  height: 62px;
+}
+
+.profile-picture-history {
+  width: 56px;
+  height: 56px;
+}
+
+.profile-user-history {
+  margin-top: 3px;
+}
+
+/* Unique styles properties of post section */
+.article {
+  margin-bottom: 55px;
+}
+
+.article-data-profile {
+  height: 60px;
+  padding-left: 12px;
+  border-bottom: 1px solid #efefef;
+}
+
+.linear-gradient-post {
+  width: 38px;
+  height: 38px;
+  margin-right: 12px;
+}
+
+.space-white-post {
+  width: 34px;
+  height: 34px;
+}
+
+.profile-picture-post {
+  width: 30px;
+  height: 30px;
+}
+
+.right-header-post {
+  width: 535px;
+}
+
+.image-container-post {
+  background-color: orange;
+  height: 450px;
+}
+
+.options-and-comments {
+  padding: 12px 13px 10px 15px;
+}
+
+.options-post {
+  margin-right: 12px;
+}
+
+.number-likes-post, .post-description, .view-all-comments, .post-comment-container, .time-before-publish {
+  margin-top: 5px;
+}
+
+.userp-description {
+  margin-left: 5px;
+}
+
+.footer-post {
+  padding: 3px 20px 0px 12px;
+  height: 56px;
+}
+
+.input-comment {
+  margin-left: 15px;
+}
+
+/* Unique styles properties of right main */
+.right-main {
+  position: fixed;
+  top: 106px;
+  left: 63.5%;
+  width: 297px;
+}
+
+.profile-picture-suggest {
+  width: 66px;
+  height: 66px;
+  margin-right: 15px;
+}
+
+.header-suggestions {
+  margin-top: 23px;
+}
+
+.users-suggested {
+  margin-top: 7px;
+}
+
+.each-user-suggested {
+  height: 48px;
+}
+
+.profile-picture-each-suggest {
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.footer-links-suggestions {
+  flex-wrap: wrap;
+  margin-top: 25px;
+  height: 36px;
+}
+
+.margin-link {
+  margin-right: 3px;
+}
+
+.from-facebook {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=style-home.css.map */
