@@ -58,8 +58,7 @@ Once you start tinkering with Sass, it will take your preprocessed Sass file and
 - The developer must have enough time to learn new features present in this preprocessor before using it.
 - Using Sass may cause losing benefits of browser's built-in element inspector.
 - Code has to be compiled.
-
-## Difficult Troubleshooting.
+- Difficult Troubleshooting.
 
 ## What is a SASS Variable? Explain why are useful
 
@@ -70,11 +69,13 @@ Think of variables as a way to store information that you want to reuse througho
 <p align="left">
 A variable declaration looks a lot like a property declaration: it’s written <variable>: <expression>. Unlike a property, which can only be declared in a style rule or at-rule, variables can be declared anywhere you want. To use a variable, just include it in a value.</p>
 
+```
 $base-color: #c6538c;
 $border-dark: rgba($base-color, 0.88);
 .alert {
 border: 1px solid $border-dark;
 }
+```
 
 ## What is a mixin? Why is it important? Give an example
 
