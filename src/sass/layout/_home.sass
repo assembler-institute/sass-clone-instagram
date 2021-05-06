@@ -1,1 +1,30 @@
-/*@use "../components/componentsIndex" as comp
+@use "../components/componentsIndex" as comp
+@use "../abstracts/mixins" as mix
+
+
+
+#navContainer
+    display: flex
+    justify-content: center
+    @include mix.size(100%,54px)
+    border-bottom: 1px solid  #ececec
+
+#iconsGlobalContainer
+    padding-top: 15px
+    padding-left: 24px
+    @include mix.size(360px,22px)
+
+#iconsContainer
+    display: flex
+    justify-content: flex-end
+    @include mix.size(360px,36px)
+
+
+
+
+
+
+
+
+
+

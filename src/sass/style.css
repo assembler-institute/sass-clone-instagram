@@ -1,2 +1,52 @@
-@use "./layout/layoutIndex" {}
+#logo {
+  margin-left: 20px;
+  padding-top: 15px;
+  width: 360px;
+  height: 36px;
+}
+
+#searchPeopleInput {
+  margin-top: 15px;
+  padding: 7px;
+  width: 215px;
+  height: 28px;
+  background: #f5f5f5;
+  border: 1px solid #ececec;
+}
+
+.navIcon {
+  margin-left: 22px;
+  width: 22px;
+  height: 22px;
+}
+
+#profileIconImg {
+  width: 22px;
+  height: 22px;
+  border: 1px transparent;
+  border-radius: 11px;
+}
+
+#navContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #ececec;
+}
+
+#iconsGlobalContainer {
+  padding-top: 15px;
+  padding-left: 24px;
+  width: 360px;
+  height: 22px;
+}
+
+#iconsContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 360px;
+  height: 36px;
+}
+
 /*# sourceMappingURL=style.css.map */
