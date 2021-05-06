@@ -1,0 +1,52 @@
+@use "../1-base/elements" as e;
+@use "../1-base/colors" as c;
+/* SIDEBAR -------------------------------------------------------------- */
+.sidebar {
+  @include e.flexCenter();
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 320px;
+  min-width: 300px;
+  height: 500px;
+  background-color: c.$instagramBackground;
+  margin: 20px;
+
+  .myProfileBox {
+    @include e.flexCenter();
+    height: 70px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    padding-left: 16px;
+
+    .sidebarPic {
+      img {
+        @include e.circleImg(56px);
+        margin-right: 20px;
+      }
+    }
+  }
+  .suggestionBox {
+    height: 325px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .captionBox {
+    height: 106px;
+    width: 100%;
+    line-height: 13px;
+  }
+}
+.suggestions-header {
+  margin-bottom: 8px;
+  padding: 0px 16px;
+}
+
+.suggestion {
+  padding: 8px 16px;
+  img {
+    @include e.circleImg(32px);
+    margin-right: 12px;
+  }
+}

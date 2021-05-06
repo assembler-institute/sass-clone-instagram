@@ -1,0 +1,72 @@
+/* NAVBAR -------------------------------------------------------------- */
+@use "../1-base/elements" as e;
+@use "../1-base/colors" as c;
+nav {
+  @include e.flexCenter;
+  //$lateralPadding: 40px;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 974px;
+  color: c.$instagramBlue;
+
+  a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  padding-right: 20px;
+}
+
+.nav-container {
+  background-color: white;
+  border-bottom: 1px c.$borderColor solid;
+  height: 54px;
+  position: sticky;
+  top: 0px;
+  justify-content: center;
+}
+
+.main-logo {
+  height: 29px;
+  width: 103px;
+}
+
+.nav-search {
+  input {
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background-color: c.$instagramBackground;
+    border: 1px solid c.$borderColor;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    width: 200px;
+    ::-webkit-input-placeholder {
+      text-align: center;
+    }
+    :-moz-placeholder {
+      /* Firefox 18- */
+      text-align: center;
+    }
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      text-align: center;
+    }
+    :-ms-input-placeholder {
+      text-align: center;
+    }
+  }
+}
+
+.nav-icons {
+  svg {
+    margin-left: 22px;
+    cursor: pointer;
+  }
+  img {
+    @include e.circleImg(22px);
+    margin-left: 22px;
+  }
+}

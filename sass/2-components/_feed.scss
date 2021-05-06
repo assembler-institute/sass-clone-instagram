@@ -1,0 +1,131 @@
+@use "../1-base/elements" as e;
+@use "../1-base/colors" as c;
+/* STORIES -------------------------------------------------------------- */
+.stories-container {
+  @include e.feedElements;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  height: 84px;
+  width: 612px;
+  box-sizing: content-box;
+}
+.horizontal-carrousel {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  overflow: hidden;
+  width: auto;
+}
+
+.story {
+  width: 80px;
+  cursor: pointer;
+
+  p {
+    font-size: 12px;
+    color: c.$instagramBlack;
+    text-align: center;
+  }
+}
+.story-round-gradient {
+  @include e.roundGradient(66px);
+}
+
+/* POSTS -------------------------------------------------------------- */
+.posts-container {
+  width: 612px;
+}
+.post {
+  width: 612px;
+  margin-bottom: 60px;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+.post-header {
+  padding: 16px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include e.feedElements;
+}
+.post-round-gradient {
+  @include e.roundGradient(42px);
+  margin-right: 10px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.post-footer {
+  @include e.feedElements;
+  display: flex;
+  flex-direction: column;
+  > * {
+    padding: 0px 16px;
+    line-height: 18px;
+  }
+  * {
+    font-size: 14px;
+  }
+}
+.post-buttons-bar {
+  width: 100%;
+  height: 44px;
+  padding: 0px 16px;
+  padding-top: 4px;
+  svg {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+  }
+  :last-child {
+    margin-left: 416px;
+    margin-right: -10px;
+  }
+}
+
+.post-likes {
+  font-size: 14px;
+  font-weight: bolder;
+  color: c.$instagramBlack;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 600;
+  color: c.$instagramBlack;
+}
+
+.post-time {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #8e8e8e;
+}
+
+.comment-bar {
+  border-top: rgb(239, 239, 239) 1px solid;
+  padding: 0px 16px;
+  margin-top: 4px;
+  align-items: center;
+  height: 55px;
+}
+
+.inp-noborder-gray {
+  border: none;
+  color: c.$instagramBlack;
+  outline: none;
+}
+
+.emoji-container {
+  padding: 8px 16px 8px 0px;
+}

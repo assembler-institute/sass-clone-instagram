@@ -1,0 +1,202 @@
+@use "../1-base/elements" as e;
+@use "../1-base/colors" as c;
+//Login Page
+main {
+  background: c.$instagramBackground;
+  @include e.flexCenter();
+  //height: 85vh;
+  width: 100%;
+}
+
+.parentMain {
+  display: flex;
+  background-color: c.$instagramBackground;
+  height: 722px;
+  width: 800px;
+  max-width: 935;
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+.parentLeft {
+  position: relative;
+  @include e.flexCenter();
+  @include e.parentbyMiddle();
+}
+.animationBox {
+  position: absolute;
+  right: 34px;
+  bottom: 130px;
+  height: 427px;
+  width: 240px;
+}
+.imageStyle {
+  background-image: url(/assets/img/mobilImg1.jpg);
+  height: 429px;
+  width: 240px;
+
+  animation-name: instagramPictures;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@keyframes instagramPictures {
+  0%,
+  30%,
+  100% {
+    background-image: url(/assets/img/mobilImg1.jpg);
+  }
+  33%,
+  63% {
+    background-image: url(/assets/img/instagramImg2.jpg);
+  }
+  66%,
+  96% {
+    background-image: url(/assets/img/mobilimg3.jpg);
+  }
+}
+.parentRight {
+  @include e.flexCenter();
+  @include e.parentbyMiddle();
+  background-color: c.$instagramBackground;
+}
+.loginBox {
+  @include e.flexCenter();
+  width: 350px;
+  height: 380px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  background-color: #ffff;
+  border: 1px solid c.$borderColor;
+}
+.instagramLogoLogin {
+  width: 175px;
+  height: 51px;
+  margin: 22px 86.5px 12px;
+}
+.formBox {
+  @include e.flexCenter();
+  width: 348px;
+  height: 213px;
+  margin: 24px 0 0;
+}
+input {
+  @include e.inputBoxes();
+  background-color: c.$instagramBackground;
+  font-size: 12px;
+  &:focus {
+    border: 1px darkgray solid;
+    color: black;
+  }
+}
+.loginBtn {
+  @include e.inputBoxes();
+  margin: 8px 40px 20px;
+  background-color: #b2dffc;
+  color: #ffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.breakPoint {
+  @include e.flexCenterRow();
+}
+.divLine {
+  @include e.divLines();
+  background-color: c.$borderColor;
+}
+.orBox {
+  font-size: 13px;
+  margin: 0 18px;
+  color: #958e95;
+}
+.facebookLogin {
+  @include e.flexCenterRow();
+  font-size: 14px;
+  font-weight: bold;
+  width: 268px;
+  height: 20px;
+  margin-top: 20px;
+  color: #385185;
+  cursor: pointer;
+}
+.facebookPng {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+.forgotPassword {
+  @include e.flexCenter();
+  color: #00376b;
+  width: 348px;
+  height: 14px;
+  margin-top: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.signupBox {
+  font-size: 12px;
+  @include e.flexCenterRow();
+  width: 350px;
+  height: 63px;
+  margin: 0 0 10px 0;
+  background-color: #ffff;
+  border: 1px solid c.$borderColor;
+}
+.getAppBox {
+  width: 350px;
+  height: 102px;
+  margin-top: 10px;
+  background-color: c.$instagramBackground;
+}
+.textBox {
+  @include e.flexCenter();
+  margin: 10px 20px;
+  font-size: 14px;
+}
+.signuptext {
+  color: #5ac6fb;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.appStoreIcons {
+  @include e.flexCenterRow();
+}
+.appStoreImg,
+.googlePlayImg {
+  @include e.playStoreImg();
+}
+.loginFooter {
+  @include e.flexCenter();
+  width: 100%;
+  height: 99px;
+  background: c.$instagramBackground;
+  margin-bottom: 40px;
+}
+.aboutParent {
+  @include e.flexCenter();
+  font-size: 12px;
+  word-spacing: 5px;
+  color: #8e8e8e;
+}
+.firstLine,
+.secondLine {
+  @include e.lineMargin();
+}
+.thirdLine {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 800px) {
+  .parentMain {
+    @include e.flexCenter;
+  }
+  .parentLeft {
+    display: none;
+  }
+  .aboutParent {
+    @include e.flexCenter;
+  }
+}

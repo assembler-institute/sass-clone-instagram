@@ -1,0 +1,32 @@
+@use "colors" as c;
+.gray-text-s {
+  color: #c7c7c7;
+  font-size: 11px;
+}
+.gray-text-m {
+  color: #8e8e8e;
+  font-size: 14px;
+}
+.gray-text-l {
+  color: #8e8e8e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.black-text-s {
+  color: c.$instagramBlack;
+  font-size: 12px !important;
+}
+.blue {
+  color: c.$instagramBlue;
+}
+
+.align-right {
+  margin-left: auto;
+}
+.margin-bottom {
+  margin-bottom: 8px;
+}
+.full-width {
+  width: 100%;
+}
