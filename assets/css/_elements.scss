@@ -1,4 +1,4 @@
-@mixin flexCenter() {
+@mixin flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,4 +34,22 @@
 }
 @mixin lineMargin {
   margin-bottom: 5px;
+}
+@mixin circleImg($picSize) {
+  height: $picSize;
+  width: $picSize;
+  border-radius: $picSize;
+  overflow: hidden;
+}
+@mixin roundGradient($extSize) {
+  @include flexCenter;
+  @include circleImg($extSize);
+  border: 1px solid white;
+  background: linear-gradient(55deg, #faa458, #c52d90);
+  box-sizing: border-box;
+  img {
+    @include circleImg($extSize - 10px);
+    border: white 2px solid;
+    box-sizing: content-box;
+  }
 }
