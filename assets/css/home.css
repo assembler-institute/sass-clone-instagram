@@ -379,7 +379,6 @@ html {
   height: 300px;
   margin-top: 25px;
   margin-left: 15px;
-  border: 1px solid grey;
 }
 .right-section .suggestions .sugg {
   width: 325px;
@@ -394,10 +393,11 @@ html {
   color: grey;
 }
 .right-section .suggestions .sugg .see {
-  width: 46px;
+  width: 80px;
   height: 20px;
   margin-right: 15px;
-  font-size: 13px;
+  margin-top: 5px;
+  font-size: 10px;
   text-align: center;
 }
 .right-section .suggestions .user-suggestion {
@@ -414,7 +414,6 @@ html {
 .right-section .suggestions .user-suggestion .user .image-cont {
   width: 42px;
   height: 42px;
-  background-color: hotpink;
 }
 .right-section .suggestions .user-suggestion .user .image-cont .user-image {
   width: 32px;
@@ -422,24 +421,52 @@ html {
   margin-top: 5px;
   margin-left: 5px;
   border-radius: 16px;
-  background-color: white;
+  background-color: black;
 }
 .right-section .suggestions .user-suggestion .user .user-info {
   width: 202px;
   height: 42px;
-  background-color: indigo;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+.right-section .suggestions .user-suggestion .user .user-info .info-sugg {
+  justify-content: center;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+.right-section .suggestions .user-suggestion .user .user-info .info2-sugg {
+  justify-content: center;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
 }
 .right-section .suggestions .user-suggestion .user .follow {
-  width: 35px;
+  width: 42px;
   height: 42px;
-  background-color: lightcoral;
+}
+.right-section .suggestions .user-suggestion .user .follow p {
+  margin-top: 48%;
+  margin-left: 5px;
+  justify-content: center;
+  font-size: 12px;
+  color: #008cff;
 }
 .right-section .information {
   width: 300px;
   height: 120px;
   margin-top: 25px;
-  margin-left: 15px;
-  border: 1px solid grey;
+  margin-left: 25px;
+  text-align: justify;
+  color: grey;
+  font-size: 12px;
+  text-decoration: none;
+}
+.right-section .information .fromFaceboock {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=home.css.map */
