@@ -1,0 +1,17 @@
+@use "../common" as common;
+
+/* Background colors classes */
+
+.main-bg {
+    background-color: common.$main-bg-color;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+/* Cursor pointer class */
+
+.pointer {
+    cursor: pointer;
+}
