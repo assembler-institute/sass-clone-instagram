@@ -503,6 +503,10 @@ input.main__posts--comentsInput {
   font-weight: bold;
 }
 
+.change__user.otherUser {
+  margin-left: 10px;
+}
+
 .user__name {
   width: 100%;
   white-space: nowrap;
@@ -547,7 +551,7 @@ div.change__user img {
 }
 
 div.sugerencias {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
