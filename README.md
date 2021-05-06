@@ -1,17 +1,26 @@
-<h1 align="center">Hi 👋, I'm Einar</h1>
-<h3 align="center">A passionate fullstack developer student from Spain.</h3>
+<h1 align="center">Hi 👋, We are Jordi and Einar</h1>
+<h3 align="center">We are passionate fullstack developers students from Spain.</h3>
 
-- 🔭 I’m currently working on **SASS - Instagram Clone**
+- 🔭 We currently working on **SASS - Instagram Clone**
 
-- 🌱 I’m currently learning **SASS**
+- 🌱 We are currently learning **SASS**
 
-- 👨‍💻 All of my projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
+- 👨‍💻 All of Einar projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
+- - 👨‍💻 All of Jordi projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
 
-- 📫 How to reach me **grelsare13@gmail.com**
+- 📫 How to reach Einar **grelsare13@gmail.com**
+- - 📫 How to reach Jordi **grelsare13@gmail.com**
 
-- ⚡ Fun fact **Amante de la tecnología, bateriste en mis ratos libres y LTBIQ+ activiste.**
+- ⚡ Fun fact about Einar **Amante de la tecnología, bateriste en mis ratos libres y LTBIQ+ activiste.**
+- - ⚡ Fun fact about Jordi **Amante de las fotos de gatitos.**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with Einar:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/grecia-sanchez1994/" height="30" width="40" /></a>
+</p>
+
+
+<h3 align="left">Connect with Jordi:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/grecia-sanchez1994/" height="30" width="40" /></a>
 </p>
