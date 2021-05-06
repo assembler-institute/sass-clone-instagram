@@ -3,7 +3,6 @@
 @use "../1-base/colors" as c;
 nav {
   @include e.flexCenter;
-  //$lateralPadding: 40px;
   justify-content: space-between;
   flex-direction: row;
   width: 974px;
