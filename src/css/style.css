@@ -324,7 +324,6 @@ header > div > div > i {
 main.main__main {
   width: 100%;
   height: calc(100vh - 80px);
-  background-color: red;
   display: flex;
   flex-direction: row;
 }
@@ -655,7 +654,7 @@ div.sugerencias_users button {
   border: none;
   background-color: white;
   cursor: pointer;
-  margin-left: 4rem;
+  margin-left: 0.5rem;
   color: #0095F6;
   font-weight: bold;
 }
@@ -670,6 +669,15 @@ div.sugerencias_users button {
   margin-top: 2rem;
 }
 
-/*aa*/
+@media (max-width: 1000px) {
+  section.recommendations {
+    display: none;
+  }
+
+  section.stories {
+    width: 80%;
+    margin-left: 6%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
