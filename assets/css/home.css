@@ -150,8 +150,27 @@ body {
   background-color: #fafafa;
 }
 
-.navBar {
+.img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-top: 1.2px;
+}
+
+.imgsugg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+body {
   background-color: #fafafa;
+}
+
+.navBar {
+  background-color: #ffffff;
   height: 54px;
   width: 100%;
   display: flex;
@@ -162,8 +181,12 @@ body {
 }
 
 .navContent {
+  width: 975px;
   display: flex;
-  padding-top: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
 }
 .navContent .logo {
@@ -172,24 +195,23 @@ body {
   background-image: url("../img/logoInsta.PNG");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-right: 15vw;
 }
 .navContent .search {
-  width: 215px;
   height: 28px;
-  padding: 9px;
+  width: 215px;
+  border-radius: 3px;
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+  border: solid 1px rgba(var(--b6a, 219, 219, 219), 1);
+  padding-left: 75px;
+  font-size: 14px;
+  padding-top: 7px;
   box-sizing: border-box;
-}
-.navContent ::placeholder {
-  color: #a0a0a0;
-  text-align: center;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  color: #afaeae;
 }
 .navContent .icons {
-  width: 225px;
+  width: 222px;
   height: 25px;
-  margin-left: 9vw;
+  box-sizing: border-box;
   display: flex;
 }
 .navContent .icons .icon {
@@ -202,8 +224,10 @@ body {
   width: 22px;
   height: 22px;
   border: 1px solid grey;
-  border-radius: 12px;
+  border-radius: 11px;
   margin: 0px 0px 0px 24px;
+  box-sizing: border-box;
+  background-color: white;
 }
 
 .container {
@@ -219,10 +243,14 @@ body {
   height: auto;
 }
 .left-section .stories {
+  background-color: #ffffff;
   width: 95%;
   height: 100px;
   margin-left: 2.5%;
   display: flex;
+  padding-top: 3px;
+  padding-left: 12px;
+  box-sizing: border-box;
   border: 1px solid #dbdbdb;
 }
 .left-section .stories .story {
@@ -237,8 +265,8 @@ body {
   text-align: center;
 }
 .left-section .stories .story .story-border {
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   border-radius: 28px;
   background: #f09433;
   justify-content: center;
@@ -250,10 +278,11 @@ body {
 .left-section .stories .story .story-image {
   width: 50px;
   height: 50px;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: 2px;
+  margin-top: 2px;
   border-radius: 25px;
-  background: #fdfdfd;
+  background: #fffdfd;
+  overflow: hidden;
 }
 .left-section .stories .story-user {
   width: 66px;
@@ -293,8 +322,8 @@ body {
   text-align: center;
 }
 .left-section .posts .postUser .story .story-border {
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   border-radius: 28px;
   background: #f09433;
   justify-content: center;
@@ -306,10 +335,11 @@ body {
 .left-section .posts .postUser .story .story-image {
   width: 50px;
   height: 50px;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: 2px;
+  margin-top: 2px;
   border-radius: 25px;
-  background: #fdfdfd;
+  background: #fffdfd;
+  overflow: hidden;
 }
 .left-section .posts .post {
   width: 100%;
@@ -347,8 +377,8 @@ body {
   text-align: center;
 }
 .right-section .my-user-suggestions .story .story-border {
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   border-radius: 28px;
   background: #f09433;
   justify-content: center;
@@ -360,10 +390,11 @@ body {
 .right-section .my-user-suggestions .story .story-image {
   width: 50px;
   height: 50px;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: 2px;
+  margin-top: 2px;
   border-radius: 25px;
-  background: #fdfdfd;
+  background: #fffdfd;
+  overflow: hidden;
 }
 .right-section .my-user-suggestions .my-user-info {
   width: 186px;
@@ -377,7 +408,7 @@ body {
   margin-bottom: 3px;
 }
 .right-section .my-user-suggestions .my-user-info .info2 {
-  color: grey;
+  color: #b8b8b8;
 }
 .right-section .my-user-suggestions .change-user {
   width: 50px;
@@ -393,7 +424,6 @@ body {
   height: 300px;
   margin-top: 25px;
   margin-left: 15px;
-  border: 1px solid #dbdbdb;
 }
 .right-section .suggestions .sugg {
   width: 325px;
@@ -405,13 +435,16 @@ body {
   height: 20px;
   margin-left: 15px;
   margin-right: 5px;
-  color: grey;
+  color: #a7a7a7;
+  font-weight: bold;
+  font-size: 11px;
 }
 .right-section .suggestions .sugg .see {
-  width: 46px;
+  width: 80px;
   height: 20px;
   margin-right: 15px;
-  font-size: 13px;
+  margin-top: 5px;
+  font-size: 10px;
   text-align: center;
 }
 .right-section .suggestions .user-suggestion {
@@ -428,7 +461,6 @@ body {
 .right-section .suggestions .user-suggestion .user .image-cont {
   width: 42px;
   height: 42px;
-  background-color: hotpink;
 }
 .right-section .suggestions .user-suggestion .user .image-cont .user-image {
   width: 32px;
@@ -436,24 +468,53 @@ body {
   margin-top: 5px;
   margin-left: 5px;
   border-radius: 16px;
-  background-color: white;
+  background-color: black;
 }
 .right-section .suggestions .user-suggestion .user .user-info {
   width: 202px;
   height: 42px;
-  background-color: indigo;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+.right-section .suggestions .user-suggestion .user .user-info .info-sugg {
+  justify-content: center;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+.right-section .suggestions .user-suggestion .user .user-info .info2-sugg {
+  justify-content: center;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  color: #b8b8b8;
+  font-size: 11px;
 }
 .right-section .suggestions .user-suggestion .user .follow {
-  width: 35px;
+  width: 42px;
   height: 42px;
-  background-color: lightcoral;
+}
+.right-section .suggestions .user-suggestion .user .follow p {
+  margin-top: 20%;
+  margin-left: 5px;
+  justify-content: center;
+  font-size: 12px;
+  color: #008cff;
 }
 .right-section .information {
   width: 300px;
   height: 120px;
   margin-top: 25px;
-  margin-left: 15px;
-  border: 1px solid #dbdbdb;
+  margin-left: 25px;
+  text-align: justify;
+  color: #b8b8b8;
+  font-size: 12px;
+  text-decoration: none;
+}
+.right-section .information .fromFaceboock {
+  margin-top: 15px;
 }
 
 html {
