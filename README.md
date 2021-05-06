@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, We are Jordi and Einar</h1>
 <h3 align="center">We are passionate fullstack developers students from Spain.</h3>
 
-- 🔭 We currently working on **SASS - Instagram Clone**
+- 🔭 We are currently working on **SASS - Instagram Clone**
 
 - 🌱 We are currently learning **SASS**
 
