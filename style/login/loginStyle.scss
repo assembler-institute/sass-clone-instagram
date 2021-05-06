@@ -1,4 +1,8 @@
-@use "loginColor" as *;
+$mainColor: #fafafa;
+$mainBlue: #0095f6;
+$mainGray: #8e8e8e;
+$mainWhite: #fff;
+$mainLightGray: #dbdbdb;
 
 $mainBorder: 1px solid $mainLightGray;
 
@@ -122,7 +126,7 @@ body {
             margin-bottom: 10px;
             .inputsWrapper {
               margin-top: 24px;
-              @include loginFlex(column);
+              @include loginFlex(column, none, none);
               .inputContainer {
                 margin: 0 40px 6px;
                 text-align: center;
@@ -159,7 +163,7 @@ body {
                 }
               }
               .barContainer {
-                @include loginFlex(row);
+                @include loginFlex(row, none, none);
                 margin: 10px 40px 18px;
                 .grayBar {
                   background-color: $mainLightGray;
@@ -234,15 +238,15 @@ body {
       padding: 0 16px;
     }
     .loginFooterBox {
-      @include loginFlex(column);
+      @include loginFlex(column, none, none);
       color: $mainGray;
       font-size: 12px;
       line-height: 14px;
       .loginFooterLists {
-        @include loginFlex(column);
+        @include loginFlex(column, none, none);
         margin-bottom: 12px;
         .loginFooterLine {
-          @include loginFlex(row, center);
+          @include loginFlex(row, center, none);
           @media only screen and (max-width: 856px) {
             flex-wrap: wrap;
           }

@@ -1,22 +1,3 @@
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer, body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 10px 40px 18px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer, body main .loginContainer .loginRightContainer .signUpContainer {
-  border-radius: 1px;
-  margin: 0 0 10px;
-  padding: 10px 0;
-  border: 1px solid #dbdbdb;
-  background-color: #fff;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -47,6 +28,7 @@ body main .loginContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: none;
 }
 
 @media only screen and (max-width: 856px) {
@@ -138,6 +120,14 @@ body main .loginContainer .loginRightContainer {
   }
 }
 
+body main .loginContainer .loginRightContainer .loginFormContainer {
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+
 @media only screen and (max-width: 499px) {
   body main .loginContainer .loginRightContainer .loginFormContainer {
     margin: 0;
@@ -170,6 +160,10 @@ body main .loginContainer .loginRightContainer .loginFormContainer form .inputsW
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  text-align: none;
 }
 
 body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer {
@@ -203,14 +197,14 @@ body main .loginContainer .loginRightContainer .loginFormContainer form .inputsW
 
 body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer .loginButton {
   font-size: 14px;
-  width: 100%;
   font-weight: 900;
+  color: #fff;
+  width: 100%;
   background-color: #0095f6;
   height: 30px;
   border: none;
   border-radius: 4px;
   margin-top: 8px;
-  color: #fff;
   padding: 5px;
 }
 
@@ -220,7 +214,22 @@ body main .loginContainer .loginRightContainer .loginFormContainer form .inputsW
   }
 }
 
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .grayBar {
+body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer, body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  text-align: none;
+  margin: 10px 40px 18px;
+}
+
+body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .grayBar, body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .grayBar {
   background-color: #dbdbdb;
   height: 1px;
   position: relative;
@@ -230,11 +239,11 @@ body main .loginContainer .loginRightContainer .loginFormContainer form .inputsW
   top: 0.45em;
 }
 
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .barText {
+body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .barText, body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .barText {
   margin: 0 18px;
-  color: #8e8e8e;
   font-size: 13px;
   font-weight: 600;
+  color: #8e8e8e;
 }
 
 body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook {
@@ -249,21 +258,26 @@ body main .loginContainer .loginRightContainer .loginFormContainer form .inputsW
 }
 
 body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .loginFacebookText {
-  color: #385185;
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
+  color: #385185;
 }
 
 body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .forgotPassword {
-  color: #00376b;
   font-size: 12px;
+  font-weight: none;
+  color: #00376b;
   text-align: center;
 }
 
 body main .loginContainer .loginRightContainer .signUpContainer {
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
   line-height: 18px;
   text-align: center;
-  border-radius: 1px;
 }
 
 @media only screen and (max-width: 499px) {
@@ -286,7 +300,6 @@ body main .loginContainer .loginRightContainer .signUpContainer p span {
 
 body main .loginContainer .loginRightContainer .appStoreContainer {
   margin: 10px 0;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,6 +307,10 @@ body main .loginContainer .loginRightContainer .appStoreContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  text-align: center;
 }
 
 body main .loginContainer .loginRightContainer .appStoreContainer .appStoreText p {
@@ -328,6 +345,10 @@ body footer .loginFooterBox {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  text-align: none;
   color: #8e8e8e;
   font-size: 12px;
   line-height: 14px;
@@ -341,6 +362,10 @@ body footer .loginFooterBox .loginFooterLists {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  text-align: none;
   margin-bottom: 12px;
 }
 
@@ -355,6 +380,7 @@ body footer .loginFooterBox .loginFooterLists .loginFooterLine {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: none;
 }
 
 @media only screen and (max-width: 856px) {
