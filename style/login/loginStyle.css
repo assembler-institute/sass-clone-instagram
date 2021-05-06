@@ -59,19 +59,19 @@ body main .loginContainer {
   animation-duration: 22s;
 }
 .loginLeftContainer .fadeImages img:nth-of-type(5) {
-  animation-delay: 18s;
+  animation-delay: -22s;
 }
 .loginLeftContainer .fadeImages img:nth-of-type(4) {
-  animation-delay: 14s;
+  animation-delay: -17s;
 }
 .loginLeftContainer .fadeImages img:nth-of-type(3) {
-  animation-delay: 10s;
+  animation-delay: -12s;
 }
 .loginLeftContainer .fadeImages img:nth-of-type(2) {
-  animation-delay: 6s;
+  animation-delay: -6s;
 }
 .loginLeftContainer .fadeImages img:nth-of-type(1) {
-  animation-delay: 2s;
+  animation-delay: -1s;
 }
 
 @keyframes fade {

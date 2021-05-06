@@ -1,8 +1,8 @@
-@forward 'loginHelpers';
-@forward 'loginBase';
-@forward 'loginLeft';
-@forward 'loginRight';
-@forward 'loginFooter';
+@use 'loginHelpers';
+@use 'loginBase';
+@use 'loginLeft';
+@use 'loginRight';
+@use 'loginFooter';
 
 
 
