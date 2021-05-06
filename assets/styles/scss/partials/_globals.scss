@@ -23,16 +23,8 @@ $instaGradient: linear-gradient(
 /* San Francisco Regular */
 @font-face {
   font-family: "SF";
-  src: url("../../../../font/SF-Pro-Text-Regular.otf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* San Francisco Bold */
-@font-face {
-  font-family: "SF";
-  src: url("../../../font/SF-Pro-Text-Bold.otf") format("truetype");
-  font-weight: 800;
+  src: url("../../font/SF-Pro.ttf") format("truetype");
+  font-weight: 1 1000;
   font-style: normal;
 }
 
