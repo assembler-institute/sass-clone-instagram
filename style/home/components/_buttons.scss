@@ -1,0 +1,18 @@
+@import '../base/variables';
+
+.btn {
+  cursor: pointer;
+  margin-right: 15px;
+}
+img {
+  border-radius: 11px;
+}
+
+.space-btn{
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+a, a:visited {
+  text-decoration: none;
+};

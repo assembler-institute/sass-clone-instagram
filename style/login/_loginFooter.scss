@@ -1,0 +1,36 @@
+@use 'loginHelpers' as *;
+
+
+footer {
+    margin: 24px 0 52px 0;
+    @media only screen and (max-width: 856px) {
+      padding: 0 16px;
+    }
+    .loginFooterBox {
+      @include loginFlex(column, none, none);
+      color: $mainGray;
+      font-size: 12px;
+      line-height: 14px;
+      .loginFooterLists {
+        @include loginFlex(column, none, none);
+        margin-bottom: 12px;
+        .loginFooterLine {
+          @include loginFlex(row, center, none);
+          @media only screen and (max-width: 856px) {
+            flex-wrap: wrap;
+          }
+          .loginFooterList {
+            margin: 0 8px 8px;
+            select {
+              border: none;
+              font-size: 12px;
+              width: 62px;
+              color: $mainGray;
+              -webkit-appearance: 1px;
+              background-color: $mainColor;
+            }
+          }
+        }
+      }
+    }
+  }
