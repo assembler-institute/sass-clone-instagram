@@ -61,6 +61,7 @@ main {
   animation-iteration-count: infinite;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 @keyframes instagramPictures {

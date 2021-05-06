@@ -52,11 +52,10 @@ main {
 
   animation-name: instagramPictures;
   animation-duration: 10s;
-  // animation-delay: 2s;
   animation-iteration-count: infinite;
-  //animation-direction: alternate;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 @keyframes instagramPictures {
