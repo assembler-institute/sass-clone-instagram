@@ -6,7 +6,7 @@
 - 🌱 We are currently learning **SASS**
 
 - 👨‍💻 All of Einar projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
-- 👨‍💻 All of Jordi projects are available at [https://www.linkedin.com/in/jordi-arnau-esteban}(https://github.com/jordi-arnau-esteban)
+- 👨‍💻 All of Jordi projects are available at [https://www.linkedin.com/jordi-arnau-esteban}(https://github.com/jordi-arnau-esteban)
 
 - 📫 How to reach Einar **grelsare13@gmail.com**
 - 📫 How to reach Jordi **aejordi@gmail.com**
