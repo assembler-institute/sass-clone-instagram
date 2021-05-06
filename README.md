@@ -1,72 +1,70 @@
-`#sass` `#css` `#html` `#master-in-software-engineering`
+# What is the difference between .scss and .sass syntax
 
-# SASS - Clone Instagram <!-- omit in toc -->
+> La sintaxis de .scss es como la sintaxis de .css, es decir, con {} y ;
+> En cambio en la sintaxis de .sass se omiten dichos signos.
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+# In which cases would we use SCSS? And in which cases would we use SASS?
 
-> Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more
->
-> The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
+> El caso más claro es según el estilo de programación usado cuando el documento va a ser compartido con otros equipos. Fanes de la sintaxis de .css usaran .scss, en cambio, si el equipo prefiere un código más limpio y claro, utilizaran .sass por sus menos caracteres y líneas.
 
-## Index <!-- omit in toc -->
+# Explain how traditional CSS and Preprocessed CSS workflows are different.
 
-- [Requirements](#requirements)
-- [Repository](#repository)
-- [Technologies used](#technologies-used)
-- [Project delivery](#project-delivery)
-- [Resources](#resources)
+> El workflow puede ser diferente, desde la optimización de archivos mas modulares, un archivo para colores, otro para formularios, etc, hasta que el código debe ser compilado, la existencia de un mayor esfuerzo para solucionar los problemas que puedan surgir.
 
-## Requirements
+# Can we create functions with SASS? If it is true, give an example.
 
-- You must use variables at least once in the project.
-- You must use nesting.
-- You must use inheritance at least once in the project.
-- You cannot use third party libraries for the development of this pill
+> Si, es posible y una de sus ventajas. Ejem: @mixin transform($property) {
+> -webkit-transform: $property;
+> -ms-transform: $property;
+> transform: $property;}
+> .box { @include transform(rotate(30deg)); }
 
-## Repository
+# What is nesting? Is it useful? Give an example of nesting
 
-First of all you must fork this project into your GitHub account.
+> El nesting consiste en anidar diferentes elementos dentro de otros. Ejem: footer{
+> ul,p{
+> @include displayFlex();
+> font-size: .8em;
+> color: rgb(153, 151, 151);
+> list-style: none;
+> line-height: 14px;
+> cursor: pointer;
+> }
 
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
+> }
 
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
+# Difference between @use & @import? Give an example
 
-### Installing
+> El @import permite incluir un archivo en otro. El @use permite incluir un archivo una SOLA VEZ, no importa cuantas veces uses este comando. Ejem:
+> // \_base.scss
+> $font-stack: Helvetica, sans-serif;
+> $primary-color: #333;
+> // styles.scss
+> @use 'base';
 
-In this project you must use the VSCode SASS extension in order to compile SASS into CSS.
+# How can we import other CSS/SASS files in SASS? Give an example
 
-First of all you will need to install the extension:
+> Es necesario unar un modulo namespace. Ejem: @use "src/corners" (url) as c (namespace);
+> .button {
+> @include c.rounded;
 
-- [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+# Explain the concept of inheritance in SASS.
 
-When the extension is installed correctly, having a SASS file open, you must click on "Watch Sass":
+> La herencia, un mecanismo por el cual un selector puede recibir estilos CSS que nos llegan de declaraciones realizadas con anterioridad. Conseguir este objetivo es sencillo gracias a la directiva @extend y las denominadas "placeholder class", que son una construcción de Sass que no tiene representación en el CSS hasta que no la usemos
 
-<img src="https://raw.githubusercontent.com/ritwickdey/vscode-live-sass-compiler/master/images/Screenshot/AnimatedPreview.gif" width="600px">
+# Why use @extend? Give an examples
 
-If you want to change some configuration of "Live SASS Compiler" you can check this official resource:
-
-- [Live SASS Compiler Settings](https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md)
-
-## Technologies used
-
-\* SASS
-
-\* CSS
-
-\* HTML
-
-## Project delivery
-
-To deliver this project you must follow the steps indicated in the document:
-
-- [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
-
-## Resources
-
-- [SASS documentation](https://sass-lang.com/)
-- [W3S SASS](https://www.w3schools.com/sass/)
-- [SASS Guidelines](https://sass-guidelin.es/es/)
-- [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
-- [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+> El uso de @extend le permite compartir un conjunto de propiedades CSS de un selector a otro. Una clase placeholder es un tipo especial de
+> clase que solo imprime cuando es extended, y puede ayudar a mantener su compilado CSS ordenado y limpio. Ejem:
+> %message-shared {
+> border: 1px solid #ccc;
+> padding: 10px;
+> color: grey;
+> }
+> .message {
+> @extend %message-shared;
+> }
+> .success {
+> @extend %message-shared;
+> border-color: green;
+> }
