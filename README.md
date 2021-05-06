@@ -192,9 +192,60 @@ that would be repeated many times.
 
 ## What is nesting? Is it useful? Give an example of nesting
 
+<p align="left">
+Nesting is the capacity of SASS to include some elements inside their
+parents in a graphic way. As HTML children are literally inside their parents,
+you can do the same in SASS or SCSS documents:
+</p>
+
+```
+.other-options-class {
+  color: b.$my_gray_text;
+  margin: 10px 0;
+  h3 {
+    display: inline-block;
+    padding: 0 3px;
+  }
+}
+```
+
 ## Difference between @use & @import? Give an example
 
+<p align="left">
+Both are ways to import one stylesheet into another in SASS, but  "@import" has
+a wider scope than "@use". This means that "@use" will only be loaded once in the
+final CSS, and also that all the elements included in it will only be accessible
+to the file where it has been imported. Besides, "@use" allows you to create private
+data adding "-" or "_" before declaring them in the main folder.
+</p>
+
 ## How can we import other CSS/SASS files in SASS? Give an example
+
+<p align="left">
+There are three methods to import other files in SASS: "@import", "@use" and "@forward".
+</p>
+
+<p align="left">
+"@import" allows you to load all the data of the file into another file, and all this information
+will be shared to all the other files imported in the receiving file.
+</p>
+
+<p align="left">
+"@use", as explained on the las question, is an import method that allows a more restricted scope
+and allows the developer to create private styles and variables.
+</p>
+
+<p align="left">
+Last, "@forward" is the correct way to share data within a the file structure with a wider scope. This
+method allows you to share all the data from an imported file with the receiving file and all the other
+stylesheets which are related to it.
+</p>
+
+```
+@forward "../base/base";
+@use "../base/base" as b;
+@import "../home/home";
+```
 
 ## Explain the concept of inheritance in SASS.
 
