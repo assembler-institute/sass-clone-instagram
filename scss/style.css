@@ -1,0 +1,646 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-content-space-around {
+  justify-content: space-around;
+}
+
+.flex-content-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-content-between {
+  justify-content: space-between;
+}
+
+/* .border-for-building {
+  border: 1px solid rgb(255, 2, 2);
+}
+ */
+.border-for-instagram {
+  border: 1px solid #dbdbdb;
+}
+
+.s9 {
+  font-size: 0.9rem;
+}
+
+.s8 {
+  font-size: 0.8rem;
+}
+
+.s7 {
+  font-size: 0.7rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.home {
+  background-color: #fafafa;
+}
+
+header {
+  height: 54px;
+  padding: 0 20px;
+  border-bottom: 1px solid #dbdbdb;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+header input {
+  background-color: transparent;
+  border: 0px solid #fafafa;
+  width: 90%;
+  position: absolute;
+  outline: none;
+}
+header img {
+  height: 32px;
+  margin-left: 10px;
+}
+
+.nav-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/profile_photos/user_profile.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header-search-class {
+  position: relative;
+  width: 215px;
+  min-width: 125px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+}
+.header-search-class span,
+.header-search-class .fas {
+  z-index: 3;
+}
+
+.stories {
+  height: 100px;
+  background-color: white;
+  margin-top: 25px;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.story-circle-class {
+  width: 62px;
+  height: 62px;
+  background: linear-gradient(to right, #f99b4a, #c92d8c);
+  border-radius: 50%;
+}
+
+.story-name-class {
+  font-weight: 200;
+  margin-top: 5px;
+  width: 62px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.story-profile-class:first-child .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/user_profile_jake.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(2) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/la_veneno.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(3) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/mr_tesla.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(4) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/kurt.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(5) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/rick_morty.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(6) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/ada_lovelace.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(7) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/tree.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.story-profile-class:nth-child(8) .story-photo-class {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/doraemon.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.article-post-class {
+  margin: 25px 0;
+}
+.article-post-class img {
+  width: 640px;
+}
+
+.post-top-class {
+  width: 640px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 3px 3px 0 0;
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+}
+.post-top-class span {
+  font-size: 2rem;
+  margin-top: -10px;
+}
+
+.post-user-profile-class-1 {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/profile_photos/mishis.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.description-icons-class {
+  padding: 5px 0;
+}
+.description-icons-class img {
+  width: 32px;
+}
+.description-icons-class img:nth-child(4) {
+  margin-left: auto;
+  width: 26px;
+}
+
+.post-description-class {
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px;
+}
+
+.description-likes-class {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.description-text-class {
+  margin-bottom: 5px;
+}
+.description-text-class h3 {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.description-comments-class span {
+  color: gray;
+}
+.description-comments-class h3 {
+  font-weight: 600;
+  display: inline-block;
+}
+.description-comments-class p {
+  margin: 5px 0;
+}
+
+.description-hour-class {
+  color: gray;
+  margin: 10px 0;
+}
+
+.post-addComment-class {
+  height: 55px;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  border-radius: 0 0 3px 3px;
+  padding: 10px;
+}
+.post-addComment-class img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.add-comment-class {
+  color: gray;
+  position: relative;
+}
+.add-comment-class input {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid transparent;
+  outline: transparent;
+}
+
+aside {
+  min-width: 300px;
+  margin-top: 30px;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.aside-profile-class {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-image: url("../assets/img/profile_photos/user_profile.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.aside-name-class p:first-child {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.aside-name-class p:nth-child(2) {
+  color: gray;
+}
+
+.blue-style {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.suggestions-title-class {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.suggestions-title-class h3 {
+  color: gray;
+}
+
+.suggestion-class {
+  margin-bottom: 12px;
+}
+
+.suggestion-class:nth-child(2) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/profile_photos/assembler.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(3) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/profile_photos/scorpio.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(4) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/profile_photos/beer_helping.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(5) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/profile_photos/shadow_bone.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.suggestion-class:nth-child(6) .suggestion-profile-class {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url("../assets/img/profile_photos/cthulhu.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.containerLoginAll-class {
+  background-color: white;
+  height: 745.32px;
+  width: 1111.49px;
+}
+
+.containerLeftAll-class {
+  height: 618px;
+  width: 454px;
+}
+
+.containerRightAll-class {
+  height: 606px;
+  width: 350px;
+  margin-top: 12px;
+}
+
+.containerDowntAll-class {
+  height: 98.32px;
+  width: 1079.49px;
+}
+
+.logInAll-class {
+  height: 606px;
+  width: 350px;
+}
+
+.logInForm-class {
+  text-align: center;
+  width: 400px;
+  padding: 35px;
+}
+.logInForm-class span p {
+  text-decoration: none;
+  color: black;
+}
+.logInForm-class span a {
+  text-decoration: none;
+  color: blue;
+}
+
+.form-class {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.input-user {
+  background-color: #e8f0fe;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: relative;
+  width: 98%;
+  margin: 2px 2px 2px 2px;
+}
+.input-user input {
+  width: 95%;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 3px;
+  padding: 8px;
+  outline: transparent;
+}
+
+.empty {
+  width: 4%;
+  background-color: white;
+  margin-left: auto;
+}
+
+.input-password {
+  background-color: #e8f0fe;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: relative;
+  width: 99%;
+  margin-top: 5px;
+}
+.input-password input {
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid transparent;
+  padding: 8px;
+  outline: transparent;
+}
+
+.my-password-class {
+  width: 73%;
+}
+
+.show-button-class {
+  width: 20%;
+  margin-left: auto;
+}
+.show-button-class button {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 600;
+  border: none;
+  background-color: white;
+}
+
+.logIn-button-class {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+.logIn-button-class button {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #0095f6;
+  padding: 6px;
+  font-weight: 600;
+}
+.logIn-button-class button a {
+  text-decoration: none;
+  color: white;
+}
+
+.other-options-class {
+  color: gray;
+  margin: 10px 0;
+}
+.other-options-class h3 {
+  display: inline-block;
+  padding: 0 3px;
+}
+.other-options-class hr {
+  width: 60%;
+  height: 1px;
+  margin: 0 auto;
+  border-color: gray;
+}
+
+.logInWithFacebook-class {
+  font-size: 0.9rem;
+}
+.logInWithFacebook-class span:first-child a {
+  text-decoration: none;
+  color: #385185;
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.logInWithFacebook-class span:nth-child(2) a {
+  text-decoration: none;
+  color: #00376b;
+  display: block;
+  margin-top: 20px;
+}
+
+.accountIg-class {
+  margin-top: 10px;
+  text-align: center;
+  width: 400px;
+  padding: 25px;
+}
+.accountIg-class a {
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: bold;
+}
+
+.getAppIg-class {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.download-app-img-class {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.containerDowntAll-class {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  color: gray;
+}
+
+.footer-first-line-class {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-first-line-class a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-second-line-class {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: gray;
+}
+.footer-second-line-class a {
+  color: gray;
+  text-decoration: none;
+}
+
+.selector-copyright {
+  gap: 12px;
+}
+.selector-copyright select {
+  width: 80px;
+  color: gray;
+  border: 0px solid transparent;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */

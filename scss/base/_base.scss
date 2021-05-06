@@ -1,0 +1,104 @@
+//Var's
+$my_gray_text: gray;
+$my_background_color_general: white;
+$my_input_text_border: 1px solid #dbdbdb;
+$my_div_border: 1px solid #dbdbdb;
+$my_input_background: rgba(232, 240, 254);
+
+//General Styles and Classes
+//*Reset
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//*Body
+
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+//*Flex
+.display-flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-content-space-around {
+  justify-content: space-around;
+}
+
+.flex-content-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-content-between {
+  justify-content: space-between;
+}
+
+//*Border
+/* .border-for-building {
+  border: 1px solid rgb(255, 2, 2);
+}
+ */
+.border-for-instagram {
+  border: $my_div_border;
+}
+
+//*Fonts
+.s9 {
+  font-size: 0.9rem;
+}
+
+.s8 {
+  font-size: 0.8rem;
+}
+
+.s7 {
+  font-size: 0.7rem;
+}
+
+//*Cursor
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//*Mixin
+@mixin postsProfile($profileUrl) {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  background-image: url($profileUrl);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+@mixin postsProfileBig($profileUrl2, $profileSize) {
+  height: $profileSize;
+  width: $profileSize;
+  border-radius: 50%;
+  background-image: url($profileUrl2);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
