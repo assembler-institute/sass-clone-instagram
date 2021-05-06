@@ -27,12 +27,39 @@
   border-radius: 11px;
 }
 
-#navContainer {
-  display: flex;
-  justify-content: center;
+.suggestionsBarProfilePic {
+  width: 56px;
+  height: 56px;
+}
+
+#yourProfileName {
+  color: #262626;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#yourRealName {
+  color: #969696;
+}
+
+#switch {
+  font-size: 14px;
+  color: #0095f6;
+}
+
+/*----------------- navBar ------------------*/
+#navGlobalContainer {
   width: 100%;
   height: 54px;
   border-bottom: 1px solid #ececec;
+}
+
+#navContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 66%;
+  height: 54px;
 }
 
 #iconsGlobalContainer {
@@ -47,6 +74,53 @@
   justify-content: flex-end;
   width: 360px;
   height: 36px;
+}
+
+/*------- middleContentMainContainer ------*/
+.main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mainContainer {
+  padding: 30px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+  height: 100%;
+}
+
+/*------- middleContentLeftContainer ------*/
+#leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+/*------ middleContentRightContainer -----*/
+#rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#yourProfileContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#yourProfileNameContainer {
+  padding-top: 5px;
+  width: 55%;
+}
+
+#switchContainer {
+  display: flex;
+  padding-top: 5px;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
