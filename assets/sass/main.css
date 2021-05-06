@@ -17,6 +17,15 @@ h4 {
   font-size: 15px;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fafafa;
+}
+
 .input {
   background-color: #fafafa;
   font-weight: 600;
@@ -147,10 +156,19 @@ footerFirst footer footerSecond {
   color: green;
 }
 
+.far {
+  opacity: 1;
+  font-weight: normal;
+}
+
 .stories {
   display: flex;
   justify-content: space-around;
-  margin: 2rem 0;
+  background-color: white;
+  margin: 1.5rem auto;
+  padding: 1rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 700px;
 }
 .stories img {
   border: 3px solid magenta;
@@ -162,7 +180,8 @@ footerFirst footer footerSecond {
 .post {
   border: 1px solid rgba(0, 0, 0, 0.2);
   max-width: 700px;
-  margin: 2.5rem auto;
+  margin: 2.2rem auto;
+  background-color: white;
 }
 .post__title {
   display: flex;
@@ -245,12 +264,6 @@ footerFirst footer footerSecond {
   font-size: 14px;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #fafafa;
-}
-
 header {
   display: flex;
   justify-content: space-around;
@@ -260,6 +273,24 @@ header {
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 4rem;
+  background-color: white;
+}
+header div {
+  max-height: 100%;
+  max-width: 170px;
+  display: flex;
+  align-items: center;
+}
+header div .logoHeader {
+  max-width: 100%;
+}
+header .search {
+  padding: 0 0.3rem;
+  min-width: 200px;
+  height: 24px;
+  border: 2px #dbdbdb solid;
+  background-color: #fafafa;
+  border-radius: 3px;
 }
 header ul {
   list-style-type: none;

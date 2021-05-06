@@ -1,10 +1,20 @@
 @use "../../helpers/variables" as *;
 @use "../../helpers/mixins" as *;
 
+.far {
+  opacity: 1;
+  font-weight: normal;
+  // font-size: 20px;
+}
+
 .stories {
   display: flex;
   justify-content: space-around;
-  margin: 2rem 0;
+  background-color: white;
+  margin: 1.5rem auto;
+  padding: 1rem 0.5rem;
+  border: $thinBorder;
+  max-width: $widthPosts;
 
   img {
     @include circleBorderRadius(3px, $brColorStory);
@@ -15,8 +25,9 @@
 
 .post {
   border: $thinBorder;
-  max-width: 700px;
-  margin: 2.5rem auto;
+  max-width: $widthPosts;
+  margin: 2.2rem auto;
+  background-color: white;
 
   &__title {
     display: flex;
