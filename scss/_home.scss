@@ -61,21 +61,6 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  .header-search-class {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 215px;
-    min-width: 125px;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #dbdbdb;
-    background-color: #fafafa;
-    span,
-    .fas {
-      z-index: 3;
-    }
-  }
   input {
     background-color: transparent;
     border: 0px solid #fafafa;
@@ -90,6 +75,22 @@ header {
   .nav-profile-class {
     @include postsProfile("../assets/img/profile_photos/user_profile.jpg");
     margin-left: 10px;
+  }
+}
+
+.header-search-class {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 215px;
+  min-width: 125px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  span,
+  .fas {
+    z-index: 3;
   }
 }
 

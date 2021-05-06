@@ -42,21 +42,6 @@ header {
   top: 0;
   background-color: white;
 }
-header .header-search-class {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 215px;
-  min-width: 125px;
-  padding: 7px;
-  border-radius: 3px;
-  border: 1px solid #dbdbdb;
-  background-color: #fafafa;
-}
-header .header-search-class span,
-header .header-search-class .fas {
-  z-index: 3;
-}
 header input {
   background-color: transparent;
   border: 0px solid #fafafa;
@@ -77,6 +62,22 @@ header .nav-profile-class {
   background-size: cover;
   display: inline-block;
   margin-left: 10px;
+}
+
+.header-search-class {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 215px;
+  min-width: 125px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+}
+.header-search-class span,
+.header-search-class .fas {
+  z-index: 3;
 }
 
 main {
