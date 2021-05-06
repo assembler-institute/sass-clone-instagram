@@ -67,6 +67,12 @@ body {
   cursor: pointer;
 }
 
+.input-user input {
+  background-color: transparent;
+  border: 0px solid transparent;
+  outline: transparent;
+}
+
 .home {
   background-color: #fafafa;
 }
@@ -486,11 +492,8 @@ aside {
 }
 .input-user input {
   width: 95%;
-  background-color: transparent;
-  border: 0px solid transparent;
   border-radius: 3px;
   padding: 8px;
-  outline: transparent;
 }
 
 .empty {

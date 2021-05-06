@@ -102,3 +102,10 @@ body {
   background-size: cover;
   display: inline-block;
 }
+
+//*Inheritance
+%transparent {
+  background-color: transparent;
+  border: 0px solid transparent;
+  outline: transparent;
+}

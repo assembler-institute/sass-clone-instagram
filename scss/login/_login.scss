@@ -62,11 +62,9 @@
   margin: 2px 2px 2px 2px;
   input {
     width: 95%;
-    background-color: transparent;
-    border: 0px solid transparent;
     border-radius: 3px;
     padding: 8px;
-    outline: transparent;
+    @extend %transparent;
   }
 }
 
@@ -77,8 +75,6 @@
 }
 
 .input-password {
-  //display: flex;
-  //flex-direction: row;
   background-color: b.$my_input_background;
   border: b.$my_input_text_border;
   border-radius: 3px;
@@ -86,7 +82,6 @@
   width: 99%;
   margin-top: 5px;
   input {
-    // position: absolute;
     width: 100%;
     background-color: transparent;
     border: 0px solid transparent;

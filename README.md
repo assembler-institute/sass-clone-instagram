@@ -5,13 +5,13 @@
 
 - 🌱 We are currently learning **SASS**
 
-- 👨‍💻 All of Einar projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
-- 👨‍💻 All of my projects are available at [https://www.linkedin.com/in/jordi-arnau-esteban/](https://www.linkedin.com/in/jordi-arnau-esteban/)
+- 👨‍💻 All of Einar's projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
+- 👨‍💻 All of Jordi's projects are available at [https://github.com/JordixArnau](https://github.com/JordixArnau)
 - 📫 How to reach Einar **grelsare13@gmail.com**
 - 📫 How to reach Jordi **aejordi@gmail.com**
 
 - ⚡ Fun fact about Einar **Amante de la tecnología, bateriste en mis ratos libres y LTBIQ+ activiste.**
-- ⚡ Fun fact about Jordi **Amante de las fotos de gatitos.**
+- ⚡ Fun fact about Jordi **¡Hago el mejor brownie del mundo!**
 
 <h3 align="left">Connect with Einar:</h3>
 <p align="left">
@@ -249,6 +249,34 @@ stylesheets which are related to it.
 
 ## Explain the concept of inheritance in SASS.
 
+<p align="left">
+Inheritance in SASS is a capability that allows you to assign a global scope to a group of properties
+so they can be used in another file.
+</p>
+
 ## Why use @extend? Give an example
 
+<p align="left">
+"@extend" is the method to use an inheritance element so it is loaded in the actual file.
 </p>
+
+**File 1**
+
+```
+%transparent {
+  background-color: transparent;
+  border: 0px solid transparent;
+  outline: transparent;
+}
+```
+
+**File 2**
+
+```
+  input {
+    width: 95%;
+    border-radius: 3px;
+    padding: 8px;
+    @extend %transparent;
+  }
+```
