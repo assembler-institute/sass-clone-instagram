@@ -1,14 +1,19 @@
 @use "../../../../../helpers/variables" as *;
 
 .registerForm {
+  display: flex;
+  flex-direction: column;
   margin: 5%;
   vertical-align: middle;
   text-align: center;
-  margin-right: 28%;
+  margin-right: 27%;
   border: $globalBorder;
-  width: 60%;
+  width: 62%;
   height: 10%;
   white-space: nowrap;
+
   padding: 3%;
   background-color: white;
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }

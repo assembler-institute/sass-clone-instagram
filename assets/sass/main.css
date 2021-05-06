@@ -68,26 +68,31 @@ h4 {
 }
 
 .downloadBox {
+  box-sizing: border-box;
+  margin-top: -1.7%;
+  margin-left: 5%;
   box-sizing: content-box;
   display: flex;
-  width: boxWidth();
+  width: 59.6%;
   flex-direction: row;
-  white-space: nowrap;
   font-size: 15px;
 }
 .downloadBox #downloadText {
-  transform: translateX(170px);
-  font-weight: 600;
+  margin-left: 38%;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 500;
 }
 
 .downloadButton {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
-  margin-right: 25px;
+  padding-right: 1%;
   flex-grow: 2;
-  height: 60px;
-  max-width: 20%;
+  transform: translateX(-123%);
+  height: 50px;
+  width: 180px;
   cursor: pointer;
 }
 
@@ -96,7 +101,7 @@ h4 {
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 60%;
+  width: 62%;
   height: 52%;
   margin: 5%;
   margin-top: 15%;
@@ -119,22 +124,28 @@ h4 {
 }
 
 #registerButton {
+  margin-left: 1%;
   font-weight: 800;
   cursor: pointer;
-  margin-top: 6px;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .registerForm {
+  display: flex;
+  flex-direction: column;
   margin: 5%;
   vertical-align: middle;
   text-align: center;
-  margin-right: 28%;
+  margin-right: 27%;
   border: 2px #dbdbdb solid;
-  width: 60%;
+  width: 62%;
   height: 10%;
   white-space: nowrap;
   padding: 3%;
   background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 footer {
