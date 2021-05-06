@@ -343,8 +343,8 @@ section.stories {
 }
 
 section.stories::-webkit-scrollbar {
-  width: 4px;
-  height: 8px;
+  width: 0px;
+  height: 0px;
 }
 
 section.stories::-webkit-scrollbar-thumb {
@@ -385,8 +385,8 @@ div.main__stories {
 }
 
 div.main__stories::-webkit-scrollbar {
-  width: 2px;
-  height: 4px;
+  width: 0px;
+  height: 0px;
 }
 
 div.main__stories::-webkit-scrollbar-thumb {
