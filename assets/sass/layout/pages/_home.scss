@@ -2,35 +2,6 @@
 @use "../../helpers/mixins" as *;
 @use "../../helpers/extension" as *;
 
-.stories {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  margin: 1.5rem auto;
-  padding: 1rem 0.5rem;
-  border: $thinBorder;
-  border-radius: 4px;
-  max-width: $widthPosts;
-
-  &__post {
-    @extend %d-flex-column-center;
-    cursor: pointer;
-  }
-
-  &__post__image {
-    border-radius: 50%;
-    padding: 0.2rem;
-    background: $gradient;
-    height: 5rem;
-    width: 5rem;
-    overflow: hidden;
-    img {
-      @include circleBorderRadius(2px, white);
-      max-width: 100%;
-    }
-  }
-}
-
 .post {
   border: $thinBorder;
   border-radius: 4px;
@@ -38,57 +9,12 @@
   margin: 2.2rem auto;
   background-color: white;
   cursor: pointer;
-
-  &__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $yPadding $xPadding;
-    img {
-      @include circleBorderRadius(0px, $brColor);
-      height: 2.5rem;
-      width: 2.5rem;
-      margin-right: 0.5rem;
-    }
-    div {
-      display: flex;
-      align-items: center;
-    }
-    > p {
-      opacity: 0.6;
-    }
-  }
-
-  &__image {
-    overflow: hidden;
-  }
-
-  &__icons {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem;
-    div {
-      display: flex;
-      i {
-        margin-right: 1rem;
-      }
-    }
-
-    .fa-heart {
-      font-weight: bold;
-      color: red;
-    }
-  }
-
   &__likes {
     padding: $yPadding $xPadding;
   }
-
   &__message {
     padding: $yPadding $xPadding;
   }
-
   &__comments {
     padding: $yPadding $xPadding;
     opacity: 0.6;
