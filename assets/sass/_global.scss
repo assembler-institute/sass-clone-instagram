@@ -67,8 +67,5 @@ $anchor:100%;
 body {
   background-color: $backgroundC;
   font-family: $font;
-
-  @include resetMarginPadding;
-
   @include resetMarginPadding;
 }
