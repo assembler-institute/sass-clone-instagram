@@ -10,19 +10,22 @@
 #navContainer
     margin: 0 auto
     display: flex
-    justify-content: center
-    @include abs.size(66%,54px)
+    justify-content: space-between
+    @include abs.size(55%,54px)
     
+#logoContainer 
+    padding-top: 15px
+    @include abs.size(33%, 36px)
 
 #iconsGlobalContainer
     padding-top: 15px
     padding-left: 24px
-    @include abs.size(360px,22px)
+    @include abs.size(33%,22px)
 
 #iconsContainer
     display: flex
     justify-content: flex-end
-    @include abs.size(360px,36px)
+    @include abs.size(100%,36px)
 
 /*------- middleContentMainContainer ------*/
 .main
@@ -35,7 +38,7 @@
     @include abs.allPaddings(30px,0,0,0)
     display: flex
     justify-content: space-between
-    @include abs.size(66%,100%)
+    @include abs.size(55%,100%)
 
 
 /*------- middleContentLeftContainer ------*/
@@ -46,12 +49,16 @@
     width: 66%
 
 /*------ middleContentRightContainer -----*/
+// profile
 #rightContainer
     display: flex
     flex-direction: column
+    justify-content: flex-start
+    @include abs.size(30%, 33%)
     width: 30%
 
 #yourProfileContainer
+    margin-bottom: 10px
     display: flex
     justify-content: space-between
 
@@ -63,6 +70,50 @@
     display: flex
     padding-top: 5px
     align-items: center
+
+// suggestions
+#suggestionsSectionContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+#suggestionsHeader
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+#suggestionsContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.suggestion
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+.suggestionLefContainer
+    display: flex
+    justify-content: flex-start
+    @include abs.size(70%,32px)
+
+.profileSuggestedPicContainer
+    @include abs.size(20%, 32px)
+
+.profileSuggestedPic
+    @include abs.size(32px,32px)
+
+.nameAndPopularity
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    @include abs.size(70%,32px)
+
+// footer
+#rightContainerFooter
+    margin-top: 20px
+    @include abs.size(100%, 30%)
+
 
 
 
