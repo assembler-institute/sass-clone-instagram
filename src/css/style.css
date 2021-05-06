@@ -41,13 +41,26 @@ div.left__containerImages {
   z-index: 2;
 }
 
-div.left__containerImages > img {
+img.imagesFixed {
+  height: 356px;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+img.imagesProgress {
+  opacity: 1;
+  transition: opacity 1.8s ease-in;
+}
+
+img.imagesOn {
   height: 356px;
   right: 0;
   opacity: 1;
   position: absolute;
   top: 0;
-  visibility: visible;
   width: 200px;
 }
 
@@ -305,7 +318,7 @@ header > div > div > img {
 
 header > div > div > i {
   font-size: 1.8rem;
-  margin-right: 1.5rem;
+  margin-right: 1.8rem;
 }
 
 main.main__main {
@@ -325,6 +338,27 @@ section.stories {
   align-items: flex-end;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-right: 0.5rem;
+}
+
+section.stories::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+
+section.stories::-webkit-scrollbar-thumb {
+  background: #CCC;
+  border-radius: 4px;
+}
+
+section.stories::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+section.stories::-webkit-scrollbar-track {
+  background: #b3b3b3;
+  border-radius: 4px;
 }
 
 section.recommendations {
@@ -338,7 +372,7 @@ section.recommendations {
 
 div.main__stories {
   width: inherit;
-  height: 9rem;
+  height: 100px;
   background-color: #FFFFFF;
   margin: 0 0 2.5rem 0;
   border: 1px solid #DBDBDB;
@@ -346,6 +380,27 @@ div.main__stories {
   align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
+  padding: 0rem 0;
+}
+
+div.main__stories::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+}
+
+div.main__stories::-webkit-scrollbar-thumb {
+  background: #CCC;
+  border-radius: 4px;
+}
+
+div.main__stories::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.main__stories::-webkit-scrollbar-track {
+  background: #b3b3b3;
+  border-radius: 4px;
 }
 
 div.storie {
@@ -357,19 +412,27 @@ div.storie {
   height: 85px;
 }
 
-div.main__stories img {
-  border: 1px solid white;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, #0eadad), color-stop(0.67, aqua));
-  background-image: -moz-linear-gradient(center bottom, #0eadad 33%, aqua 67%);
+div.storie div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid -webkit-gradient(linear, left bottom, left top, color-stop(0.33, #833ab4), color-stop(0.33, #fd1d1d), color-stop(0.33, #fcb045));
+  width: 4.25rem;
+  height: 4.25rem;
+  margin: 0.75rem;
+  border-radius: 50%;
+}
+
+div.storie > div > img {
   width: 4rem;
   height: 4rem;
-  margin: 0.75rem;
   border-radius: 50%;
 }
 
 div.main__posts {
   width: inherit;
-  max-height: 600px;
+  height: 472px;
   background-color: #FFFFFF;
   border: 1px solid #DBDBDB;
   margin: 0 0 1.5rem 0;
@@ -440,11 +503,12 @@ div.main__posts--contentIcons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0.5rem 1rem;
+  margin: 0rem 0rem;
 }
 
 div.main__posts--contentIcons > div > i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  margin: 0.5rem 1rem;
 }
 
 div.main__posts--playback {

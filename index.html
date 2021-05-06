@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Instagram</title>
   </head>
 
@@ -22,9 +23,9 @@
           <img src="./src/img/mockup.png" alt="" />
         </div>
         <div class="left__containerImages">
-          <img src="./src/img/1.jpg" alt="" />
-          <img src="./src/img/2.jpg" alt="" />
-          <img src="./src/img/3.jpg" alt="" />
+          <img id="img1" class="imagesOn" src="./src/img/1.jpg" alt="" />
+          <img id="img2" class="imagesFixed" src="./src/img/2.jpg" alt="" />
+          <img id="img3" class="imagesFixed" src="./src/img/3.jpg" alt="" />
         </div>
       </section>
       <section class="right">
@@ -97,5 +98,24 @@
       </div>
       <div>© 2021 Instagram from Facebook</div>
     </footer>
+    <script>
+      $(document).ready(function () {
+        setInterval(function () {
+          setTimeout(function () {
+            $("#img1").removeClass("imagesProgress imagesOn");
+            $("#img1").addClass("imagesFixed");
+            $("#img2").addClass("imagesProgress");
+          }, 3000);
+          setTimeout(function () {
+            $("#img2").removeClass("imagesProgress");
+            $("#img3").addClass("imagesProgress");
+          }, 6000);
+          setTimeout(function () {
+            $("#img3").removeClass("imagesProgress");
+            $("#img1").addClass("imagesProgress");
+          }, 9000);
+        }, 9000);
+      });
+    </script>
   </body>
 </html>
