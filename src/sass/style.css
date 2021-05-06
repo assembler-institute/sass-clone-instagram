@@ -1,3 +1,209 @@
+#logo {
+  margin-left: 20px;
+  padding-top: 15px;
+  width: 360px;
+  height: 36px;
+}
+
+#searchPeopleInput {
+  margin-top: 15px;
+  padding: 7px;
+  width: 215px;
+  height: 28px;
+  background: #f5f5f5;
+  border: 1px solid #ececec;
+}
+
+.navIcon {
+  margin-left: 22px;
+  width: 22px;
+  height: 22px;
+}
+
+#profileIconImg {
+  width: 22px;
+  height: 22px;
+  border: 1px transparent;
+  border-radius: 11px;
+}
+
+.suggestionsBarProfilePic {
+  width: 56px;
+  height: 56px;
+}
+
+#yourProfileName {
+  color: #262626;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#yourRealName {
+  color: #969696;
+}
+
+#switch {
+  font-size: 14px;
+  color: #0095f6;
+}
+
+.main {
+  background-color: #fafafa;
+}
+
+#newsContentBar {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  max-width: 614px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 16px 0;
+  margin: 0 0 24px;
+}
+#newsContentBar .profileLinkContainer {
+  padding-left: 15px;
+  height: 90px;
+  width: 85px;
+}
+#newsContentBar .profileLinkBtn {
+  border: none;
+  background-color: #fff;
+  padding: 2px;
+}
+#newsContentBar .profileName {
+  text-align: center;
+  font-size: 12px;
+  color: #262626;
+}
+
+.roundFrame {
+  box-sizing: content-box;
+  height: 66px;
+  width: 66px;
+  background-image: url(../img/bundle.png);
+  background-repeat: no-repeat;
+  background-position: -305px -65px;
+}
+.roundFrame .profilePic {
+  height: 100%;
+}
+.roundFrame .profilePic img {
+  height: 100%;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.post .postHeader {
+  display: flex;
+  height: 60px;
+  padding: 16px;
+}
+.post .postHeader .profilePic {
+  height: 32px;
+  width: 32px;
+}
+.post .postHeader .profilePic img {
+  height: 100%;
+  border-radius: 20px;
+}
+.post .postHeader .postOptions {
+  position: relative;
+  left: 300px;
+  font-size: 30px;
+}
+.post .postHeader .postProfileName {
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.post .postImg {
+  max-width: -webkit-fill-available;
+}
+
+/*----------------- navBar ------------------*/
+#navGlobalContainer {
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #ececec;
+}
+
+#navContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 66%;
+  height: 54px;
+}
+
+#iconsGlobalContainer {
+  padding-top: 15px;
+  padding-left: 24px;
+  width: 360px;
+  height: 22px;
+}
+
+#iconsContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 360px;
+  height: 36px;
+}
+
+/*------- middleContentMainContainer ------*/
+.main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mainContainer {
+  padding: 30px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+  height: 100%;
+}
+
+/*------- middleContentLeftContainer ------*/
+#leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+/*------ middleContentRightContainer -----*/
+#rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#yourProfileContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#yourProfileNameContainer {
+  padding-top: 5px;
+  width: 55%;
+}
+
+#switchContainer {
+  display: flex;
+  padding-top: 5px;
+  align-items: center;
+}
+
 body {
   background-color: #fafafa;
   height: 100vh;

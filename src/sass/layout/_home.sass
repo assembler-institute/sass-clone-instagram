@@ -1,1 +1,75 @@
 @use "../components/componentsIndex" as comp
+@use "../abstracts/abstractsIndex" as abs
+
+
+/*----------------- navBar ------------------*/
+#navGlobalContainer
+    @include abs.size(100%,54px)
+    border-bottom: 1px solid  abs.$lightGray
+
+#navContainer
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    @include abs.size(66%,54px)
+    
+
+#iconsGlobalContainer
+    padding-top: 15px
+    padding-left: 24px
+    @include abs.size(360px,22px)
+
+#iconsContainer
+    display: flex
+    justify-content: flex-end
+    @include abs.size(360px,36px)
+
+/*------- middleContentMainContainer ------*/
+.main
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    @include abs.size(100%,100%)
+
+.mainContainer
+    @include abs.allPaddings(30px,0,0,0)
+    display: flex
+    justify-content: space-between
+    @include abs.size(66%,100%)
+
+
+/*------- middleContentLeftContainer ------*/
+#leftContainer
+
+    display: flex
+    flex-direction: column
+    width: 66%
+
+/*------ middleContentRightContainer -----*/
+#rightContainer
+    display: flex
+    flex-direction: column
+    width: 30%
+
+#yourProfileContainer
+    display: flex
+    justify-content: space-between
+
+#yourProfileNameContainer
+    padding-top: 5px
+    width: 55%
+
+#switchContainer
+    display: flex
+    padding-top: 5px
+    align-items: center
+
+
+
+
+
+
+
+
+
+
