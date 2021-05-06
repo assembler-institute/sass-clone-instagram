@@ -1,0 +1,291 @@
+.btn {
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+img {
+  border-radius: 11px;
+}
+
+.space-btn {
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+  width: 100vw;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding: 0 20px;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgrey;
+  background-color: #fafafa;
+}
+nav input {
+  text-align: center;
+}
+
+.big-profile {
+  height: 56px;
+  width: 56px;
+  border-radius: 28px;
+}
+
+.mid-profile {
+  height: 32px;
+  width: 32px;
+  border-radius: 15px;
+}
+
+.default-font {
+  font-size: 14px;
+}
+
+.little-font {
+  font-size: 12px;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.bottom-right {
+  color: rgba(var(--edc, 199, 199, 199), 1);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: none;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.p-2-8 {
+  padding: 2px 8px;
+}
+
+.mb-3 {
+  margin-bottom: 3px;
+}
+
+.ml-14 {
+  margin-left: 14px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-2-0 {
+  padding: 2px 0;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.grey {
+  color: #8e8e8e;
+}
+
+.basis-100 {
+  flex-basis: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fit {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.right-end {
+  position: absolute;
+  right: 16px;
+}
+
+.align-centered {
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.prueba {
+  justify-content: flex-start;
+}
+
+.story {
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 2px;
+  width: 60px;
+  height: 60px;
+}
+.story :after {
+  background: linear-gradient(to bottom, #d82b7e, #f57939);
+  position: sticky;
+  display: block;
+  margin-top: -4px;
+  margin-left: -4px;
+  z-index: 2;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.blue {
+  color: #0095f6;
+}
+
+.light-font {
+  font-weight: lighter;
+}
+
+.semi-bold-font {
+  font-weight: 600;
+}
+
+.f-11 {
+  font-size: 11px;
+}
+
+.add-comment {
+  border-top: 1px solid lightgrey;
+}
+
+.Ypffh {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: 0 0;
+  border: 0;
+  color: #262626;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-size: inherit;
+  height: 18px;
+  max-height: 80px;
+  outline: 0;
+  padding: 0;
+  resize: none;
+  width: 0;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.article-container {
+  flex-direction: column;
+  padding-bottom: 0;
+  flex-grow: 1;
+  position: relative;
+  min-height: 800px;
+  max-width: 600px;
+  min-width: 600px;
+  float: left;
+  margin-right: 40px;
+}
+
+.stories {
+  flex-basis: 100%;
+  height: 84px;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-columns: 50px;
+  grid-auto-flow: column dense;
+  overflow: auto;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.post-container {
+  border: 1px solid lightgrey;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.post-header {
+  height: 27px;
+  flex-basis: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.media-content {
+  display: flex;
+  flex-basis: 100%;
+  height: fit-content;
+  justify-content: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  background-color: #fafafa;
+  height: 100%;
+  padding-top: 85px;
+  justify-content: center;
+}
+
+.right-container {
+  width: 293px;
+  min-width: 293px;
+}
+
+@media (max-width: 940px) {
+  .right-container {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
