@@ -15,8 +15,8 @@
 - [Requirements](#requirements)
 - [Repository](#repository)
 - [Technologies used](#technologies-used)
-- [How to](#howtouse)
-- [Theory](@theory)
+- [How to](#how-to-use)
+- [Theory](#theory)
 - [Resources](#resources)
 
 ## Repository
