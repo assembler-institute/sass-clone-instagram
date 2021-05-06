@@ -187,3 +187,8 @@ a:visited {
   padding: 8px;
   margin-bottom: 8px;
 }
+
+@mixin appLogo {
+  width: 145px;
+  height: auto;
+}

@@ -137,7 +137,7 @@ a:visited {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 #loginBody #loginMain #loginRight #loginTopRight #loginLogotype {
@@ -163,7 +163,7 @@ a:visited {
 }
 #loginBody #loginMain #loginRight #loginTopRight form button {
   border-radius: 3px;
-  margin-top: 8px;
+  margin-top: 5px;
   margin-bottom: 8px;
   width: 100%;
   height: 30px;
@@ -202,6 +202,7 @@ a:visited {
 }
 #loginBody #loginMain #loginRight #loginTopRight #forgottenPassword {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 #loginBody #loginMain #loginRight #loginMediumRight {
   border-radius: 3px;
@@ -213,13 +214,33 @@ a:visited {
   align-items: center;
   width: 100%;
   height: 61px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 #loginBody #loginMain #loginRight #loginMediumRight .no-account {
   display: inline-block;
 }
 #loginBody #loginMain #loginRight #loginMediumRight .sign-in-login {
   color: #3d95ef;
+}
+#loginBody #loginMain #loginRight #loginBottomRight {
+  margin: auto;
+  width: 298px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#loginBody #loginMain #loginRight #loginBottomRight #appLogos {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#loginBody #loginMain #loginRight #loginBottomRight #appLogos img {
+  width: 145px;
+  height: auto;
 }
 #loginBody footer {
   width: 100%;

@@ -36,7 +36,7 @@
         height: 378px;
         padding-top: 30px;
         @include g.elementBorder;
-        @include g.flexDistribution(column, flex-start, center);
+        @include g.flexDistribution(column, center, center);
 
         #loginLogotype {
           width: 175px;
@@ -51,7 +51,7 @@
 
           button {
             border-radius: 3px;
-            margin-top: 8px;
+            margin-top: 5px;
             margin-bottom: 8px;
             width: 100%;
             height: 30px;
@@ -67,6 +67,7 @@
           margin-bottom: 22px;
           width: 258px;
           @include g.flexDistribution(row, space-between, center);
+
           .login-line {
             width: 35%;
             display: inline-block;
@@ -92,6 +93,7 @@
 
         #forgottenPassword {
           margin-top: 15px;
+          margin-bottom: 15px;
         }
       }
 
@@ -100,7 +102,7 @@
         @include g.flexDistribution(row, center, center);
         width: 100%;
         height: 61px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
 
         .no-account {
           display: inline-block;
@@ -108,6 +110,21 @@
 
         .sign-in-login {
           color: g.$blue;
+        }
+      }
+
+      #loginBottomRight {
+        margin: auto;
+        width: 298px;
+        @include g.flexDistribution(column, center, center);
+
+        #appLogos {
+          margin-top: 20px;
+          width: 100%;
+          @include g.flexDistribution(row, space-between, center);
+          img {
+            @include g.appLogo;
+          }
         }
       }
     }
