@@ -469,7 +469,7 @@ header #headerWrapper #iconsWrapper #headerPhoto {
 #homeMain #mainLeft #postsContainer .post .post-comment .comment-placeholder {
   flex-grow: 1;
   border: none;
-  background-color: #fafafa;
+  background-color: white;
 }
 #homeMain #mainLeft #postsContainer .post .post-comment .post-text {
   margin-right: 16px;
