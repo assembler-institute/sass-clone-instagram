@@ -1,0 +1,21 @@
+@use "./global" as global;
+footer {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding: 0 11%;
+  .interestingLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .countryInfo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  a {
+    font-size: 14px;
+    color: #8e8e8e;
+    text-decoration: none;
+  }
+}

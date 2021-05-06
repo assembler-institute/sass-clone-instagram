@@ -1,0 +1,599 @@
+/*_________________*/
+body {
+  background-color: #fafafa;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+section.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background-color: #fafafa;
+  max-width: 500px;
+}
+
+.im1 {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  right: 100px;
+}
+
+.im2 {
+  position: absolute;
+  z-index: 0;
+  width: 50%;
+  top: 10%;
+}
+
+.instagram {
+  width: 40%;
+  margin: 10px;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #fafafa;
+  border: #dbdbdb 0px solid;
+  padding-right: 11%;
+  max-width: 500px;
+}
+
+.or {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: none;
+  border: #dbdbdb 0px solid;
+  color: rgba(68, 68, 68, 0.6);
+  margin: 15px;
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #ffffff;
+  border: #dbdbdb 1px solid;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.contr {
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.face {
+  color: #385185;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #ffffff;
+  border: #dbdbdb 1px solid;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+  padding: 20px 10px;
+}
+
+.sing span:last-child {
+  color: #0095f6;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.apps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #fafafa;
+  border: #dbdbdb 0px solid;
+}
+
+.inps {
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  height: 40px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  margin-top: none;
+  margin-bottom: 5%;
+}
+
+.sub {
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  height: 40px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: #b9dffc;
+  margin-top: 20px;
+  margin-bottom: none;
+  height: 25px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gooPl {
+  width: 40%;
+  border-radius: 5px;
+}
+
+.appS {
+  width: 41%;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding: 0 11%;
+}
+footer .interestingLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer .countryInfo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+footer a {
+  font-size: 14px;
+  color: #8e8e8e;
+  text-decoration: none;
+}
+
+.headerHome {
+  padding: 10px 16%;
+  height: 35px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerHome .imgLogo {
+  height: 29px;
+  margin-top: 8px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.headerHome .searching img {
+  height: 29px;
+}
+.headerHome .searching img:hover {
+  cursor: pointer;
+}
+.headerHome .navbar ul {
+  display: flex;
+  align-items: center;
+}
+.headerHome .navbar ul li {
+  padding-left: 24px;
+  list-style-type: none;
+}
+.headerHome .navbar ul li:hover {
+  cursor: pointer;
+}
+
+.mainHome {
+  margin: 30px 16%;
+  display: flex;
+}
+.mainHome .main {
+  margin-right: 28px;
+  flex-grow: 1;
+}
+.mainHome .main .storiesSection {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 25px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+}
+.mainHome .main .storiesSection .storiesContainer {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+.mainHome .main .storiesSection .storiesContainer .story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+.mainHome .main .storiesSection .storiesContainer .story .gradientBorder {
+  height: 65px;
+  width: 65px;
+  padding: 1px;
+  background: linear-gradient(#ccc, #ccc) padding-box, linear-gradient(to right, #f99c4b, #fb3570) border-box;
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+.mainHome .main .storiesSection .storiesContainer .story .gradientBorder img {
+  height: 65px;
+  border-radius: 50%;
+}
+.mainHome .main .storiesSection .storiesContainer .story p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.mainHome .main .storiesSection .storiesContainer .story:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection {
+  width: 100%;
+}
+.mainHome .main .postSection .postContainer .post {
+  margin-bottom: 60px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+}
+.mainHome .main .postSection .postContainer .post .headerPost {
+  height: 32px;
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle {
+  display: flex;
+  align-items: center;
+}
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle img:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle .postUser {
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #262626;
+}
+.mainHome .main .postSection .postContainer .post .headerPost .postTitle .postUser:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainHome .main .postSection .postContainer .post .headerPost .postOption {
+  font-size: 16px;
+}
+.mainHome .main .postSection .postContainer .post .headerPost .postOption:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection .postContainer .post .picturePost img {
+  width: 100%;
+}
+.mainHome .main .postSection .postContainer .post .iconPost {
+  height: 40px;
+  margin-top: 4px;
+  padding: 0px 16px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postSection .postContainer .post .iconPost .imgIcon {
+  height: 24px;
+  padding: 6px;
+}
+.mainHome .main .postSection .postContainer .post .iconPost .imgIcon:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection .postContainer .post .likePost {
+  height: 18px;
+  margin-bottom: 8px;
+  padding: 0px 16px;
+}
+.mainHome .main .postSection .postContainer .post .likePost p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mainHome .main .postSection .postContainer .post .likePost p:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection .postContainer .post .commentsPost {
+  padding: 0px 16px;
+  margin-bottom: 8px;
+}
+.mainHome .main .postSection .postContainer .post .commentsPost p {
+  display: inline;
+  font-size: 14px;
+}
+.mainHome .main .postSection .postContainer .post .commentsPost p:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection .postContainer .post .commentsPost .postUser {
+  font-weight: 600;
+}
+.mainHome .main .postSection .postContainer .post .commentsPost .postUser:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainHome .main .postSection .postContainer .post .commentsPost .greyText {
+  color: grey;
+}
+.mainHome .main .postSection .postContainer .post .timePost {
+  height: 18px;
+  padding: 0px 16px;
+  color: grey;
+  font-size: 12px;
+}
+.mainHome .main .postSection .postContainer .post .footerPost {
+  height: 55px;
+  margin-top: 4px;
+  padding: 0px 16px;
+  border-top: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter {
+  display: flex;
+  align-items: center;
+}
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter img {
+  height: 30px;
+  padding-right: 16px;
+}
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter img:hover {
+  cursor: pointer;
+}
+.mainHome .main .postSection .postContainer .post .footerPost .leftFooter p {
+  color: grey;
+  font-size: 14px;
+}
+.mainHome .main .postSection .postContainer .post .footerPost .rightFooter {
+  font-weight: 600;
+  color: #b3dffc;
+}
+.mainHome .main .postSection .postContainer .post .footerPost .rightFooter:hover {
+  cursor: pointer;
+}
+.mainHome .aside {
+  width: 300px;
+  height: 1000px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  width: 100%;
+  background-color: #fafafa;
+  border: #dbdbdb 0px solid;
+  min-width: 300px;
+}
+
+.currentUser {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr;
+  column-gap: 5px;
+  justify-content: left;
+  align-content: flex-start;
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  max-height: 70px;
+}
+
+.suggest {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  column-gap: 5px;
+  justify-content: left;
+  align-content: flex-start;
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  max-height: 70px;
+}
+
+.suggestText {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: none;
+  background-color: none;
+  border: #dbdbdb none solid;
+}
+
+.suggest a {
+  text-decoration: none;
+  color: #6ac1f3;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  justify-self: center;
+  align-self: center;
+}
+
+.currentUser a {
+  text-decoration: none;
+  color: #6ac1f3;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  justify-self: center;
+  align-self: center;
+}
+
+.suggestText p {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.suggestText span {
+  color: #ada9a9;
+}
+
+.suggesTitle {
+  display: grid;
+  grid-template-columns: 3fr 1fr 0fr;
+  column-gap: 5px;
+  justify-content: left;
+  align-content: flex-start;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+}
+
+.suggesTitle p {
+  justify-self: left;
+  color: #ada9a9;
+  margin: 10px;
+}
+
+.suggesTitle span {
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+  color: #6ac1f3;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  justify-self: center;
+  align-self: center;
+}
+
+.imag1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  background-image: url("./img/cara1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imag2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  background-image: url("./img/cara2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imag3 {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  background-image: url("./img/cara3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imag4 {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  background-image: url("./img/cara4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imag5 {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  background-image: url("./img/cara5.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.user {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  margin: 5px;
+  background-image: url("./img/userface.png");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+.extra {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+  color: #ada9a9;
+  margin: 20px;
+  line-height: 200%;
+}
+
+@media (max-width: 768px) {
+  section.main {
+    margin: 0 11%;
+    margin-top: 100px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .mainhome .main {
+    margin-right: 0;
+  }
+  .mainhome .aside {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

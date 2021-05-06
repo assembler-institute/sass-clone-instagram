@@ -1,0 +1,37 @@
+@use "./global" as global;
+.headerHome {
+  padding: 10px 16%;
+  height: 35px;
+  background-color: white;
+  border-bottom: global.$borderColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .imgLogo {
+    height: 29px;
+    margin-top: 8px;
+    cursor: pointer;
+    @include global.resetMarginPadding;
+  }
+  .searching {
+    img {
+      height: 29px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+  .navbar {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        padding-left: 24px;
+        list-style-type: none;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
