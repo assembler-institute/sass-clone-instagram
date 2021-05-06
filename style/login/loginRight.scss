@@ -1,0 +1,135 @@
+@use 'helpers' as *;
+
+
+.loginRightContainer {
+    max-width: 350px;
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+    @media only screen and (max-width: 499px) {
+      margin-top: 0;
+      max-width: none;
+    }
+    .loginFormContainer {
+      @include borderContainer;
+      @media only screen and (max-width: 499px) {
+        @include borderContainerSmallScreen;
+      }
+      .imageContainer {
+        text-align: center;
+        border-radius: 1px;
+        #loginLogo {
+          width: 180px;
+          height: 55px;
+          margin: 22px auto 12px;
+        }
+      }
+
+      form {
+        margin-bottom: 10px;
+        .inputsWrapper {
+          margin-top: 24px;
+          @include loginFlex(column, none, none);
+          .inputContainer {
+            margin: 0 40px 6px;
+            text-align: center;
+            input {
+              font-size: 14px;
+              border: $mainBorder;
+              width: 96%;
+              background-color: $mainColor;
+              padding: 9px 0 7px 8px;
+              border-radius: 3px;
+              &::-webkit-input-placeholder {
+                font-size: 12px;
+              }
+              &:focus {
+                outline: none;
+                border: 1px solid $mainGray;
+              }
+              @media only screen and (max-width: 499px) {
+                width: 85%;
+              }
+            }
+            .loginButton {
+              @include fontStyle(14px, 900, $mainWhite);
+              width: 100%;
+              background-color: $mainBlue;
+              height: 30px;
+              border: none;
+              border-radius: 4px;
+              margin-top: 8px;
+              padding: 5px;
+              @media only screen and (max-width: 499px) {
+                width: 89%;
+              }
+            }
+          }
+          .barContainer {
+            @include loginFlex(row, none, none);
+            margin: 10px 40px 18px;
+            .grayBar {
+              background-color: $mainLightGray;
+              height: 1px;
+              position: relative;
+              flex-grow: 1;
+              top: 0.45em;
+            }
+            .barText {
+              margin: 0 18px;
+              @include fontStyle(13px, 600, $mainGray);
+            }
+          }
+          .loginFacebook {
+            @extend .barContainer;
+            justify-content: center;
+            line-height: 18px;
+            .facebookIcon {
+              margin-right: 8px;
+            }
+            .loginFacebookText {
+              @include fontStyle(14px, 600, #385185);
+            }
+          }
+          .forgotPassword {
+            @include fontStyle(12px, none, #00376b);
+            text-align: center;
+          }
+        }
+      }
+    }
+    .signUpContainer {
+      @include borderContainer;
+      line-height: 18px;
+      text-align: center;
+      @media only screen and (max-width: 499px) {
+        @include borderContainerSmallScreen;
+      }
+      p {
+        margin: 13px;
+        font-size: 14px;
+        span {
+          color: $mainBlue;
+          font-weight: 600;
+        }
+      }
+    }
+    .appStoreContainer {
+      margin: 10px 0;
+      @include loginFlex(column, none, center);
+      .appStoreText {
+        p {
+          font-size: 14px;
+          margin: 10px 20px;
+        }
+      }
+
+      .appStoreIcons {
+        margin: 10px 0;
+        img {
+          height: 40px;
+          padding: 0 2px;
+        }
+      }
+    }
+  }

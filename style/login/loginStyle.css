@@ -5,420 +5,73 @@ body {
   background-color: #fafafa;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 body main {
   margin: 0;
   padding: 0;
   position: relative;
   width: 100%;
 }
-
 body main .loginContainer {
   margin: 32px auto 0;
   max-width: 935px;
   padding-bottom: 32px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   text-align: none;
 }
-
 @media only screen and (max-width: 856px) {
   body main .loginContainer {
     margin: 13px auto 0;
   }
 }
-
 @media only screen and (max-width: 499px) {
   body main .loginContainer {
     margin: 0;
   }
 }
 
-body main .loginContainer .loginLeftContainer {
+.loginLeftContainer {
   background-image: url("/assets/images/phone.png");
   background-position: 0 0;
   background-size: 454px 618px;
-  -ms-flex-preferred-size: 454px;
-      flex-basis: 454px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  flex-basis: 454px;
+  align-self: center;
   height: 618px;
   margin-left: -35px;
   margin-right: -15px;
 }
-
 @media only screen and (max-width: 856px) {
-  body main .loginContainer .loginLeftContainer {
+  .loginLeftContainer {
     display: none;
   }
 }
-
-body main .loginContainer .loginLeftContainer .fadeImages {
+.loginLeftContainer .fadeImages {
   margin: 99px 0 0 151px;
   position: relative;
 }
-
-body main .loginContainer .loginLeftContainer .fadeImages img {
+.loginLeftContainer .fadeImages img {
   position: absolute;
   top: 0;
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 22s;
-          animation-duration: 22s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 22s;
 }
-
-body main .loginContainer .loginLeftContainer .fadeImages img:nth-of-type(5) {
-  -webkit-animation-delay: 18s;
-          animation-delay: 18s;
+.loginLeftContainer .fadeImages img:nth-of-type(5) {
+  animation-delay: 18s;
 }
-
-body main .loginContainer .loginLeftContainer .fadeImages img:nth-of-type(4) {
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+.loginLeftContainer .fadeImages img:nth-of-type(4) {
+  animation-delay: 14s;
 }
-
-body main .loginContainer .loginLeftContainer .fadeImages img:nth-of-type(3) {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+.loginLeftContainer .fadeImages img:nth-of-type(3) {
+  animation-delay: 10s;
 }
-
-body main .loginContainer .loginLeftContainer .fadeImages img:nth-of-type(2) {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+.loginLeftContainer .fadeImages img:nth-of-type(2) {
+  animation-delay: 6s;
 }
-
-body main .loginContainer .loginLeftContainer .fadeImages img:nth-of-type(1) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-body main .loginContainer .loginRightContainer {
-  max-width: 350px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 32px;
-  width: 100%;
-}
-
-@media only screen and (max-width: 499px) {
-  body main .loginContainer .loginRightContainer {
-    margin-top: 0;
-    max-width: none;
-  }
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer {
-  border-radius: 1px;
-  margin: 0 0 10px;
-  padding: 10px 0;
-  border: 1px solid #dbdbdb;
-  background-color: #fff;
-}
-
-@media only screen and (max-width: 499px) {
-  body main .loginContainer .loginRightContainer .loginFormContainer {
-    margin: 0;
-    border-radius: 0;
-    border: none;
-  }
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer .imageContainer {
-  text-align: center;
-  border-radius: 1px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer .imageContainer #loginLogo {
-  width: 180px;
-  height: 55px;
-  margin: 22px auto 12px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form {
-  margin-bottom: 10px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper {
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  text-align: none;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer {
-  margin: 0 40px 6px;
-  text-align: center;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input {
-  font-size: 14px;
-  border: 1px solid #dbdbdb;
-  width: 96%;
-  background-color: #fafafa;
-  padding: 9px 0 7px 8px;
-  border-radius: 3px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input::-webkit-input-placeholder {
-  font-size: 12px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input:focus {
-  outline: none;
-  border: 1px solid #8e8e8e;
-}
-
-@media only screen and (max-width: 499px) {
-  body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input {
-    width: 85%;
-  }
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer .loginButton {
-  font-size: 14px;
-  font-weight: 900;
-  color: #fff;
-  width: 100%;
-  background-color: #0095f6;
-  height: 30px;
-  border: none;
-  border-radius: 4px;
-  margin-top: 8px;
-  padding: 5px;
-}
-
-@media only screen and (max-width: 499px) {
-  body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer .loginButton {
-    width: 89%;
-  }
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer, body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  text-align: none;
-  margin: 10px 40px 18px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .grayBar, body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .grayBar {
-  background-color: #dbdbdb;
-  height: 1px;
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  top: 0.45em;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .barText, body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .barText {
-  margin: 0 18px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #8e8e8e;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  line-height: 18px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .facebookIcon {
-  margin-right: 8px;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .loginFacebookText {
-  font-size: 14px;
-  font-weight: 600;
-  color: #385185;
-}
-
-body main .loginContainer .loginRightContainer .loginFormContainer form .inputsWrapper .forgotPassword {
-  font-size: 12px;
-  font-weight: none;
-  color: #00376b;
-  text-align: center;
-}
-
-body main .loginContainer .loginRightContainer .signUpContainer {
-  border-radius: 1px;
-  margin: 0 0 10px;
-  padding: 10px 0;
-  border: 1px solid #dbdbdb;
-  background-color: #fff;
-  line-height: 18px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 499px) {
-  body main .loginContainer .loginRightContainer .signUpContainer {
-    margin: 0;
-    border-radius: 0;
-    border: none;
-  }
-}
-
-body main .loginContainer .loginRightContainer .signUpContainer p {
-  margin: 13px;
-  font-size: 14px;
-}
-
-body main .loginContainer .loginRightContainer .signUpContainer p span {
-  color: #0095f6;
-  font-weight: 600;
-}
-
-body main .loginContainer .loginRightContainer .appStoreContainer {
-  margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  text-align: center;
-}
-
-body main .loginContainer .loginRightContainer .appStoreContainer .appStoreText p {
-  font-size: 14px;
-  margin: 10px 20px;
-}
-
-body main .loginContainer .loginRightContainer .appStoreContainer .appStoreIcons {
-  margin: 10px 0;
-}
-
-body main .loginContainer .loginRightContainer .appStoreContainer .appStoreIcons img {
-  height: 40px;
-  padding: 0 2px;
-}
-
-body footer {
-  margin: 24px 0 52px 0;
-}
-
-@media only screen and (max-width: 856px) {
-  body footer {
-    padding: 0 16px;
-  }
-}
-
-body footer .loginFooterBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  text-align: none;
-  color: #8e8e8e;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-body footer .loginFooterBox .loginFooterLists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  text-align: none;
-  margin-bottom: 12px;
-}
-
-body footer .loginFooterBox .loginFooterLists .loginFooterLine {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: none;
-}
-
-@media only screen and (max-width: 856px) {
-  body footer .loginFooterBox .loginFooterLists .loginFooterLine {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-body footer .loginFooterBox .loginFooterLists .loginFooterLine .loginFooterList {
-  margin: 0 8px 8px;
-}
-
-body footer .loginFooterBox .loginFooterLists .loginFooterLine .loginFooterList select {
-  border: none;
-  font-size: 12px;
-  width: 62px;
-  color: #8e8e8e;
-  -webkit-appearance: 1px;
-  background-color: #fafafa;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-  }
-  53% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+.loginLeftContainer .fadeImages img:nth-of-type(1) {
+  animation-delay: 2s;
 }
 
 @keyframes fade {
@@ -438,4 +91,218 @@ body footer .loginFooterBox .loginFooterLists .loginFooterLine .loginFooterList 
     opacity: 0;
   }
 }
+.loginRightContainer {
+  max-width: 350px;
+  justify-content: center;
+  margin-top: 32px;
+  width: 100%;
+}
+@media only screen and (max-width: 499px) {
+  .loginRightContainer {
+    margin-top: 0;
+    max-width: none;
+  }
+}
+.loginRightContainer .loginFormContainer {
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+@media only screen and (max-width: 499px) {
+  .loginRightContainer .loginFormContainer {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+}
+.loginRightContainer .loginFormContainer .imageContainer {
+  text-align: center;
+  border-radius: 1px;
+}
+.loginRightContainer .loginFormContainer .imageContainer #loginLogo {
+  width: 180px;
+  height: 55px;
+  margin: 22px auto 12px;
+}
+.loginRightContainer .loginFormContainer form {
+  margin-bottom: 10px;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  text-align: none;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer {
+  margin: 0 40px 6px;
+  text-align: center;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input {
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  width: 96%;
+  background-color: #fafafa;
+  padding: 9px 0 7px 8px;
+  border-radius: 3px;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input:focus {
+  outline: none;
+  border: 1px solid #8e8e8e;
+}
+@media only screen and (max-width: 499px) {
+  .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer input {
+    width: 85%;
+  }
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer .loginButton {
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  width: 100%;
+  background-color: #0095f6;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding: 5px;
+}
+@media only screen and (max-width: 499px) {
+  .loginRightContainer .loginFormContainer form .inputsWrapper .inputContainer .loginButton {
+    width: 89%;
+  }
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .barContainer, .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  text-align: none;
+  margin: 10px 40px 18px;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .grayBar, .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .grayBar {
+  background-color: #dbdbdb;
+  height: 1px;
+  position: relative;
+  flex-grow: 1;
+  top: 0.45em;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .barContainer .barText, .loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .barText {
+  margin: 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook {
+  justify-content: center;
+  line-height: 18px;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .facebookIcon {
+  margin-right: 8px;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .loginFacebook .loginFacebookText {
+  font-size: 14px;
+  font-weight: 600;
+  color: #385185;
+}
+.loginRightContainer .loginFormContainer form .inputsWrapper .forgotPassword {
+  font-size: 12px;
+  font-weight: none;
+  color: #00376b;
+  text-align: center;
+}
+.loginRightContainer .signUpContainer {
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  line-height: 18px;
+  text-align: center;
+}
+@media only screen and (max-width: 499px) {
+  .loginRightContainer .signUpContainer {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+}
+.loginRightContainer .signUpContainer p {
+  margin: 13px;
+  font-size: 14px;
+}
+.loginRightContainer .signUpContainer p span {
+  color: #0095f6;
+  font-weight: 600;
+}
+.loginRightContainer .appStoreContainer {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  text-align: center;
+}
+.loginRightContainer .appStoreContainer .appStoreText p {
+  font-size: 14px;
+  margin: 10px 20px;
+}
+.loginRightContainer .appStoreContainer .appStoreIcons {
+  margin: 10px 0;
+}
+.loginRightContainer .appStoreContainer .appStoreIcons img {
+  height: 40px;
+  padding: 0 2px;
+}
+
+footer {
+  margin: 24px 0 52px 0;
+}
+@media only screen and (max-width: 856px) {
+  footer {
+    padding: 0 16px;
+  }
+}
+footer .loginFooterBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  text-align: none;
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 14px;
+}
+footer .loginFooterBox .loginFooterLists {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  text-align: none;
+  margin-bottom: 12px;
+}
+footer .loginFooterBox .loginFooterLists .loginFooterLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: none;
+}
+@media only screen and (max-width: 856px) {
+  footer .loginFooterBox .loginFooterLists .loginFooterLine {
+    flex-wrap: wrap;
+  }
+}
+footer .loginFooterBox .loginFooterLists .loginFooterLine .loginFooterList {
+  margin: 0 8px 8px;
+}
+footer .loginFooterBox .loginFooterLists .loginFooterLine .loginFooterList select {
+  border: none;
+  font-size: 12px;
+  width: 62px;
+  color: #8e8e8e;
+  -webkit-appearance: 1px;
+  background-color: #fafafa;
+}
+
 /*# sourceMappingURL=loginStyle.css.map */
