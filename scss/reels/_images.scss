@@ -1,0 +1,74 @@
+@use 'mixins';
+
+$samplePhoto: 'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg';
+
+$profileOne: 'https://pbs.twimg.com/profile_images/1355306722429181966/4fYyGC3D.jpg';
+$profileTwo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png';
+$profileThree: 'https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png';
+$profileFour: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png';
+$profileFive: 'https://midu.dev/images/tags/node.png';
+
+$profileSix: '/img/marc.jpg';
+$profileSeven: '/img/mathias.jpg';
+$profileEight: '/img/pau.jpg';
+$profileNine: '/img/manu.jpg';
+$profileTen: '/img/hayk.jpg';
+$profileEleven: '/img/nacho.jpg';
+$profileTwelve: '/img/hugo.jpg';
+$profileThirteen: '/img/oriol.jpg';
+
+
+$searchIcon : '/img/search.svg';
+
+
+.profile-img-1 {
+  @include mixins.backgroundImage($profileOne);
+}
+
+.profile-img-2 {
+  @include mixins.backgroundImage($profileTwo);
+}
+
+.profile-img-3 {
+  @include mixins.backgroundImage($profileThree);
+}
+
+.profile-img-4 {
+  @include mixins.backgroundImage($profileFour);
+}
+
+.profile-img-5 {
+  @include mixins.backgroundImage($profileFive);
+}
+
+.profile-img-6 {
+  @include mixins.backgroundImage($profileSix);
+}
+
+.profile-img-7 {
+  @include mixins.backgroundImage($profileSeven);
+}
+
+.profile-img-8 {
+  @include mixins.backgroundImage($profileEight);
+}
+
+.profile-img-9 {
+  @include mixins.backgroundImage($profileNine);
+}
+
+.profile-img-10 {
+  @include mixins.backgroundImage($profileTen);
+}
+
+.profile-img-11 {
+  @include mixins.backgroundImage($profileEleven);
+}
+
+.profile-img-12 {
+  @include mixins.backgroundImage($profileTwelve);
+}
+
+.profile-img-13 {
+  @include mixins.backgroundImage($profileThirteen);
+}
