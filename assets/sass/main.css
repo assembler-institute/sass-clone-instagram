@@ -156,9 +156,17 @@ footerFirst footer footerSecond {
   color: green;
 }
 
-.far {
-  opacity: 1;
-  font-weight: normal;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stories__post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .stories {
@@ -168,20 +176,33 @@ footerFirst footer footerSecond {
   margin: 1.5rem auto;
   padding: 1rem 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   max-width: 700px;
 }
-.stories img {
-  border: 3px solid magenta;
+.stories__post {
+  cursor: pointer;
+}
+.stories__post__image {
   border-radius: 50%;
+  padding: 0.2rem;
+  background: linear-gradient(to bottom left, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
   height: 5rem;
   width: 5rem;
+  overflow: hidden;
+}
+.stories__post__image img {
+  border: 2px solid white;
+  border-radius: 50%;
+  max-width: 100%;
 }
 
 .post {
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   max-width: 700px;
   margin: 2.2rem auto;
   background-color: white;
+  cursor: pointer;
 }
 .post__title {
   display: flex;
@@ -217,6 +238,10 @@ footerFirst footer footerSecond {
 }
 .post__icons div i {
   margin-right: 1rem;
+}
+.post__icons .fa-heart {
+  font-weight: bold;
+  color: red;
 }
 .post__likes {
   padding: 0.6rem 1.5rem;
@@ -265,12 +290,6 @@ footerFirst footer footerSecond {
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 4rem;
   background-color: white;
@@ -299,4 +318,5 @@ header ul {
 header ul li {
   margin-left: 2.5rem;
   font-size: 1.4rem;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
