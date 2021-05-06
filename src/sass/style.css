@@ -153,7 +153,8 @@
 }
 .post .postHeader .postOptions {
   position: relative;
-  left: 300px;
+  margin-left: auto;
+  align-self: flex-end;
   font-size: 30px;
 }
 .post .postHeader .postProfileName {
@@ -163,6 +164,42 @@
 }
 .post .postImg {
   max-width: -webkit-fill-available;
+}
+.post .postLowerOptions {
+  display: flex;
+  height: 40px;
+  margin-top: 4px;
+  padding: 0 16px;
+}
+.post .postLowerOptions button {
+  border: none;
+  background: #fff;
+}
+.post .postLowerOptions .archiveBtn {
+  margin-left: auto;
+}
+.post .addCommentContainer {
+  display: flex;
+  height: 55px;
+  padding: 0 16px;
+  border-top: 1px solid #efefef;
+}
+.post .addCommentContainer .emotes {
+  align-self: center;
+  padding-right: 10px;
+}
+.post .addCommentContainer input {
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+.post .addCommentContainer .postCommentBtn {
+  align-self: center;
+  margin-left: auto;
+  color: #0095f6;
+  opacity: 0.3;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /*----------------- navBar ------------------*/
