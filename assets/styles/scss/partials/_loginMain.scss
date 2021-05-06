@@ -50,6 +50,7 @@
           }
 
           button {
+            border-radius: 3px;
             margin-top: 8px;
             margin-bottom: 8px;
             width: 100%;
@@ -59,6 +60,38 @@
             background-color: g.$disabledBlue;
             color: white;
           }
+        }
+
+        #orWrapper {
+          margin-top: 14px;
+          margin-bottom: 22px;
+          width: 258px;
+          @include g.flexDistribution(row, space-between, center);
+          .login-line {
+            width: 35%;
+            display: inline-block;
+          }
+
+          p {
+            width: fit-content;
+          }
+        }
+
+        #facebookWrapper {
+          width: 258px;
+          @include g.flexDistribution(row, center, center);
+
+          span {
+            img {
+              height: 16px;
+              width: auto;
+              margin-right: 8px;
+            }
+          }
+        }
+
+        #forgottenPassword {
+          margin-top: 15px;
         }
       }
 
