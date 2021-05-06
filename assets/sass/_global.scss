@@ -27,6 +27,7 @@ $anchor: 100%;
   position: absolute;
   z-index: $ejeZ;
   width: 50%;
+  max-width: 260px;
 }
 @mixin flex($direction, $xPos, $ypos, $color, $borde, $anchor) {
   display: $flexbox;

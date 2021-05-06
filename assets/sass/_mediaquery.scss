@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  section.main {
+    margin: 0 11%;
+    margin-top: 100px;
+  }
+  .image {
+    display: none;
+  }
+  //   footer {
+  //     .interesting-links {
+  //       flex-wrap: wrap;
+  //     }
+  //   }
+  .mainhome {
+    .main {
+      margin-right: 0;
+    }
+    .aside {
+      display: none;
+    }
+  }
+}

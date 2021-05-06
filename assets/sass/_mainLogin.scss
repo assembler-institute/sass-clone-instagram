@@ -30,7 +30,7 @@ section.main {
 }
 .log {
   @include global.flex(column, center, center, global.$backgroundC, 0px, 80%);
-  padding-right: 150px;
+  padding-right: 11%;
 }
 .or {
   @include global.flex(row, center, center, none, 0px, 80%);
@@ -80,7 +80,12 @@ section.main {
   height: 25px;
   color: white;
   font-family: global.$font;
+  font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gooPl {
   width: 40%;

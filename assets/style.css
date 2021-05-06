@@ -30,6 +30,7 @@ section.main {
   position: absolute;
   z-index: 1;
   width: 50%;
+  max-width: 260px;
   right: 100px;
 }
 
@@ -37,6 +38,7 @@ section.main {
   position: absolute;
   z-index: 0;
   width: 50%;
+  max-width: 260px;
   top: 10%;
 }
 
@@ -53,7 +55,7 @@ section.main {
   width: 80%;
   background-color: #fafafa;
   border: #dbdbdb 0px solid;
-  padding-right: 150px;
+  padding-right: 11%;
 }
 
 .or {
@@ -151,7 +153,12 @@ section.main {
   height: 25px;
   color: white;
   font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gooPl {
@@ -385,8 +392,9 @@ section.main {
 }
 
 footer {
-  margin: 60px 0;
-  padding: 0 200px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding: 0 11%;
 }
 footer .interestingLinks {
   display: flex;
@@ -402,6 +410,24 @@ footer a {
   font-size: 14px;
   color: #8e8e8e;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  section.main {
+    margin: 0 11%;
+    margin-top: 100px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .mainhome .main {
+    margin-right: 0;
+  }
+  .mainhome .aside {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
