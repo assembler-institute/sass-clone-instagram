@@ -3,29 +3,44 @@
 @import "general";
 @import "logo";
 @import "flex_grid";
+@import "border";
 
 
 $borderInitial: $facebookBlue 1px solid;
 $all__width:100%;
 
+* {
+  font-family: "Roboto",
+  sans-serif;
+}
+
 .container__home {
   @include flex__row__center;
   text-align: center;
-  width: 100%;
+  margin: 0 auto;
+  width: fit-content;
   height: 85vh;
   min-height: 550px;
   padding: 5% 20%;
-  gap: 2%;
+  gap: 20px;
   position: relative;
   .container__left {
+    background-image: url;
     height: 100%;
-    width: 400px;
+    .container__left__mobile {
+      height: 427px;
+      left: 27.8%;
+      /* opacity: 0; */
+      position: absolute;
+      top: 150px;
+      /* visibility: hidden; */
+      width: 240px;
+    }
   }
   .container__right {
     @include flex__column;
-    height: 100%;
-    width: 400px;
-    min-width: 300px;
+    height: 570px;
+    min-width: 350px;
     .main__logo {
       @include main_logo;
     }
@@ -34,18 +49,129 @@ $all__width:100%;
     }
     .login__profile {
       @include flex__column;
+      @include border_insta;
       align-items: center;
       gap: 20px;
       padding: 5%;
+      .login__profile__input {
+        width: 250px;
+        height: 30px;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+      }
+      .login__profile__input::placeholder{
+        font-size: 12px;
+        text-align: left;
+      }
+      .login__profile__button {
+        width: 250px;
+        height: 30px;
+        background-color: $activeBlue;
+        color: $notWhite;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+      }
     }
-    .bg__white {
-      background-color: $white;
+  }
+  .login__profile__or{
+    margin: 10px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    .login__profile__or__separator {
+      flex-grow: 1;
+      height: 1px;
+      position: relative;
+      top: 0.45em;
+      flex-shrink: 1;
+      color: black;
+      box-sizing: border-box;
+      border-bottom: 0.5px solid $lightGrey;
+    }
+    .login__profile__or__text {
+      flex-grow: 0;
+      flex-shrink: 0;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 15px;
+      margin: 0 18px;
+      text-transform: uppercase;
+      color: #8e8e8e;
+      font-weight: 500;
     }
   }
 }
+.login__profile__facebook{
+  margin: 0px 40px;
+  .login__profile__facebook__button {
+    background-color: transparent;
+    border: 0;
+    box-sizing: border-box;
+    color: #385185;
+    cursor: pointer;
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: inherit;
+    user-select: none;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    margin: 0 auto;
+  }
+  .login__profile__facebook__logo{
+    background-image: url(/public/assets/img/logos.png);
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+  }
+}
+.login__profile__forgotpass{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 0px;
+  text-align: center;
+  color: #385185;
+}
+.login__profile__signup {
+  top: 0;
+  height: 50px;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  padding: 10px 0;
+  margin: 10px 0px;
+  .login__profile__signup__text {
+    color: #262626;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+  }
+}
+.login__profile__getapp {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 8px 0px 0px;
+  padding: 0;
+  position: relative;
 
+}
 .footers_home {
   position: relative;
   height: 15vh;
   width: $all__width;
+}
+b {
+  color: $activeBlue;
 }

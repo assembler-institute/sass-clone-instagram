@@ -286,6 +286,10 @@ body {
       .img__round {
         @include img__round;
       }
+      .ul__home__footer {
+        display: flex;
+        flex-direction: column;
+      }
     }
     h6 {
       font-size: 1em;
