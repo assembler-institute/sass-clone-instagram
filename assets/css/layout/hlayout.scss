@@ -1,4 +1,5 @@
 @use "../root/hroot.scss" as hroot;
+
 .navBar {
   background-color: hroot.$bg;
   height: 54px;
@@ -80,25 +81,36 @@
     }
   }
   .posts {
+    background-color: white;
     width: 95%;
     height: auto;
     margin-left: 2.5%;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    overflow: hidden;
     @include hroot.borders();
     margin-top: hroot.$mt-containers;
     .postUser {
       width: 100%;
       height: 60px;
+      padding: 16px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
       @include hroot.borders-bottom();
       @include hroot.story(0px);
     }
     .post {
       width: 100%;
-      height: 613px;
+      height: max-content;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
     .postFoot {
       width: 100%;
-      height: 190px;
-      @include hroot.borders();
     }
   }
 }

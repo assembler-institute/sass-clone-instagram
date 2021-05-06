@@ -146,6 +146,10 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .navBar {
   background-color: #fafafa;
   height: 54px;
@@ -154,7 +158,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .navContent {
@@ -219,7 +223,7 @@ html {
   height: 100px;
   margin-left: 2.5%;
   display: flex;
-  border: 1px solid grey;
+  border: 1px solid #dbdbdb;
 }
 .left-section .stories .story {
   margin-left: 10px;
@@ -258,16 +262,24 @@ html {
   margin-top: 4px;
 }
 .left-section .posts {
+  background-color: white;
   width: 95%;
   height: auto;
   margin-left: 2.5%;
-  border: 1px solid grey;
+  border-radius: 3px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
   margin-top: 30px;
 }
 .left-section .posts .postUser {
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid grey;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
 }
 .left-section .posts .postUser .story {
   margin-left: 10px;
@@ -301,12 +313,15 @@ html {
 }
 .left-section .posts .post {
   width: 100%;
-  height: 613px;
+  height: max-content;
+  overflow: hidden;
+}
+.left-section .posts .post img {
+  width: 100%;
+  height: 100%;
 }
 .left-section .posts .postFoot {
   width: 100%;
-  height: 190px;
-  border: 1px solid grey;
 }
 
 .right-section {
@@ -378,7 +393,7 @@ html {
   height: 300px;
   margin-top: 25px;
   margin-left: 15px;
-  border: 1px solid grey;
+  border: 1px solid #dbdbdb;
 }
 .right-section .suggestions .sugg {
   width: 325px;
@@ -438,7 +453,233 @@ html {
   height: 120px;
   margin-top: 25px;
   margin-left: 15px;
-  border: 1px solid grey;
+  border: 1px solid #dbdbdb;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.full-height-main {
+  height: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.bg-grey {
+  background-color: #fafafa;
+}
+
+button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  margin: 0;
+  border-radius: 4px;
+  position: relative;
+  color: white;
+  background-color: #0095f6;
+  padding: 5px 9px;
+  border: 1px solid transparent;
+}
+
+input {
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  padding: 9px 8px 7px 8px;
+  background-color: #fafafa;
+  color: #262626;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  color: #385185;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.story-post {
+  width: 42px;
+  height: 42px;
+  border-radius: 28px;
+  background: #f09433;
+  justify-content: center;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.story-post .whiteb {
+  width: 34px;
+  height: 34px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.story-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postUser .my-user-info {
+  margin-left: 14px;
+  height: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.postUser .my-user-info .info {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 220px;
+  padding: 2px;
+  top: 1px;
+}
+.postUser .my-user-info .info2 {
+  color: #262626;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 2px;
+  bottom: 1px;
+}
+
+.post {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+.post img {
+  width: 100%;
+  height: 100%;
+}
+
+.p-foot {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mb4 {
+  margin-bottom: 4px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.bar-i {
+  display: flex;
+  align-items: center;
+}
+
+.icon-f {
+  padding: 8px;
+  height: 24px;
+  width: 24px;
+  display: block;
+  position: relative;
+}
+
+.icon-c {
+  height: 24px;
+  width: 24px;
+  padding: 8px 16px 8px 0;
+}
+
+.c {
+  width: 100%;
+}
+
+.mneg6 {
+  margin-left: -8px;
+}
+
+.r {
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+.text-f {
+  font-size: 14px;
+  color: #262626;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.grey {
+  color: #8e8e8e;
+}
+
+.text-s {
+  height: 16px;
+  font-size: 10px;
+  color: #8e8e8e;
+  text-transform: uppercase;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.nc-div {
+  border-top: 1px solid #dbdbdb;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.blue {
+  color: #0095f6;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.disabled {
+  opacity: 0.3;
+  justify-self: flex-end;
+}
+
+.icon-h {
+  height: 12px;
+}
+
+.row {
+  display: flex;
 }
 
 /*# sourceMappingURL=home.css.map */
