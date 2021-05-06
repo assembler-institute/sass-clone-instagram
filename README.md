@@ -6,13 +6,13 @@
 - 🌱 We are currently learning **SASS**
 
 - 👨‍💻 All of Einar projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
-- - 👨‍💻 All of Jordi projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
+- 👨‍💻 All of Jordi projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
 
 - 📫 How to reach Einar **grelsare13@gmail.com**
-- - 📫 How to reach Jordi **grelsare13@gmail.com**
+- 📫 How to reach Jordi **grelsare13@gmail.com**
 
 - ⚡ Fun fact about Einar **Amante de la tecnología, bateriste en mis ratos libres y LTBIQ+ activiste.**
-- - ⚡ Fun fact about Jordi **Amante de las fotos de gatitos.**
+- ⚡ Fun fact about Jordi **Amante de las fotos de gatitos.**
 
 <h3 align="left">Connect with Einar:</h3>
 <p align="left">
