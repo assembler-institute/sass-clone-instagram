@@ -12,7 +12,6 @@
 @mixin roundGradient($extSize) {
   @include flexCenter;
   @include circleImg($extSize);
-  margin: auto;
   border: 1px solid white;
   background: linear-gradient(55deg, #faa458, #c52d90);
   box-sizing: border-box;

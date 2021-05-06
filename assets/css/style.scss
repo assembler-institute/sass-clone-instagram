@@ -22,7 +22,7 @@
 main {
   background: $instagramBackground;
   @include flexCenter();
-  height: 85vh;
+  //height: 85vh;
   width: 100%;
 }
 
@@ -45,18 +45,25 @@ nav {
   @include flexCenter;
   $lateralPadding: 40px;
   justify-content: space-between;
-  background-color: white;
   flex-direction: row;
-  padding: 0px $lateralPadding;
-  border-bottom: 1px $borderColor solid;
-  height: 54px;
-  width: calc(100vw - $lateralPadding * 2);
+  width: 974px;
   color: $instagramBlue;
+
   a {
     display: flex;
     height: 100%;
     align-items: center;
   }
+  padding-right: 20px;
+}
+
+.nav-container {
+  background-color: white;
+  border-bottom: 1px $borderColor solid;
+  height: 54px;
+  position: sticky;
+  top: 0px;
+  justify-content: center;
 }
 
 .main-logo {
@@ -96,6 +103,7 @@ nav {
 .nav-icons {
   svg {
     margin-left: 22px;
+    cursor: pointer;
   }
   img {
     @include circleImg(22px);
@@ -112,14 +120,11 @@ nav {
 
 .main-container {
   margin-top: 30px;
-  width: 80%;
-  height: calc(100% - 30px);
+  width: 100%;
   margin: auto;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
-  /* TODO adjust size */
-}
-.feed-container {
 }
 
 /* STORIES -------------------------------------------------------------- */
@@ -141,6 +146,7 @@ nav {
 
 .story {
   width: 80px;
+  cursor: pointer;
 
   p {
     font-size: 12px;
@@ -158,7 +164,6 @@ nav {
 }
 .post {
   width: 612px;
-  /* height: 500px; */ /* temporal */
   margin-bottom: 60px;
   img {
     width: 100%;
@@ -231,8 +236,23 @@ nav {
 .post-comment {
 }
 
-.comment-count {
+.gray-text-s {
+  color: #c7c7c7;
+  font-size: 11px;
+}
+.gray-text-m {
   color: #8e8e8e;
+  font-size: 14px;
+}
+.gray-text-l {
+  color: #8e8e8e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.black-text-s {
+  color: $instagramBlack;
+  font-size: 12px !important;
 }
 
 .post-time {
@@ -279,27 +299,51 @@ nav {
   width: 320px;
   min-width: 300px;
   height: 500px;
-
-  outline: 1px black solid;
+  background-color: $instagramBackground;
   margin: 20px;
 
   .myProfileBox {
     @include flexCenter();
     height: 70px;
     width: 100%;
-    outline: 1px black solid;
-    background-color: lightcoral;
     flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    padding-left: 16px;
+
+    .sidebarPic {
+      img {
+        @include circleImg(56px);
+        margin-right: 20px;
+      }
+    }
   }
   .suggestionBox {
     height: 325px;
     width: 100%;
-    outline: 1px black solid;
-    background-color: lightgoldenrodyellow;
+    margin-top: 12px;
   }
   .captionBox {
     height: 106px;
     width: 100%;
-    background-color: lightblue;
+    line-height: 13px;
+  }
+}
+.suggestions-header {
+  margin-bottom: 8px;
+  padding: 0px 16px;
+}
+
+.suggestion {
+  padding: 8px 16px;
+  img {
+    @include circleImg(32px);
+    margin-right: 12px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .sidebar {
+    display: none;
   }
 }
