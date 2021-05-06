@@ -123,7 +123,7 @@ a:visited {
 @mixin elementBorder {
   border-radius: 3px;
   border: 1px solid $lightGray;
-  background-color: $darkWhite;
+  background-color: $lightWhite;
 }
 
 @mixin roundedElement($diameter, $borderWidth, $color) {
