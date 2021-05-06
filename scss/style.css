@@ -541,15 +541,16 @@ aside {
   width: 100%;
   margin-top: 15px;
 }
-.logIn-button-class button {
+.logIn-button-class a {
+  text-decoration: none;
+  width: 100%;
+}
+.logIn-button-class a button {
   width: 100%;
   border-radius: 3px;
   background-color: #0095f6;
   padding: 6px;
   font-weight: 600;
-}
-.logIn-button-class button a {
-  text-decoration: none;
   color: white;
 }
 
@@ -568,13 +569,13 @@ aside {
   border-color: gray;
 }
 
-.logInWithFacebook-class {
-  font-size: 0.9rem;
+.logInWithFacebook-class img {
+  margin-right: 10px;
+  margin-bottom: -5px;
 }
-.logInWithFacebook-class span:first-child a {
+.logInWithFacebook-class div:first-child a {
   text-decoration: none;
   color: #385185;
-  display: block;
   margin-top: 20px;
   font-weight: 600;
 }
