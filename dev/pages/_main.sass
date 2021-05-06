@@ -1,0 +1,361 @@
+header
+     width: 100%
+     height: 50px
+     background-color: $background-container
+     border-bottom: solid 1px #DBDBDB
+     margin: 0 0 2.5rem 0
+     display: flex
+     flex-direction: row
+     justify-content: space-around
+     align-items: center
+div.main__header--logo
+     width: auto
+     height: auto
+     display: flex
+     flex-direction: row
+     
+div.main__header--logo > img
+     max-width: 140px
+     height: 50px
+     margin-left: 11rem
+     padding: 0 0 0 1rem      
+
+div.main__header--search
+     width: 180px
+     padding: 0.2rem
+     border: $border
+     background-color: $background-main
+     display: flex
+     border-radius: 3px
+     text-align: center
+     flex-direction: row
+     justify-content: center
+
+div.main__header--search > i 
+     font-size: 1rem 
+div.main__header--search > i > input
+     border: none     
+     padding: 0.5rem
+     text-align: center
+div.main__header--search > i > input:hover
+     border: none     
+
+div.header__icons
+     display: flex
+     flex-direction: row
+     align-items: center
+     justify-content: center
+     margin-right: 7rem
+
+header > div > div 
+     display: flex
+     flex-direction: row
+     align-items: center
+
+header > div > div > img
+     border-radius: 50%
+     width: 2.5em
+     height: 2.5rem
+
+header > div > div > i
+     font-size: 1.8rem
+     margin-right: 1.8rem
+     
+main.main__main
+     width: 100%
+     height: calc(100vh - 80px)
+     display: flex
+     flex-direction: row
+
+section.stories
+     width: 70%
+     height: 100% 
+     background-color: $background-main
+     display: flex
+     flex-direction: column
+     justify-content: flex-start
+     //align-items: center
+     align-items: flex-end
+     overflow-y: scroll
+     overflow-x: hidden
+     padding-right: 0.5rem
+section.stories::-webkit-scrollbar
+    width: 0px  
+    height: 0px    
+
+section.stories::-webkit-scrollbar-thumb 
+    background: #CCC
+    border-radius: 4px
+section.stories::-webkit-scrollbar-thumb:hover 
+    background: #b3b3b3
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2)
+section.stories::-webkit-scrollbar-track
+    background: #b3b3b3
+    border-radius: 4px
+section.recommendations
+     width: 40%
+     height: auto
+     background-color: $background-main
+     display: flex
+     flex-direction: column
+     padding: 2rem 0 0 2rem
+
+div.main__stories
+     width: inherit
+     height: 100px
+     background-color: $background-container
+     margin: 0 0 2.5rem 0
+     border: $border
+     display: flex
+     align-items: center
+     overflow-x: scroll
+     overflow-y: hidden
+     padding: 4rem 0
+div.main__stories::-webkit-scrollbar
+    width: 0px  
+    height: 0px
+div.main__stories::-webkit-scrollbar-thumb 
+    background: #CCC
+    border-radius: 4px
+div.main__stories::-webkit-scrollbar-thumb:hover 
+    background: #b3b3b3
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2)
+div.main__stories::-webkit-scrollbar-track
+    background: #b3b3b3
+    border-radius: 4px
+div.storie
+     display: flex
+     flex-direction: column
+     align-items: center
+     justify-content: end
+     width: 70px
+     height: 85px
+div.storie div 
+     display: flex
+     flex-direction: row
+     justify-content: center
+     align-items: center
+     border: 4px solid $border-gradient
+     //background-image: -webkit-gradient(radial, left bottom, left top, color-stop(23%, rgba(131,58,180,1)), color-stop(56%, rgba(253,29,29,1)), color-stop(79%, rgba(252,176,69,1)))
+     //background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% )
+     width: 4.25rem
+     height: 4.25rem
+     margin: 0.75rem
+     border-radius: 50%
+div.storie > div >img 
+     width: 4rem
+     height: 4rem
+     border-radius: 50%
+
+
+     
+div.main__posts
+     width: inherit
+     height: auto
+     background-color: $background-container
+     border: $border
+     margin: 0 0 1.5rem 0
+
+div.main__posts--container
+     width: 100%
+     height: auto
+
+div.main__posts--user
+     width: auto
+     height: 10%
+     display: flex
+     flex-direction: row
+     justify-content: space-between
+     align-items: center
+     padding: 0.5rem 1rem
+
+div.main__posts--userName
+     display: flex
+     flex-direction: row
+     justify-content: center
+     align-items: center
+div.main__posts--userImg
+     margin: 0 1rem 0 0
+     width: 30px
+     height: 30px
+     //border: solid 1px
+     //border: 2px solid linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%)
+     border-radius: 20px 
+     display: flex
+     flex-direction: row
+     justify-content: center
+     align-items: center
+
+div.main__posts--userImg > img
+     width: inherit
+     max-width: 100%
+     height: inherit
+     max-height: 100%
+     border-radius: 20px 
+
+div.main__posts--img
+     width: 100%
+     height: 70%
+     background-color: red
+     display: flex
+     flex-direction: row
+
+div.main__posts--img > img
+     width: inherit
+     display: block
+     margin: auto
+
+div.main__posts--content
+     width: 100%
+     height: 20%
+div.main__posts--contentIcons
+     width: auto
+     display: flex 
+     flex-direction: row
+     justify-content: space-between
+     margin: 0rem 0rem
+
+div.main__posts--contentIcons > div > i
+     font-size: 1.8rem
+     margin: 0.5rem 1rem 
+div.main__posts--playback
+     display: flex 
+     flex-direction: row
+     justify-content: end
+     margin: 0.5rem 1rem
+
+span.main__posts--generalBold
+     margin: 0 0.5rem 0 0
+     font-weight: bold
+div.main__posts--userTitle
+     display: flex 
+     flex-direction: row
+     justify-content: end
+     margin: 0px 1rem 1rem 1rem
+     width: auto
+     height: auto
+
+div.main__posts--coments
+     width: 100%
+     height: 10%
+     border-top: $border
+div.main__posts--coments > div
+     display: flex
+     flex-direction: row
+     height: auto
+     width: auto
+     padding: 0.5rem 1rem
+     justify-content: flex-start
+     align-items: center
+     
+div.main__posts--coments > div > i
+     font-size: 1.5rem
+
+input.main__posts--comentsInput
+     width:  100%
+     height: 20%
+     padding: 0.5rem
+     margin: 0 0 0 0.5rem
+     border-top: 0
+     border-left: 0
+     border-right: 0
+     border-bottom: $border
+
+
+//@mixin bg-gradient($angle: 180deg, $color: #0bd, $amount: 20%) 
+     //background: linear-gradient($angle, $color, adjust-hue($color, $amount)) fixed;
+     //background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)
+#user
+     font-weight: bold
+
+.change__user.otherUser
+     margin-left: 10px
+
+.user__name
+     width: 100%
+     white-space: nowrap
+     text-overflow: ellipsis
+     overflow: hidden
+     margin-left: 1rem
+    
+.recommendations.change__user button
+     border: none
+     background-color: white
+     cursor: pointer
+     margin-left: 1rem
+     color: #0095F6
+     font-weight: bold
+
+.containerRecomend
+     width: 85%
+
+div.change__user
+     width: 70%
+     display: flex
+     justify-content: space-between
+     align-items: center
+
+div.change__user button
+     border: none
+     background-color: white
+
+div.change__user img
+     border-radius: 50%
+     width: 4.5rem
+     height: 4.5rem
+
+.sugestmentContainer
+     width: 100%
+
+div.sugerencias
+     margin-top: 1.5rem
+     display: flex
+     justify-content: space-between
+
+div.sugestedUsers
+     width: 70%
+     display: flex
+     flex-direction: column
+     justify-content: space-between
+
+div.sugerencias h5
+     color: grey
+
+div.sugerencias button
+     border: none
+     cursor: pointer
+     background-color: white
+
+div.sugerencias_users
+     display: flex
+     flex-direction: row
+     align-items: center
+     margin-top: 2rem
+
+div.sugerencias_users img
+     border-radius: 50%
+     width: 3.2em
+     height: 3.2rem
+
+div.sugerencias_users button
+     border: none
+     background-color: white
+     cursor: pointer
+     margin-left: 0.5rem
+     color: #0095F6
+     font-weight: bold
+
+.copy_text
+     color: lightgrey
+     margin-top: 4rem
+
+.copy_text h5
+     font-weight: 500
+     margin-top: 2rem
+
+@media (max-width: 1000px)
+    section.recommendations
+        display: none
+    section.stories
+        width: 80%
+        margin-left: 6%

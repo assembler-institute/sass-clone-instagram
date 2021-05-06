@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Instagram</title>
+  </head>
+
+  <body>
+    <div>
+      <section class="left">
+        <div class="left__mockup">
+          <img src="./src/img/mockup.png" alt="" />
+        </div>
+        <div class="left__containerImages">
+          <img id="img1" class="imagesOn" src="./src/img/1.jpg" alt="" />
+          <img id="img2" class="imagesFixed" src="./src/img/2.jpg" alt="" />
+          <img id="img3" class="imagesFixed" src="./src/img/3.jpg" alt="" />
+        </div>
+      </section>
+      <section class="right">
+        <main class="login__login">
+          <div class="login">
+            <div class="login__img">
+              <img src="./src/img/logo.png" />
+            </div>
+            <form class="login__form" action="./main.html">
+              <input type="text" placeholder="Phone, user or email" required />
+              <input type="password" placeholder="Password" required />
+              <button type="submit">Login</button>
+            </form>
+            <div class="separator">
+              <div class="line" id="leftLine"></div>
+              <div>o</div>
+              <div class="line" id="rightLine"></div>
+            </div>
+            <div class="loginOptions">
+              <div class="loginFacebook">
+                <img src="./src/img/facebook.png" width="15px" height="15px" />
+                <p class="facebook">Login with Facebook</p>
+              </div>
+              <p class="passwordForget">have you forgotten your password?</p>
+            </div>
+          </div>
+          <div class="create">
+            <p>Don't have an account?</p>
+            <a href="www.google.com">Register</a>
+          </div>
+          <div class="download">
+            <p>Download the App</p>
+            <div class="stores">
+              <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
+                ><img src="./src/img/app-store.png"
+              /></a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=841477B0-4311-49C1-BB5C-0634EA3FEBA0&utm_content=lo&utm_medium=badge"
+                ><img src="./src/img/google-play.png"
+              /></a>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+    <footer>
+      <div>
+        <div>
+          <div>Information</div>
+          <div>Blog</div>
+          <div>job</div>
+          <div>Help</div>
+          <div>API</div>
+          <div>Privacy</div>
+          <div>Terms</div>
+          <div>Featured</div>
+          <div>accounts</div>
+          <div>Hashtags</div>
+          <div>Locations</div>
+        </div>
+        <div>
+          <div>Beauty</div>
+          <div>Dance and show</div>
+          <div>Physical exercise</div>
+          <div>Food and drink</div>
+          <div>Home and gardening</div>
+          <div>Music</div>
+          <div>visual arts</div>
+        </div>
+      </div>
+      <div>© 2021 Instagram from Facebook</div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        setInterval(function () {
+          setTimeout(function () {
+            $("#img1").removeClass("imagesProgress imagesOn");
+            $("#img1").addClass("imagesFixed");
+            $("#img2").addClass("imagesProgress");
+          }, 3000);
+          setTimeout(function () {
+            $("#img2").removeClass("imagesProgress");
+            $("#img3").addClass("imagesProgress");
+          }, 6000);
+          setTimeout(function () {
+            $("#img3").removeClass("imagesProgress");
+            $("#img1").addClass("imagesProgress");
+          }, 9000);
+        }, 9000);
+      });
+    </script>
+  </body>
+</html>

@@ -1,72 +1,142 @@
-`#sass` `#css` `#html` `#master-in-software-engineering`
+· What is SASS? What does SASS stand for?
 
-# SASS - Clone Instagram <!-- omit in toc -->
+  - Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins     into regular CSS.
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+  - Syntactically Awesome Style Sheets
 
-> Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more
->
-> The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
+· What is a CSS pre-processor?
 
-## Index <!-- omit in toc -->
+  - A CSS preprocessor is a program that allows you to generate CSS from the preprocessor's unique syntax. There are several CSS preprocessors to choose from, however most CSS preprocessors will add some features that do not exist in pure CSS, such as variables, mixins, nested selectors, among others. These features make the CSS structure more readable and easy to maintain.
 
-- [Requirements](#requirements)
-- [Repository](#repository)
-- [Technologies used](#technologies-used)
-- [Project delivery](#project-delivery)
-- [Resources](#resources)
+· What does a pre-processor have to do with SASS?
 
-## Requirements
+  - SASS is a pre-processor
 
-- You must use variables at least once in the project.
-- You must use nesting.
-- You must use inheritance at least once in the project.
-- You cannot use third party libraries for the development of this pill
+· Why use SASS?
 
-## Repository
+  - CSS has evolved over recent years and the problems that lead developers to Sass in the first place seem to be less of an issue today. An example of CSS catching up with Sass is the introduction of CSS Variables.Sass functionality like nesting (when used carefully), mixins & partials still provide value to front-end developers and are not (yet) supported in vanilla CSS.
 
-First of all you must fork this project into your GitHub account.
+· SASS has disadvantages? Which are?
 
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
+  - The developer must have enough time to learn new features present in this preprocessor before using it.
+  - Using Sass may cause losing benefits of browser’s built-in element inspector.
+  - Code has to be compiled
+  - Difficult  Troubleshooting
 
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
+· What is a SASS Variable? Explain why are useful
 
-### Installing
+  - Sass variables are simple: you assign a value to a name that begins with $, and then you can refer to that name instead of the value itself.
 
-In this project you must use the VSCode SASS extension in order to compile SASS into CSS.
+  - Variables make it possible to reduce repetition, do complex math, configure libraries, and much more.
 
-First of all you will need to install the extension:
+· Explain the SASS variables property with an example.
 
-- [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+  - A property’s name can include interpolation, which makes it possible to dynamically generate properties as needed. You can even interpolate the entire property name
 
-When the extension is installed correctly, having a SASS file open, you must click on "Watch Sass":
+  - Sass makes this easier and less redundant by allowing property declarations to be nested. The outer property names are added to the inner, separated by a hyphen.
 
-<img src="https://raw.githubusercontent.com/ritwickdey/vscode-live-sass-compiler/master/images/Screenshot/AnimatedPreview.gif" width="600px">
+  .enlarge
+    font-size: 14px
+  transition:
+    property: font-size
+    duration: 4s
+    delay: 2s
 
-If you want to change some configuration of "Live SASS Compiler" you can check this official resource:
+  &:hover
+    font-size: 36px
 
-- [Live SASS Compiler Settings](https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md)
+  - If a declaration’s value is null or an empty unquoted string, Sass won’t compile that declaration to CSS at all.
 
-## Technologies used
+  $rounded-corners: false
 
-\* SASS
+  .button
+    border: 1px solid black
+    border-radius: if($rounded-corners, 5px, null)
 
-\* CSS
+· What is a mixin? Why is it important? Give an example
 
-\* HTML
+  - A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes. Here's an example for transform.
 
-## Project delivery
+  @mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
+  .box { @include transform(rotate(30deg)); }
 
-To deliver this project you must follow the steps indicated in the document:
+· What is SCSS? Give an example
 
-- [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
+  - SCSS is the syntax of CSS but with all the advantages of SASS
 
-## Resources
+· What is the difference between .scss and .sass syntax.
 
-- [SASS documentation](https://sass-lang.com/)
-- [W3S SASS](https://www.w3schools.com/sass/)
-- [SASS Guidelines](https://sass-guidelin.es/es/)
-- [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
-- [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+  - SCSS have the syntax of pure CSS and SASS don't use breaks or curly braces
+
+· In which cases would we use SCSS? And in which cases would we use SASS?
+
+  - I wil use SCSS if I'm more advanced programmer and SASS if I'm a beginer 
+
+· Explain how traditional CSS and Preprocessed CSS workflows are different.
+
+  - Traditional CSS is added to HTML and changes are applied once the page is loaded. With SASS, the .sass document is first compiled, a .css document is created and this is the one that applies the changes.
+
+. Can we create functions with SASS? If it is true, give an example.
+
+  - Yes.
+
+    @function mult($base, $exponent) {
+      $result: 1;
+      $exponent: $result * $base;
+      @return $exponent;
+    }
+
+· What is nesting? Is it useful? Give an example of nesting.
+
+  - Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Is useful for have more organized CSS.
+
+  nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+  li
+    display: inline-block
+
+  a
+    display: block
+    padding: 6px 12px
+    text-decoration: none
+
+· Difference between @use & @import? Give an example
+
+  - Fundamentally both rules do the same thing - load members inside another module. The main differences is how they handle members. @import makes everything globally accessible in the target file. Same as @import, @use rule enables us to break our stylesheet into more practical, smaller sections and load them inside other stylesheets. The key difference is how you access the original files' members. To do this you will need to refer to the namespace of the original file.
+
+  // _box.scss
+
+  @use 'button';
+
+  .boxButton {
+      @include button.buttonSmall;
+      margin: 1rem + button.$radius;
+  }
+
+- How can we import other CSS/SASS files in SASS? Give an example
+
+· Explain the concept of inheritance in SASS.
+
+  - Using @extend lets you share a set of CSS properties from one selector to another.
+
+· Why use @extend? Give an example
+
+  - Lets you share a set of CSS properties from one selector to another.
+
+  %message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+
+  .message {
+    @extend %message-shared;
+  }
