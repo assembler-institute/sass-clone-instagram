@@ -45,26 +45,16 @@ h4 {
   opacity: 1;
 }
 
-.loginForm {
-  background-color: white;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 60%;
-  height: 50%;
-  margin: 5%;
-  margin-top: 16%;
-  border: 2px #dbdbdb solid;
-}
-.loginForm .loginHeader {
-  margin-top: 5%;
-}
-.loginForm .loginHeader .logoHeader {
-  height: 100px;
-}
-.loginForm #loginSeparator {
-  margin-right: 3%;
-  margin-top: 5%;
+.downloadButton {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  padding-right: 4%;
+  flex-grow: 2;
+  transform: translateX(-116%);
+  height: 45px;
+  width: 185px;
+  cursor: pointer;
 }
 
 .downloadBox {
@@ -82,18 +72,6 @@ h4 {
   white-space: nowrap;
   text-align: center;
   font-weight: 500;
-}
-
-.downloadButton {
-  display: flex;
-  flex-direction: row;
-  margin-top: 25px;
-  padding-right: 1%;
-  flex-grow: 2;
-  transform: translateX(-123%);
-  height: 50px;
-  width: 180px;
-  cursor: pointer;
 }
 
 .loginForm {
@@ -116,7 +94,6 @@ h4 {
 .loginForm #loginSeparator {
   color: grey;
   font-size: 14px;
-  margin-left: 3%;
   margin-top: 4%;
 }
 .loginForm #loginSeparator #separatorLine {
@@ -135,7 +112,8 @@ h4 {
 }
 .loginForm #passForbidden {
   color: #385195;
-  margin-top: 3%;
+  margin-top: 7%;
+  font-weight: 100;
   font-size: 13px;
 }
 
