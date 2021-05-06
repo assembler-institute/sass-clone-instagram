@@ -1,27 +1,59 @@
-@use "../common" as c;
-
-* {
-    font-family: c.$font-family;
-}
+@use "../common" as common;
+@use "flex-properties" as flex;
+@use "borders" as borders;
+@use "fonts" as fonts;
+@use "bg-pointer" as bg-pointer;
 
 body {
+    font-family: common.$font-family;
     margin: 0;
 }
 
-nav {
+/* Variables used in this scss */
+
+$instaGradient: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+);
+
+%linear-gradient {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background: $instaGradient;
+    border-radius: 100%;
+}
+
+%space-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+@mixin w_h_square($side) {
+    width: $side;
+    height: $side;
+}
+
+/* Unique styles properties of nav */
+
+nav {
+    position: fixed;
+    width: 100%;
     height: 53px;
-    border-bottom: c.$box-border;
 }
 
 .container-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 0 20px 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 935px;
     height: 54px;
 }
 
@@ -36,118 +68,182 @@ nav {
 }
 
 .search-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 213px;
     height: 26px;
-    font-size: 14px;
-    color: c.$s-text-color;
-    border: c.$box-border;
-    border-radius: 3px;
-    background-color: c.$main-bg-color;
 }
 
 .search-icon {
     background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png);
     background-size: 440px 411px;
     background-position: -428px -241px;
-    width: 10px;
-    height: 10px;
+    @include w_h_square(10px);
     margin-top: 2px;
     margin-right: 6px;
 }
 
 .search-text {
-    font-weight: 300;
     width: 39px;
     height: 18px;
 }
 
 .nav-options-container {
-    display: flex;
-    justify-content: flex-end;
     width: 360px;
 }
 
 .options-box-nav{
-    display: flex;
-    justify-content: space-between;
     width: 198px;
     height: 22px;
     margin-left: 24px;
 }
 
-.option-nav {
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
-}
-
-.profile-picture-nav {
-    border-radius: 100%;
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    background-color: c.$main-bg-color;
-}
+/* Unique styles properties of main */
 
 .main-section {
     width: 935px;
-    margin-top: 30px;
+    margin-top: 84px;
 }
 
+/* Unique styles properties of left-main side */
+
 .left-main {
-    display: flex;
-    flex-direction: column;
     width: 614px;
 }
 
+/* Unique styles properties of histories section */
+
 .histories {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     height: 116px;
-    border: c.$box-border;
-    border-radius: 3px;
-    background-color: #fff;
     padding-left: 13px;
+    margin-bottom: 24px;
     overflow: hidden;
 }
 
 .profile-history {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-left: 7px;
     margin-right: 7px;
-    cursor: pointer;
 }
 
 .linear-gradient-history {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 100%;
-    width: 62px;
-    height: 62px;
+    @extend %linear-gradient;
+    @include w_h_square(66px);
+}
+
+.space-white-history {
+    @extend %space-white;
+    @include w_h_square(62px);
 }
 
 .profile-picture-history {
-    border-radius: 100%;
-    width: 56px;
-    height: 56px;
+    @include w_h_square(56px);
 }
 
 .profile-user-history {
     margin-top: 3px;
-    font-size: 12px;
 }
 
+/* Unique styles properties of post section */
+
+.article {
+    margin-bottom: 55px;
+}
+
+.article-data-profile {
+    height: 60px;
+    padding-left: 12px;
+    border-bottom: 1px solid #efefef;
+}
+
+.linear-gradient-post {
+    @extend %linear-gradient;
+    @include w_h_square(38px);
+    margin-right: 12px;
+}
+
+.space-white-post {
+    @extend %space-white;
+    @include w_h_square(34px);
+}
+
+.profile-picture-post {
+    @include w_h_square(30px);
+}
+
+.right-header-post {
+    width: 535px;
+}
+
+.image-container-post {
+    background-color: orange;
+    height: 450px;
+}
+
+.options-and-comments {
+    padding: 12px 13px 10px 15px;
+}
+
+.options-post {
+    margin-right: 12px;
+}
+
+.number-likes-post, .post-description, .view-all-comments, .post-comment-container, .time-before-publish {
+    margin-top: 5px;
+}
+
+.userp-description {
+    margin-left: 5px;
+}
+
+.footer-post {
+    padding: 3px 20px 0px 12px;
+    height: 56px;
+}
+
+.input-comment {
+    margin-left: 15px;
+}
+
+/* Unique styles properties of right main */
+
+.right-main {
+    position: fixed;
+    top: 106px;
+    left: 63.5%;
+    width: 297px;
+}
+
+.profile-picture-suggest{
+    @include w_h_square(66px);
+    margin-right: 15px;
+}
+
+.header-suggestions {
+    margin-top: 23px;
+}
+
+.users-suggested {
+    margin-top: 7px;
+}
+
+.each-user-suggested {
+    height: 48px;
+}
+
+.profile-picture-each-suggest {
+    @include w_h_square(32px);
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.footer-links-suggestions{
+    flex-wrap: wrap;
+    margin-top: 25px;
+    height: 36px;
+}
+
+.margin-link{
+    margin-right: 3px;
+}
+
+.from-facebook {
+    margin-top: 15px;
+}
