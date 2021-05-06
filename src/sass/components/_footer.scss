@@ -1,0 +1,12 @@
+@import "../base/variables";
+
+.footer {
+  background-color: $main-bg-color;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  padding: 0 20px;
+}
