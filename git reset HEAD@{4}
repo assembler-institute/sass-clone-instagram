@@ -1,0 +1,16 @@
+[33mdf576c3[m[33m ([m[1;36mHEAD -> [m[1;32mhome[m[33m, [m[1;31morigin/home[m[33m)[m HEAD@{0}: checkout: moving from login to home
+[33mb8db53d[m[33m ([m[1;32mlogin[m[33m)[m HEAD@{1}: checkout: moving from home to login
+[33mdf576c3[m[33m ([m[1;36mHEAD -> [m[1;32mhome[m[33m, [m[1;31morigin/home[m[33m)[m HEAD@{2}: checkout: moving from main to home
+[33mbe08260[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from home to main
+[33mdf576c3[m[33m ([m[1;36mHEAD -> [m[1;32mhome[m[33m, [m[1;31morigin/home[m[33m)[m HEAD@{4}: commit: suggestions section added profile pics
+[33m46a291a[m HEAD@{5}: commit: suggestions section fully styled except for profile pics
+[33m2200a6d[m HEAD@{6}: commit: added styles to suggested to follow section header. Image profil still left to style
+[33m9938d44[m HEAD@{7}: commit: fixed main and navBar containers aligment
+[33m295a682[m HEAD@{8}: commit: staged some files that were not staged before
+[33m75ea1d2[m HEAD@{9}: commit: added some sass code and created suggestionsBar.sass
+[33m37f69b0[m HEAD@{10}: commit: added navBar sass code. navBar done
+[33mea26019[m HEAD@{11}: commit: home html almost done. Time to start coding sass
+[33m0e631d5[m HEAD@{12}: checkout: moving from develop to home
+[33m1fd68ce[m[33m ([m[1;32mdevelop[m[33m)[m HEAD@{13}: checkout: moving from home to develop
+[33m0e631d5[m HEAD@{14}: checkout: moving from main to home
+[33mbe08260[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{15}: clone: from https://github.com/Ernest-DT/sass-clone-instagram.git

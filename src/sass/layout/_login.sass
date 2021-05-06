@@ -1,1 +1,167 @@
 @use "../components/componentsIndex" as comp
+@use "../abstracts/abstractsIndex" as abs
+
+@mixin flexCenter($direction)
+    width: 50%
+    justify-content: center
+    align-items: center
+    flex-direction: $direction
+    box-sizing: border-box
+
+body
+    background-color: abs.$background
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    overflow-y: scroll
+
+section
+    display: flex
+    height: 100%
+    justify-content: center
+
+.left
+    @include flexCenter(column)
+    display: flex
+    width: 451px
+    margin-left: -50px
+    margin-top:-14px
+
+.leftContent
+    background-image: url(../img/instaBackground.png)
+    height: 618px
+    background-size: 453px 618px
+    width: -webkit-fill-available
+    margin: 13px
+    .imgContainer
+        position: relative
+        margin: 99px 0 0 151px
+        img
+            width: 240px
+
+.right
+    @include flexCenter(column)
+    display: flex
+    max-width: 350px
+    margin-top: 10px
+.rightContent
+    text-align: center
+
+.rightContent1
+    background-color: #fff
+    border: 1px solid #dbdbdb
+    margin: 0 0 10px
+    padding: 10px 0
+    .instaSprite
+        height: 89px
+        width: 175px
+        margin: 4px 0 18px 0
+    .loginDiv
+        margin: 0 40px 6px
+        .loginForm
+            width: 100%
+            .loginInput
+                height: 38px
+                background: abs.$background
+                border: 1px solid #dbdbdb
+                border-radius: 3px
+                width: 100%
+                font-size: 12px
+                color: #8e8e8e
+                padding: 8px
+                margin: -1px
+                outline: none
+    .logIn
+        color: #fff
+        background-color: rgba(0,149,246)
+        opacity: .3
+        border: 1px solid transparent
+        border-radius: 4px
+        width: 100%
+        height: 29px
+        margin: 8px 0 0 0
+        outline: none
+        font-weight: 500
+        font-size: 14px
+        &:hover
+            opacity: 1
+    .dashDiv
+        display: flex
+        margin: 18px 40px 18px
+        .dashSpan
+            flex-grow: 1
+            background-color: #dbdbdb
+            height: 2px
+            position: relative
+            top: .45em
+        .dashText
+            margin: 0 18px
+            color: #8e8e8e
+            font-size: 13px
+            font-weight: 600
+            line-height: 15px
+    .contentButton
+        background-color: #fff
+        border: none
+        outline: none
+        margin: 2px
+        .faceLogo
+            height: 16px
+            width: 16px
+            margin-right: 4px
+        .faceText
+            color: #385185
+            font-weight: 600
+            font-size: 14px
+    .second
+        color: #00376b
+        font-size: 12px
+        margin-top: 12px
+        margin: 12px 0 7px 0
+
+.rightContent2
+    background-color: #fff
+    border: 1px solid #dbdbdb
+    padding: 7px 0
+    p
+        margin: 12px
+        font-size: 14px
+        span
+            font-weight: 600
+            color: #0095f6
+
+.rightContent3
+    margin: 20px 0 10px 0
+    p
+        font-size: 14px
+        margin-bottom: 3px
+    img
+        height: 40px
+        margin: 15px 2px
+
+footer
+    text-align: center
+    color: #8e8e8e
+    .footer1
+        margin-bottom: -3px
+        .footerText
+            font-size: 12px
+            line-height: 14px
+            margin-right: 10px
+
+    .footer2
+        margin-bottom: 12px
+        .footerText
+            font-size: 12px
+            line-height: 14px
+            margin-right: 10px
+
+    .footer3
+        margin-bottom: 56px
+        .footerText
+            font-size: 12px
+            line-height: 14px
+            margin-right: 7px
+        .downIcon
+            transform: rotate(180deg)
