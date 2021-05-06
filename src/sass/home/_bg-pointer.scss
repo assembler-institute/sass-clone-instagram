@@ -1,17 +1,17 @@
-@use "../common" as common;
+@use "../base/variables" as common;
 
 /* Background colors classes */
 
 .main-bg {
-    background-color: common.$main-bg-color;
+  background-color: common.$main-bg-color;
 }
 
 .white-bg {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Cursor pointer class */
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }

@@ -1,17 +1,17 @@
-@use "../common" as common;
+@use "../base/variables" as common;
 
 .border {
-    border: common.$box-border;
+  border: common.$box-border;
 }
 
 .border-b {
-    border-bottom: common.$box-border;
+  border-bottom: common.$box-border;
 }
 
 .border-radius {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 .border-circle {
-    border-radius: 100%;
+  border-radius: 100%;
 }

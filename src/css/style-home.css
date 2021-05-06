@@ -267,7 +267,11 @@ nav {
   margin-right: 12px;
 }
 
-.number-likes-post, .post-description, .view-all-comments, .post-comment-container, .time-before-publish {
+.number-likes-post,
+.post-description,
+.view-all-comments,
+.post-comment-container,
+.time-before-publish {
   margin-top: 5px;
 }
 

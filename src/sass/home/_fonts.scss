@@ -1,45 +1,45 @@
-@use "../common" as common;
+@use "../base/variables" as common;
 
-.f-14{
-    font-size: 14px;
+.f-14 {
+  font-size: 14px;
 }
 
-.f-12{
-    font-size: 12px;
+.f-12 {
+  font-size: 12px;
 }
 
-.f-11{
-    font-size: 11px;
+.f-11 {
+  font-size: 11px;
 }
 
-.f-10{
-    font-size: 10px;
+.f-10 {
+  font-size: 10px;
 }
 
-.fw-600{
-    font-weight: 600;
+.fw-600 {
+  font-weight: 600;
 }
 
-.fw-300{
-    font-weight: 300;
+.fw-300 {
+  font-weight: 300;
 }
 
-.fw-400{
-    font-weight: 400;
+.fw-400 {
+  font-weight: 400;
 }
 
-.f-primary{
-    color: common.$p-text-color;
+.f-primary {
+  color: common.$p-text-color;
 }
 
-.f-secundary{
-    color: common.$s-text-color;
+.f-secundary {
+  color: common.$s-text-color;
 }
 
 .f-primary-link {
-    color: common.$p-link-color;
+  color: common.$p-link-color;
 }
 
-.f-footer{
-    color: #c7c7c7;
+.f-footer {
+  color: #c7c7c7;
 }
