@@ -9,8 +9,6 @@
 
   /*--------------------------LEFT------------------------------*/
   #mainLeft {
-    // overflow: scroll;
-    // max-height: inherit;
     width: 614px;
     margin-right: 28px;
 
@@ -67,6 +65,7 @@
             margin-right: 14px;
           }
         }
+
         .post-photo {
           @include g.photoBlock(1px);
         }
@@ -174,18 +173,22 @@
     #sidebarBottom {
       #sidebarSuggestions {
         margin-bottom: 35px;
+
         .sidebar-suggestion {
           @include g.flexDistribution(row, flex-start, center);
           margin-bottom: 16px;
+
           .suggestion-photo {
             @include g.roundedElement(32px, 1px, g.$darkGray);
             margin-right: 12px;
             cursor: pointer;
           }
+
           .suggestion-text {
             flex-grow: 1;
             margin-right: 20px;
           }
+
           .follow-text {
             cursor: pointer;
           }
