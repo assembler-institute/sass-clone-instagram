@@ -1,13 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/login/loginStyle.css">
     <title>Log in</title>
 </head>
+
 <body>
-    <div class="left"></div>
-    <div class="right"></div>
-    <footer></footer>
+    <!-- Log In Main Container -->
+    <main>
+        <div class="loginContainer">
+            <!-- Left Container -->
+            <div class="loginLeftContainer">
+
+                <div class="fadeImages">
+                    <img src="./assets/images/screen1.jpeg" alt="screen1">
+                    <img src="./assets/images/screen2.jpeg" alt="screen2">
+                    <img src="./assets/images/screen3.jpeg" alt="screen3">
+                    <img src="./assets/images/screen4.jpeg" alt="screen4">
+                    <img src="./assets/images/screen5.jpeg" alt="screen5">
+                </div>
+            </div>
+            <!-- Right Container -->
+            <div class="loginRightContainer">
+                <div class="loginFormContainer">
+                    <!-- Instagram Logo -->
+                    <div class="imageContainer">
+                        <img src="./assets/images/logo_text.png" alt="logoText" id="loginLogo">
+                    </div>
+                    <!-- Log in Form -->
+                    <form action="">
+                        <div class="inputsWrapper">
+                            <div class="inputContainer">
+                                <input placeholder="Phone number, username, or email">
+                            </div>
+                            <div class="inputContainer">
+                                <input placeholder="Password">
+                            </div>
+                            <div class="inputContainer">
+                                <a href="home.html"><input type="button" class="loginButton" value="Log in"></input></a>
+                            </div>
+                            <div class="barContainer">
+                                <div class="grayBar"></div>
+                                <div class="barText">OR</div>
+                                <div class="grayBar"></div>
+                            </div>
+                            <div class="loginFacebook">
+                                <span class="facebookIcon"><img src="./assets/images/facebook.png" alt=""></span>
+                                <span class="loginFacebookText">Log in with Facebook</span>
+                            </div>
+                            <div class="forgotPassword">Forgot password?</div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Sign Up Container -->
+                <div class="signUpContainer">
+                    <div class="signUpText">
+                        <p>Don't have an account?<span> Sign up</span></p>
+                    </div>
+                </div>
+                <!-- App Store Icons Container -->
+                <div class="appStoreContainer">
+                    <div class="appStoreText">
+                        <p>Get the app</p>
+                    </div>
+                    <div class="appStoreIcons">
+                        <img src="./assets/images/appStore.png" alt="app store">
+                        <img src="./assets/images/googlePlay.png" alt="google play">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Log In Footer  -->
+    <footer class="loginFooter">
+        <div class="loginFooterBox">
+            <!-- Footer Links -->
+            <div class="loginFooterLists">
+                <div class="loginFooterLine">
+                    <div class="loginFooterList">
+                        About
+                    </div>
+                    <div class="loginFooterList">
+                        Blog
+                    </div>
+                    <div class="loginFooterList">
+                        Jobs
+                    </div>
+                    <div class="loginFooterList">
+                        Help
+                    </div>
+                    <div class="loginFooterList">
+                        API
+                    </div>
+                    <div class="loginFooterList">
+                        Privacy
+                    </div>
+                    <div class="loginFooterList">
+                        Terms
+                    </div>
+                    <div class="loginFooterList">
+                        Top Accounts
+                    </div>
+
+                    <div class="loginFooterList">
+                        Hashtags
+                    </div>
+                    <div class="loginFooterList">
+                        Locations
+                    </div>
+                </div>
+                <div class="loginFooterLine">
+                    <div class="loginFooterList">
+                        Beauty
+                    </div>
+                    <div class="loginFooterList">
+                        Dance & Performance
+                    </div>
+                    <div class="loginFooterList">
+                        Fitness
+                    </div>
+                    <div class="loginFooterList">
+                        Food & Drink
+                    </div>
+                    <div class="loginFooterList">
+                        Home & Garden
+                    </div>
+                    <div class="loginFooterList">
+                        Music
+                    </div>
+                    <div class="loginFooterList">
+                        Visual Arts
+                    </div>
+                </div>
+            </div>
+            <!-- Language Select -->
+            <div class="loginFooterLists">
+                <div class="loginFooterLine">
+                    <div class="loginFooterList">
+                        <select>
+                            <option value="af">Afrikaans</option>
+                            <option value="cs">Čeština</option>
+                            <option value="da">Dansk</option>
+                            <option value="de">Deutsch</option>
+                            <option value="el">Ελληνικά</option>
+                            <option value="en" selected>English</option>
+                            <option value="es">Español (España)</option>
+                            <option value="es-la">Español</option>
+                            <option value="fi">Suomi</option>
+                            <option value="fr">Français</option>
+                            <option value="id">Bahasa Indonesia</option>
+                            <option value="it">Italiano</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                            <option value="ms">Bahasa Melayu</option>
+                            <option value="nb">Norsk</option>
+                            <option value="nl">Nederlands</option>
+                            <option value="pl">Polski</option>
+                            <option value="pt-br">Português (Brasil)</option>
+                            <option value="pt">Português (Portugal)</option>
+                            <option value="ru">Русский</option>
+                            <option value="sv">Svenska</option>
+                            <option value="th">ภาษาไทย</option>
+                            <option value="tl">Filipino</option>
+                            <option value="tr">Türkçe</option>
+                            <option value="zh-cn">中文(简体)</option>
+                            <option value="zh-tw">中文(台灣)</option>
+                            <option value="bn">বাংলা</option>
+                            <option value="gu">ગુજરાતી</option>
+                            <option value="hi">हिन्दी</option>
+                            <option value="hr">Hrvatski</option>
+                            <option value="hu">Magyar</option>
+                            <option value="kn">ಕನ್ನಡ</option>
+                            <option value="ml">മലയാളം</option>
+                            <option value="mr">मराठी</option>
+                            <option value="ne">नेपाली</option>
+                            <option value="pa">ਪੰਜਾਬੀ</option>
+                            <option value="si">සිංහල</option>
+                            <option value="sk">Slovenčina</option>
+                            <option value="ta">தமிழ்</option>
+                            <option value="te">తెలుగు</option>
+                            <option value="vi">Tiếng Việt</option>
+                            <option value="zh-hk">中文(香港)</option>
+                            <option value="bg">Български</option>
+                            <option value="fr-ca">Français (Canada)</option>
+                            <option value="ro">Română</option>
+                            <option value="sr">Српски</option>
+                            <option value="uk">Українська</option>
+                        </select>
+                    </div>
+                    <div class="loginFooterList">© 2021 Instagram from Facebook</div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
 </body>
+
 </html>
