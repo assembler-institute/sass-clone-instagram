@@ -47,6 +47,87 @@
   color: #0095f6;
 }
 
+.main {
+  background-color: #fafafa;
+}
+
+#newsContentBar {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  max-width: 614px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 16px 0;
+  margin: 0 0 24px;
+}
+#newsContentBar .profileLinkContainer {
+  padding-left: 15px;
+  height: 90px;
+  width: 85px;
+}
+#newsContentBar .profileLinkBtn {
+  border: none;
+  background-color: #fff;
+  padding: 2px;
+}
+#newsContentBar .profileName {
+  text-align: center;
+  font-size: 12px;
+  color: #262626;
+}
+
+.roundFrame {
+  box-sizing: content-box;
+  height: 66px;
+  width: 66px;
+  background-image: url(../img/bundle.png);
+  background-repeat: no-repeat;
+  background-position: -305px -65px;
+}
+.roundFrame .profilePic {
+  height: 100%;
+}
+.roundFrame .profilePic img {
+  height: 100%;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.post .postHeader {
+  display: flex;
+  height: 60px;
+  padding: 16px;
+}
+.post .postHeader .profilePic {
+  height: 32px;
+  width: 32px;
+}
+.post .postHeader .profilePic img {
+  height: 100%;
+  border-radius: 20px;
+}
+.post .postHeader .postOptions {
+  position: relative;
+  left: 300px;
+  font-size: 30px;
+}
+.post .postHeader .postProfileName {
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.post .postImg {
+  max-width: -webkit-fill-available;
+}
+
 /*----------------- navBar ------------------*/
 #navGlobalContainer {
   width: 100%;

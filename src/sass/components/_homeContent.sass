@@ -1,0 +1,68 @@
+@use "../abstracts/abstractsIndex" as abs
+
+.main
+    background-color: #fafafa
+
+#newsContentBar
+    background-color: #fff
+    border: 1px solid #dbdbdb
+    display: flex 
+    max-width: 614px
+    width: 100%
+    border-radius: 3px
+    padding: 16px 0
+    margin: 0 0 24px
+    .profileLinkContainer
+        padding-left: 15px
+        height: 90px
+        width: 85px
+    .profileLinkBtn
+        border: none
+        background-color: #fff
+        padding: 2px
+    .profileName
+        text-align: center
+        font-size: 12px
+        color: #262626
+
+.roundFrame
+    box-sizing: content-box
+    height: 66px
+    width: 66px
+    background-image: url(../img/bundle.png)
+    background-repeat: no-repeat 
+    background-position: -305px -65px
+    .profilePic
+        height: 100%
+        img
+            height: 100%
+            padding: 5px
+            border-radius: 40px
+
+.post
+    background-color: #fff
+    border: 1px solid #dbdbdb
+    display: flex 
+    flex-direction: column
+    margin-bottom: 60px
+    .postHeader
+        display: flex
+        height: 60px
+        padding: 16px
+        .profilePic
+            height: 32px
+            width: 32px
+            img
+                height: 100%
+                border-radius: 20px
+        .postOptions
+            position: relative
+            left: 300px
+            font-size: 30px
+        .postProfileName
+            padding-left: 15px
+            font-weight: 600
+            font-size: 14px
+    .postImg
+        max-width: -webkit-fill-available
+
