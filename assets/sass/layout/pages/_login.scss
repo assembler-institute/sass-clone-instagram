@@ -40,16 +40,4 @@ main {
   #loginSubmit {
     @include logButton();
   }
-
-  #alternativeLogin {
-    cursor: pointer;
-    margin-top: 8%;
-    color: $fbTextColor;
-  }
-
-  #passForbidden {
-    color: $fbTextColor;
-    margin-top: 3%;
-    font-size: 14px;
-  }
 }
