@@ -1,5 +1,11 @@
 @use "../../helpers/variables" as *;
+@use "../../helpers/mixins" as *;
 
+
+main {
+
+  font-family: 'Roboto', sans-serif;
+}
 .mainLogin {
   display: flex;
   flex-direction: row;
@@ -8,6 +14,7 @@
   height: 100%;
   background-color: $backgroundColor;
   font-weight: 600;
+
 
   .leftContainer {
     width: 50%;
@@ -20,7 +27,13 @@
     align-items: flex-start;
     // #leftImage {
     //   margin-left: 30%;
-    // }
+    // }                       
+    .carouselContainer{
+      z-index: 11;
+    }
+    .leftImage{
+      z-index: 10;
+    }
   }
 
   .rightContainer {
@@ -30,15 +43,7 @@
     text-align: center;
   }
 
-  #alternativeLogin {
-    cursor: pointer;
-    margin-top: 8%;
-    color: $fbTextColor;
-  }
-
-  #passForbidden {
-    color: $fbTextColor;
-    margin-top: 3%;
-    font-size: 14px;
+  #loginSubmit {
+    @include logButton();
   }
 }

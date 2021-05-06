@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-main {
-  font-family: "Roboto", sans-serif;
 }
 
 h4 {
@@ -42,6 +38,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.input:focus {
+  border: 1px orange solid;
+}
 .input ::-moz-placeholder {
   font-size: 10px;
   opacity: 1;
@@ -55,49 +54,33 @@ body {
   opacity: 1;
 }
 
-.loginForm {
-  background-color: white;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 60%;
-  height: 50%;
-  margin: 5%;
-  margin-top: 16%;
-  border: 2px #dbdbdb solid;
-}
-.loginForm .loginHeader {
-  margin-top: 5%;
-}
-.loginForm .loginHeader .logoHeader {
-  height: 100px;
-}
-.loginForm #loginSeparator {
-  margin-right: 3%;
-  margin-top: 5%;
-}
-
-.downloadBox {
-  box-sizing: content-box;
-  display: flex;
-  width: boxWidth();
-  flex-direction: row;
-  white-space: nowrap;
-  font-size: 15px;
-}
-.downloadBox #downloadText {
-  transform: translateX(170px);
-  font-weight: 600;
-}
-
 .downloadButton {
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
-  margin-right: 25px;
+  margin-top: 45px;
+  padding-right: 4%;
   flex-grow: 2;
-  height: 60px;
+  transform: translateX(-116%);
+  height: 45px;
+  width: 185px;
   cursor: pointer;
+}
+
+.downloadBox {
+  box-sizing: border-box;
+  margin-top: -1.7%;
+  margin-left: 5%;
+  box-sizing: content-box;
+  display: flex;
+  width: 59.6%;
+  flex-direction: row;
+  font-size: 15px;
+}
+.downloadBox #downloadText {
+  margin-left: 38%;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 500;
 }
 
 .loginForm {
@@ -105,10 +88,10 @@ body {
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 60%;
-  height: 50%;
+  width: 62%;
+  height: 52%;
   margin: 5%;
-  margin-top: 16%;
+  margin-top: 15%;
   border: 2px #dbdbdb solid;
 }
 .loginForm .loginHeader {
@@ -118,27 +101,59 @@ body {
   height: 100px;
 }
 .loginForm #loginSeparator {
-  margin-right: 3%;
-  margin-top: 5%;
+  color: grey;
+  font-size: 14px;
+  margin-top: 4%;
+}
+.loginForm #loginSeparator #separatorLine {
+  letter-spacing: -3px;
+}
+.loginForm #alternativeLogin {
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 8%;
+  color: #385195;
+}
+.loginForm #alternativeLogin #fbIcon {
+  width: 20px;
+  height: 20px;
+}
+.loginForm #passForbidden {
+  color: #385195;
+  margin-top: 7%;
+  font-weight: 100;
+  font-size: 13px;
 }
 
 #registerButton {
-  font-weight: 800;
+  margin-left: 1%;
+  font-weight: 600;
   cursor: pointer;
-  margin-top: 6px;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .registerForm {
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
   margin: 5%;
+  transform: translateY(-25%);
   vertical-align: middle;
   text-align: center;
-  margin-right: 28%;
+  margin-right: 27%;
   border: 2px #dbdbdb solid;
-  width: 60%;
-  height: 10%;
+  width: 62%;
+  height: 8%;
   white-space: nowrap;
   padding: 3%;
   background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.registerForm #registerText {
+  margin-bottom: 1%;
 }
 
 footer {
@@ -258,6 +273,10 @@ header {
   opacity: 0.6;
 }
 
+main {
+  font-family: "Roboto", sans-serif;
+}
+
 .mainLogin {
   display: flex;
   flex-direction: row;
@@ -276,21 +295,28 @@ header {
   justify-content: flex-end;
   align-items: flex-start;
 }
+.mainLogin .leftContainer .carouselContainer {
+  z-index: 11;
+}
+.mainLogin .leftContainer .leftImage {
+  z-index: 10;
+}
 .mainLogin .rightContainer {
   width: 50%;
   height: 800px;
   background-color: #fafafa;
   text-align: center;
 }
-.mainLogin #alternativeLogin {
-  cursor: pointer;
-  margin-top: 8%;
-  color: darkblue;
-}
-.mainLogin #passForbidden {
-  color: darkblue;
-  margin-top: 3%;
-  font-size: 14px;
+.mainLogin #loginSubmit {
+  border: none;
+  height: 30px;
+  color: white;
+  font-weight: 600;
+  border: 5px 2px #dbdbdb solid solid;
+  border-radius: 5px;
+  width: 76%;
+  margin-top: 4%;
+  background-color: #b2dffc;
 }
 
 header {
