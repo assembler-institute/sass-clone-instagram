@@ -1,0 +1,135 @@
+@use 'mixins';
+@use 'colors';
+@use 'images';
+
+header {
+  width: 100%;
+  background-color: colors.$white;
+  border-bottom: 1px solid colors.$border;
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+
+  div{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    #logo {
+      width: 39%;
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        min-height: 25px;
+      }
+    }
+
+    #buscador {
+      width: 22%;
+      position: relative;
+
+      .serch-icon{
+        width: 10px;
+        height: 10px;
+        @include mixins.backgroundImage(images.$searchIcon);
+        position: absolute;
+        left: 30%;
+        color: colors.$bg;
+      }
+
+      input {
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+        background-color: colors.$bg;
+        text-decoration: none;
+        border: 1px solid rgb(197, 197, 197);
+        border-radius: 2px;
+        overflow: auto;
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        resize: none;
+      }
+    }
+
+    #menu {
+      width: 39%;
+      display: flex;
+      justify-content: flex-end;
+      min-height: 40px;
+
+      div {
+        width:12%;
+
+        svg {
+          path {
+            background-color: #000;
+          }
+        }
+      }
+
+      #menu-profile {
+        #profile-button {
+          display: none;
+
+          &:checked + label > ul {
+            display: block;
+          }
+        }
+
+        label {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid colors.$border;
+          align-items: center;
+          justify-content: center;
+
+          @include mixins.backgroundImage(images.$profileOne);
+
+          ul {
+            display: none;
+            position: absolute;
+            top: 3rem;
+            left: -12rem;
+            width: 16rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px colors.$border;
+            list-style-type: none;
+
+            li {
+              padding: 0.7rem 1rem;
+              display: flex;
+              flex-direction: row;
+
+              p {
+                margin-left: 0.8rem;
+              }
+
+              &:hover {
+                background-color: colors.$bg;
+              }
+
+              &:last-child {
+                border-top: 1px solid colors.$border;
+                padding: 0.8rem;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
