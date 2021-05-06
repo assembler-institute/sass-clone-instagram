@@ -7,7 +7,9 @@
 }
 /* General Styles */
 * {
-  font-family: instagramFont, sans-serif;
+  //font-family: instagramFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -72,20 +74,22 @@ nav {
     border: 1px solid $borderColor;
     padding: 7px;
     text-align: center;
-  }
-  ::-webkit-input-placeholder {
-    text-align: center;
-  }
-  :-moz-placeholder {
-    /* Firefox 18- */
-    text-align: center;
-  }
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    text-align: center;
-  }
-  :-ms-input-placeholder {
-    text-align: center;
+    outline: none;
+    width: 200px;
+    ::-webkit-input-placeholder {
+      text-align: center;
+    }
+    :-moz-placeholder {
+      /* Firefox 18- */
+      text-align: center;
+    }
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      text-align: center;
+    }
+    :-ms-input-placeholder {
+      text-align: center;
+    }
   }
 }
 
@@ -103,6 +107,7 @@ nav {
 @mixin feedElements {
   background-color: white;
   border: solid 1px $borderColor;
+  border-radius: 3px;
 }
 
 .main-container {
@@ -110,6 +115,8 @@ nav {
   width: 80%;
   height: calc(100% - 30px);
   margin: auto;
+  display: flex;
+  justify-content: center;
   /* TODO adjust size */
 }
 .feed-container {
@@ -128,6 +135,8 @@ nav {
   display: flex;
   flex-direction: row;
   padding-left: 20px;
+  overflow: hidden;
+  width: auto;
 }
 
 .story {
@@ -148,11 +157,12 @@ nav {
   width: 612px;
 }
 .post {
-  @include feedElements;
   width: 612px;
-  height: 500px; /* temporal */
+  /* height: 500px; */ /* temporal */
+  margin-bottom: 60px;
   img {
     width: 100%;
+    display: block;
   }
 }
 .post-header {
@@ -162,6 +172,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include feedElements;
 }
 .post-round-gradient {
   @include roundGradient(42px);
@@ -173,10 +184,122 @@ nav {
   align-items: center;
   span {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
   }
 }
 
+.post-footer {
+  @include feedElements;
+  display: flex;
+  flex-direction: column;
+  > * {
+    padding: 0px 16px;
+    line-height: 18px;
+  }
+  * {
+    font-size: 14px;
+  }
+}
+.post-buttons-bar {
+  width: 100%;
+  height: 44px;
+  padding: 0px 16px;
+  padding-top: 4px;
+  svg {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+  }
+  :last-child {
+    margin-left: 416px;
+    margin-right: -10px;
+  }
+}
+
+.post-likes {
+  font-size: 14px;
+  font-weight: bolder;
+  color: $instagramBlack;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 600;
+  color: $instagramBlack;
+}
+
+.post-comment {
+}
+
+.comment-count {
+  color: #8e8e8e;
+}
+
+.post-time {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #8e8e8e;
+}
+
+.comment-bar {
+  border-top: rgb(239, 239, 239) 1px solid;
+  padding: 0px 16px;
+  margin-top: 4px;
+  align-items: center;
+  height: 55px;
+}
+.blue {
+  color: $instagramBlue;
+}
+
+.align-right {
+  margin-left: auto;
+}
+
+.margin-bottom {
+  margin-bottom: 8px;
+}
+.inp-noborder-gray {
+  border: none;
+  color: $instagramBlack;
+  outline: none;
+}
+.full-width {
+  width: 100%;
+}
+
+.emoji-container {
+  padding: 8px 16px 8px 0px;
+}
 /* SIDEBAR -------------------------------------------------------------- */
 .sidebar {
+  @include flexCenter();
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 320px;
+  min-width: 300px;
+  height: 500px;
+
+  outline: 1px black solid;
+  margin: 20px;
+
+  .myProfileBox {
+    @include flexCenter();
+    height: 70px;
+    width: 100%;
+    outline: 1px black solid;
+    background-color: lightcoral;
+    flex-direction: row;
+  }
+  .suggestionBox {
+    height: 325px;
+    width: 100%;
+    outline: 1px black solid;
+    background-color: lightgoldenrodyellow;
+  }
+  .captionBox {
+    height: 106px;
+    width: 100%;
+    background-color: lightblue;
+  }
 }
