@@ -1,72 +1,20 @@
-`#sass` `#css` `#html` `#master-in-software-engineering`
+<h1 align="center">Hi 👋, I'm Einar</h1>
+<h3 align="center">A passionate fullstack developer student from Spain.</h3>
 
-# SASS - Clone Instagram <!-- omit in toc -->
+- 🔭 I’m currently working on **SASS - Instagram Clone**
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+- 🌱 I’m currently learning **SASS**
+
+- 👨‍💻 All of my projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
+
+- 📫 How to reach me **grelsare13@gmail.com**
+
+- ⚡ Fun fact **Amante de la tecnología, bateriste en mis ratos libres y LTBIQ+ activiste.**
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/grecia-sanchez1994/" height="30" width="40" /></a>
 </p>
 
-> Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more
->
-> The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
-
-## Index <!-- omit in toc -->
-
-- [Requirements](#requirements)
-- [Repository](#repository)
-- [Technologies used](#technologies-used)
-- [Project delivery](#project-delivery)
-- [Resources](#resources)
-
-## Requirements
-
-- You must use variables at least once in the project.
-- You must use nesting.
-- You must use inheritance at least once in the project.
-- You cannot use third party libraries for the development of this pill
-
-## Repository
-
-First of all you must fork this project into your GitHub account.
-
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
-
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
-
-### Installing
-
-In this project you must use the VSCode SASS extension in order to compile SASS into CSS.
-
-First of all you will need to install the extension:
-
-- [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
-
-When the extension is installed correctly, having a SASS file open, you must click on "Watch Sass":
-
-<img src="https://raw.githubusercontent.com/ritwickdey/vscode-live-sass-compiler/master/images/Screenshot/AnimatedPreview.gif" width="600px">
-
-If you want to change some configuration of "Live SASS Compiler" you can check this official resource:
-
-- [Live SASS Compiler Settings](https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md)
-
-## Technologies used
-
-\* SASS
-
-\* CSS
-
-\* HTML
-
-## Project delivery
-
-To deliver this project you must follow the steps indicated in the document:
-
-- [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
-
-## Resources
-
-- [SASS documentation](https://sass-lang.com/)
-- [W3S SASS](https://www.w3schools.com/sass/)
-- [SASS Guidelines](https://sass-guidelin.es/es/)
-- [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
-- [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
