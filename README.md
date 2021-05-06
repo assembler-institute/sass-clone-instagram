@@ -15,12 +15,12 @@
 
 <h3 align="left">Connect with Einar:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/grecia-sanchez1994/" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"></a>
 </p>
 
 <h3 align="left">Connect with Jordi:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/jordi-arnau-esteban/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/jordi-arnau-esteban/" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/jordi-arnau-esteban/" target="blank"></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -36,7 +36,7 @@ Stands for "Syntactically Awesome Style Sheets." Sass is an extension of cascadi
 ## What is a CSS pre-processor?
 
 <p align="left">
-A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on.</p>
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however, most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on.</p>
 
 ## What does a pre-processor have to do with SASS?
 
@@ -56,7 +56,7 @@ Once you start tinkering with Sass, it will take your preprocessed Sass file and
 ## SASS has disadvantages? Which are?
 
 - The developer must have enough time to learn new features present in this preprocessor before using it.
-- Using Sass may cause losing benefits of browser's built-in element inspector.
+- Using Sass may cause losing benefits of the browser's built-in element inspector.
 - Code has to be compiled.
 - Difficult Troubleshooting.
 
@@ -99,7 +99,7 @@ background-color: green;
 
 <p align="left">
 SCSS, that stands for "Sassy CSS", is the file format that SASS uses to preprocess the CSS. It has
-the same syntax as CSS but including, of course, all the useful functions from SASS.
+the same syntax as CSS including, of course, all the useful functions from SASS.
 </p>
 
 ```
@@ -143,7 +143,7 @@ with indentation.
 ## What is the difference between .scss and .sass syntax.
 
 <p align="left">
-The main difference between .scss and .sass syntax is the absolut absence of "{}"
+The main difference between .scss and .sass syntax is the absolute absence of "{}"
 and ";" in the .sass files. As said before, .scss files use almost the same syntax
 as CSS, but .sass files removes all the symbols that mark semantic groups and does
 it through indentation.
@@ -152,7 +152,7 @@ it through indentation.
 ## In which cases would we use SCSS? And in which cases would we use SASS?
 
 <p align="left">
-Both work perfectly with SASS and the CSS that is created from then, so at the end
+Both work perfectly with SASS and the CSS that is created from them, so at the end
 it comes to a personal preference. If the user likes the CSS syntax and comes from
 it, is probable that will feel more comfortable with SCSS format.
 </p>
@@ -161,7 +161,7 @@ it, is probable that will feel more comfortable with SCSS format.
 
 <p align="left">
 There's many differences when creating a project with vanilla CSS and with a Preprocessed
-CSS, starting with the capacity to bind different stylesheet in a unic file. This allows
+CSS, starting with the capacity to bind different stylesheet in a unique file. This allows
 the developer to separate, reuse and optimize the code a 100%.
 </p>
 
@@ -174,7 +174,7 @@ stylesheets, that can be used to style unique pages or components.
 ## Can we create functions with SASS? If it is true, give an example.
 
 <p align="left">
-Yes, that's what "mixins" are created for: you can pass paramethers to them and use code
+Yes, that's what "mixins" are created for: you can pass parameters to them and use code
 that would be repeated many times.
 </p>
 
@@ -216,7 +216,7 @@ Both are ways to import one stylesheet into another in SASS, but  "@import" has
 a wider scope than "@use". This means that "@use" will only be loaded once in the
 final CSS, and also that all the elements included in it will only be accessible
 to the file where it has been imported. Besides, "@use" allows you to create private
-data adding "-" or "_" before declaring them in the main folder.
+data, adding "-" or "_" before declaring them in the main folder.
 </p>
 
 ## How can we import other CSS/SASS files in SASS? Give an example
@@ -231,7 +231,7 @@ will be shared to all the other files imported in the receiving file.
 </p>
 
 <p align="left">
-"@use", as explained on the las question, is an import method that allows a more restricted scope
+"@use", as explained in the las question, is an import method that allows a more restricted scope
 and allows the developer to create private styles and variables.
 </p>
 
