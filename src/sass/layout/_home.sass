@@ -49,12 +49,16 @@
     width: 66%
 
 /*------ middleContentRightContainer -----*/
+// profile
 #rightContainer
     display: flex
     flex-direction: column
+    justify-content: flex-start
+    @include abs.size(30%, 33%)
     width: 30%
 
 #yourProfileContainer
+    margin-bottom: 10px
     display: flex
     justify-content: space-between
 
@@ -66,6 +70,45 @@
     display: flex
     padding-top: 5px
     align-items: center
+
+// suggestions
+#suggestionsSectionContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+#suggestionsHeader
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+#suggestionsContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.suggestion
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+.suggestionLefContainer
+    display: flex
+    justify-content: flex-start
+    @include abs.size(70%,32px)
+
+.profileSuggestedPicContainer
+    @include abs.size(25%, 32px)
+
+.profileSuggestedPic
+    @include abs.size(32px,32px)
+
+.nameAndPopularity
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    @include abs.size(70%,32px)
+
 
 
 
