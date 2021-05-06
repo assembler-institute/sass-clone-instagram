@@ -40,7 +40,7 @@
             aria-label="Contraseña"
           />
 
-          <button class="sesion-btn">Inicia sesión</button>
+          <button class="sesion-btn" onclick="redirect()">Inicia sesión</button>
 
           <div class="hr-style">
             <hr />
@@ -126,4 +126,9 @@
     </footer>
   </body>
   <script src="/assets/main.js"></script>
+  <script>
+    function redirect() {
+      location.href = "reel.html";
+    }
+  </script>
 </html>

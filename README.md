@@ -1,3 +1,65 @@
+# What is SASS? What does SASS stand for?
+
+> Sass es un preprocesador CSS.
+> SASS significa Syntactically Awesome Style Sheets
+
+# What is a CSS pre-processor?
+
+> Un preprocesador CSS es una herramienta que nos permite generar, de manera automática, hojas de estilo, añadiéndoles características que no tiene CSS, y que son propias de los lenguajes de programación, como pueden ser variables, funciones, selectores anidados, herencia, etcétera.
+
+# What does a pre-processor have to do with SASS?
+
+> El preprocesamiento de los datos nos ayuda a lidiar con problemas de mantenimiento y escalabilidad del codigo.
+
+# Why use SASS?
+
+> SASS nos permite el uso de variables, funciones, selectores anidados, herencia, y mas funcionalidades para facilitarnos la organizacion y escritura de CSS.
+
+# SASS has disadvantages? Which are?
+
+> Como todo, tiene sus pros y sus contras, aunque tiene pocos. El mas destacado es que podemos perder algunos beneficios del inspector de elementos integrado del navegador.
+
+# What is a SASS Variable? Explain why are useful
+
+> Se usa para asignar un valor a un nombre que comenzamos con $ al cual podemos hacer referencia en cualquier parte de nuestro codigo las veces que necesitemos.
+
+# Explain the SASS variables property with an example.
+
+> $variable: 55px;
+
+> div { margin: $variable; }
+
+# What is a mixin? Why is it important? Give an example
+
+> @mixin nos permite predefinir una 'plantilla' de estilos para reutilizarlos en nuestro codigo.
+
+> Es importante porque nos permite unificar y reducir gran cantidad de estilos que se suelen duplicar.
+
+> @mixin reset-list {
+> margin: 0;
+> padding: 0;
+> list-style: none;
+> }
+
+> @include reset-list
+
+# What is SCSS? Give an example
+
+> SCSS es uno de los formatos en los que podemos trabajar con SASS. Se caracteriza porque mantiene la sintaxis de css {} y ;.
+
+> body {
+> font-size: 1rem;
+> margin: 0 auto;
+> }
+
+# What is SASS? Give an example
+
+> SASS es el otro formato en el que podemos trabajar con SASS. Se caracteriza por eliminar {} y ; utilizando la tabulacion.
+
+> body
+> font-size: 1rem
+> margin: 0 auto
+
 # What is the difference between .scss and .sass syntax
 
 > La sintaxis de .scss es como la sintaxis de .css, es decir, con {} y ;
