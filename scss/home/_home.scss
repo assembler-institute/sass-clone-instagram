@@ -1,63 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.s9 {
-  font-size: 0.9rem;
-}
-
-.s8 {
-  font-size: 0.8rem;
-}
-
-.s7 {
-  font-size: 0.7rem;
-}
-
-@mixin postsProfile($profileUrl) {
-  height: 32px;
-  width: 32px;
-  border-radius: 25px;
-  background-image: url($profileUrl);
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-}
-
-@mixin postsProfileBig($profileUrl2, $profileSize) {
-  height: $profileSize;
-  width: $profileSize;
-  border-radius: 50%;
-  background-image: url($profileUrl2);
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-}
+@forward "../base/base";
+@use "../base/base" as b;
 
 .home {
   background-color: #fafafa;
-  font-family: "Arimo", sans-serif;
 }
 
 header {
   height: 54px;
   padding: 0 20px;
-  border-bottom: 1px solid #dbdbdb;
-  display: flex;
-  justify-content: space-evenly;
+  border-bottom: b.$my_div_border;
   position: sticky;
   top: 0;
   background-color: white;
@@ -72,21 +23,20 @@ header {
     height: 32px;
     margin-left: 10px;
   }
-  .nav-profile-class {
-    @include postsProfile("../assets/img/profile_photos/user_profile.jpg");
-    margin-left: 10px;
-  }
+}
+
+.nav-profile-class {
+  @include b.postsProfile("../assets/img/profile_photos/user_profile.jpg");
+  margin-left: 10px;
 }
 
 .header-search-class {
   position: relative;
-  display: flex;
-  justify-content: center;
   width: 215px;
   min-width: 125px;
   padding: 7px;
   border-radius: 3px;
-  border: 1px solid #dbdbdb;
+  border: b.$my_div_border;
   background-color: #fafafa;
   span,
   .fas {
@@ -94,33 +44,16 @@ header {
   }
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 .stories {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   height: 100px;
   background-color: white;
   margin-top: 25px;
   padding: 10px;
-  border: 1px solid #dbdbdb;
+  border: b.$my_div_border;
   border-radius: 3px;
 }
 
-.story-profile-class {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .story-circle-class {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 62px;
   height: 62px;
   background: linear-gradient(to right, #f99b4a, #c92d8c);
@@ -136,7 +69,7 @@ main {
 }
 
 .story-profile-class:first-child .story-photo-class {
-  @include postsProfileBig(
+  @include b.postsProfileBig(
     "../assets/img/profile_photos/user_profile_jake.jpg",
     58px
   );
@@ -144,27 +77,33 @@ main {
 }
 
 .story-profile-class:nth-child(2) .story-photo-class {
-  @include postsProfileBig("../assets/img/profile_photos/la_veneno.jpg", 58px);
+  @include b.postsProfileBig(
+    "../assets/img/profile_photos/la_veneno.jpg",
+    58px
+  );
   border: 2px solid white;
 }
 
 .story-profile-class:nth-child(3) .story-photo-class {
-  @include postsProfileBig("../assets/img/profile_photos/mr_tesla.jpg", 58px);
+  @include b.postsProfileBig("../assets/img/profile_photos/mr_tesla.jpg", 58px);
   border: 2px solid white;
 }
 
 .story-profile-class:nth-child(4) .story-photo-class {
-  @include postsProfileBig("../assets/img/profile_photos/kurt.jpg", 58px);
+  @include b.postsProfileBig("../assets/img/profile_photos/kurt.jpg", 58px);
   border: 2px solid white;
 }
 
 .story-profile-class:nth-child(5) .story-photo-class {
-  @include postsProfileBig("../assets/img/profile_photos/rick_morty.jpg", 58px);
+  @include b.postsProfileBig(
+    "../assets/img/profile_photos/rick_morty.jpg",
+    58px
+  );
   border: 2px solid white;
 }
 
 .story-profile-class:nth-child(6) .story-photo-class {
-  @include postsProfileBig(
+  @include b.postsProfileBig(
     "../assets/img/profile_photos/ada_lovelace.jpeg",
     58px
   );
@@ -172,18 +111,16 @@ main {
 }
 
 .story-profile-class:nth-child(7) .story-photo-class {
-  @include postsProfileBig("../assets/img/profile_photos/tree.jpg", 58px);
+  @include b.postsProfileBig("../assets/img/profile_photos/tree.jpg", 58px);
   border: 2px solid white;
 }
 
 .story-profile-class:nth-child(8) .story-photo-class {
-  @include postsProfileBig("../assets/img/profile_photos/doraemon.jpg", 58px);
+  @include b.postsProfileBig("../assets/img/profile_photos/doraemon.jpg", 58px);
   border: 2px solid white;
 }
 
 .article-post-class {
-  display: flex;
-  flex-direction: column;
   margin: 25px 0;
   img {
     width: 640px;
@@ -191,33 +128,25 @@ main {
 }
 
 .post-top-class {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 640px;
   padding: 16px;
   background-color: white;
   border-radius: 3px 3px 0 0;
-  border-top: 1px solid #dbdbdb;
-  border-left: 1px solid #dbdbdb;
-  border-right: 1px solid #dbdbdb;
+  border-top: b.$my_div_border;
+  border-left: b.$my_div_border;
+  border-right: b.$my_div_border;
   span {
     font-size: 2rem;
     margin-top: -10px;
   }
 }
 
-.post-user-class {
-  justify-content: space-between;
-  .post-user-profile-class-1 {
-    @include postsProfile("../assets/img/profile_photos/mishis.jpg");
-    margin-right: 15px;
-  }
+.post-user-profile-class-1 {
+  @include b.postsProfile("../assets/img/profile_photos/mishis.jpg");
+  margin-right: 15px;
 }
 
 .description-icons-class {
-  display: flex;
-  align-items: center;
   padding: 5px 0;
   img {
     width: 32px;
@@ -229,9 +158,9 @@ main {
 }
 
 .post-description-class {
-  border-right: 1px solid #dbdbdb;
-  border-left: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
+  border-right: b.$my_div_border;
+  border-left: b.$my_div_border;
+  border-bottom: b.$my_div_border;
   padding: 10px;
 }
 .description-likes-class {
@@ -264,11 +193,9 @@ main {
 
 .post-addComment-class {
   height: 55px;
-  display: flex;
-  align-items: center;
-  border-right: 1px solid #dbdbdb;
-  border-left: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
+  border-right: b.$my_div_border;
+  border-left: b.$my_div_border;
+  border-bottom: b.$my_div_border;
   border-radius: 0 0 3px 3px;
   padding: 10px;
   img {
@@ -296,13 +223,8 @@ aside {
   padding: 10px;
 }
 
-.aside-user-class {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .aside-profile-class {
-  @include postsProfileBig(
+  @include b.postsProfileBig(
     "../assets/img/profile_photos/user_profile.jpg",
     56px
   );
@@ -327,43 +249,32 @@ aside {
 .suggestions-title-class {
   margin-top: 25px;
   margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   h3 {
     color: gray;
   }
 }
 
 .suggestion-class {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 12px;
 }
 
-.suggestion-user-class {
-  display: flex;
-  align-items: center;
-}
-
 .suggestion-class:nth-child(2) .suggestion-profile-class {
-  @include postsProfile("../assets/img/profile_photos/assembler.jpg");
+  @include b.postsProfile("../assets/img/profile_photos/assembler.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(3) .suggestion-profile-class {
-  @include postsProfile("../assets/img/profile_photos/scorpio.jpg");
+  @include b.postsProfile("../assets/img/profile_photos/scorpio.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(4) .suggestion-profile-class {
-  @include postsProfile("../assets/img/profile_photos/beer_helping.jpg");
+  @include b.postsProfile("../assets/img/profile_photos/beer_helping.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(5) .suggestion-profile-class {
-  @include postsProfile("../assets/img/profile_photos/shadow_bone.jpg");
+  @include b.postsProfile("../assets/img/profile_photos/shadow_bone.jpg");
   margin-right: 10px;
 }
 .suggestion-class:nth-child(6) .suggestion-profile-class {
-  @include postsProfile("../assets/img/profile_photos/cthulhu.jpg");
+  @include b.postsProfile("../assets/img/profile_photos/cthulhu.jpg");
   margin-right: 10px;
 }

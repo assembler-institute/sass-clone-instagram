@@ -6,13 +6,49 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+.display-flex {
+  display: flex;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
 }
 
-.cursor-pointer {
-  cursor: pointer;
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-content-space-around {
+  justify-content: space-around;
+}
+
+.flex-content-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-content-between {
+  justify-content: space-between;
+}
+
+/* .border-for-building {
+  border: 1px solid rgb(255, 2, 2);
+}
+ */
+.border-for-instagram {
+  border: 1px solid #dbdbdb;
 }
 
 .s9 {
@@ -27,17 +63,18 @@
   font-size: 0.7rem;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .home {
   background-color: #fafafa;
-  font-family: "Arimo", sans-serif;
 }
 
 header {
   height: 54px;
   padding: 0 20px;
   border-bottom: 1px solid #dbdbdb;
-  display: flex;
-  justify-content: space-evenly;
   position: sticky;
   top: 0;
   background-color: white;
@@ -53,7 +90,8 @@ header img {
   height: 32px;
   margin-left: 10px;
 }
-header .nav-profile-class {
+
+.nav-profile-class {
   height: 32px;
   width: 32px;
   border-radius: 25px;
@@ -66,8 +104,6 @@ header .nav-profile-class {
 
 .header-search-class {
   position: relative;
-  display: flex;
-  justify-content: center;
   width: 215px;
   min-width: 125px;
   padding: 7px;
@@ -80,15 +116,7 @@ header .nav-profile-class {
   z-index: 3;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 .stories {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   height: 100px;
   background-color: white;
   margin-top: 25px;
@@ -97,16 +125,7 @@ main {
   border-radius: 3px;
 }
 
-.story-profile-class {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .story-circle-class {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 62px;
   height: 62px;
   background: linear-gradient(to right, #f99b4a, #c92d8c);
@@ -210,8 +229,6 @@ main {
 }
 
 .article-post-class {
-  display: flex;
-  flex-direction: column;
   margin: 25px 0;
 }
 .article-post-class img {
@@ -219,9 +236,6 @@ main {
 }
 
 .post-top-class {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 640px;
   padding: 16px;
   background-color: white;
@@ -235,10 +249,7 @@ main {
   margin-top: -10px;
 }
 
-.post-user-class {
-  justify-content: space-between;
-}
-.post-user-class .post-user-profile-class-1 {
+.post-user-profile-class-1 {
   height: 32px;
   width: 32px;
   border-radius: 25px;
@@ -250,8 +261,6 @@ main {
 }
 
 .description-icons-class {
-  display: flex;
-  align-items: center;
   padding: 5px 0;
 }
 .description-icons-class img {
@@ -300,8 +309,6 @@ main {
 
 .post-addComment-class {
   height: 55px;
-  display: flex;
-  align-items: center;
   border-right: 1px solid #dbdbdb;
   border-left: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
@@ -332,12 +339,6 @@ aside {
   padding: 10px;
 }
 
-.aside-user-class {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .aside-profile-class {
   height: 56px;
   width: 56px;
@@ -365,24 +366,13 @@ aside {
 .suggestions-title-class {
   margin-top: 25px;
   margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .suggestions-title-class h3 {
   color: gray;
 }
 
 .suggestion-class {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 12px;
-}
-
-.suggestion-user-class {
-  display: flex;
-  align-items: center;
 }
 
 .suggestion-class:nth-child(2) .suggestion-profile-class {
@@ -440,204 +430,217 @@ aside {
   margin-right: 10px;
 }
 
-.display-flex {
-  display: flex;
-}
-
-.flex-center {
-  align-items: center;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-content-center {
-  justify-content: center;
-}
-
-.flex-content-space-around {
-  justify-content: space-around;
-}
-
-.border-for-building {
-  border: 1px transparent #ff0202;
-}
-
-.border-for-instagram {
-  border: 1px solid #dbdbdb;
-}
-
-.all-class .containerLoginAll-class {
+.containerLoginAll-class {
   background-color: white;
   height: 745.32px;
   width: 1111.49px;
 }
-.all-class .containerLoginAll-class .row-all-class .containerLeftAll-class {
+
+.containerLeftAll-class {
   height: 618px;
   width: 454px;
 }
-.all-class .containerLoginAll-class .row-all-class .containerRightAll-class {
+
+.containerRightAll-class {
   height: 606px;
   width: 350px;
   margin-top: 12px;
 }
-.all-class .containerLoginAll-class .containerDowntAll-class {
+
+.containerDowntAll-class {
   height: 98.32px;
   width: 1079.49px;
 }
 
 .logInAll-class {
   height: 606px;
-  width: 220px;
+  width: 350px;
 }
-.logInAll-class .logInForm-class {
+
+.logInForm-class {
   text-align: center;
+  width: 400px;
+  padding: 35px;
 }
-.logInAll-class .logInForm-class .form-class {
+.logInForm-class span p {
+  text-decoration: none;
+  color: black;
+}
+.logInForm-class span a {
+  text-decoration: none;
+  color: blue;
+}
+
+.form-class {
   width: 70%;
   margin: 0 auto;
 }
-.logInAll-class .logInForm-class .form-class .input-user {
+
+.input-user {
   background-color: #e8f0fe;
-  border: 1px solid black;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
   position: relative;
   width: 98%;
   margin: 2px 2px 2px 2px;
 }
-.logInAll-class .logInForm-class .form-class .input-user input {
+.input-user input {
   width: 95%;
   background-color: transparent;
   border: 0px solid transparent;
   border-radius: 3px;
+  padding: 8px;
+  outline: transparent;
 }
-.logInAll-class .logInForm-class .form-class .input-user .empty {
+
+.empty {
   width: 4%;
+  background-color: white;
+  margin-left: auto;
 }
-.logInAll-class .logInForm-class .form-class .input-password {
+
+.input-password {
   background-color: #e8f0fe;
-  border: 1px solid black;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
   position: relative;
   width: 99%;
+  margin-top: 5px;
 }
-.logInAll-class .logInForm-class .form-class .input-password input {
+.input-password input {
   width: 100%;
   background-color: transparent;
   border: 0px solid transparent;
+  padding: 8px;
+  outline: transparent;
 }
-.logInAll-class
-  .logInForm-class
-  .form-class
-  .input-password
-  .my-password-class {
+
+.my-password-class {
   width: 73%;
 }
-.logInAll-class
-  .logInForm-class
-  .form-class
-  .input-password
-  .show-button-class {
-  width: 25%;
+
+.show-button-class {
+  width: 20%;
+  margin-left: auto;
 }
-.logInAll-class
-  .logInForm-class
-  .form-class
-  .input-password
-  .show-button-class
-  button {
-  height: 85%;
+.show-button-class button {
+  height: 100%;
   width: 100%;
-  font-size: x-small;
   border-radius: 3px;
+  font-weight: 600;
+  border: none;
+  background-color: white;
 }
-.logInAll-class .logInForm-class .form-class .logIn-button-class {
+
+.logIn-button-class {
   position: relative;
   width: 100%;
+  margin-top: 15px;
 }
-.logInAll-class .logInForm-class .form-class .logIn-button-class button {
+.logIn-button-class button {
   width: 100%;
-  font-size: x-small;
   border-radius: 3px;
+  background-color: #0095f6;
+  padding: 6px;
+  font-weight: 600;
 }
-.logInAll-class .logInForm-class .form-class .other-options-class {
-  font-size: xx-small;
+.logIn-button-class button a {
+  text-decoration: none;
+  color: white;
+}
+
+.other-options-class {
   color: gray;
+  margin: 10px 0;
 }
-.logInAll-class .logInForm-class .form-class .logInWithFacebook-class {
-  font-size: x-small;
+.other-options-class h3 {
+  display: inline-block;
+  padding: 0 3px;
 }
-.logInAll-class .logInForm-class .form-class .logInWithFacebook-class a {
-  font-size: xx-small;
+.other-options-class hr {
+  width: 60%;
+  height: 1px;
+  margin: 0 auto;
+  border-color: gray;
+}
+
+.logInWithFacebook-class {
+  font-size: 0.9rem;
+}
+.logInWithFacebook-class span:first-child a {
   text-decoration: none;
-  color: blue;
+  color: #385185;
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
 }
-.logInAll-class .logInForm-class span p {
-  font-size: xx-small;
+.logInWithFacebook-class span:nth-child(2) a {
   text-decoration: none;
-  color: black;
+  color: #00376b;
+  display: block;
+  margin-top: 20px;
 }
-.logInAll-class .logInForm-class span a {
-  font-size: xx-small;
-  text-decoration: none;
-  color: blue;
-}
-.logInAll-class .accountIg-class {
+
+.accountIg-class {
   margin-top: 10px;
   text-align: center;
-  width: 100%;
-  font-size: x-small;
+  width: 400px;
+  padding: 25px;
 }
-.logInAll-class .getAppIg-class {
+.accountIg-class a {
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: bold;
+}
+
+.getAppIg-class {
   text-align: center;
   margin-top: 20px;
-  font-size: xx-small;
   width: 100%;
 }
-.logInAll-class .getAppIg-class .download-app-img-class {
+
+.download-app-img-class {
   width: 100%;
   height: 100px;
   margin-top: 20px;
 }
 
 .containerDowntAll-class {
-  display: flex;
-  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
   align-items: center;
-  font-size: x-small;
   color: gray;
 }
-.containerDowntAll-class .footer-first-line-class {
+
+.footer-first-line-class {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 12px;
 }
-.containerDowntAll-class .footer-first-line-class a {
+.footer-first-line-class a {
   color: gray;
   text-decoration: none;
 }
-.containerDowntAll-class .footer-second-line-class {
+
+.footer-second-line-class {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 12px;
   color: gray;
 }
-.containerDowntAll-class .footer-second-line-class a {
+.footer-second-line-class a {
   color: gray;
   text-decoration: none;
 }
 
 .selector-copyright {
-  display: flex;
-  flex-direction: row;
   gap: 12px;
 }
 .selector-copyright select {
   width: 80px;
   color: gray;
-} /*# sourceMappingURL=style.css.map */
+  border: 0px solid transparent;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
