@@ -19,7 +19,6 @@
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/grecia-sanchez1994/" height="30" width="40" /></a>
 </p>
 
-
 <h3 align="left">Connect with Jordi:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/grecia-sanchez1994/" height="30" width="40" /></a>
@@ -47,20 +46,24 @@ CSS on its own can be fun, but stylesheets are getting larger, more complex, and
 Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your website.</p>
  
 ## Why use SASS?
-## It's CSS syntax friendly
-## It offers variables for whatever you want
-## It uses nested syntax
-## It includes mixins
-## You can divide and conquer
-## It has a large community and is well documented
-## If you know SASS, you can customize Bootstrap 4
+- It's CSS syntax friendly
+- It offers variables for whatever you want
+- It uses nested syntax
+- It includes mixins
+- You can divide and conquer
+- It has a large community and is well documented
+- If you know SASS, you can customize Bootstrap 4
+
 ## SASS has disadvantages? Which are?
-## The developer must have enough time to learn new features present in this preprocessor before using it.
-## Using Sass may cause losing benefits of browser's built-in element inspector.
-## Code has to be compiled.
+
+- The developer must have enough time to learn new features present in this preprocessor before using it.
+- Using Sass may cause losing benefits of browser's built-in element inspector.
+- Code has to be compiled.
+
 ## Difficult Troubleshooting.
- 
+
 ## What is a SASS Variable? Explain why are useful
+
 <p align="left">
 Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable.</p>
  
@@ -91,6 +94,11 @@ background-color: green;
 }
 
 ## What is SCSS? Give an example
+
+<p align="left">
+SCSS, that stands for "Sassy CSS", is the file format that SASS uses to preprocess the CSS. It uses
+the same synthax as CSS but including, of course, all the useful functions from SASS.
+</p>
 
 ## What is SASS? Give an example
 
