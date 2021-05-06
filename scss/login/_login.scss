@@ -2,17 +2,12 @@
 @use "../base/base" as b;
 
 //Containers
-.all-class {
-} //all-class
 
 .containerLoginAll-class {
   background-color: b.$my_background_color_general;
   height: 745.32px;
   width: 1111.49px;
 } //containerLoginAll-class
-
-.row-all-class {
-} //row-all-class
 
 .containerLeftAll-class {
   height: 618px;
@@ -51,9 +46,6 @@
       color: blue;
     }
   }
-}
-
-.logInTitleForm-class {
 }
 
 .form-class {
@@ -232,8 +224,4 @@
     border: 0px solid transparent;
     outline: none;
   }
-}
-
-//Mobil
-.containerLeftAll-class {
 }

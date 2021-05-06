@@ -82,6 +82,7 @@ border: 1px solid $border-dark;
 <p align="left">
 The @mixin directive lets you create CSS code that is to be reused throughout the website.</p>
 
+```
 @mixin important-text {
 color: red;
 font-size: 25px;
@@ -92,23 +93,102 @@ border: 1px solid blue;
 @include important-text;
 background-color: green;
 }
+```
 
 ## What is SCSS? Give an example
 
 <p align="left">
-SCSS, that stands for "Sassy CSS", is the file format that SASS uses to preprocess the CSS. It uses
-the same synthax as CSS but including, of course, all the useful functions from SASS.
+SCSS, that stands for "Sassy CSS", is the file format that SASS uses to preprocess the CSS. It has
+the same syntax as CSS but including, of course, all the useful functions from SASS.
 </p>
+
+```
+.description-comments-class {
+  span {
+    color: gray;
+  }
+  h3 {
+    font-weight: 600;
+    display: inline-block;
+  }
+  p {
+    margin: 5px 0;
+  }
+}
+```
 
 ## What is SASS? Give an example
 
+<p align="left">
+SASS is the original file format that SASS uses to preprocess the CSS. It doesn't use
+the same syntax as SCSS or CSS, removing all the "{}" and ";" from it and working only
+with indentation. 
+</p>
+
+<p align="left">SASS files are still valid and won't be deprecated in the future.</p>
+
+```
+.description-comments-class
+  span
+    color: gray
+
+  h3
+    font-weight: 600;
+    display: inline-block;
+
+  p
+    margin: 5px 0;
+```
+
 ## What is the difference between .scss and .sass syntax.
+
+<p align="left">
+The main difference between .scss and .sass syntax is the absolut absence of "{}"
+and ";" in the .sass files. As said before, .scss files use almost the same syntax
+as CSS, but .sass files removes all the symbols that mark semantic groups and does
+it through indentation.
+</p>
 
 ## In which cases would we use SCSS? And in which cases would we use SASS?
 
+<p align="left">
+Both work perfectly with SASS and the CSS that is created from then, so at the end
+it comes to a personal preference. If the user likes the CSS syntax and comes from
+it, is probable that will feel more comfortable with SCSS format.
+</p>
+
 ## Explain how traditional CSS and Preprocessed CSS workflows are different.
 
+<p align="left">
+There's many differences when creating a project with vanilla CSS and with a Preprocessed
+CSS, starting with the capacity to bind different stylesheet in a unic file. This allows
+the developer to separate, reuse and optimize the code a 100%.
+</p>
+
+<p align="left">
+For example, with a CSS preprocessor you can create a file that only contains the basic
+variables (with colors for example), mixins and main styles to be used for all the other
+stylesheets, that can be used to style unique pages or components.
+</p>
+
 ## Can we create functions with SASS? If it is true, give an example.
+
+<p align="left">
+Yes, that's what "mixins" are created for: you can pass paramethers to them and use code
+that would be repeated many times.
+</p>
+
+```
+@mixin postsProfileBig($profileUrl2, $profileSize) {
+  height: $profileSize;
+  width: $profileSize;
+  border-radius: 50%;
+  background-image: url($profileUrl2);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+```
 
 ## What is nesting? Is it useful? Give an example of nesting
 
