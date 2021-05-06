@@ -464,26 +464,180 @@ aside {
   justify-content: space-around;
 }
 
+.border-for-building {
+  border: 1px transparent #ff0202;
+}
+
+.border-for-instagram {
+  border: 1px solid #dbdbdb;
+}
+
 .all-class .containerLoginAll-class {
-  background-color: aquamarine;
+  background-color: white;
   height: 745.32px;
   width: 1111.49px;
 }
 .all-class .containerLoginAll-class .row-all-class .containerLeftAll-class {
-  background-color: #ffe17f;
   height: 618px;
   width: 454px;
 }
 .all-class .containerLoginAll-class .row-all-class .containerRightAll-class {
-  background-color: #ff8a7f;
   height: 606px;
   width: 350px;
   margin-top: 12px;
 }
 .all-class .containerLoginAll-class .containerDowntAll-class {
-  background-color: #7fff9b;
   height: 98.32px;
   width: 1079.49px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.logInAll-class {
+  height: 606px;
+  width: 220px;
+}
+.logInAll-class .logInForm-class {
+  text-align: center;
+}
+.logInAll-class .logInForm-class .form-class {
+  width: 70%;
+  margin: 0 auto;
+}
+.logInAll-class .logInForm-class .form-class .input-user {
+  background-color: #e8f0fe;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: relative;
+  width: 98%;
+  margin: 2px 2px 2px 2px;
+}
+.logInAll-class .logInForm-class .form-class .input-user input {
+  width: 95%;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 3px;
+}
+.logInAll-class .logInForm-class .form-class .input-user .empty {
+  width: 4%;
+}
+.logInAll-class .logInForm-class .form-class .input-password {
+  background-color: #e8f0fe;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: relative;
+  width: 99%;
+}
+.logInAll-class .logInForm-class .form-class .input-password input {
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+.logInAll-class
+  .logInForm-class
+  .form-class
+  .input-password
+  .my-password-class {
+  width: 73%;
+}
+.logInAll-class
+  .logInForm-class
+  .form-class
+  .input-password
+  .show-button-class {
+  width: 25%;
+}
+.logInAll-class
+  .logInForm-class
+  .form-class
+  .input-password
+  .show-button-class
+  button {
+  height: 85%;
+  width: 100%;
+  font-size: x-small;
+  border-radius: 3px;
+}
+.logInAll-class .logInForm-class .form-class .logIn-button-class {
+  position: relative;
+  width: 100%;
+}
+.logInAll-class .logInForm-class .form-class .logIn-button-class button {
+  width: 100%;
+  font-size: x-small;
+  border-radius: 3px;
+}
+.logInAll-class .logInForm-class .form-class .other-options-class {
+  font-size: xx-small;
+  color: gray;
+}
+.logInAll-class .logInForm-class .form-class .logInWithFacebook-class {
+  font-size: x-small;
+}
+.logInAll-class .logInForm-class .form-class .logInWithFacebook-class a {
+  font-size: xx-small;
+  text-decoration: none;
+  color: blue;
+}
+.logInAll-class .logInForm-class span p {
+  font-size: xx-small;
+  text-decoration: none;
+  color: black;
+}
+.logInAll-class .logInForm-class span a {
+  font-size: xx-small;
+  text-decoration: none;
+  color: blue;
+}
+.logInAll-class .accountIg-class {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: x-small;
+}
+.logInAll-class .getAppIg-class {
+  text-align: center;
+  margin-top: 20px;
+  font-size: xx-small;
+  width: 100%;
+}
+.logInAll-class .getAppIg-class .download-app-img-class {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.containerDowntAll-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-small;
+  color: gray;
+}
+.containerDowntAll-class .footer-first-line-class {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.containerDowntAll-class .footer-first-line-class a {
+  color: gray;
+  text-decoration: none;
+}
+.containerDowntAll-class .footer-second-line-class {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: gray;
+}
+.containerDowntAll-class .footer-second-line-class a {
+  color: gray;
+  text-decoration: none;
+}
+
+.selector-copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.selector-copyright select {
+  width: 80px;
+  color: gray;
+} /*# sourceMappingURL=style.css.map */
