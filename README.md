@@ -6,10 +6,9 @@
 - 🌱 We are currently learning **SASS**
 
 - 👨‍💻 All of Einar projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
-- 👨‍💻 All of Jordi projects are available at [https://github.com/imalovelyghost](https://github.com/imalovelyghost)
-
+- 👨‍💻 All of my projects are available at [https://www.linkedin.com/in/jordi-arnau-esteban/](https://www.linkedin.com/in/jordi-arnau-esteban/)
 - 📫 How to reach Einar **grelsare13@gmail.com**
-- 📫 How to reach Jordi **grelsare13@gmail.com**
+- 📫 How to reach Jordi **aejordi@gmail.com**
 
 - ⚡ Fun fact about Einar **Amante de la tecnología, bateriste en mis ratos libres y LTBIQ+ activiste.**
 - ⚡ Fun fact about Jordi **Amante de las fotos de gatitos.**
@@ -21,7 +20,7 @@
 
 <h3 align="left">Connect with Jordi:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/grecia-sanchez1994/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/grecia-sanchez1994/" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/jordi-arnau-esteban/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/jordi-arnau-esteban/" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
