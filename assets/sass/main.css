@@ -226,6 +226,10 @@ footerFirst footer footerSecond {
   opacity: 0.6;
 }
 
+main {
+  font-family: "Roboto", sans-serif;
+}
+
 .mainLogin {
   display: flex;
   flex-direction: row;
