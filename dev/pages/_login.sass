@@ -2,7 +2,7 @@ $background-container: #FFFFFF
 $background-main: #FAFAFA
 $border: 1px solid #DBDBDB
 $color: #8E8E9C
-
+$border-gradient: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(131,58,180,1)), color-stop(0.33, rgba(253,29,29,1)), color-stop(0.33, rgba(252,176,69,1)))
 // SASS LOGIN.HTML
 
 *
@@ -352,21 +352,27 @@ div.storie
      justify-content: end
      width: 70px
      height: 85px
-
-div.main__stories img 
-     border: 1px solid white
-     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255)))
-     background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% )
-     //padding: 2px
+div.storie div 
+     display: flex
+     flex-direction: row
+     justify-content: center
+     align-items: center
+     border: 4px solid $border-gradient
+     //background-image: -webkit-gradient(radial, left bottom, left top, color-stop(23%, rgba(131,58,180,1)), color-stop(56%, rgba(253,29,29,1)), color-stop(79%, rgba(252,176,69,1)))
+     //background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% )
+     width: 4.25rem
+     height: 4.25rem
+     margin: 0.75rem
+     border-radius: 50%
+div.storie > div >img 
      width: 4rem
      height: 4rem
-     margin: 0.75rem
-     //margin-bottom: 0.5rem
      border-radius: 50%
+
 
      
 div.main__posts
-     width: 614px
+     width: inherit
      height: 472px
      background-color: $background-container
      border: $border
