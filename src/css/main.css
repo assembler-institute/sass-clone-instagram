@@ -1,0 +1,164 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  background-color: #fafafa;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.container {
+  min-height: 100%;
+  overflow: hidden;
+  margin: 5rem auto 0;
+  max-width: 55rem;
+}
+
+.logo {
+  height: 8rem;
+}
+
+.logo-store {
+  height: 40px;
+}
+
+.box {
+  margin-top: 1rem;
+  padding: 20px 40px;
+  min-width: 23rem;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+}
+
+form {
+  outline: 1px solid red;
+}
+
+.input {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  flex: 1 0 auto;
+  margin: 0.2rem 0;
+  outline: 0;
+  overflow: hidden;
+  padding: 9px 0 7px 8px;
+  text-overflow: ellipsis;
+}
+
+.button {
+  display: block;
+  margin: 0.6rem 0;
+  padding: 0.4rem;
+  font-weight: 700;
+  background-color: #0095f6;
+  color: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.overline {
+  margin: 0.8rem 0 1.5rem;
+  width: 100%;
+  text-align: center;
+  line-height: 0.1em;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.overline__text {
+  padding: 0 0.8rem;
+  color: #8e8e8e;
+  background: #ffffff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.hide-in-mobile {
+  display: block;
+}
+@media screen and (max-width: 875px) {
+  .hide-in-mobile {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "ico-instagram";
+  src: url("../fonts/fonts/ico-instagram.ttf?afmejc") format("truetype"), url("../fonts/fonts/ico-instagram.woff?afmejc") format("woff"), url("../fonts/fonts/ico-instagram.svg?afmejc#ico-instagram") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ico-instagram" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.facebook-login {
+  color: red;
+  padding: 1rem 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,83 @@
+$weights: (
+  regular: var(--font-weight-regular),
+  bold: var(--font-weight-bold)
+);
+
+@mixin apply-text($text) {
+  font-size: nth($text, 1) !important;
+  line-height: nth($text, 2) !important;
+  font-weight: map_get($weights, nth($text, 3)) !important;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.2;
+  color: var(--font-color-base);
+
+  @include is-mobile {
+    font-size: var(--font-size-base-mobile);
+  }
+}
+
+$heading-texts: (
+  'heading-main': (
+    'desktop': (3.5rem 1.5 'bold'),
+    'mobile': (2.5rem 1 'bold'),
+  ),
+  'heading-secondary': (
+    'desktop': (3rem 1.5 'bold'),
+    'mobile': (2.5rem 1.2 'bold'),
+  ),
+    'heading-tertiary': (
+    'desktop': (2rem 1.5 'bold'),
+    'mobile': (1.8rem 1 'bold'),
+  )
+);
+
+$body-texts: (
+  'body-main': (
+    'desktop': (1.6rem 1 'regular'),
+    'mobile': (1.6rem 1 'regular'),
+  ),
+  'body-main-bold': (
+    'desktop': (1.8rem 1 'bold'),
+    'mobile': (1.6rem 1 'bold'),
+  ),
+  'body-secondary': (
+    'desktop': (1.6rem 1 'regular'),
+    'mobile': (1.4rem 1 'regular'),
+  ),
+  'body-secondary-bold': (
+    'desktop': (1.6rem 1 'bold'),
+    'mobile': (1.4rem 1 'bold'),
+  ),
+);
+
+$other-texts: (
+  'tag': (
+    'desktop': (1.4rem 1 'regular'),
+    'mobile': (1.3 1 'regular'),
+  )
+);
+
+$texts: map-merge(
+  $heading-texts,
+  map-merge(
+    $body-texts,
+    $other-texts
+  )
+);
+
+@each $text, $value  in $texts {
+  $text-desktop: map-get($value, 'desktop');
+  $text-mobile: map-get($value, 'mobile');
+
+  .text-#{$text},
+  %text-#{$text} {
+    @include apply-text($text-desktop);
+    @include is-mobile {
+      @include apply-text($text-mobile);
+    }
+  }
+}

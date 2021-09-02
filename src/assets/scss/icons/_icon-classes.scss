@@ -1,0 +1,34 @@
+@use '../abstract' as var;
+
+@font-face {
+  font-family: '#{var.$icomoon-font-family}';
+  src:
+    url('../fonts/#{var.$icomoon-font-path}/#{var.$icomoon-font-family}.ttf?afmejc') format('truetype'),
+    url('../fonts/#{var.$icomoon-font-path}/#{var.$icomoon-font-family}.woff?afmejc') format('woff'),
+    url('../fonts/#{var.$icomoon-font-path}/#{var.$icomoon-font-family}.svg?afmejc##{var.$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{var.$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook {
+  &:before {
+    content: var.$icon-facebook;
+  }
+}
+

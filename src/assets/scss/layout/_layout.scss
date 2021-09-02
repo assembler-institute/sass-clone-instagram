@@ -1,0 +1,8 @@
+@use '../abstract' as var;
+
+.container {
+  min-height: 100%;
+  overflow: hidden;
+  margin: 5rem auto 0;
+  max-width: var.$width-desktop;
+}

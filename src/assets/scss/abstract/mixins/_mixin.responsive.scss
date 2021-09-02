@@ -1,0 +1,16 @@
+//BREAKPOINTS
+$breakpoint-xs: 480px;
+$breakpoint-sm: 875px;
+$breakpoint-md: 1200px;
+
+@mixin is-mobile() {
+  @media screen and (max-width: $breakpoint-xs) { @content; }
+}
+
+@mixin is-tablet() {
+  @media screen and (max-width: $breakpoint-sm) { @content; }
+}
+
+@mixin is-desktop() {
+  @media screen and (max-width: $breakpoint-md) { @content; }
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ico-instagram";
+  src: url("fonts/ico-instagram.ttf?afmejc") format("truetype"), url("fonts/ico-instagram.woff?afmejc") format("woff"), url("fonts/ico-instagram.svg?afmejc#ico-instagram") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ico-instagram" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "";
+}/*# sourceMappingURL=style.css.map */
