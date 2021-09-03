@@ -1,0 +1,17 @@
+@use "./mixins" as m;
+@use "./colors" as c;
+.new___user {
+    @include m.borders;
+    @include m.flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: c.$bg-color-contrast;
+    width: 21.875rem;
+    height: 4rem;
+    a {
+        color: c.$btn__primary;
+        font-weight: bold;
+        margin-left: .3125rem;
+        text-decoration: none;
+    }
+}

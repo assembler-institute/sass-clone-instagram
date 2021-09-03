@@ -1,0 +1,176 @@
+.footer__objects {
+  text-decoration: none;
+  color: #8e8e8e;
+  padding: 0 1rem 0 0;
+}
+
+.footer__nav {
+  margin: auto;
+  text-align: center;
+}
+
+.footer__div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.125rem;
+  margin-bottom: 0;
+  max-width: 46.875rem;
+  font-size: 0.75rem;
+}
+
+.login__screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 21.875rem;
+  max-height: 35.875rem;
+  padding: 0.625rem 0;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.login__screen .login__inputs {
+  border: 0.0625rem solid #dbdbdb;
+  border: 0.0625rem solid rgba(var(--b6a, 219, 219, 219), 1);
+  width: 13.125rem;
+  height: 2.25rem;
+  background: white;
+  border-radius: 0.25rem;
+  margin: 0.3125rem;
+}
+.login__screen .login__button {
+  width: 13.625rem;
+  height: 1.75rem;
+  background-color: #0095f6;
+  border: none;
+  margin: 0.3125rem;
+  color: white;
+  border-radius: 0.3125rem;
+}
+.login__screen .login__menu {
+  border: 0.0625rem solid #dbdbdb;
+  border: 0.0625rem solid rgba(var(--b6a, 219, 219, 219), 1);
+  background-color: white;
+}
+.login__screen .facebook__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.75rem;
+  color: #385185;
+  font-weight: bold;
+}
+.login__screen .facebook__login img {
+  height: 1rem;
+  size: 1rem;
+}
+
+.forgot__pass {
+  color: #385185;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.or__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.9375rem;
+  color: #8e8e8e;
+}
+.or__login * {
+  margin: 0.3125rem;
+}
+
+.or__lines {
+  width: 6.6875rem;
+  height: 0.0625rem;
+  background-color: #dbdbdb;
+}
+
+@media (max-width: 500px) {
+  .login__menu .new__user .app_links {
+    border: none;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin: 3.125rem;
+}
+
+body {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.link__img {
+  height: 2.5rem;
+  width: 8.3925rem;
+}
+
+.logo__img {
+  width: 10.9375rem;
+  height: 3.1875rem;
+  margin: 1.375rem auto 0.75rem;
+}
+
+.app__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 21.875rem;
+  height: 5rem;
+}
+
+.new___user {
+  border: 0.0625rem solid #dbdbdb;
+  border: 0.0625rem solid rgba(var(--b6a, 219, 219, 219), 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  width: 21.875rem;
+  height: 4rem;
+}
+.new___user a {
+  color: #0095f6;
+  font-weight: bold;
+  margin-left: 0.3125rem;
+  text-decoration: none;
+}
+
+.smartphone__image {
+  background: url(../../Instagram-Clone--SASS/assets/iPhoneBackGround.png);
+  width: 454px;
+  height: 618px;
+}
+
+.display__image {
+  position: relative;
+  left: 33.3%;
+  bottom: -99.5px;
+}
+
+@media (max-width: 916px) {
+  .smartphone__image {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

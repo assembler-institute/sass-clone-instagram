@@ -1,0 +1,17 @@
+.smartphone__image {
+    background: url(../../Instagram-Clone--SASS/assets/iPhoneBackGround.png);
+    width: 454px;
+    height: 618px;
+}
+
+.display__image {
+    position: relative;
+    left: 33.3%;
+    bottom: -99.5px;
+}
+
+@media (max-width: 916px) {
+    .smartphone__image {
+        display: none;
+    }
+}

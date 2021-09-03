@@ -1,0 +1,17 @@
+@mixin borders {
+    border: .0625rem solid #dbdbdb;
+    border: .0625rem solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin footer {
+    text-decoration: none;
+    color: #8e8e8e;
+    padding: 0 1rem 0 0;
+}
