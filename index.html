@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram Clone</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
@@ -26,21 +26,27 @@
 
                 <input class="login__inputs" aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off" autocorrect="off" maxlength="75" name="username" type="text" />
                 <input class="login__inputs" aria-required="true" type="password" aria-label="password" />
-                <button class="login__button">Log In</button>
+                <a href="./profile.html"><button class="login__button">Log In</button></a
+          >
 
-                <div class="or__login">
-                    <div class="or__lines"></div>
-                    <span>OR</span>
-                    <div class="or__lines"></div>
-                </div>
+          <div class="or__login">
+            <div class="or__lines"></div>
+            <span>OR</span>
+            <div class="or__lines"></div>
+          </div>
 
-                <div class="facebook__login">
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="Login with Facebook" />
-                        <span>Login with Facebook</span>
-                    </div>
-                    <a class="forgot__pass" href="">Forgot Password?</a>
-                </div>
+          <div class="facebook__login">
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg"
+                alt="Login with Facebook"
+              />
+              <a href="https://es-es.facebook.com/" target="_blank"
+                ><span>Login with Facebook</span></a
+              >
+            </div>
+            <a class="forgot__pass" href="">Forgot Password?</a>
+            </div>
             </div>
             <div class="new___user">
                 <p>Dont have an Account?</p>
@@ -49,8 +55,10 @@
             <div class="app__links">
                 <span>Get the App.</span>
                 <div>
-                    <img class="link__img" src="assets/applestore.png" alt="Apple Store" />
-                    <img class="link__img" src="assets/googleplay.png" alt="Google Play Store" />
+                    <a href="https://apps.apple.com/es/app/instagram/id389801252" target="_blank">
+                        <img class="link__img" src="assets/applestore.png" alt="Apple Store" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank">
+                        <img class="link__img" src="assets/googleplay.png" alt="Google Play Store" /></a>
                 </div>
             </div>
         </section>
