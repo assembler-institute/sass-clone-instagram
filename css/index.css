@@ -2,6 +2,10 @@
   color: gray;
 }
 
+.img_wrapper {
+  background-image: url("sass-clone-instagram\assets");
+}
+
 .footer {
   display: flex;
   flex-direction: row;
