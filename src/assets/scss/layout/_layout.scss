@@ -1,8 +1,30 @@
 @use '../abstract' as var;
 
 .container {
+  margin: auto;
+  max-width: var.$width-desktop;
   min-height: 100%;
   overflow: hidden;
-  margin: 5rem auto 0;
-  max-width: var.$width-desktop;
+}
+
+.column {
+  @include var.flex(flex);
+  margin-top: var.$height-header;
+
+  @include var.is-tablet {
+    margin-top: var.$height-header + 2rem;
+  }
+
+  &__main {
+    width: 70%;
+
+    @include var.is-tablet {
+      width: 100%;
+    }
+  }
+
+  &__second {
+    width: 25%;
+    outline: 2px dotted blue;
+  }
 }

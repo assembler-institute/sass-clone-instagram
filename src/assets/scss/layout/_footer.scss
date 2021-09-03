@@ -1,0 +1,11 @@
+@use '../abstract' as var;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  @include var.flex(flex, center, center);
+  width: 100%;
+  background-color: var.$color-white;
+  border-top: 1px solid var.$color-grey-border;
+}

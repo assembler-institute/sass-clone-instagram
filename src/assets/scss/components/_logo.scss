@@ -1,7 +1,17 @@
+@use '../abstract' as var;
+
 .logo {
   height: 8rem;
+
+  &--small {
+    height: 3rem;
+
+    @include var.is-tablet {
+      height: 4rem;
+    }
+  }
 }
 
 .logo-store {
-  height: 40px;
+  height: 2.5rem;
 }

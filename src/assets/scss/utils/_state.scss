@@ -7,3 +7,11 @@
     display: none;
   }
 }
+
+.hide-in-web {
+  display: none;
+
+  @include mixin.is-tablet {
+    display: block;
+  }
+}

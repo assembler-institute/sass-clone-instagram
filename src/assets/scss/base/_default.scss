@@ -8,6 +8,10 @@ body {
   font-family: 'Lato', sans-serif;
   color: var.$font-color-base;
   background-color: var.$color-grey;
+
+  @include var.is-tablet {
+    background-color: var.$color-white;
+  }
 }
 
 p {

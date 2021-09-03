@@ -8,22 +8,168 @@
   <title>Instagrammy Home</title>
 </head>
 <body>
-  <header>
-    <h1>Aran.Triple</h1>
-    <span>add</span>
-    <span>burguer</span>
+  <header class="header">
+    <div class="header__inner">
+      <span class="icon-compass hide-in-web"></span>
+      <img class="logo--small" src="./assets/img/Instagram-Logo.png" alt="Instagram logo" >
+      <input type="text" class="[ input input__search ] hide-in-mobile" placeholder="Search">
+      <nav>
+        <ul class="menu">
+          <li class="hide-in-mobile"><span class="icon-home-full"></span></li>
+          <li><span class="icon-send"></span></li>
+          <li class="hide-in-mobile"><span class="icon-compass"></span></li>
+          <li class="hide-in-mobile"><span class="icon-heart"></span></li>
+          <li class="hide-in-mobile"><span class="icon-avatar"></span></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    grid * 12
+  <main class="container column">
+    <article class="column__main">
+      <section class="[ box --no-border ]">
+        <ul class="flex flex-around p-1">
+          <li><img class="image image__avatar" src="./assets/img/profile/profile01.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile02.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile03.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile04.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile05.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile01.png" alt=""></li>
+        </ul>
+      </section>
+      <section class="[ box --no-border ]">
+        <header class="flex-between">
+          <div class="flex">
+            <img class="image image__avatar --small" src="./assets/img/profile/profile03.png" alt="">
+            <p>nickname</p>
+          </div>
+          <span>...</span>
+        </header>
+        <article>
+          <img class="image" src="./assets/img/post/post01.jpg" alt="">
+        </article>
+        <footer>
+          <nav class="flex-between">
+            <div class="flex">
+              <span class="icon-heart"></span>
+              <span class="icon-compass"></span>
+              <span class="icon-send"></span>
+            </div>
+            <span class="icon-home"></span>
+          </nav>
+          <p>170 likes</p>
+          <span>comments</span>
+          <div class="flex">
+            <span class="icon-avatar"></span>
+            <input type="text" placeholder="Add a comment...">
+          </div>
+        </footer>
+      </section>
+      <section class="[ box --no-border ]">
+        <header class="flex-between">
+          <div class="flex">
+            <img class="image image__avatar --small" src="./assets/img/profile/profile04.png" alt="">
+            <p>nickname</p>
+          </div>
+          <span>...</span>
+        </header>
+        <article>
+          <img class="image" src="./assets/img/post/post02.jpg" alt="">
+        </article>
+        <footer>
+          <nav class="flex-between">
+            <div class="flex">
+              <span class="icon-heart"></span>
+              <span class="icon-compass"></span>
+              <span class="icon-send"></span>
+            </div>
+            <span class="icon-home"></span>
+          </nav>
+          <p>170 likes</p>
+          <span>comments</span>
+          <div class="flex">
+            <span class="icon-avatar"></span>
+            <input type="text" placeholder="Add a comment...">
+          </div>
+        </footer>
+      </section>
+      <section class="[ box --no-border ]">
+        <header class="flex-between">
+          <div class="flex">
+            <img class="image image__avatar --small" src="./assets/img/profile/profile05.png" alt="">
+            <p>nickname</p>
+          </div>
+          <span>...</span>
+        </header>
+        <article>
+          <img class="image" src="./assets/img/post/post03.jpg" alt="">
+        </article>
+        <footer>
+          <nav class="flex-between">
+            <div class="flex">
+              <span class="icon-heart"></span>
+              <span class="icon-compass"></span>
+              <span class="icon-send"></span>
+            </div>
+            <span class="icon-home"></span>
+          </nav>
+          <p>170 likes</p>
+          <span>comments</span>
+          <div class="flex">
+            <span class="icon-avatar"></span>
+            <input type="text" placeholder="Add a comment...">
+          </div>
+        </footer>
+      </section>
+    </article>
+    <aside class="column__second hide-in-mobile mt-1">
+      <section class="flex-align-center">
+        <img class="image image__avatar" src="./assets/img/profile/my-profile.png" alt="">
+        <div class="flex-column">
+          <span>aran.triple</span>
+          <span>Aran Triple</span>
+        </div>
+      </section>
+      <section>
+        <p>suggestions list</p>
+        <div class="flex-align-center">
+          <img class="image image__avatar --small" src="./assets/img/profile/my-profile.png" alt="">
+          <div class="flex-column">
+            <span>aran.triple</span>
+            <span>follows you</span>
+          </div>
+        </div>
+        <div class="flex-align-center">
+          <img class="image image__avatar --small" src="./assets/img/profile/my-profile.png" alt="">
+          <div class="flex-column">
+            <span>aran.triple</span>
+            <span>follows you</span>
+          </div>
+        </div>
+        <div class="flex-align-center">
+          <img class="image image__avatar --small" src="./assets/img/profile/my-profile.png" alt="">
+          <div class="flex-column">
+            <span>aran.triple</span>
+            <span>follows you</span>
+          </div>
+        </div>
+        <div class="flex-align-center">
+          <img class="image image__avatar --small" src="./assets/img/profile/my-profile.png" alt="">
+          <div class="flex-column">
+            <span>aran.triple</span>
+            <span>follows you</span>
+          </div>
+        </div>
+      </section>
+    </aside>
   </main>
-  <footer>
+  <footer class="footer hide-in-web">
     <nav>
-      <ul>
-        <li>home</li>
-        <li>search</li>
-        <li>add</li>
-        <li>like</li>
-        <li>profile</li>
+      <ul class="menu menu__mobile">
+        <li><span class="icon-home-full"></span></li>
+        <li><span class="icon-send"></span></li>
+        <li><span class="icon-compass"></span></li>
+        <li><span class="icon-heart"></span></li>
+        <li><span class="icon-avatar"></span></li>
       </ul>
     </nav>
   </footer>

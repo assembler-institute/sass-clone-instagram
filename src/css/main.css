@@ -21,6 +21,11 @@ body {
   color: #000000;
   background-color: #fafafa;
 }
+@media screen and (max-width: 875px) {
+  body {
+    background-color: #ffffff;
+  }
+}
 
 p {
   padding: 1rem 0;
@@ -31,32 +36,156 @@ ul {
   padding-left: 0;
 }
 
+.grid-2-to-1 {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.grid-2-to-1 {
+  grid-template-columns: 2fr 1fr;
+}
+@media screen and (max-width: 875px) {
+  .grid-2-to-1 {
+    grid-template-columns: auto;
+  }
+}
+
 .container {
+  margin: auto;
+  max-width: 55rem;
   min-height: 100%;
   overflow: hidden;
-  margin: 5rem auto 0;
+}
+
+.column {
+  display: flex;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 875px) {
+  .column {
+    margin-top: 5rem;
+  }
+}
+.column__main {
+  width: 70%;
+}
+@media screen and (max-width: 875px) {
+  .column__main {
+    width: 100%;
+  }
+}
+.column__second {
+  width: 25%;
+  outline: 2px dotted blue;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 3rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+@media screen and (max-width: 875px) {
+  .header {
+    border: none;
+  }
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 55rem;
+  width: 100%;
+}
+@media screen and (max-width: 875px) {
+  .header__inner {
+    padding: 0 1rem;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #dbdbdb;
+}
+
+.menu {
+  display: flex;
+}
+.menu li:not(:last-child) {
+  padding-right: 1rem;
+}
+.menu__mobile {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
 }
 
 .logo {
   height: 8rem;
 }
+.logo--small {
+  height: 3rem;
+}
+@media screen and (max-width: 875px) {
+  .logo--small {
+    height: 4rem;
+  }
+}
 
 .logo-store {
-  height: 40px;
+  height: 2.5rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+.image__avatar {
+  max-width: 4rem;
+}
+@media screen and (max-width: 875px) {
+  .image__avatar {
+    max-width: 5.5rem;
+    padding: 0 0.5rem;
+  }
+}
+.image__avatar.--small {
+  max-width: 3rem;
+}
+
+[class^=icon-] {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 875px) {
+  [class^=icon-] {
+    font-size: 2rem;
+  }
 }
 
 .box {
   margin-top: 1rem;
-  padding: 20px 40px;
   min-width: 23rem;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
   border-radius: 2px;
 }
-
-form {
-  outline: 1px solid red;
+@media screen and (max-width: 875px) {
+  .box.--no-border {
+    border: none;
+  }
 }
 
 .input {
@@ -66,8 +195,13 @@ form {
   margin: 0.2rem 0;
   outline: 0;
   overflow: hidden;
-  padding: 9px 0 7px 8px;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 1rem;
   text-overflow: ellipsis;
+}
+.input__search {
+  max-width: 14rem;
 }
 
 .button {
@@ -99,6 +233,10 @@ form {
   display: flex;
 }
 
+.flex-inline {
+  display: inline-flex;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -110,9 +248,19 @@ form {
   align-items: center;
 }
 
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
 .flex-around {
   display: flex;
   justify-content: space-around;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 .flex-column {
@@ -124,6 +272,34 @@ form {
   flex-grow: 1;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.3rem 2.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.color-facebook {
+  color: #385085;
+}
+
+.color-success {
+  color: #0095f6;
+}
+
 .hide-in-mobile {
   display: block;
 }
@@ -133,9 +309,18 @@ form {
   }
 }
 
+.hide-in-web {
+  display: none;
+}
+@media screen and (max-width: 875px) {
+  .hide-in-web {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: "ico-instagram";
-  src: url("../fonts/fonts/ico-instagram.ttf?afmejc") format("truetype"), url("../fonts/fonts/ico-instagram.woff?afmejc") format("woff"), url("../fonts/fonts/ico-instagram.svg?afmejc#ico-instagram") format("svg");
+  src: url("../assets/fonts/ico-instagram.ttf?ew4rwv") format("truetype"), url("../assets/fonts/ico-instagram.woff?ew4rwv") format("woff"), url("../assets/fonts/ico-instagram.svg?ew4rwv#ico-instagram") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -143,7 +328,6 @@ form {
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ico-instagram" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -154,11 +338,48 @@ form {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
-  content: "";
+.icon-avatar:before {
+  content: "";
+  color: #8e8e8e;
 }
 
-.facebook-login {
-  color: red;
-  padding: 1rem 0;
+.icon-compass-full:before {
+  content: "";
+}
+
+.icon-compass:before {
+  content: "";
+}
+
+.icon-heart-full:before {
+  content: "";
+}
+
+.icon-heart-like:before {
+  content: "";
+  color: #d7443e;
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-home-full:before {
+  content: "";
+}
+
+.icon-home:before {
+  content: "";
+}
+
+.icon-send-full:before {
+  content: "";
+}
+
+.icon-send:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+@use '../abstract' as var;
+
+.color-facebook {
+  color: var.$color-facebook;
+}
+
+.color-success {
+  color: var.$color-success;
+}

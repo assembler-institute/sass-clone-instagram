@@ -1,0 +1,27 @@
+@use '../abstract' as var;
+
+.image {
+  display: block;
+  width: 100%;
+
+  &__avatar {
+    max-width: 4rem;
+
+    @include var.is-tablet {
+      max-width: 5.5rem;
+      padding: 0 0.5rem;
+    }
+
+    &.--small {
+      max-width: 3rem;
+    }
+  }
+}
+
+[class^="icon-"] {
+  font-size: 1.3rem;
+
+  @include var.is-tablet {
+    font-size: 2rem;
+  }
+}
