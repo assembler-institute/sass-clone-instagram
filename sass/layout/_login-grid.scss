@@ -1,0 +1,21 @@
+.login__grid__container{
+display: grid;
+  grid-template-areas: 'auto auto';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+// .login__container{
+//   &--left{
+//       grid-column: 1/1;
+//   }
+
+//   &--right{
+//       grid-column: 2/2; 
+//   }
+// }
+
+body{
+    background-color: black;
+}

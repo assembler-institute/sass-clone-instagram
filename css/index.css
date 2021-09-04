@@ -1,0 +1,11 @@
+.login__grid__container {
+  display: grid;
+  grid-template-areas: "auto auto";
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+body {
+  background-color: black;
+}/*# sourceMappingURL=index.css.map */
