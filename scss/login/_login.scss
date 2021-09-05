@@ -1,0 +1,225 @@
+@use "../base/base" as b;
+
+//Containers
+
+.containerLoginAll-class {
+  background-color: b.$my_background_color_general;
+  height: 745.32px;
+  width: 1111.49px;
+  margin-top: 60px;
+} //containerLoginAll-class
+
+.containerLeftAll-class {
+  height: 618px;
+  width: 454px;
+} //containerLeftAll-class
+
+.containerRightAll-class {
+  height: 606px;
+  width: 350px;
+  margin-top: 12px;
+} //containerRightAll-class
+
+.containerDowntAll-class {
+  height: 98.32px;
+  width: 1079.49px;
+} //containerDowntAll-class
+
+.logInAll-class {
+  height: 606px;
+  width: 350px;
+} //logInAll-class
+
+.logInForm-class {
+  //logInForm-class
+  //HERE
+  text-align: center;
+  width: 400px;
+  padding: 35px;
+  span {
+    p {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+}
+
+.form-class {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.input-user {
+  background-color: b.$my_input_background;
+  border: b.$my_input_text_border;
+  border-radius: 3px;
+  position: relative;
+  width: 98%;
+  margin: 2px 2px 2px 2px;
+  input {
+    width: 95%;
+    border-radius: 3px;
+    padding: 8px;
+    @extend %transparent;
+  }
+}
+
+.empty {
+  width: 4%;
+  background-color: white;
+  margin-left: auto;
+}
+
+.input-password {
+  background-color: b.$my_input_background;
+  border: b.$my_input_text_border;
+  border-radius: 3px;
+  position: relative;
+  width: 99%;
+  margin-top: 5px;
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: 0px solid transparent;
+    padding: 8px;
+    outline: transparent;
+  }
+}
+
+.my-password-class {
+  width: 73%;
+}
+
+.show-button-class {
+  width: 20%;
+  margin-left: auto;
+  button {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+  }
+}
+
+.logIn-button-class {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  a {
+    text-decoration: none;
+
+    width: 100%;
+    button {
+      // position: absolute;
+      width: 100%;
+      border-radius: 3px;
+      background-color: #0095f6;
+      padding: 6px;
+      font-weight: 600;
+      color: white;
+    }
+  }
+}
+
+.other-options-class {
+  color: b.$my_gray_text;
+  margin: 10px 0;
+  h3 {
+    display: inline-block;
+    padding: 0 3px;
+  }
+  hr {
+    width: 60%;
+    height: 1px;
+    margin: 0 auto;
+    border-color: gray;
+  }
+}
+
+.logInWithFacebook-class {
+  img {
+    margin-right: 10px;
+    margin-bottom: -5px;
+  }
+  div:first-child a {
+    text-decoration: none;
+    color: #385185;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  span:nth-child(2) a {
+    text-decoration: none;
+    color: #00376b;
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.accountIg-class {
+  margin-top: 10px;
+  text-align: center;
+  width: 400px;
+  padding: 25px;
+  a {
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+  }
+}
+
+.getAppIg-class {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.download-app-img-class {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+//Footer
+.containerDowntAll-class {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  color: b.$my_gray_text;
+}
+
+.footer-first-line-class {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  a {
+    color: b.$my_gray_text;
+    text-decoration: none;
+  }
+}
+
+.footer-second-line-class {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: b.$my_gray_text;
+  a {
+    color: b.$my_gray_text;
+    text-decoration: none;
+  }
+}
+
+.selector-copyright {
+  gap: 12px;
+  select {
+    width: 80px;
+    color: b.$my_gray_text;
+    border: 0px solid transparent;
+    outline: none;
+  }
+}
