@@ -1,0 +1,105 @@
+@use "sass:map";
+
+/* ===== Breakpoints ===== */
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxk": 1400px,
+);
+
+/* ===== Responsive Mixins ===== */
+
+	@mixin media-breakpoint-sm {
+		@media screen and (min-width: map.get($breakpoints, "sm")) {
+			@content;
+		}
+	}
+
+	@mixin media-breakpoint-md {
+		@media screen and (min-width: map.get($breakpoints, "sm")) {
+			@content;
+		}
+	}
+
+	@mixin media-breakpoint-lg {
+		@media screen and (min-width: map.get($breakpoints, "lg")) {
+			@content;
+		}
+	}
+
+	@mixin media-breakpoint-xl {
+		@media screen and (min-width: map.get($breakpoints, "xl")) {
+			@content;
+		}
+	}
+
+	@mixin media-breakpoint-xxl {
+		@media screen and (min-width: map.get($breakpoints, "xxl")) {
+			@content;
+		}
+	}
+	
+	@mixin width-constraint-sm {
+		@include media-breakpoint-sm { width: map.get($breakpoints, "sm") }
+	}
+
+	@mixin width-constraint-md {
+		@include media-breakpoint-md { width: map.get($breakpoints, "md") }
+	}
+
+	@mixin width-constraint-lg {
+		@include media-breakpoint-lg { width: map.get($breakpoints, "lg") }
+	}
+
+	@mixin width-constraint-xl {
+		@include media-breakpoint-sm { width: map.get($breakpoints, "sm") }
+	}
+
+	@mixin width-constraint-xxl {
+		@include media-breakpoint-sm { width: map.get($breakpoints, "sm") }
+	}
+
+/* ===== Responsive Containers ====== */
+
+.container-sm {
+	width: 100%;
+
+	@include width-constraint-sm;
+	@include width-constraint-md;
+	@include width-constraint-lg;
+	@include width-constraint-xl;
+	@include width-constraint-xxl;
+}
+
+.container-md {
+	width: 100%;
+
+	@include width-constraint-md;
+	@include width-constraint-lg;
+	@include width-constraint-xl;
+	@include width-constraint-xxl;
+}
+
+.container-lg {
+	width: 100%;
+
+	@include width-constraint-lg;
+	@include width-constraint-xl;
+	@include width-constraint-xxl;
+}
+
+.container-xl {
+	width: 100%;
+
+	@include width-constraint-xl;
+	@include width-constraint-xxl;
+}
+
+.container-xxl {
+	width: 100%;
+
+	@include width-constraint-xxl;
+}

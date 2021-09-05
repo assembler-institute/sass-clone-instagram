@@ -1819,4 +1819,102 @@ a {
 
 .grid {
   display: grid;
+}
+
+/* ===== Breakpoints ===== */
+/* ===== Responsive Mixins ===== */
+/* ===== Responsive Containers ====== */
+.container-sm {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .container-sm {
+    width: 576px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-sm {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-sm {
+    width: 992px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-sm {
+    width: 576px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-sm {
+    width: 576px;
+  }
+}
+
+.container-md {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .container-md {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-md {
+    width: 992px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-md {
+    width: 576px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-md {
+    width: 576px;
+  }
+}
+
+.container-lg {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .container-lg {
+    width: 992px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-lg {
+    width: 576px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-lg {
+    width: 576px;
+  }
+}
+
+.container-xl {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .container-xl {
+    width: 576px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container-xl {
+    width: 576px;
+  }
+}
+
+.container-xxl {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .container-xxl {
+    width: 576px;
+  }
 }/*# sourceMappingURL=main.css.map */
