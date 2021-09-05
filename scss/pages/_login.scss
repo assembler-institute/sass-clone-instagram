@@ -1,0 +1,48 @@
+@use "../abstracts/colors";
+@use "sass:map";
+
+%login-content__frame {
+	padding: 0.5rem 2.5rem;
+	background-color: white;
+	border: 1px solid map.get(colors.$colors, gray-02);
+}
+
+.login-form {
+	@extend %login-content__frame;
+
+	&__logo {
+		display: block;
+		width: 12rem;
+		margin: 1rem auto 2rem;
+	}
+}
+
+.login-sign-up {
+	@extend %login-content__frame;
+	
+	font-size: 0.9rem;
+	text-align: center;
+
+	&__link {
+		font-weight: 600;
+		color: map.get(colors.$colors, blue-01);
+	}
+}
+
+.login-download {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+
+	&__title {
+		font-size: 0.9rem;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: center;
+		gap: 0.75rem;
+	}
+}

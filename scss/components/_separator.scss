@@ -1,0 +1,12 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+@use "sass:map";
+
+.login-separator {
+	@include mixins.separator-template(
+		$font-size: 0.8rem,
+		$text-color: map.get(colors.$colors, gray-03),
+		$line-color: map.get(colors.$colors, gray-02),
+		$stroke: 1px,
+	)
+}

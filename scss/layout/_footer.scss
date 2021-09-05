@@ -1,0 +1,36 @@
+@use "../abstracts/colors";
+@use "sass:map";
+
+.footer {
+	background-color: inherit;
+
+	&-content {
+		width: 800px;
+		margin: 0 auto;
+	
+		font-size: 0.8rem;
+		font-weight: 300;
+		color: map.get(colors.$colors, gray-03);
+	}
+	
+	&-links {
+		padding: 0 1rem;
+		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem 0.75rem;
+	
+		& a:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	&-miscelaneous {
+		margin: 1rem 0;
+		
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+	}
+}

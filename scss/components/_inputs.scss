@@ -1,0 +1,64 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+@use "sass:map";
+@use "sass:color";
+
+@mixin input-template($width: 100%, $height: auto, $padding: 0, $margin: 0, $radius: 0, $text-color: grey, $border-color: grey, $bg-color: white) {
+	width: $width;
+	height: $height;
+	padding: $padding;
+	margin: $margin;
+
+	font-size: 0.8rem;
+	font-weight: 300;
+
+	background-color: $bg-color;
+	color: $text-color;
+	border-radius: $radius;
+	border-width: 1px;
+	border-style: solid; 
+	border-color: $border-color;
+	outline: none;
+
+	&:focus {
+		border-color: color.scale($border-color, $lightness: -20%);
+	}
+}
+
+.login-input {
+	@include input-template(
+		$padding: 0.7rem,
+		$margin: 0.5rem 0,
+		$radius: 0.2rem,
+		$bg-color: map.get(colors.$colors, gray-01),
+		$text-color: map.get(colors.$colors, gray-03),
+		$border-color: map.get(colors.$colors, gray-02),
+	);
+
+	display: block;
+}
+
+.search-bar {
+	@include input-template(
+		$width: 14rem,
+		$padding: 0.35rem 1rem,
+		$radius: 0.2rem,
+		$bg-color: map.get(colors.$colors, gray-01),
+		$text-color: map.get(colors.$colors, gray-03),
+		$border-color: map.get(colors.$colors, gray-02),
+	);
+
+	display: block;
+}
+
+
+.language-select {
+	width: 8rem;
+
+	color: map.get(colors.$colors, gray-03);
+	background-color: transparent;
+	border: none;
+	outline: none;
+
+	cursor: pointer;
+}
