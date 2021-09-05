@@ -1,72 +1,132 @@
-`#sass` `#css` `#html` `#master-in-software-engineering`
+# What is SASS? What does SASS stand for?
 
-# SASS - Clone Instagram <!-- omit in toc -->
+> Sass es un preprocesador CSS.
+> SASS significa Syntactically Awesome Style Sheets
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+# What is a CSS pre-processor?
 
-> Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more
->
-> The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
+> Un preprocesador CSS es una herramienta que nos permite generar, de manera automática, hojas de estilo, añadiéndoles características que no tiene CSS, y que son propias de los lenguajes de programación, como pueden ser variables, funciones, selectores anidados, herencia, etcétera.
 
-## Index <!-- omit in toc -->
+# What does a pre-processor have to do with SASS?
 
-- [Requirements](#requirements)
-- [Repository](#repository)
-- [Technologies used](#technologies-used)
-- [Project delivery](#project-delivery)
-- [Resources](#resources)
+> El preprocesamiento de los datos nos ayuda a lidiar con problemas de mantenimiento y escalabilidad del codigo.
 
-## Requirements
+# Why use SASS?
 
-- You must use variables at least once in the project.
-- You must use nesting.
-- You must use inheritance at least once in the project.
-- You cannot use third party libraries for the development of this pill
+> SASS nos permite el uso de variables, funciones, selectores anidados, herencia, y mas funcionalidades para facilitarnos la organizacion y escritura de CSS.
 
-## Repository
+# SASS has disadvantages? Which are?
 
-First of all you must fork this project into your GitHub account.
+> Como todo, tiene sus pros y sus contras, aunque tiene pocos. El mas destacado es que podemos perder algunos beneficios del inspector de elementos integrado del navegador.
 
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
+# What is a SASS Variable? Explain why are useful
 
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
+> Se usa para asignar un valor a un nombre que comenzamos con $ al cual podemos hacer referencia en cualquier parte de nuestro codigo las veces que necesitemos.
 
-### Installing
+# Explain the SASS variables property with an example.
 
-In this project you must use the VSCode SASS extension in order to compile SASS into CSS.
+> $variable: 55px;
 
-First of all you will need to install the extension:
+> div { margin: $variable; }
 
-- [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+# What is a mixin? Why is it important? Give an example
 
-When the extension is installed correctly, having a SASS file open, you must click on "Watch Sass":
+> @mixin nos permite predefinir una 'plantilla' de estilos para reutilizarlos en nuestro codigo.
 
-<img src="https://raw.githubusercontent.com/ritwickdey/vscode-live-sass-compiler/master/images/Screenshot/AnimatedPreview.gif" width="600px">
+> Es importante porque nos permite unificar y reducir gran cantidad de estilos que se suelen duplicar.
 
-If you want to change some configuration of "Live SASS Compiler" you can check this official resource:
+> @mixin reset-list {
+> margin: 0;
+> padding: 0;
+> list-style: none;
+> }
 
-- [Live SASS Compiler Settings](https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md)
+> @include reset-list
 
-## Technologies used
+# What is SCSS? Give an example
 
-\* SASS
+> SCSS es uno de los formatos en los que podemos trabajar con SASS. Se caracteriza porque mantiene la sintaxis de css {} y ;.
 
-\* CSS
+> body {
+> font-size: 1rem;
+> margin: 0 auto;
+> }
 
-\* HTML
+# What is SASS? Give an example
 
-## Project delivery
+> SASS es el otro formato en el que podemos trabajar con SASS. Se caracteriza por eliminar {} y ; utilizando la tabulacion.
 
-To deliver this project you must follow the steps indicated in the document:
+> body
+> font-size: 1rem
+> margin: 0 auto
 
-- [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
+# What is the difference between .scss and .sass syntax
 
-## Resources
+> La sintaxis de .scss es como la sintaxis de .css, es decir, con {} y ;
+> En cambio en la sintaxis de .sass se omiten dichos signos.
 
-- [SASS documentation](https://sass-lang.com/)
-- [W3S SASS](https://www.w3schools.com/sass/)
-- [SASS Guidelines](https://sass-guidelin.es/es/)
-- [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
-- [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+# In which cases would we use SCSS? And in which cases would we use SASS?
+
+> El caso más claro es según el estilo de programación usado cuando el documento va a ser compartido con otros equipos. Fanes de la sintaxis de .css usaran .scss, en cambio, si el equipo prefiere un código más limpio y claro, utilizaran .sass por sus menos caracteres y líneas.
+
+# Explain how traditional CSS and Preprocessed CSS workflows are different.
+
+> El workflow puede ser diferente, desde la optimización de archivos mas modulares, un archivo para colores, otro para formularios, etc, hasta que el código debe ser compilado, la existencia de un mayor esfuerzo para solucionar los problemas que puedan surgir.
+
+# Can we create functions with SASS? If it is true, give an example.
+
+> Si, es posible y una de sus ventajas. Ejem: @mixin transform($property) {
+> -webkit-transform: $property;
+> -ms-transform: $property;
+> transform: $property;}
+> .box { @include transform(rotate(30deg)); }
+
+# What is nesting? Is it useful? Give an example of nesting
+
+> El nesting consiste en anidar diferentes elementos dentro de otros. Ejem: footer{
+> ul,p{
+> @include displayFlex();
+> font-size: .8em;
+> color: rgb(153, 151, 151);
+> list-style: none;
+> line-height: 14px;
+> cursor: pointer;
+> }
+
+> }
+
+# Difference between @use & @import? Give an example
+
+> El @import permite incluir un archivo en otro. El @use permite incluir un archivo una SOLA VEZ, no importa cuantas veces uses este comando. Ejem:
+> // \_base.scss
+> $font-stack: Helvetica, sans-serif;
+> $primary-color: #333;
+> // styles.scss
+> @use 'base';
+
+# How can we import other CSS/SASS files in SASS? Give an example
+
+> Es necesario unar un modulo namespace. Ejem: @use "src/corners" (url) as c (namespace);
+> .button {
+> @include c.rounded;
+
+# Explain the concept of inheritance in SASS.
+
+> La herencia, un mecanismo por el cual un selector puede recibir estilos CSS que nos llegan de declaraciones realizadas con anterioridad. Conseguir este objetivo es sencillo gracias a la directiva @extend y las denominadas "placeholder class", que son una construcción de Sass que no tiene representación en el CSS hasta que no la usemos
+
+# Why use @extend? Give an examples
+
+> El uso de @extend le permite compartir un conjunto de propiedades CSS de un selector a otro. Una clase placeholder es un tipo especial de
+> clase que solo imprime cuando es extended, y puede ayudar a mantener su compilado CSS ordenado y limpio. Ejem:
+> %message-shared {
+> border: 1px solid #ccc;
+> padding: 10px;
+> color: grey;
+> }
+> .message {
+> @extend %message-shared;
+> }
+> .success {
+> @extend %message-shared;
+> border-color: green;
+> }

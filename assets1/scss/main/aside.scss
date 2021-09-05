@@ -1,0 +1,98 @@
+@use '../mixins';
+@use '../colors';
+@use '../images';
+
+aside {
+  width: 35%;
+  position: relative;
+  padding: 0 1rem;
+
+  .aside-profile {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .aside-profile-img {
+    width: 15%;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 1px solid colors.$border;
+    align-items: center;
+    justify-content: center;
+
+    @include mixins.backgroundImage(images.$profileOne);
+  }
+
+  .aside-profile-name {
+    width: 65%;
+    justify-content: center;
+    padding-left: 0.5rem;
+  }
+
+  .aside-change {
+    width: 20%;
+    justify-content: center;
+    align-items: flex-end;
+    color: colors.$blue;
+  }
+
+  .aside-username {
+    font-weight: bold;
+  }
+
+  .aside-fullname {
+    color: colors.$gray;
+  }
+
+  .aside-suggest-title {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+
+    p:first-child {
+      width: 84%;
+      text-align: start;
+      font-weight: bold;
+      color: colors.$gray;
+    }
+    
+    p {
+      color: colors.$black;
+    }
+  }
+
+  .aside-small-profile-img {
+    width: 15%;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid colors.$border;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aside-small-profile-name {
+    width: 70%;
+    justify-content: center;
+    padding-left: 0.5rem;
+  }
+
+  .aside-follow {
+    width: 15%;
+    align-items: flex-end;
+    justify-content: center;
+    color: colors.$blue;
+  }
+
+  .aside-extra-info {
+    width: 100%;
+    color: colors.$gray;
+    margin-top: 2rem;
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
+  }
+}

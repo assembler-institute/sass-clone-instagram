@@ -1,0 +1,22 @@
+{
+  "name": "sass-clone-instagram",
+  "version": "1.0.0",
+  "description": "# In which cases would we use SCSS? And in which cases would we use SASS?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelPerezMartinez/sass-clone-instagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelPerezMartinez/sass-clone-instagram/issues"
+  },
+  "homepage": "https://github.com/MiguelPerezMartinez/sass-clone-instagram#readme",
+  "dependencies": {
+    "sass": "^1.32.12"
+  }
+}
