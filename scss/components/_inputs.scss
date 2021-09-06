@@ -1,0 +1,38 @@
+@use '../abstracts/index-abstracts' as a;
+
+.container_input{
+        background-color: a.$background-color;
+        border: 1px solid #a4a6a9;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 2rem;
+        width: 15rem;
+        margin-bottom: 0.3rem;
+}
+.input{
+    border: none;
+    background-color: a.$background-color;
+    outline: none;
+    
+    &_title{
+        color: #a4a6a9;
+        margin: 0rem;
+        font-size: 0.40rem;
+    }
+    &_search{
+        background-color: a.$background-color;
+        @extend %border;
+        outline: none;
+        text-align: center;
+        height: 1.7rem;
+        width: 12.5rem;   
+    }
+    &_comment{
+        border: none;
+        outline: none;
+        margin-left: 0.5rem;
+    }
+
+}

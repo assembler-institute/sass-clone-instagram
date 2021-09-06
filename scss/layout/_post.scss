@@ -1,0 +1,78 @@
+@use '../abstracts/index-abstracts' as a;
+
+.post{
+    @extend %border;
+    width: 36rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: white;
+
+    &_title_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    &_user{
+        &_container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &_name{
+            margin-left: 0.8rem;
+            margin-right: 0.5rem;
+            color: #262626;
+        }
+        &_img{
+            margin-left: 0.8rem;
+        }
+    }
+
+    &_interaction_container{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 0rem 1rem;
+    }
+    &_timer{
+        margin-left: 0.8rem;
+        color: gray;
+        font-size: 0.8rem;
+    }
+
+}
+
+.caption_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.counter{
+    
+    &_likes_container{
+    margin-left: 0.8rem;
+    }
+    &_comments_container{
+        color:gray;
+        margin-left: 0.8rem;
+    }
+}
+
+.comment{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.8rem;
+    color: #262626;
+
+    &_post_container{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0.8rem;
+        border-top: 1px solid lightgray;
+        height: 3rem;
+    }
+}
