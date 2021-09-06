@@ -478,6 +478,24 @@ ul {
   color: rgba(var(--eca, 255, 255, 255), 1);
   position: relative;
 }
+.btn--login {
+  border: 0;
+  color: #0095f6;
+  color: rgba(var(--d69, 0, 149, 246), 1);
+  display: inline;
+  padding: 0;
+  position: relative;
+}
+.btn--login__icon {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+.btn--login__text {
+  color: #385185;
+  font-weight: 600;
+}
 .btn__inner {
   align-items: center;
   justify-content: center;
@@ -1713,9 +1731,11 @@ ul {
   background-position: 0 -129px;
 }
 
-.coreSpriteFacebookIcon, .coreSpriteFacebookIconInverted {
+.coreSpriteFacebookIcon,
+.coreSpriteFacebookIconInverted {
   background-repeat: no-repeat;
-  background-position: -414px -259px;
+  background-position: -347px -329px;
+  background-size: 440px 411px;
   height: 16px;
   width: 16px;
 }

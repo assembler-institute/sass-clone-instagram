@@ -24,6 +24,27 @@
     position: relative;
   }
 
+  &--login{
+    border: 0;
+    color: #0095f6;
+    color: rgba(var(--d69,0,149,246),1);
+    display: inline;
+    padding: 0;
+    position: relative;
+
+    &__icon{
+      display: inline-block;
+      margin-right: 8px;
+      position: relative;
+      top: 3px;
+    }
+
+    &__text{
+      color: #385185;
+      font-weight: 600;
+    }
+  }
+
   &__inner{
     @include a.align-items(center);
     @include a.justify-content(center);
