@@ -1051,6 +1051,7 @@ a {
 }
 
 .post-gallery {
+  max-width: 768px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1059,6 +1060,7 @@ a {
 }
 
 .user-gallery {
+  max-width: 768px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
