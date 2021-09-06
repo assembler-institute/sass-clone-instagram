@@ -1,0 +1,59 @@
+@use '../abstracts' as a;
+//Index page
+.facebook-img {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+}
+
+.get-app-img {
+    width: 120px;
+    margin: 5px;
+}
+
+.image__static {
+    max-height: 460px;
+}
+
+//Home page
+.profile-size {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.profile-size-user {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post__card-img {
+    max-width: 760px;
+}
+
+.post__img {
+    width: 100%;
+}
+
+.story-image {
+    border: solid 3px pink;
+}
+
+.post__card-info-user {
+    @include a.display-flex($flex-direction: row, $justify-content: flex-start, $gap: 0.8rem);
+}
+
+.post__card-info>p {
+    margin-right: 1rem;
+}
+
+.post__card-info {
+    @include a.display-flex($flex-direction: row, $justify-content: space-between);
+    background-color: a.$color-secondary;
+    border: solid 1px a.$color-border;
+    margin-top: 2rem;
+}

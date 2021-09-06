@@ -1,0 +1,35 @@
+@use '../abstracts' as a;
+.icons-size {
+    width: 22px;
+    height: 22px;
+}
+
+.navbar__icons-profile {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    content: inherit;
+}
+
+.like-red {
+    background-color: none;
+    &:hover {
+        background-color: #f00;
+    }
+}
+
+.comment__section-icon {
+    @include a.display-flex($flex-direction: row, $justify-content: space-between);
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+}
+
+.instagram-size {
+    width: 6rem;
+    padding-left: 1rem;
+}
+
+.index-instagram-size {
+    width: 12rem;
+    padding: 1rem 3rem;
+}

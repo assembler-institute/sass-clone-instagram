@@ -1,0 +1,32 @@
+@use '../abstracts' as a;
+.forgot-password>a {
+    color: blue;
+    text-decoration: none;
+    font-family: a.$font-h1;
+    font-size: 0.8rem;
+}
+
+.btn>a {
+    color: a.$color-primary;
+    text-decoration: none;
+}
+
+.sign-up-text>a {
+    color: blue;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.facebook-link {
+    color: darkblue;
+    font-family: a.$font-h1;
+}
+
+.container__a>a {
+    text-decoration: none;
+    padding: auto;
+    margin: .125rem;
+    font-family: a.$font-h1;
+    font-size: a.$font-size-footer;
+    color: a.$color-tertiary;
+}
