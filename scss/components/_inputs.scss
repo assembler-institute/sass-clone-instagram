@@ -3,6 +3,11 @@
 @use "sass:map";
 @use "sass:color";
 
+@mixin input-reset {
+	border: none;
+	outline: none;
+}
+
 @mixin input-template($width: 100%, $height: auto, $padding: 0, $margin: 0, $radius: 0, $text-color: grey, $border-color: grey, $bg-color: white) {
 	width: $width;
 	height: $height;
@@ -36,6 +41,11 @@
 	);
 
 	display: block;
+}
+
+.comment-input {
+	@include input-reset;
+	width: 480px;
 }
 
 .search-bar {

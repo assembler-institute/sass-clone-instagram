@@ -19,7 +19,7 @@ $breakpoints: (
 	}
 
 	@mixin media-breakpoint-md {
-		@media screen and (min-width: map.get($breakpoints, "sm")) {
+		@media screen and (min-width: map.get($breakpoints, "md")) {
 			@content;
 		}
 	}
@@ -55,11 +55,11 @@ $breakpoints: (
 	}
 
 	@mixin width-constraint-xl {
-		@include media-breakpoint-sm { width: map.get($breakpoints, "sm") }
+		@include media-breakpoint-xl { width: map.get($breakpoints, "xl") }
 	}
 
 	@mixin width-constraint-xxl {
-		@include media-breakpoint-sm { width: map.get($breakpoints, "sm") }
+		@include media-breakpoint-xxl { width: map.get($breakpoints, "xxl") }
 	}
 
 /* ===== Responsive Containers ====== */

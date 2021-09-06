@@ -17,6 +17,7 @@ $colors: (
 	blue-01: #0095f6,
 	blue-02: #385185,
 	blue-03: #00376b,
+	transparent: transparent,
 );
 
 @each $name, $value in $colors {

@@ -1,0 +1,47 @@
+@mixin user-thumbnail-template() {
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50%;
+
+	img {
+		border: 0.125rem solid white;
+		border-radius: 50%;
+	}
+}
+
+@mixin user-thumbnail-size($diameter: 3.5rem) {
+	width: $diameter;
+	height: $diameter;
+
+	img {
+		width: $diameter - 0.25rem;
+		height: $diameter - 0.25rem;
+	}
+}
+
+.user-thumbnail {
+	@include user-thumbnail-template;
+
+	&--bg {
+		@include user-thumbnail-size(4rem);
+	}
+	
+	&--md {
+		@include user-thumbnail-size;
+	}
+
+	&--sm {
+		@include user-thumbnail-size(3rem);
+	}
+
+	&--with-story {
+		background: rgb(145,13,56);
+		background: linear-gradient(225deg, rgba(145,13,56,1) 0%, rgba(255,76,0,1) 100%);
+	}
+}
+
+
+

@@ -1,0 +1,53 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "sass:map";
+
+.post {
+	font-size: 0.8rem;
+	background-color: white;
+	border: 1px solid map.get(colors.$colors, gray-02);
+
+	&-header {
+		padding: 0.75rem 1rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	&-user-icon {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		border: 2px solid map.get(colors.$colors, gray-02);
+	}
+
+	&-img {
+		width: 100%
+	}
+
+	&-body {
+		padding: 0.5rem 1rem;
+	}
+
+	&-options {
+		display: flex;
+		gap: 1rem;
+	}
+
+	&-content {
+		line-height: 150%;
+		text-align: justify;
+	}
+
+	&-footer {
+		padding: 0.75rem 1rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-top: 1px solid map.get(colors.$colors, gray-02);
+	}
+}
