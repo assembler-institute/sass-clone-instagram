@@ -29,12 +29,13 @@ Sass allows the use of features that do not exist in CSS, like variables, nested
 A variable is a named reference used to store a value that we could reuse multiple times throughout our stylesheet. Thus, instead of specifying the value, the name of the variable that stores it is typed. Sass uses the reserves the $ symbol to define variables.
  
 ## Explain the SASS variables property with an example.
+```
+$cyan:    #0dcaf0;
 
-   $cyan:    #0dcaf0;
-
-   .my-box {
-     background-color: $cyan;
-   }
+.my-box {
+  background-color: $cyan;
+}
+```
 
 ## What is a mixin? Why is it important? Give an example.
 
