@@ -254,13 +254,13 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 1.5rem;
   align-items: flex-start;
+  gap: 2rem;
 }
 
 aside {
-  margin-top: 4 rem;
   max-width: 22rem;
 }
 
@@ -274,6 +274,7 @@ aside {
   font-weight: bold;
   font-size: small;
   gap: 5rem;
+  margin-top: 1rem;
 }
 .switch__profile--exclude--button {
   display: flex;
@@ -422,6 +423,10 @@ aside {
   cursor: pointer;
 }
 
+.like__heart:active {
+  fill: #ed4956;
+}
+
 .bold__username {
   font-weight: bold;
 }
@@ -450,4 +455,5 @@ aside {
 .show__more {
   margin-top: 0.5rem;
   color: #8e8e8e;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

@@ -51,6 +51,10 @@
     cursor: pointer;
 }
 
+.like__heart:active {
+    fill: #ed4956
+}
+
 .bold__username {
     font-weight: bold;
 }
@@ -76,4 +80,5 @@
 .show__more {
     margin-top: 0.5rem;
     color: c.$light-color;
+    cursor: pointer;
 }

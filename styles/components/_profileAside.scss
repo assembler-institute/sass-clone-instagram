@@ -1,7 +1,6 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/colors" as c;
 aside {
-    margin-top: 4 rem;
     max-width: 22rem;
 }
 
@@ -12,6 +11,7 @@ aside {
     font-weight: bold;
     font-size: small;
     gap: 5rem;
+    margin-top: 1rem;
     &--exclude--button {
         @include m.flex;
         flex-direction: row;

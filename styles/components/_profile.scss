@@ -3,7 +3,8 @@
 main {
     @include m.flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 1.5rem;
     align-items: flex-start;
+    gap: 2rem;
 }
