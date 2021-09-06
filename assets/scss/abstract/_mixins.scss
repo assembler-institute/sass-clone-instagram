@@ -1,0 +1,24 @@
+$ncols: 12;
+
+$breakpoints: ('xs': 0,
+    'sm':576px,
+    'md':768px,
+    'lg':992px,
+    'xl':1200px,
+    'xxl':1400px);
+
+@mixin cols($bks, $ncols, $prefix) {
+
+    @each $name,
+    $bk in $bks {
+        @media(min-width: $bk) {
+            @for $i from 1 to $ncols+1 {
+                .#{$prefix}-#{$name}-#{$i} {
+                    width: (($i * 100) / $ncols) * 1%;
+                }
+            }
+        }
+    }
+}
+
+@include cols($breakpoints, $ncols, 'col');

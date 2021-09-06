@@ -1,0 +1,28 @@
+@use '../abstract'as a;
+
+.app{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    background-color: a.$background-main;
+    padding-top: 1rem;
+}
+
+.image-login{
+    width: 50%;
+}
+
+.container-login{
+    width: 50%;
+    max-width: 350px;
+}
+
+.main{
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative;
+    width: 100%;
+}

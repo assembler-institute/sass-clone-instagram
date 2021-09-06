@@ -1,0 +1,121 @@
+@use '../abstract'as a;
+
+.login {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+
+    &__title {
+        margin: 22px auto 12px;
+        text-align: center;
+    }
+
+    &__facebook {
+        padding-top: 1rem;
+        text-align: center;
+        &__text{
+            margin:0 0.3rem;
+            font-weight: a.$font-weight-600;
+            letter-spacing: -0.5px;
+        }
+    }
+
+    &__remember {
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        padding:1rem 0;
+    }
+
+    &__separator {
+        padding: 0 2rem;
+        display: flex;
+    }
+    &-image-instagram{
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+}
+
+.color-facebook {
+    color: a.$color-facebook;
+}
+
+.separator {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #dbdbdb;
+    height: 1px;
+    position: relative;
+    top: .45em;
+}
+
+.cercle {
+    color: #8e8e8e;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: a.$font-weight-600;
+    position: relative;
+    top: -0.4rem;
+}
+
+.form-login {
+    padding: 2rem;
+
+    &__input {
+        border: 1px solid #dbdbdb;
+        border-radius: 3px 3px 3px 3px;
+        margin: 0 0 10px;
+        padding: 10px 10px;
+        width: 92%;
+        outline: 0;
+    }
+
+    &__submit {
+        background-color: a.$color-blue-light;
+        color: white;
+        border: 0;
+        cursor: pointer;
+        font-weight: a.$font-weight-600;
+        padding: 5px 9px;
+        text-align: center;
+        width: 100%;
+        border-radius: 3px 3px 3px 3px;
+    }
+}
+
+.register {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 20px;
+    font-size: a.$font-size-normal;
+    &--blue{
+        font-weight: a.$font-weight-600;
+        font-size: a.$font-size-normal;
+        color: a.$color-blue-light;
+    }
+}
+
+.apps {
+    &__download {
+        text-align: center;
+        margin: 20px;
+    }
+
+    &__stores {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__img {
+        height: 40px;
+    }
+
+}

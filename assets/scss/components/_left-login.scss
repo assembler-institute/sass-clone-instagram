@@ -1,0 +1,11 @@
+@use '../abstract/' as a;
+
+.image-login{
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .image-login{
+        display: block;
+    }
+}
