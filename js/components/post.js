@@ -5,14 +5,14 @@ function createPost(post, user) {
 	const template = document.createElement("template");
 
 	template.innerHTML = `
-		<article class="post">
+		<article class="post container-sm">
 			<header class="post-header">
 				<div class="flex gap-3 align-items-center">
 					<div class="user-thumbnail user-thumbnail--sm user-thumbnail--with-story">
-						<img src="https://i.pravatar.cc/300?img=1" alt="user-1" />
+						<img src="https://i.pravatar.cc/300?img=${user.id}" alt="user-1" />
 					</div>
 					<div>
-						<span class="block my-2 font-weight-700">${user.username}</span>
+						<span class="block my-2 font-weight-700">${user.name}</span>
 						<span class="block my-2">${post.title}</span>
 					</div>
 				</div>
@@ -34,7 +34,7 @@ function createPost(post, user) {
 					</button>
 				</div>
 				<span class="block my-2 font-weight-700">0 Likes</span>
-				<p class="post-content my-2"><span class="font-weight-700">${user.username}</span> ${post.body}</p>
+				<p class="post-content my-2"><span class="font-weight-700">${user.name}</span> ${post.body}</p>
 				<span class="block my-2 text-color-gray-03">1 week ago</span>
 				<div class="post-comments" data-container="post-comments">
 				</div>

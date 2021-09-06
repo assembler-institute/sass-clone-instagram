@@ -1,8 +1,11 @@
 @use "../abstracts/colors";
 @use "../abstracts/mixins";
+@use "../abstracts/breakpoints";
 @use "sass:map";
 
 .post {
+	max-width: map.get(breakpoints.$breakpoints, "md");
+
 	font-size: 0.8rem;
 	background-color: white;
 	border: 1px solid map.get(colors.$colors, gray-02);
@@ -24,11 +27,17 @@
 	}
 
 	&-img {
-		width: 100%
+		width: 100%;
+		
+		@include breakpoints.media-breakpoint-sm { height: map.get(breakpoints.$breakpoints, "sm") * 0.5 }
+		@include breakpoints.media-breakpoint-md { height: map.get(breakpoints.$breakpoints, "md") * 0.5 }
+		
+		object-fit: cover;
+		object-position: center;
 	}
 
 	&-body {
-		padding: 0.5rem 1rem;
+		padding: 0.67rem 1rem;
 	}
 
 	&-options {
