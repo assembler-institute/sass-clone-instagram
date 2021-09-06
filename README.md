@@ -29,6 +29,7 @@ Sass allows the use of features that do not exist in CSS, like variables, nested
 A variable is a named reference used to store a value that we could reuse multiple times throughout our stylesheet. Thus, instead of specifying the value, the name of the variable that stores it is typed. Sass uses the reserves the $ symbol to define variables.
  
 ## Explain the SASS variables property with an example.
+
 ```
 $cyan:    #0dcaf0;
 
@@ -43,22 +44,26 @@ A mixin allows us to make groups of CSS declarations that can be reused througho
 
 ## What is SCSS? Give an example:
 
-    $font-stack: Helvetica,sans-serif;
-    $primary-color: #333;
+```
+$font-stack: Helvetica,sans-serif;
+$primary-color: #333;
 
-    body{
-      font:100% $font-stack;
-      color:$primary-color;
-    }
+body{
+  font:100% $font-stack;
+  color:$primary-color;
+}
+```
 
 ## What is SASS? Give an example:
 
-    $font-stack: Helvetica,sans-serif
-    $primary-color: #333
+```
+$font-stack: Helvetica,sans-serif
+$primary-color: #333
 
-    body
-      font:100% $font-stack
-      color:$primary-color
+body
+  font:100% $font-stack
+  color:$primary-color
+```
 
 ## What is the difference between .scss and .sass syntax?
 
@@ -70,32 +75,36 @@ The use of SCSS or SASS is under personal preference, but many CSS and UI Framew
 
 ## Can we create functions with SASS? If it is true, give an example.
 
-    @function pow($base, $exponent) {
-      $result: 1;
-      @for $_ from 1 through $exponent {
-        $result: $result * $base;
-      }
-      @return $result;
-    }
+```
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+```
 
 ## What is nesting? Is it useful? Give an example of nesting.
 
 Nesting is a style rule that allows us to write style rules inside another declaration block. Thus, Sass will combine the outer rule’s selector with the inner rule’s. Nested rules are useful to avoid the repetition of the same selector over and over again.
 
-  .user-table {
-    border: 1px solid rgba(0,0,0,10%);
-    border-spacing: 0.125rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 4px rgba(0,0,0,25%);
+```
+.user-table {
+  border: 1px solid rgba(0,0,0,10%);
+  border-spacing: 0.125rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 4px rgba(0,0,0,25%);
 
-    &__cell {
-      padding: 0.5rem 2rem;
-      text-align: center;
-      border: 1px solid rgba(0,0,0,10%);
-      border-radius: 0.25rem;
-    }
+  &__cell {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,10%);
+    border-radius: 0.25rem;
   }
- 
+}
+```
+
 ## Difference between @use & @import? Give an example:
 
 The new @use is similar to @import. but has some notable differences:
@@ -108,29 +117,32 @@ The new @use is similar to @import. but has some notable differences:
 
 Yes, with the use of the at-rule @use that allows us to import other Sass and CSS files like modules.
 
-    // _base.scss
-    $font-stack:    Helvetica, sans-serif;
-    $primary-color: #333;
+```
+// _base.scss
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
 
-    // styles.scss
-    @use 'base';
+// styles.scss
+@use 'base';
 
-    .inverse {
-      background-color: base.$primary-color;
-      color: white;
-    }
- 
+.inverse {
+  background-color: base.$primary-color;
+  color: white;
+}
+```
+
 ## Why use @extend? Give an example:
 
 Using @extend lets you share a set of CSS properties from one selector to another. 
 
-    %message-shared {
-      border: 1px solid #ccc;
-      padding: 10px;
-      color: #333;
-    }
+```
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
 
-    .message {
-      @extend %message-shared;
-    }
-
+.message {
+  @extend %message-shared;
+}
+```
