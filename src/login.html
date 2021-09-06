@@ -6,39 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
   <script src="assets/js/main.js" defer></script>
+  <link rel="icon" sizes="192x192" href="./assets/img/logo-ico.png">
   <title>Instagrammy Login</title>
 </head>
 <body>
-  <section class="container">
+  <section class="container flex-column flex-center-center">
     <main class="flex-center">
       <section class="hide-in-mobile">
         <img src="./assets/img/mockup.png" alt="Mobile">
       </section>
       <section class="flex-column">
-        <div class="flex-column box p-2">
+        <div class="[ box --no-border ] flex-column p-2">
           <header class="flex-center">
             <img class="logo" src="./assets/img/Instagram-Logo.png" alt="Instagram logo" >
           </header>
           <form action="" class="flex-column">
-            <input type="text" class="input" placeholder="Telephone, user or email">
+            <input type="text" class="input" placeholder="Phone number, username or email">
             <input type="password" class="input" placeholder="Password">
-            <button class="button" id="login">Start session</button>
+            <button class="button" id="login">Log in</button>
             <h2 class="overline"><span class="overline__text">or</span></h2>
             <div class="flex-column flex-center-center">
               <div class="color-facebook py-1">
                 <span class="icon-facebook"></span>
-                <span>Start session with Facebook</span>
+                <span>Log in with Facebook</span>
               </div>
-
               <span><a href="#">Forgot Password?</a></span>
             </div>
           </form>
         </div>
-        <div class="box text-center p-2">
-          <span>Don't have an account?<a class="color-success" href="#"> Register</a></span>
+        <div class="[ box --no-border ] text-center p-2">
+          <span>Don't have an account?<a class="color-success" href="#"> Sign up</a></span>
         </div>
         <footer class="flex-column">
-          <span class="text-center py-1">Download app</span>
+          <span class="text-center py-1">Get the app</span>
           <div class="flex-around">
             <img class="logo-store" src="./assets/img/app-store.png" alt="Apple store">
             <img class="logo-store" src="./assets/img/apple-store.png" alt="Google store">
@@ -46,6 +46,31 @@
         </footer>
       </section>
     </main>
+    <footer class="footer-link p-3">
+      <section class="text-center">
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Top Accounts</a>
+        <a href="#">Hashtags</a>
+        <a href="#">Locations</a>
+        <a href="#">Beauty</a>
+        <a href="#">Dance</a>
+        <a href="#">Fitness</a>
+        <a href="#">Food & Drink</a>
+        <a href="#">Home & garden</a>
+        <a href="#">Music</a>
+        <a href="#">Visual Arts</a>
+      </section>
+      <section class="text-center color-grey-dark p-1">
+        <span>English</span>
+        <span>&copy;2021 Instagram from Facebook</span>
+      </section>
+    </footer>
   </section>
 </body>
 </html>

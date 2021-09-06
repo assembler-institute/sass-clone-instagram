@@ -13,3 +13,8 @@
     grid-template-columns: auto;
   }
 }
+
+.grid-3-to-3 {
+  @extend %grid;
+  grid-template-columns: repeat(3, 1fr);
+}

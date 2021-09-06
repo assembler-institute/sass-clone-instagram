@@ -3,7 +3,7 @@
 .container {
   margin: auto;
   max-width: var.$width-desktop;
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -16,7 +16,7 @@
   }
 
   &__main {
-    width: 70%;
+    width: 65%;
 
     @include var.is-tablet {
       width: 100%;
@@ -24,7 +24,7 @@
   }
 
   &__second {
-    width: 25%;
-    outline: 2px dotted blue;
+    width: 30%;
+    //outline: 2px dotted blue;
   }
 }

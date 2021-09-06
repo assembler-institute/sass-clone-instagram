@@ -29,6 +29,10 @@
   @include mixin.flex(flex, between);
 }
 
+.flex-between-center {
+  @include mixin.flex(flex, between, center);
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;

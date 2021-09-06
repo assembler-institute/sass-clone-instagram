@@ -1,7 +1,7 @@
 @use '../abstract' as var;
 
 .logo {
-  height: 8rem;
+  max-width: 10rem;
 
   &--small {
     height: 3rem;
@@ -13,5 +13,5 @@
 }
 
 .logo-store {
-  height: 2.5rem;
+  max-width: 9rem;
 }
