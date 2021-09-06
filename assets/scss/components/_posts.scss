@@ -13,6 +13,10 @@
     display: flex;
     padding: 10px;
     position: relative;
+    
+    &__image{
+        padding: 0 0 0 5px;
+    }
 
     &__image>img {
         height: 32px;
@@ -63,7 +67,7 @@
             padding: 8px;
         }
 
-        
+
     }
 
     &__likes {
@@ -87,20 +91,16 @@
     float: right;
 }
 
-@mixin font-comments {
-    font-size: a.$font-size-normal;
-}
-
 .comment {
-    @include font-comments;
+    font-size: a.$font-size-normal;
 
     &__name {
-        @include font-comments;
+        @extend .comment;
         font-weight: a.$font-weight-600;
     }
 
     &__message {
-        @include font-comments;
+        @extend .comment;
     }
 
     &__date {
@@ -126,6 +126,7 @@
     &__textarea {
         width: 83%;
         padding-top: 0.8rem;
+
         &>textarea {
             resize: none;
             background: 0 0;
@@ -154,6 +155,6 @@
     }
 }
 
-svg{
+svg {
     cursor: pointer;
 }

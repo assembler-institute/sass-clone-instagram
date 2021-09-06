@@ -1,11 +1,27 @@
-@use '../abstract/' as a;
+@use '../abstract/'as a;
 
-.image-login{
+.image-login {
     display: none;
+    height: 618px;
+    background-image: url(/assets/images/image-login.png);
+    flex-basis: 454px;
+    margin-left: -35px;
+    margin-right: -15px;
+    position: relative;
+
+    &>img {
+        height: 434px;
+        left: 147px;
+        opacity: 1;
+        position: absolute;
+        top: 96px;
+        visibility: visible;
+        width: 248px;
+    }
 }
 
 @media (min-width: 992px) {
-    .image-login{
+    .image-login {
         display: block;
     }
 }

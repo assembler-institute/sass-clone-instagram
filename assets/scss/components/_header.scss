@@ -12,7 +12,7 @@
         width: 33.33%;
 
         &__image--resize {
-            max-width: 125px;
+            max-width: 100px;
         }
     }
 
@@ -70,7 +70,7 @@
     top: 0;
     align-items: center;
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0 0;
     border-bottom: 1px solid a.$border-color-navbar;
     background-color: a.$white;
     z-index: 100;

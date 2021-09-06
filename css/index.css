@@ -304,7 +304,7 @@
   width: 33.33%;
 }
 .header__logo__image--resize {
-  max-width: 125px;
+  max-width: 100px;
 }
 .header__search {
   flex-grow: 1;
@@ -355,7 +355,7 @@
   top: 0;
   align-items: center;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0 0;
   border-bottom: 1px solid #dbdbdb;
   background-color: #FFFFFF;
   z-index: 100;
@@ -363,6 +363,21 @@
 
 .image-login {
   display: none;
+  height: 618px;
+  background-image: url(/assets/images/image-login.png);
+  flex-basis: 454px;
+  margin-left: -35px;
+  margin-right: -15px;
+  position: relative;
+}
+.image-login > img {
+  height: 434px;
+  left: 147px;
+  opacity: 1;
+  position: absolute;
+  top: 96px;
+  visibility: visible;
+  width: 248px;
 }
 
 @media (min-width: 992px) {
@@ -493,6 +508,9 @@
   padding: 10px;
   position: relative;
 }
+.header__post__image {
+  padding: 0 0 0 5px;
+}
 .header__post__image > img {
   height: 32px;
   width: 32px;
@@ -552,15 +570,11 @@
   float: right;
 }
 
-.comment {
+.comment, .comment__message, .comment__name {
   font-size: 14px;
 }
 .comment__name {
-  font-size: 14px;
   font-weight: 600;
-}
-.comment__message {
-  font-size: 14px;
 }
 .comment__date {
   font-size: 10px;
@@ -693,11 +707,17 @@ a {
   text-align: center;
 }
 .stories__image > img {
-  height: 56px;
+  /* height: 56px;
   width: 56px;
   border-radius: 50%;
-  border: 3px solid #ff2100;
-  padding: 1px;
+  border: a.$border-image-perfil;
+  padding: 1px; */
+  height: 56px;
+  width: 56px;
+  background: -webkit-linear-gradient(right top, #e91ece 0%, #f90 100%);
+  border-radius: 1000px;
+  border: 1px solid white;
+  padding: 2px;
 }
 
 .fa-chevron-circle-right {

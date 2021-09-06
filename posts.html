@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/main.js" type="text/javascript" defer></script>
     <title>Instagram Clone</title>
   </head>
   <body>
     <header class="navbar">
       <nav class="header">
         <div class="header__logo">
-          <div class="header__logo__image"><img class="header__logo__image--resize" src="./assets/images/instagram_name.svg.webp" alt="logo instagram" srcset="" /></div>
+          <div class="header__logo__image">
+            <a href="./index.html"><img class="header__logo__image--resize" src="./assets/images/instagram_name.svg.webp" alt="logo instagram" srcset="" /></a>
+          </div>
         </div>
         <div class="header__search">
           <input type="text" name="search" id="search" placeholder="Buscar" />
@@ -58,15 +60,44 @@
     </header>
     <section class="main">
       <section class="stories">
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
-        <div class="stories__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /><div class="stories__image__nickname">bady_yoda</div></div>
+        <div class="stories__image">
+  
+            <img src="./assets/images/yoda.jpg" alt="image profile" srcset="" />
+
+          <div class="stories__image__nickname">Adrian</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/profile2.jpg" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Gonzalo</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/profile1.jpg" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Daniella</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/profile3.jpg" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Josep</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/profile4.png" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Pere</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/profile5.jpg" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Marc</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/profile6.jpg" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Haroon</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/profile7.jpg" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Marcel</div>
+        </div>
+        <div class="stories__image">
+          <img src="./assets/images/yoda.jpg" alt="image profile" srcset="" />
+          <div class="stories__image__nickname">Andres</div>
+        </div>
         <i class="fas fa-chevron-circle-right arrow-right"></i>
       </section>
       <section class="posts">
@@ -77,7 +108,7 @@
             <div class="header__post__options">...</div>
           </header>
           <div class="post__image">
-            <img src="./assets/images/mario.jpg" alt="super mario bros" srcset="" />
+            <img src="./assets/images/1.jpg" alt="super mario bros" srcset="" />
           </div>
           <section class="post__icons">
             <span class="post__icons__icon" data-heart="false"
@@ -107,9 +138,9 @@
           <section class="post__likes"><span>1.798</span>Me gusta</section>
           <section class="post__comments">
             <div class="comment"><span class="comment__name">Pedro</span><span class="comment__message"> Como estas ?</span></div>
-            <div class="comment"><span class="comment__name">Anna</span><span class="comment__message"> Yo bien y tu ?</span></div>
-            <div class="comment"><span class="comment__name">Pedro</span><span class="comment__message"> Muy bien</span></div>
-            <div class="comment__date"><span>Hace 5 días</span></div>
+            <div class="comment"><span class="comment__name">Mario</span><span class="comment__message"> Yo bien y tu ?</span></div>
+            <div class="comment"><span class="comment__name">Cristian</span><span class="comment__message"> Muy bien</span></div>
+            <div class="comment__date"><span>Hace 2 días</span></div>
           </section>
           <section class="write-comment">
             <div class="write-comment__emoticon">
@@ -128,12 +159,12 @@
         </article>
         <article class="post">
           <header class="header__post">
-            <div class="header__post__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /></div>
-            <div class="header__post__nickname"><span>Baby Yoda</span></div>
+            <div class="header__post__image"><img src="./assets/images/profile1.jpg" alt="" srcset="" /></div>
+            <div class="header__post__nickname"><span>Anna</span></div>
             <div class="header__post__options">...</div>
           </header>
           <div class="post__image">
-            <img src="./assets/images/mario.jpg" alt="super mario bros" srcset="" />
+            <img src="./assets/images/2.jpg" alt="super mario bros" srcset="" />
           </div>
           <section class="post__icons">
             <span class="post__icons__icon" data-heart="false"
@@ -160,12 +191,12 @@
                 ></path></svg
             ></span>
           </section>
-          <section class="post__likes"><span>1.798</span>Me gusta</section>
+          <section class="post__likes"><span>365</span>Me gusta</section>
           <section class="post__comments">
             <div class="comment"><span class="comment__name">Pedro</span><span class="comment__message"> Como estas ?</span></div>
-            <div class="comment"><span class="comment__name">Anna</span><span class="comment__message"> Yo bien y tu ?</span></div>
-            <div class="comment"><span class="comment__name">Pedro</span><span class="comment__message"> Muy bien</span></div>
-            <div class="comment__date"><span>Hace 5 días</span></div>
+            <div class="comment"><span class="comment__name">Adrian</span><span class="comment__message"> Yo bien y tu ?</span></div>
+            <div class="comment"><span class="comment__name">Pere</span><span class="comment__message"> Muy bien</span></div>
+            <div class="comment__date"><span>Hace 10 días</span></div>
           </section>
           <section class="write-comment">
             <div class="write-comment__emoticon">
@@ -184,12 +215,12 @@
         </article>
         <article class="post">
           <header class="header__post">
-            <div class="header__post__image"><img src="./assets/images/yoda.jpg" alt="" srcset="" /></div>
-            <div class="header__post__nickname"><span>Baby Yoda</span></div>
+            <div class="header__post__image"><img src="./assets/images/profile2.jpg" alt="" srcset="" /></div>
+            <div class="header__post__nickname"><span>Andres</span></div>
             <div class="header__post__options">...</div>
           </header>
           <div class="post__image">
-            <img src="./assets/images/mario.jpg" alt="super mario bros" srcset="" />
+            <img src="./assets/images/3.jpg" alt="super mario bros" srcset="" />
           </div>
           <section class="post__icons">
             <span class="post__icons__icon" data-heart="false"
@@ -216,12 +247,12 @@
                 ></path></svg
             ></span>
           </section>
-          <section class="post__likes"><span>1.798</span>Me gusta</section>
+          <section class="post__likes"><span>796</span>Me gusta</section>
           <section class="post__comments">
-            <div class="comment"><span class="comment__name">Pedro</span><span class="comment__message"> Como estas ?</span></div>
-            <div class="comment"><span class="comment__name">Anna</span><span class="comment__message"> Yo bien y tu ?</span></div>
-            <div class="comment"><span class="comment__name">Pedro</span><span class="comment__message"> Muy bien</span></div>
-            <div class="comment__date"><span>Hace 5 días</span></div>
+            <div class="comment"><span class="comment__name">Gonzalo</span><span class="comment__message"> Como estas ?</span></div>
+            <div class="comment"><span class="comment__name">Josep</span><span class="comment__message"> Yo bien y tu ?</span></div>
+            <div class="comment"><span class="comment__name">Daniella</span><span class="comment__message"> Muy bien</span></div>
+            <div class="comment__date"><span>Hace 3 días</span></div>
           </section>
           <section class="write-comment">
             <div class="write-comment__emoticon">
