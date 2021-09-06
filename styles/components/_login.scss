@@ -1,6 +1,6 @@
-@use "./sizes" as s;
-@use "./colors" as c;
-@use "./mixins" as m;
+@use "../abstracts/fonts" as s;
+@use "../abstracts/colors" as c;
+@use "../abstracts/mixins" as m;
 .login__screen {
     @include m.flex();
     text-align: center;
@@ -24,6 +24,7 @@
         margin: .3125rem;
         color: white;
         border-radius: .3125rem;
+        cursor: pointer;
     }
     .login__menu {
         @include m.borders();

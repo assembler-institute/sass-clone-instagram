@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
+.main__stories {
+    @include m.borders;
+    height: 5.25rem;
+    padding: 1rem;
+    background-color: c.$bg-color-contrast;
+    font-size: small;
+    &--list {
+        @include m.flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 0.5rem;
+    }
+    &--story {
+        @include m.flex;
+        text-decoration: none;
+        margin: 0 10px;
+        img {
+            border-radius: 100%;
+            cursor: pointer;
+            border: 2px solid purple;
+        }
+    }
+}

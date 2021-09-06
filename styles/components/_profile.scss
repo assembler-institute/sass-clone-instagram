@@ -1,0 +1,7 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
+main {
+    @include m.flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

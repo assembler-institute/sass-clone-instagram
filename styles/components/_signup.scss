@@ -1,5 +1,5 @@
-@use "./mixins" as m;
-@use "./colors" as c;
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
 .new___user {
     @include m.borders;
     @include m.flex;
