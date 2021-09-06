@@ -3,5 +3,7 @@
 main {
     @include m.flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+    align-items: flex-start;
 }

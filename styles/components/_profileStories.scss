@@ -6,6 +6,7 @@
     padding: 1rem;
     background-color: c.$bg-color-contrast;
     font-size: small;
+    width: 40rem;
     &--list {
         @include m.flex;
         flex-direction: row;

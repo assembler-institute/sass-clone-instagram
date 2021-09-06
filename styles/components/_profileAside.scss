@@ -1,0 +1,92 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
+aside {
+    margin-top: 4 rem;
+    max-width: 22rem;
+}
+
+.switch__profile {
+    @include m.flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: small;
+    gap: 5rem;
+    &--exclude--button {
+        @include m.flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    button {
+        color: c.$btn__primary;
+        font-weight: bold;
+        border: none;
+        background-color: c.$bg-color;
+        cursor: pointer;
+    }
+    &--cat {
+        border: 1px solid rgb(245, 212, 245);
+        border-radius: 100%;
+    }
+    &--names {
+        display: flex;
+        flex-direction: column;
+    }
+    &--name {
+        font-weight: lighter;
+    }
+}
+
+.suggestions {
+    margin-top: 2rem;
+    @include m.flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__title {
+        color: #8e8e8e;
+        font-weight: bold;
+    }
+    &__btn {
+        background-color: c.$bg-color;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 916px) {
+    aside {
+        display: none;
+    }
+}
+
+.suggestions__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.suggested__users {
+    @include m.flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    img {
+        border: #8e8e8e 1px solid;
+        border-radius: 100%;
+    }
+    button {
+        border: none;
+        background-color: c.$bg-color;
+        color: #0095f6;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+.ig__users {
+    @include m.flex;
+    align-items: flex-start;
+    width: 20rem;
+    .name {
+        font-weight: bold;
+    }
+}

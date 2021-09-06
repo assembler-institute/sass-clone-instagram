@@ -1,0 +1,74 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
+.post__feed {
+    @include m.borders;
+    border-bottom: none;
+    margin-top: 2rem;
+    &--header {
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
+        button {
+            border: none;
+            background-color: inherit;
+        }
+    }
+    &--img {
+        border: 2px solid purple;
+        border-radius: 100%;
+    }
+    &--title {
+        font-weight: bold;
+    }
+    &--label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.post__main {
+    @include m.flex;
+    margin: 0;
+    &--img {
+        width: 40rem;
+        height: 40rem;
+    }
+    &--nav {
+        width: 38rem;
+        @include m.flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 1rem 1rem 1rem
+    }
+}
+
+.nav__like {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.bold__username {
+    font-weight: bold;
+}
+
+.comment-and-likes {
+    width: 40rem;
+}
+
+.comment__section {
+    @include m.flex;
+    align-items: flex-start;
+    width: 40rem;
+    margin-top: 0.5rem;
+    &--comment {
+        margin-top: 0.3rem;
+    }
+}
+
+.show__more {
+    margin-top: 0.5rem;
+    color: #8e8e8e;
+}
