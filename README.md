@@ -7,7 +7,6 @@ Sass is a stylesheet language that’s compiled to CSS. It allows you to use var
 ## What is a CSS pre-processor?
 
 A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
-https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor
 
 ## What does a pre-processor have to do with SASS?
 
@@ -31,11 +30,11 @@ A variable is a named reference used to store a value that we could reuse multip
  
 ## Explain the SASS variables property with an example.
 
-  $cyan:    #0dcaf0;
+   $cyan:    #0dcaf0;
 
-  .my-box {
-    background-color: $cyan;
-  }
+   .my-box {
+     background-color: $cyan;
+   }
 
 ## What is a mixin? Why is it important? Give an example.
 
@@ -43,22 +42,22 @@ A mixin allows us to make groups of CSS declarations that can be reused througho
 
 ## What is SCSS? Give an example:
 
-  $font-stack: Helvetica,sans-serif;
-  $primary-color: #333;
+    $font-stack: Helvetica,sans-serif;
+    $primary-color: #333;
 
-  body{
-    font:100% $font-stack;
-    color:$primary-color;
-  }
+    body{
+      font:100% $font-stack;
+      color:$primary-color;
+    }
 
 ## What is SASS? Give an example:
 
-  $font-stack: Helvetica,sans-serif
-  $primary-color: #333
+    $font-stack: Helvetica,sans-serif
+    $primary-color: #333
 
-  body
-    font:100% $font-stack
-    color:$primary-color
+    body
+      font:100% $font-stack
+      color:$primary-color
 
 ## What is the difference between .scss and .sass syntax?
 
@@ -70,13 +69,13 @@ The use of SCSS or SASS is under personal preference, but many CSS and UI Framew
 
 ## Can we create functions with SASS? If it is true, give an example.
 
-  @function pow($base, $exponent) {
-    $result: 1;
-    @for $_ from 1 through $exponent {
-      $result: $result * $base;
+    @function pow($base, $exponent) {
+      $result: 1;
+      @for $_ from 1 through $exponent {
+        $result: $result * $base;
+      }
+      @return $result;
     }
-    @return $result;
-  }
 
 ## What is nesting? Is it useful? Give an example of nesting.
 
@@ -108,29 +107,29 @@ The new @use is similar to @import. but has some notable differences:
 
 Yes, with the use of the at-rule @use that allows us to import other Sass and CSS files like modules.
 
-  // _base.scss
-  $font-stack:    Helvetica, sans-serif;
-  $primary-color: #333;
+    // _base.scss
+    $font-stack:    Helvetica, sans-serif;
+    $primary-color: #333;
 
-  // styles.scss
-  @use 'base';
+    // styles.scss
+    @use 'base';
 
-  .inverse {
-    background-color: base.$primary-color;
-    color: white;
-  }
+    .inverse {
+      background-color: base.$primary-color;
+      color: white;
+    }
  
 ## Why use @extend? Give an example:
 
 Using @extend lets you share a set of CSS properties from one selector to another. 
 
-  %message-shared {
-    border: 1px solid #ccc;
-    padding: 10px;
-    color: #333;
-  }
+    %message-shared {
+      border: 1px solid #ccc;
+      padding: 10px;
+      color: #333;
+    }
 
-  .message {
-    @extend %message-shared;
-  }
+    .message {
+      @extend %message-shared;
+    }
 
