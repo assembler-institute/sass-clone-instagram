@@ -2,8 +2,9 @@
 @use "../abstracts/colors" as c;
 .post__feed {
     @include m.borders;
-    border-bottom: none;
     margin-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: c.$bg-color-contrast;
     &--header {
         margin: 1rem;
         display: flex;
@@ -66,9 +67,13 @@
     &--comment {
         margin-top: 0.3rem;
     }
+    &--mention {
+        color: c.$btn__primary;
+        cursor: pointer;
+    }
 }
 
 .show__more {
     margin-top: 0.5rem;
-    color: #8e8e8e;
+    color: c.$light-color;
 }

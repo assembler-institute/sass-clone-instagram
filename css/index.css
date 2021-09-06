@@ -367,8 +367,9 @@ aside {
 .post__feed {
   border: 0.0625rem solid #dbdbdb;
   border: 0.0625rem solid rgba(var(--b6a, 219, 219, 219), 1);
-  border-bottom: none;
   margin-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: white;
 }
 .post__feed--header {
   margin: 1rem;
@@ -440,6 +441,10 @@ aside {
 }
 .comment__section--comment {
   margin-top: 0.3rem;
+}
+.comment__section--mention {
+  color: #0095f6;
+  cursor: pointer;
 }
 
 .show__more {

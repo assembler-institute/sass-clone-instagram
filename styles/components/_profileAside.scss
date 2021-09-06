@@ -43,7 +43,7 @@ aside {
     flex-direction: row;
     justify-content: space-between;
     &__title {
-        color: #8e8e8e;
+        color: c.$light-color;
         font-weight: bold;
     }
     &__btn {
@@ -70,7 +70,7 @@ aside {
     gap: 2rem;
     margin-bottom: 0.5rem;
     img {
-        border: #8e8e8e 1px solid;
+        border: c.$light-color 1px solid;
         border-radius: 100%;
     }
     button {
