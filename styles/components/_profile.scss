@@ -1,6 +1,6 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/colors" as c;
-main {
+.page__main {
     @include m.flex;
     flex-direction: row;
     justify-content: center;

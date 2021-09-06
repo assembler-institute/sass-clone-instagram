@@ -29,10 +29,10 @@
 }
 
 .post__main {
-    @include m.flex;
+    display: block;
     margin: 0;
     &--img {
-        width: 40rem;
+        width: 42rem;
         height: 40rem;
     }
     &--nav {
@@ -61,6 +61,7 @@
 
 .comment-and-likes {
     width: 40rem;
+    margin-left: 1rem
 }
 
 .comment__section {
@@ -68,6 +69,7 @@
     align-items: flex-start;
     width: 40rem;
     margin-top: 0.5rem;
+    margin-left: 1rem;
     &--comment {
         margin-top: 0.3rem;
     }
