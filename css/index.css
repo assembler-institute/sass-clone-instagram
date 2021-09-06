@@ -209,12 +209,12 @@ body {
   justify-content: flex-end;
 }
 
-@media only screen and (max-width: 780px) {
+@media (max-width: 780px) {
   .login-photos {
     display: none;
   }
 }
-@media only screen and (max-width: 780px) {
+@media (max-width: 780px) {
   .login-container {
     width: 50%;
   }
