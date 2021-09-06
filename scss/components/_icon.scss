@@ -1,0 +1,53 @@
+// --------------------------------------------------
+// components/icon
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.icon{
+
+  &__activity{
+    background-color: transparent;
+    border: 0;
+    color: transparent;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__activity-notif{
+    left: 50%;
+    position: absolute;
+    top: 62px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+
+    top: 4px;
+
+    &::after {
+      background: #ed4956;
+      background: rgba(var(--c37,237,73,86),1);
+      border-radius: 2px;
+      bottom: -10px;
+      content: '';
+      height: 4px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      -webkit-transition: bottom .2s ease-in-out;
+      transition: bottom .2s ease-in-out;
+      width: 4px;
+    }
+  }
+
+  &__add{
+    padding: 0;
+  }
+
+  &__save{
+    margin-left: auto;
+    margin-right: -10px;
+  }
+}

@@ -1,0 +1,26 @@
+// --------------------------------------------------
+// components/actions
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.actions{
+  @include a.align-content(center);
+  @include a.align-items(center);
+  @include a.flexbox();
+  @include a.flex(1, 0, 0%);
+  @include a.flex-direction(row);
+  @include a.flex-wrap(wrap);
+  @include a.justify-content(flex-end);
+
+  &__list{
+    @include a.flexbox();
+    @include a.flex-direction(row);
+    @include a.justify-content(space-between);
+    padding-left: 24px;
+    white-space: nowrap;
+
+    width: 100%;
+    max-width: 222px;
+  }
+}

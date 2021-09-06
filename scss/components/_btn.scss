@@ -1,0 +1,32 @@
+// --------------------------------------------------
+// components/btn
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.btn{
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  @include a.flexbox();
+  @include a.align-items(center);
+  @include a.justify-content(center);
+  padding: 8px;
+
+  &--primary {
+    background-color: rgba(0,149,246,.3);
+    background-color: rgba(var(--d69,0,149,246),.3);
+    opacity: 1;
+
+    border-radius: 4px;
+    color: #fff;
+    color: rgba(var(--eca,255,255,255),1);
+    position: relative;
+  }
+
+  &__inner{
+    @include a.align-items(center);
+    @include a.justify-content(center);
+  }
+
+}

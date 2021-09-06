@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Instagram Clone</title>
+  <link rel="icon" sizes="192x192" href="assets/images/favicon.png">
+</head>
+
+<body>
+  <nav class="nav">
+
+    <div class="nav__top"></div>
+    <div>
+      <div class="nav__wrapper">
+        <div class="nav__content">
+
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/" class="logo__link">
+              <div class="flex justify-content-start flex-row align-items-center align-content-stretch">
+                <div class="logo__img-wrapper">
+                  <img alt="Instagram" class="logo__img" src="/assets/images/logos/instagram-logo.png"
+                    srcset="/assets/images/logos/instagram-logo-2x.png">
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Logo -->
+
+          <!-- Search -->
+          <div class="search">
+            <div class="search__wrap">
+              <input autocapitalize="none" class="search__input" placeholder="Busca" type="text" value="">
+              <div class="search__content" role="button" tabindex="0">
+                <div class="search__text">
+                  <span class="search__icon coreSpriteSearchIcon"></span>
+                  <span class="search__span">Busca</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- Search -->
+
+          <!-- Actions -->
+          <div class="actions">
+            <div class="actions__list">
+              <div class="actions__item">
+                <a href="/" tabindex="0">
+                  <img src="assets/images/svg/home.svg" alt="Home" class="svg" />
+                </a>
+              </div>
+              <div class="actions__item">
+                <a class="icon__direct" href="/direct/inbox/" tabindex="0">
+                  <img src="assets/images/svg/direct.svg" alt="Direct" class="svg" />
+                  <!-- <div class="icon__direct-notif">
+                  <div class="J_0ip  Vpz-1  TKi86 ">
+                    <div class="bqXJH">1</div>
+                  </div>
+                </div> -->
+                </a>
+              </div>
+              <div class="actions__item">
+                <button class="btn icon__add" type="button">
+                  <div class="btn__inner">
+                    <img src="assets/images/svg/add.svg" alt="Add" class="svg" />
+                  </div>
+                </button>
+              </div>
+              <div class="actions__item">
+                <a href="/explore/" tabindex="0">
+                  <img src="assets/images/svg/explore.svg" alt="Explore" class="svg" />
+                </a>
+              </div>
+              <div class="actions__item">
+                <a class="icon__activity" href="/accounts/activity/">
+                  <img src="assets/images/svg/activity.svg" alt="Activity" class="svg" />
+                  <div class="icon__activity-notif">
+                    <div role="button" tabindex="0">
+                      <div aria-hidden="true" class="iMofo  R0tpI  nwToI  nHGTw ">
+                        <div class="JxPw3  pUTym  ">
+                          <div class="_18Jen  nHGTw "></div>
+                        </div>
+                        <div class="jctW7">
+                          <div class="h6wjK">
+                            <div class="Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm  n4cjz   ">
+                              <span aria-label="Comentarios"
+                                class="glyphsSpriteComment__filled__16__white u-__7"></span>
+                              <div class="Igw0E   rBNOH        eGOV_         _4EzTmWKY0a     ">
+                                <div class="_7UhW9    vy6Bb     MMzan          h_zdq  uL8Hv        T0kll ">1</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- <div class="poA5q" style="margin-left: -423px;"></div> -->
+              </div>
+            </div>
+          </div><!-- Actions -->
+
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <main class="main" role="main">
+    <section class="section home">
+
+      <!-- Mainbar -->
+      <div class="mainbar">
+
+        <!-- Hero -->
+        <div class="hero">
+          <div class="hero__inner">
+
+            <!-- Stories -->
+            <div class="stories" role="presentation">
+              <ul class="stories__list">
+                <li class="stories__item">
+                  <div class="story">
+                    <button class="story__button border-color-gradient">
+                      <span class="story__span">
+                        <img alt="Foto del perfil de tonvisagedemain" class="story__img" crossorigin="anonymous"
+                          data-testid="user-avatar" draggable="false"
+                          src="assets/images/avatars/avatar-tonvisagedemain_n.jpeg" />
+                      </span>
+                      <div class="story__username">tonvisagedemain</div>
+                    </button>
+                  </div>
+                </li>
+                <li class="stories__item">
+                  <div class="story">
+                    <button class="story__button border-color-gradient">
+                      <span class="story__span">
+                        <img alt="Foto del perfil de soylaila" class="story__img" crossorigin="anonymous"
+                          data-testid="user-avatar" draggable="false"
+                          src="assets/images/avatars/avatar-soylaila_n.jpeg" />
+                      </span>
+                      <div class="story__username">soylaila</div>
+                    </button>
+                  </div>
+                </li>
+                <li class="stories__item">
+                  <div class="story">
+                    <button class="story__button border-color-gradient">
+                      <span class="story__span">
+                        <img alt="Foto del perfil de elnacional" class="story__img" crossorigin="anonymous"
+                          data-testid="user-avatar" draggable="false"
+                          src="assets/images/avatars/avatar-elnacional_n.jpeg" />
+                      </span>
+                      <div class="story__username">elnacional</div>
+                    </button>
+                  </div>
+                </li>
+                <li class="stories__item">
+                  <div class="story">
+                    <button class="story__button border-color-gradient">
+                      <span class="story__span">
+                        <img alt="Foto del perfil de lilitmauro" class="story__img" crossorigin="anonymous"
+                          data-testid="user-avatar" draggable="false"
+                          src="assets/images/avatars/avatar-lilitmauro_n.jpeg" />
+                      </span>
+                      <div class="story__username">lilitmauro</div>
+                    </button>
+                  </div>
+                </li>
+                <li class="stories__item">
+                  <div class="story">
+                    <button class="story__button border-color-gradient">
+                      <span class="story__span">
+                        <img alt="Foto del perfil de syracoffee" class="story__img" crossorigin="anonymous"
+                          data-testid="user-avatar" draggable="false"
+                          src="assets/images/avatars/avatar-syracoffee_n.jpeg" />
+                      </span>
+                      <div class="story__username">syracoffee</div>
+                    </button>
+                  </div>
+                </li>
+                <li class="stories__item">
+                  <div class="story">
+                    <button class="story__button border-color-gradient">
+                      <span class="story__span">
+                        <img alt="Foto del perfil de thecutedogworld" class="story__img" crossorigin="anonymous"
+                          data-testid="user-avatar" draggable="false"
+                          src="assets/images/avatars/avatar-thecutedogworld_n.jpeg" />
+                      </span>
+                      <div class="story__username">thecutedogworld</div>
+                    </button>
+                  </div>
+                </li>
+                <li class="stories__item">
+                  <div class="story">
+                    <button class="story__button border-color-gradient">
+                      <span class="story__span">
+                        <img alt="Foto del perfil de mariarodes" class="story__img" crossorigin="anonymous"
+                          data-testid="user-avatar" draggable="false"
+                          src="assets/images/avatars/avatar-mariarodes_n.jpeg" />
+                      </span>
+                      <div class="story__username">mariarodes</div>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- Stories -->
+
+          </div>
+        </div><!-- Hero -->
+
+        <!-- Posts -->
+        <div class="posts">
+          <article class="post" role="presentation" tabindex="0">
+            <header class="post__header">
+              <div class="avatar cursor-pointer border-color-gradient" aria-disabled="false" role="button" tabindex="0">
+                <canvas class="avatar__canvas"></canvas>
+                <span class="avatar__img-wrap" role="link" tabindex="-1">
+                  <img alt="Foto del perfil de thecutedogworld" class="avatar__img" crossorigin="anonymous"
+                    data-testid="user-avatar" draggable="false"
+                    src="assets/images/avatars/avatar-thecutedogworld_n.jpeg">
+                </span>
+              </div>
+              <div class="post__header-content">
+                <div class="">
+                  <div class="post__header-name">
+                    <a class="post__header-user" href="/thecutedogworld/" tabindex="0">thecutedogworld</a>
+                  </div>
+                </div>
+                <div class="M30cS">
+                  <div></div>
+                  <div class="JF9hh"></div>
+                </div>
+              </div>
+              <div class="post__header-settings">
+                <button class="btn" type="button">
+                  <div class="btn__inner">
+                    <div class="flex justify-content-center align-items-center align-items-stretch"
+                      style="height: 24px; width: 24px;">
+                      <svg aria-label="Más opciones" class="svg" fill="#262626" height="16" role="img"
+                        viewBox="0 0 48 48" width="16">
+                        <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                        <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                        <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </header>
+
+            <div class="post-photo">
+              <div role="button" class="touch-action-manipulation" tabindex="0">
+                <div class="post-photo__content">
+                  <div class="post-photo__img-wrap">
+                    <img alt="Photo by assemblerschool" class="post-photo__img" crossorigin="anonymous" decoding="auto"
+                      style="object-fit: cover;" sizes="600px" srcset="assets/images/posts/post-img-01_n.jpeg"
+                      src="assets/images/posts/post-img-01_n.jpeg">
+                  </div>
+                  <div class="_9AhH0"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post__footer">
+              <section class="post__actions flex-row">
+                <span class="display-inline-block">
+                  <button class="btn" type="button">
+                    <div class="btn__inner">
+                      <img src="assets/images/svg/like.svg" alt="Like" class="svg" />
+                    </div>
+                  </button>
+                </span>
+                <span class="display-inline-block">
+                  <button class="btn" type="button">
+                    <div class="btn__inner">
+                      <img src="assets/images/svg/comment.svg" alt="Comment" class="svg" />
+                    </div>
+                  </button>
+                </span>
+                <span class="display-inline-block">
+                  <button class="btn" type="button">
+                    <div class="btn__inner">
+                      <img src="assets/images/svg/share.svg" alt="Share" class="svg" />
+                    </div>
+                  </button>
+                </span>
+                <span class="display-inline-block">
+                  <div>
+                    <div aria-disabled="false" role="button" tabindex="0">
+                      <button class="btn" type="button">
+                        <div class="btn__inner display-none">
+                          <img src="assets/images/svg/bookmark.svg" alt="Bookmark" class="svg" />
+                        </div>
+                        <div class="btn__inner display-block">
+                          <svg aria-label="Guardar" class="svg" fill="#262626" height="24" role="img"
+                            viewBox="0 0 48 48" width="24">
+                            <path
+                              d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                            </path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </span>
+              </section>
+              <section class="post-likes ygqzn">
+                <div class="flex-1 justify-content-start flex-row align-items-stretch">
+                  <div class="post-likes__wrap">
+                    <a class="post-likes__link" href="/p/CTWzQtloYq6/liked_by/" tabindex="0">
+                      <span>11</span> Me gusta
+                    </a>
+                  </div>
+                </div>
+              </section>
+              <div class="post-comments">
+                <div class="flex flex-content-start align-items-stretch align-content-stretch">
+                  <div class="flex flex-content-start align-items-stretch align-content-stretch post-comments__inner">
+                    <div class="display-block flex-1 justify-content-start align-items-stretch align-content-stretch"
+                      data-testid="post-comment-root">
+                      <span class="display-inline position-relative">
+                        <a class="post-comments__user notranslate MBL3Z" title="assemblerschool"
+                          href="/assemblerschool/" tabindex="0">assemblerschool</a>
+                      </span>
+                      &nbsp;
+                      <span class="post-comments__text">
+                        <span>🔥Last call Octubre 2021🔥</span>
+                        <span class="post-comments__dots">
+                          ...&nbsp;
+                          <button class="btn post-comments__more">más</button>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post__bottom display-block">
+                <a class="post__bottom-inner" href="/p/CTWzQtloYq6/" tabindex="0">
+                  <time class="post__time" datetime="2021-09-03T10:33:11.000Z" title="3 de septiembre de 2021">
+                    Hace 51 minutos
+                  </time>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- Posts -->
+
+        <!-- Spin -->
+        <div class="spin">
+          <div class="spin__inner" data-visualcompletion="loading-state">
+            <img src="assets/images/svg/spin.svg" alt="Spin" class="svg" />
+          </div>
+        </div><!-- Spin -->
+
+      </div><!-- Mainbar -->
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+
+      </div><!-- Sidebar -->
+
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__list">
+          <div class="footer__item">
+            <a href="https://about.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">
+              <div class="footer__text">Información</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="https://about.instagram.com/blog/" rel="nofollow noopener noreferrer" target="_blank">
+              <div class="footer__text">Blog</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/about/jobs/">
+              <div class="footer__text">Empleo</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="https://help.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">
+              <div class="footer__text">Ayuda</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="https://developers.facebook.com/docs/instagram" rel="nofollow noopener noreferrer" target="_blank">
+              <div class="footer__text">API</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/legal/privacy/">
+              <div class="footer__text">Privacidad</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/legal/terms/">
+              <div class="footer__text">Condiciones</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/directory/profiles/">
+              <div class="footer__text">Cuentas destacadas</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/directory/hashtags/">
+              <div class="footer__text">Hashtags</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/explore/locations/">
+              <div class="footer__text">Ubicaciones</div>
+            </a>
+          </div>
+        </div>
+        <div class="footer__list">
+          <div class="footer__item">
+            <a href="/topics/beauty/">
+              <div class="footer__text">Belleza</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/topics/dance-and-performance/">
+              <div class="footer__text">Danza</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/topics/fitness/">
+              <div class="footer__text">Actividad física</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/topics/food-and-drink/">
+              <div class="footer__text">Comida y bebida</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/topics/home-and-garden/">
+              <div class="footer__text">Hogar y jardinería</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/topics/music/">
+              <div class="footer__text">Música</div>
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="/topics/visual-arts/">
+              <div class="footer__text">Artes visuales</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="lang">
+          <span class="lang__inner">
+            <div class="lang__title">
+              <span>Español (España)</span>
+              <div class="Igw0E IwRSH eGOV_         _4EzTmWKY0a     ">
+                <span style="display: display-inline; transform: rotate(180deg);">
+                  <svg aria-label="Icono de comilla angular hacia abajo" class="svg" fill="#8e8e8e" height="12"
+                    role="img" viewBox="0 0 48 48" width="12">
+                    <path
+                      d="M40 33.5c-.4 0-.8-.1-1.1-.4L24 18.1l-14.9 15c-.6.6-1.5.6-2.1 0s-.6-1.5 0-2.1l16-16c.6-.6 1.5-.6 2.1 0l16 16c.6.6.6 1.5 0 2.1-.3.3-.7.4-1.1.4z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <select aria-label="Cambiar idioma de visualización" class="lang__select">
+              <option value="af">Afrikaans</option>
+              <option value="cs">Čeština</option>
+              <option value="da">Dansk</option>
+              <option value="de">Deutsch</option>
+              <option value="el">Ελληνικά</option>
+              <option value="en">English</option>
+              <option value="en-gb">English (UK)</option>
+              <option value="es">Español (España)</option>
+              <option value="es-la">Español</option>
+              <option value="fi">Suomi</option>
+              <option value="fr">Français</option>
+              <option value="id">Bahasa Indonesia</option>
+              <option value="it">Italiano</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="ms">Bahasa Melayu</option>
+              <option value="nb">Norsk</option>
+              <option value="nl">Nederlands</option>
+              <option value="pl">Polski</option>
+              <option value="pt-br">Português (Brasil)</option>
+              <option value="pt">Português (Portugal)</option>
+              <option value="ru">Русский</option>
+              <option value="sv">Svenska</option>
+              <option value="th">ภาษาไทย</option>
+              <option value="tl">Filipino</option>
+              <option value="tr">Türkçe</option>
+              <option value="zh-cn">中文(简体)</option>
+              <option value="zh-tw">中文(台灣)</option>
+              <option value="bn">বাংলা</option>
+              <option value="gu">ગુજરાતી</option>
+              <option value="hi">हिन्दी</option>
+              <option value="hr">Hrvatski</option>
+              <option value="hu">Magyar</option>
+              <option value="kn">ಕನ್ನಡ</option>
+              <option value="ml">മലയാളം</option>
+              <option value="mr">मराठी</option>
+              <option value="ne">नेपाली</option>
+              <option value="pa">ਪੰਜਾਬੀ</option>
+              <option value="si">සිංහල</option>
+              <option value="sk">Slovenčina</option>
+              <option value="ta">தமிழ்</option>
+              <option value="te">తెలుగు</option>
+              <option value="vi">Tiếng Việt</option>
+              <option value="zh-hk">中文(香港)</option>
+              <option value="bg">Български</option>
+              <option value="fr-ca">Français (Canada)</option>
+              <option value="ro">Română</option>
+              <option value="sr">Српски</option>
+              <option value="uk">Українська</option>
+            </select>
+          </span>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__text">© 2021 Instagram from Facebook</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

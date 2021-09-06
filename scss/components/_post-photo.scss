@@ -1,0 +1,32 @@
+// --------------------------------------------------
+// components/photo
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.post-photo{
+
+  &__content{
+    background-color: #efefef;
+    background-color: rgba(var(--bb2,239,239,239),1);
+    display: block;
+    width: 100%;
+  }
+
+  &__img-wrap{
+    display: block;
+    overflow: hidden;
+    padding-bottom: 100%;
+  }
+
+  &__img{
+    object-fit: cover;
+
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    @include a.user-select(none);
+    width: 100%;
+  }
+}

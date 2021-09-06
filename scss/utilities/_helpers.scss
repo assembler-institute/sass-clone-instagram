@@ -1,0 +1,112 @@
+// --------------------------------------------------
+// utilities/help
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.flex{
+  @include a.flex(0, 0, auto);
+}
+
+.flex-1{
+  @include a.flex(1, 1, auto);
+  min-height: 0;
+  min-width: 0;
+}
+
+.flex-grow-1{
+  @include a.flex-grow(1);
+}
+
+.flex-shrink-1{
+  @include a.flex-shrink(1);
+}
+
+.justify-content-start{
+  @include a.justify-content(flex-start);
+}
+
+.justify-content-center{
+  @include a.justify-content(center);
+}
+
+.flex-row{
+  @include a.flex-direction(row);
+}
+
+.flex-column{
+  @include a.flex-direction(column);
+}
+
+.align-items-center{
+  @include a.align-items(center);
+}
+
+.align-content-stretch{
+  @include a.align-content(stretch);
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.border-color-gradient{
+  position: relative;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: 50%;
+  padding: 2px;
+
+  span{
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+}
+
+.touch-action-manipulation{
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.display-inline-block{
+  display: inline-block;
+}
+
+.display-inline{
+  display: inline;
+}
+
+.display-none{
+  display: none;
+}
+
+.display-block{
+  display: block;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.position-absolute{
+  position: absolute;
+}
+
+.is-hidden{
+  visibility: hidden;
+}
+
+.is-visible{
+  visibility: visible;
+}
+
+.opacity-1{
+  opacity: 1;
+}
+
+.opacity-0{
+  opacity: 0;
+}

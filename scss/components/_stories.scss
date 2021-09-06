@@ -1,0 +1,32 @@
+// --------------------------------------------------
+// components/stories
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.stories{
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  @include a.flexbox();
+  @include a.flex-direction(row);
+  height: 100%;
+
+  &__inner{
+    @include a.flexbox();
+    @include a.flex-direction(row);
+    height: 100%;
+  }
+
+  &__list{
+    @include a.flexbox();
+    @include a.flex-direction(row);
+  }
+
+  &__item{
+    position: absolute;
+    @include a.translateX;
+  }
+}

@@ -1,0 +1,28 @@
+// --------------------------------------------------
+// components/likes
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.post-likes{
+  @include a.flex-direction(row);
+  @include a.justify-content(flex-start);
+
+  margin-bottom: 8px;
+
+  &__wrap{
+    @include a.flexbox();
+    @include a.align-items(center);
+    @include a.flex-direction(row);
+    @include a.flex-wrap(wrap);
+    @include a.flex(1, 1, auto);
+    @include a.justify-content(flex-start);
+    // white-space: pre;
+  }
+
+  &__link{
+    font-weight: 600;
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+  }
+}

@@ -1,0 +1,11 @@
+// --------------------------------------------------
+// Section
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.section{
+  @include a.flexbox();
+  @include a.flex-direction(column);
+  @include a.flex-grow(1);
+}
