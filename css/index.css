@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 
-header, .post, .main, .form__or, .footer_lang {
+header, .circles, .post, .main, .form__or, .footer_lang {
   display: flex;
   align-content: center;
 }
@@ -202,6 +202,7 @@ header {
   justify-content: center;
   border-bottom: 1px solid #dbdbdb;
   height: 3rem;
+  padding-right: 15rem;
 }
 
 .header__logo {
@@ -211,11 +212,11 @@ header {
   height: 3rem;
   background-repeat: no-repeat;
   background-size: contain;
-  flex-basis: 35%;
+  flex-basis: 45%;
 }
 
 .header__search {
-  flex-basis: 25%;
+  flex-basis: 30%;
 }
 .header__search input {
   background-color: #fafafa;
@@ -223,7 +224,7 @@ header {
   width: 12.5rem;
   border: 1px solid #dbdbdb;
   border-radius: 0.2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 0 0.3rem;
   text-align: center;
   margin-top: 0.7rem;
@@ -232,6 +233,10 @@ header {
 
 #pia {
   height: 1.3rem;
+}
+
+.header__icons {
+  text-align: left;
 }
 
 .icons {
@@ -250,14 +255,47 @@ header {
   background-color: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 0.2rem;
+  overflow-x: scroll;
+}
+.circles::-webkit-scrollbar {
+  background-color: #fff;
+}
+.circles::-webkit-scrollbar-thumb {
+  background-color: #fafafa;
+  border: solid 1px #8e8e8e;
+  border-radius: 0.2rem;
+}
+.circles::-webkit-scrollbar-thumb:active {
+  background: #8e8e8e;
+  border: solid 1px #fafafa;
+}
+.circles::-webkit-scrollbar-track {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.2rem;
+}
+.circles div {
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+  padding: 0.15rem;
+  position: relative;
+  background: linear-gradient(to right top, orange, purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circles span {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.15rem;
+  display: flex;
 }
 .circles img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  border: 2px solid darkorange;
-  margin-right: 0.1rem;
-  cursor: pointer;
 }
 
 .post {
@@ -350,6 +388,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  border-top: 1px solid #dbdbdb;
 }
 .post__add svg {
   padding-bottom: 0.3rem;
