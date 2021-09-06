@@ -6,7 +6,7 @@ Sass is a stylesheet language that’s compiled to CSS. It allows you to use var
 
 ## What is a CSS pre-processor?
 
-A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+A **CSS preprocessor** is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
 
 ## What does a pre-processor have to do with SASS?
 
@@ -31,7 +31,7 @@ A variable is a named reference used to store a value that we could reuse multip
 ## Explain the SASS variables property with an example.
 
 ```
-$cyan:    #0dcaf0;
+$cyan: #0dcaf0;
 
 .my-box {
   background-color: $cyan;
@@ -47,6 +47,46 @@ A __mixin__ is a rule that allows to define styles that can be reused throughout
 * Mixins can contain style rules of their own, that can be nested in other rules or included at the top level of the stylesheet
 * Mixins be used to modify variables.
 * Mixins are like functions, which can be parameterized and take arguments to customize the behaviour each time they are called with the __include__ rule.
+
+Example where a custom separator line mixin is defined:
+
+```
+@use "../abstracts/colors";
+@use "sass:map";
+
+@mixin separator-template($stroke: 2px, $line-color: gray, $text-color: gray, $text-padding: 0.75rem, $font-size: 1rem, $font-weight: 600) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > :nth-child(1),
+	& > :nth-child(3) {
+		flex-grow: 1;
+		flex-shrink: 1;
+		background-color: $line-color;
+		height: $stroke;
+	}
+
+	& > :nth-child(2) {
+		padding: $text-padding;
+		flex-grow: 0;
+		flex-shrink: 0;
+		color: $text-color;
+		font-size: $font-size;
+		font-weight: $font-weight;
+		text-align: center;
+	}
+}
+
+.login-separator {
+	@include mixins.separator-template(
+		$font-size: 0.8rem,
+		$text-color: map.get(colors.$colors, gray-03),
+		$line-color: map.get(colors.$colors, gray-02),
+		$stroke: 1px,
+	)
+}
+```
 
 ## What is SCSS? Give an example:
 
@@ -115,51 +155,11 @@ Example in which the styles are defined for .user-table and .user-table__cell se
 
 ## Difference between @use & @import? Give an example:
 
-The new @use is similar to @import. but has some notable differences:
-* With @use, the file is only imported once, no matter how many times you @use it in a project.
-* With @use, variables, mixins, and functions (what Sass calls “members”) that start with an underscore (_) or hyphen (-) are considered private, and not imported.
-* With @use, members from the used file are only made available locally, but not passed along to future imports.
-* With @use, all imported members are namespaced by default.
-
-Example where a custom separator line mixin is defined:
-
-```
-@use "../abstracts/colors";
-@use "sass:map";
-
-@mixin separator-template($stroke: 2px, $line-color: gray, $text-color: gray, $text-padding: 0.75rem, $font-size: 1rem, $font-weight: 600) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	& > :nth-child(1),
-	& > :nth-child(3) {
-		flex-grow: 1;
-		flex-shrink: 1;
-		background-color: $line-color;
-		height: $stroke;
-	}
-
-	& > :nth-child(2) {
-		padding: $text-padding;
-		flex-grow: 0;
-		flex-shrink: 0;
-		color: $text-color;
-		font-size: $font-size;
-		font-weight: $font-weight;
-		text-align: center;
-	}
-}
-
-.login-separator {
-	@include mixins.separator-template(
-		$font-size: 0.8rem,
-		$text-color: map.get(colors.$colors, gray-03),
-		$line-color: map.get(colors.$colors, gray-02),
-		$stroke: 1px,
-	)
-}
-```
+The new **@use** rule is similar to **@import**. but has some notable differences:
+* With **@use**, the file is only imported once, no matter how many times you @use it in a project.
+* With **@use**, variables, mixins, and functions (what Sass calls “members”) that start with an underscore (_) or hyphen (-) are considered private, and not imported.
+* With **@use**, members from the used file are only made available locally, but not passed along to future imports.
+* With **@use**, all imported members are namespaced by default.
 
 ## How can we import other CSS/SASS files in SASS? Give an example:
 
