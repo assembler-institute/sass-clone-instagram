@@ -201,6 +201,7 @@
         background-color: c.$bg-color;
         border: 0;
         @include footer-font();
+        text-align: right;
     }
 
 }

@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 
-.main, .form__or, .footer_lang {
+header, .post, .main, .form__or, .footer_lang {
   display: flex;
   align-content: center;
 }
@@ -194,6 +194,182 @@ a {
   font-size: 12px;
   font-weight: 400px;
   margin-right: 1rem;
+  text-align: right;
+}
+
+header {
+  background-color: #fff;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  height: 3rem;
+}
+
+.header__logo {
+  background-image: url("/assets/img/login/Instagram-logo.png");
+  background-position: center;
+  width: 100%;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-basis: 35%;
+}
+
+.header__search {
+  flex-basis: 25%;
+}
+.header__search input {
+  background-color: #fafafa;
+  height: 1.7rem;
+  width: 12.5rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  padding: 0 0.3rem;
+  text-align: center;
+  margin-top: 0.7rem;
+  outline: none;
+}
+
+#pia {
+  height: 1.3rem;
+}
+
+.icons {
+  margin-left: 0.5rem;
+}
+.icons img {
+  height: 1.7rem;
+  margin-top: 1rem;
+}
+
+.circles {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 37.5rem;
+  background-color: #fff;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.2rem;
+}
+.circles img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid darkorange;
+  margin-right: 0.1rem;
+  cursor: pointer;
+}
+
+.post {
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 37.5rem;
+  background-color: #fff;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.2rem;
+}
+
+.post__header {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.post__header img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid darkorange;
+  cursor: pointer;
+}
+.post__header h2 {
+  color: #262626;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+.post__header svg {
+  position: relative;
+  top: 0.7rem;
+  cursor: pointer;
+}
+
+.post__profile {
+  flex-basis: 90%;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.post__picture {
+  max-height: 105vh;
+}
+
+.post__react {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+.post__react svg {
+  cursor: pointer;
+}
+.post__react h2 {
+  flex-basis: 100%;
+  color: #262626;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.reactions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.post__comments {
+  padding: 0 1rem;
+  font-size: 14px;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.comment div {
+  flex-basis: 90%;
+}
+
+.comment__ago {
+  font-size: 10px;
+  color: #8e8e8e;
+  margin-bottom: 0.5rem;
+}
+
+.post__add {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.post__add svg {
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+}
+.post__add textarea {
+  height: 18px;
+  width: 85%;
+  border: none;
+  position: relative;
+  top: 0.2rem;
+  resize: none;
+  outline: none;
+}
+.post__add button {
+  background-color: #fff;
+  border: none;
+  color: #0095f6;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 * {

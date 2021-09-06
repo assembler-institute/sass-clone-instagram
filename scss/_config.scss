@@ -2,3 +2,10 @@ $bg-color: #fafafa;
 $btn-color: #0095f6;
 $input-border: #dbdbdb;
 $footer: #8e8e8e;
+$dark-font: #262626;
+
+@mixin white-bg {
+    background-color: #fff;
+    border: 1px solid $input-border;
+    border-radius: 0.2rem;
+}
