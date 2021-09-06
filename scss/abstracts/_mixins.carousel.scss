@@ -1,0 +1,54 @@
+@mixin carrusel-animation($pos) {
+  @include create-carrusel-animation($pos);
+  animation: carrusel-animation-#{$pos} 24s linear infinite normal;
+}
+
+@mixin create-carrusel-animation($pos) {
+  @-moz-keyframes carrusel-animation-#{$pos} {
+    $percentages: -10%, -5%, 20%, 25%;
+    $opacity: 0, 1, 1, 0;
+    @if $pos !=1 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @for $i from 1 through 4 {
+      @if ($pos - 1) * 25% + nth($percentages, $i) > 0 {
+        #{($pos - 1) * 25% + nth($percentages, $i)} {
+          opacity: nth($opacity, $i);
+        }
+      } @else {
+        #{100%+($pos - 1) * 25% + nth($percentages, $i)} {
+          opacity: nth($opacity, $i);
+        }
+      }
+    }
+  }
+
+  @keyframes carrusel-animation-#{$pos} {
+    $percentages: -10%, -5%, 20%, 25%;
+    $opacity: 0, 1, 1, 0;
+    @if $pos !=1 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @for $i from 1 through 4 {
+      @if ($pos - 1) * 25% + nth($percentages, $i) > 0 {
+        #{($pos - 1) * 25% + nth($percentages, $i)} {
+          opacity: nth($opacity, $i);
+        }
+      } @else {
+        #{100%+($pos - 1) * 25% + nth($percentages, $i)} {
+          opacity: nth($opacity, $i);
+        }
+      }
+    }
+  }
+}
