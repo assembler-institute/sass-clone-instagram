@@ -1,9 +1,13 @@
-import { insertPostCards } from "./components/postCard.js";
+import { insertPosts } from "./components/post.js";
+import { insertUserStoryThumbnails } from "./components/userStoryThumbnail.js";
+
+const ss = sessionStorage;
 
 document.addEventListener("DOMContentLoaded", async function () {
-	sessionStorage.start = 0;
-	sessionStorage.limit = 12;
-	sessionStorage.url = "http://localhost:3000";
+	ss.start = 0;
+	ss.limit = 12;
+	ss.url = "http://localhost:3000";
 
-	await insertPostCards();
+	await insertUserStoryThumbnails();
+	await insertPosts(parseInt(ss.start), parseInt(ss.limit));
 });

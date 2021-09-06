@@ -564,6 +564,8 @@ a {
   text-decoration: none;
 }
 
+/*
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -573,6 +575,7 @@ a {
   scrollbar-width: none;
 }
 
+*/
 .footer {
   background-color: inherit;
 }
@@ -732,7 +735,7 @@ a {
 .comment-input {
   border: none;
   outline: none;
-  width: 480px;
+  width: 100%;
 }
 
 .search-bar {
@@ -894,6 +897,9 @@ a {
   align-items: center;
   border-top: 1px solid #dbdbdb;
 }
+.post-footer > :first-child {
+  width: 90%;
+}
 
 .login-sign-up, .login-form {
   padding: 0.5rem 2.5rem;
@@ -941,7 +947,7 @@ a {
   gap: 2rem;
 }
 
-.story-gallery {
+.user-gallery {
   width: 40rem;
   margin: 0 auto;
   padding: 1rem 1.5rem;

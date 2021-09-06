@@ -49,5 +49,9 @@
 		align-items: center;
 
 		border-top: 1px solid map.get(colors.$colors, gray-02);
+
+		& > :first-child {
+			width: 90%;
+		}
 	}
 }
