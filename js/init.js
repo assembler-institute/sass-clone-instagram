@@ -6,7 +6,7 @@ const ss = sessionStorage;
 document.addEventListener("DOMContentLoaded", async function () {
 	ss.start = 0;
 	ss.limit = 12;
-	ss.url = "http://localhost:3000";
+	ss.url = "https://jsonplaceholder.typicode.com";
 
 	await insertUserStoryThumbnails();
 	await insertPosts(parseInt(ss.start), parseInt(ss.limit));
