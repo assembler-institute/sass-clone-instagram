@@ -1,37 +1,31 @@
-`#sass` `#css` `#html` `#master-in-software-engineering`
+`#sass` `#css` `#html`
 
 # SASS - Clone Instagram <!-- omit in toc -->
 
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="login page" src="assets/img/login-page.PNG" />
+</p>
+<p>
+  <img alt="login page" src="assets/img/home-page.PNG" />
 </p>
 
 > Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more
->
-> The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
 
 ## Index <!-- omit in toc -->
 
-- [Requirements](#requirements)
-- [Repository](#repository)
-- [Technologies used](#technologies-used)
-- [Project delivery](#project-delivery)
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
 - [Resources](#resources)
 
-## Requirements
+## Description
 
 - You must use variables at least once in the project.
 - You must use nesting.
 - You must use inheritance at least once in the project.
 - You cannot use third party libraries for the development of this pill
 
-## Repository
-
-First of all you must fork this project into your GitHub account.
-
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
-
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
+## Table of content
 
 ### Installing
 
@@ -56,12 +50,6 @@ If you want to change some configuration of "Live SASS Compiler" you can check t
 \* CSS
 
 \* HTML
-
-## Project delivery
-
-To deliver this project you must follow the steps indicated in the document:
-
-- [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
 
 ## Resources
 
