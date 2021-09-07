@@ -1,0 +1,32 @@
+@use "../4-abstracts/variables"as a;
+
+.header__home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 2%;
+    border-bottom: 1px a.$borderCard-color solid;
+    &-logo{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-btn{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.main__home{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    &-header{
+        @extend .main__home;
+            flex-direction: row;
+
+    }
+}
+

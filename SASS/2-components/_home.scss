@@ -1,0 +1,75 @@
+@use "../4-abstracts/variables"as a;
+
+.main__home-post {
+    border: 1px a.$borderCard-color solid;
+    margin-bottom: 2rem;
+
+    .main__home-header {
+        background-color: a.$white-color;
+        padding: 0.2rem;
+        font-weight: 600;
+        font-size: 0.8rem;
+
+        .fas{
+            margin: 0.2rem 0.4rem 0.2rem 0.6rem;
+            font-size: 1.5rem;
+            color: a.$grey-color;
+        }
+    }
+
+    .main__home-comments{
+        margin-bottom: 0;
+        padding: 0.8rem;
+
+            .main__home-icons {
+                margin-bottom: 0.4rem;
+
+                .fa-heart{
+                    color: rgb(146, 28, 28);
+                    font-size: 1.5rem;
+                }
+
+                .fa-comment{
+                    @extend .fa-heart;
+                    font-size: 1.5rem;
+                    margin-left: 0.5rem;
+                    color: black;
+                }
+        }
+            .like{
+                font-weight: 600;
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .newComment{
+                margin: 0.7rem 0;
+            }
+}
+
+}
+
+
+
+.main__home-comments {
+    background-color: a.$white-color;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.comment{
+    color: a.$grey-color;
+    font-size: 0.9rem;
+}
+
+.user{
+    font-weight: bold;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+
+}
+.comment-date{
+    color: a.$grey-color;
+    font-size: 0.6rem;
+}

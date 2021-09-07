@@ -1,0 +1,62 @@
+@use "../4-abstracts/variables"as a;
+@use "../4-abstracts/mixins"as b;
+
+
+.main__page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 1rem;
+    align-items: flex-start;
+    align-content: center;
+    margin: 6%;
+}
+
+@media all and(max-width: 900px) {
+    .main__image {
+        display: none;
+    }
+
+    .main__page {
+        @include b.flex($justify-content: center);
+        grid-template-columns: none;
+    }
+}
+
+.main__login-space{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+
+
+.main__login-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+
+.main__login-account{
+    width: 100%;
+    text-align: center;
+    padding: 1.7rem 0;
+}
+
+.main__login-app{
+    text-align: center;
+    margin: 1rem;
+}
+
+.main__login-app-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 1rem;
+}
