@@ -1,0 +1,84 @@
+.login__open__facebook--image{
+    height: 14px;
+    width: 14px;
+    padding-right: 10px;
+}
+
+.login__container--download--image{
+    height: 40px;
+    width: 150px;
+}
+
+.login__instagram--image{
+    height: 71px;
+    width: 185px;
+    padding-bottom: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: white;
+    width: 100vw;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    z-index: 1;
+}
+
+.main__header{
+    max-width: 975px;
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--title{
+        width: 30%;
+        
+    }
+    &--title img{
+        width: 103px;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+    &--form{
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        margin: 0 30px;
+    }
+    &--form input{
+        width: 209px;
+        height: 24px;
+        border: 1px solid #dbdbdb;
+        background-color: #fafafa;
+        border-radius: 3px;
+        box-sizing: content-box;
+        line-height: normal;
+    }
+    &--images{
+        display: flex;
+        justify-content: flex-end;
+        
+        margin: 0 0px;
+    }
+    &--images img{
+        height: 22px;
+        width: 22px;
+    }
+    &--photo{
+        
+
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;  
+    }
+    &--photo img{
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;  
+    }
+}
