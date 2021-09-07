@@ -20,12 +20,17 @@
 
 ## Description
 
-- You must use variables at least once in the project.
-- You must use nesting.
-- You must use inheritance at least once in the project.
-- You cannot use third party libraries for the development of this pill
+This project aims to improve HTML skils, learn how to work with HTML and SASS, to improve front end and SASS knowledge
 
 ## Table of content
+
+| File / Folder       | Description                                                |
+| ------------------- | ---------------------------------------------------------- |
+| `src`               | Source of files for testing.                               |
+| `test`              | Implement test methods                                     |
+| `package.json`      | List the packages the project depends on                   |
+| `package-lock.json` | Keep track of the exact version of every package installed |
+| `.gitignore`        | Untracked files that Git should ignore                     |
 
 ### Installing
 
