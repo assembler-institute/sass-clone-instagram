@@ -25,10 +25,9 @@ This project aims to improve HTML skils, learn how to work with HTML and SASS, t
 ## Table of content
 
 | File / Folder | Description                            |
-| ------------- | -------------------------------------- |
+| ------------- | -------------------------------------- | --- |
 | `assets`      | Sass files and other assets            |
-| `css`         | Css files                              |
-| methods       |
+| `css`         | Css files                              |     |
 | `home.html`   | Home page                              |
 | `login.html`  | Login page                             |
 | `.gitignore`  | Untracked files that Git should ignore |
