@@ -328,7 +328,6 @@
   padding: 4px;
   font-weight: 300;
   font-size: 14px;
-  font-family: "Font Awesome 5 Free";
 }
 .header__icons {
   flex-grow: 1;
@@ -543,7 +542,7 @@
   width: 100%;
 }
 .post__icons {
-  margin-top: 4px;
+  margin-top: 8px;
   padding-left: 8px;
   padding-right: 16px;
 }
@@ -579,6 +578,9 @@
   text-transform: uppercase;
   color: #8e8e8e;
   padding: 0.5rem 0;
+}
+.comment__mention {
+  color: #00376b;
 }
 
 .write-comment {
