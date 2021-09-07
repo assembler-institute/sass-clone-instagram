@@ -14,23 +14,13 @@
 ## Index <!-- omit in toc -->
 
 - [Description](#description)
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Resources](#resources)
+- [Theory](#theory)
 
 ## Description
 
-This project aims to improve HTML skils, learn how to work with HTML and SASS, to improve front end and SASS knowledge
-
-## Table of content
-
-| File / Folder | Description                            |
-| ------------- | -------------------------------------- | --- |
-| `assets`      | Sass files and other assets            |
-| `css`         | Css files                              |     |
-| `home.html`   | Home page                              |
-| `login.html`  | Login page                             |
-| `.gitignore`  | Untracked files that Git should ignore |
+This project aims to improve HTML skils, learn how to work with HTML and SASS, to improve front end and SASS knowledge.
 
 ### Installing
 
@@ -63,3 +53,18 @@ If you want to change some configuration of "Live SASS Compiler" you can check t
 - [SASS Guidelines](https://sass-guidelin.es/es/)
 - [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
 - [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+
+## Theory
+
+- SASS is a tool known as a CSS preprocessor, a scripting language that extend the default capabilities of CSS.
+- SASS stands for Syntactically Awesome Style Sheet.
+- CSS pre-processor is a program that let you generate CSS from the preprocessor’s own unique syntax.
+- Using SASS we can write more readable, maintainable and reusable code.
+- Using SASS variable is a way to store values for colors, fonts or any CSS value that you want to reuse. Use the $ symbol. This becomes extremely powerful when working on large Project.
+- Mixins is a method to group together multiple CSS declarations for reuse throughout your project. To add mixin into our code, use @include directive.
+- Sass functions can receive arguments and return a single value. We can do standard math: +, -, \*, /.
+- Nesting is used nesting to nest child selectors inside of the parent selector as CSS lacks a visual structure to make it easier to read. The code will be cleaner and less repetitive.
+- To import other CSS/SASS files in SASS, we divide up our Sass into separate files representing different components. Then we import the partial using an @import directive.
+- Inheritance allows multiple classes to share a common set of properties with one another. We implement this using the @extend directive.
+- The ampersand & operator is often used when nesting in SASS and is an extremely useful feature.
+- Placeholder selectors are mainly useful when writing a SASS library where each style rule is optional.
