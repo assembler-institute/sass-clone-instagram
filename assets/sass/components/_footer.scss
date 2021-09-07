@@ -1,0 +1,23 @@
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content_first ul,
+.footer__content_second ul,
+.footer__content_third ul {
+    display: flex;
+    align-items: center;
+    li {
+        list-style-type:none;  
+        display: inline-block;
+        margin: 0 0.4rem;
+    }
+    justify-content: space-around;
+}
+
+
+
+
