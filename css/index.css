@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 
-header, .circles, .post, .main, .form__or, .footer_lang {
+.header, .circles, .post, .main, .form__or, .footer_lang {
   display: flex;
   align-content: center;
 }
@@ -197,14 +197,13 @@ header, .circles, .post, .main, .form__or, .footer_lang {
   text-align: right;
 }
 
-header {
+.header {
   background-color: #fff;
   justify-content: center;
   border-bottom: 1px solid #dbdbdb;
   height: 3rem;
   padding-right: 15rem;
 }
-
 .header__logo {
   background-image: url("/assets/img/login/Instagram-logo.png");
   background-position: center;
@@ -214,7 +213,6 @@ header {
   background-size: contain;
   flex-basis: 45%;
 }
-
 .header__search {
   flex-basis: 30%;
 }
@@ -230,13 +228,12 @@ header {
   margin-top: 0.7rem;
   outline: none;
 }
+.header__icons {
+  text-align: left;
+}
 
 #pia {
   height: 1.3rem;
-}
-
-.header__icons {
-  text-align: left;
 }
 
 .icons {
@@ -307,7 +304,6 @@ header {
   border: 1px solid #dbdbdb;
   border-radius: 0.2rem;
 }
-
 .post__header {
   padding: 0.7rem;
   display: flex;
@@ -331,17 +327,14 @@ header {
   top: 0.7rem;
   cursor: pointer;
 }
-
 .post__profile {
   flex-basis: 90%;
   display: flex;
   gap: 0.6rem;
 }
-
 .post__picture {
   max-height: 105vh;
 }
-
 .post__react {
   display: flex;
   justify-content: space-between;
@@ -358,32 +351,10 @@ header {
   cursor: pointer;
   margin-top: 0.5rem;
 }
-
-.reactions {
-  display: flex;
-  gap: 0.6rem;
-}
-
 .post__comments {
   padding: 0 1rem;
   font-size: 14px;
 }
-
-.comment {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.5rem 0;
-}
-.comment div {
-  flex-basis: 90%;
-}
-
-.comment__ago {
-  font-size: 10px;
-  color: #8e8e8e;
-  margin-bottom: 0.5rem;
-}
-
 .post__add {
   display: flex;
   justify-content: space-between;
@@ -409,6 +380,25 @@ header {
   color: #0095f6;
   font-weight: 600;
   cursor: pointer;
+}
+
+.reactions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.comment div {
+  flex-basis: 90%;
+}
+.comment__ago {
+  font-size: 10px;
+  color: #8e8e8e;
+  margin-bottom: 0.5rem;
 }
 
 * {

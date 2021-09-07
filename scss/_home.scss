@@ -5,48 +5,48 @@
 
 //--------------------------------------------------HEADER
 
-header {
+.header {
     @extend %flexy;
     background-color: #fff;
     justify-content: center;
     border-bottom: 1px solid c.$input-border;
     height: 3rem;
     padding-right: 15rem;
-}
 
-.header__logo {
-    background-image: url("/assets/img/login/Instagram-logo.png");
-    background-position: center;
-    width: 100%;
-    height: 3rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex-basis: 45%;
-}
-
-.header__search {
-    flex-basis: 30%;
-    input{
-        background-color: c.$bg-color;
-        height: 1.7rem;
-        width: 12.5rem;
-        border: 1px solid c.$input-border;
-        border-radius: 0.2rem;
-        font-size: 1rem;
-        padding: 0 0.3rem;
-        text-align: center;
-        margin-top: 0.7rem;
-        outline: none;
+    &__logo {
+        background-image: url("/assets/img/login/Instagram-logo.png");
+        background-position: center;
+        width: 100%;
+        height: 3rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-basis: 45%;
     }
-    
+
+    &__search {
+        flex-basis: 30%;
+        input{
+            background-color: c.$bg-color;
+            height: 1.7rem;
+            width: 12.5rem;
+            border: 1px solid c.$input-border;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            padding: 0 0.3rem;
+            text-align: center;
+            margin-top: 0.7rem;
+            outline: none;
+        }
+    }
+
+    &__icons {
+        text-align: left;
+    }
 }
+
 
 #pia {
     height: 1.3rem;
-}
-
-.header__icons{
-    text-align: left;
 }
 
 .icons {
@@ -124,74 +124,104 @@ header {
     max-width: 37.5rem;
     background-color: #fff;
     @include c.white-bg();
-}
 
-.post__header {
-    
-    padding: 0.7rem;
-    display: flex;
-    justify-content: space-between;
+    &__header {
+        padding: 0.7rem;
+        display: flex;
+        justify-content: space-between;
 
-    img {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        border: 2px solid darkorange;
-        cursor: pointer;
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border: 2px solid darkorange;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: c.$dark-font;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 0.5rem 0;
+        }
+
+
+        svg {
+            position: relative;
+            top: 0.7rem;
+            cursor: pointer;
+        }    
     }
 
-    h2 {
-        color: c.$dark-font;
-        font-size: 14px;
-        cursor: pointer;
-        margin: 0.5rem 0;
+    &__profile {
+        flex-basis: 90%;
+        display: flex;
+        gap: 0.6rem;
     }
 
-
-    svg {
-        position: relative;
-        top: 0.7rem;
-        cursor: pointer;
-    }    
-}
-
-.post__profile {
-    flex-basis: 90%;
-    display: flex;
-    gap: 0.6rem;
-}
-
-.post__picture {
-    max-height: 105vh;
-}
-
-.post__react {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 1rem 0.5rem 1rem ;
-    flex-wrap: wrap;
-
-    svg {
-        cursor: pointer;
+    &__picture {
+       max-height: 105vh; 
     }
 
-    h2 {
-        flex-basis: 100%;
-        color: c.$dark-font;
-        font-size: 14px;
-        cursor: pointer;
-        margin-top: 0.5rem;
+    &__react {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 1rem 0.5rem 1rem ;
+        flex-wrap: wrap;
+
+        svg {
+            cursor: pointer;
+        }
+
+        h2 {
+            flex-basis: 100%;
+            color: c.$dark-font;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+    }
+
+    &__comments {
+        padding: 0 1rem;
+        font-size: 14px;    
+    }
+
+    &__add {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        border-top: 1px solid c.$input-border;
+
+        svg {
+            padding-bottom: 0.3rem;
+            cursor: pointer;
+        }
+
+        textarea {
+            height: 18px;
+            width: 85%;
+            border: none;
+            position: relative;
+            top: 0.2rem;
+            resize: none;
+            outline: none;
+        }
+
+        button {
+            background-color: #fff;
+            border: none;
+            color: c.$btn-color;
+            font-weight: 600;
+            cursor: pointer;
+        }
     }
 }
+
 
 .reactions {
     display: flex;
     gap: 0.6rem;
-}
-
-.post__comments{
-    padding: 0 1rem;
-    font-size: 14px;
 }
 
 .comment {
@@ -202,41 +232,11 @@ header {
     div{
         flex-basis: 90%;
     }
+
+    &__ago {
+        font-size: 10px;
+        color: c.$footer;
+        margin-bottom: 0.5rem;
+    }
 }
 
-.comment__ago {
-    font-size: 10px;
-    color: c.$footer;
-    margin-bottom: 0.5rem;
-}
-
-.post__add {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    border-top: 1px solid c.$input-border;
-
-    svg {
-        padding-bottom: 0.3rem;
-        cursor: pointer;
-    }
-
-    textarea {
-        height: 18px;
-        width: 85%;
-        border: none;
-        position: relative;
-        top: 0.2rem;
-        resize: none;
-        outline: none;
-    }
-
-    button {
-        background-color: #fff;
-        border: none;
-        color: c.$btn-color;
-        font-weight: 600;
-        cursor: pointer;
-    }
-
-}
