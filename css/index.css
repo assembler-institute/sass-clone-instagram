@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.margin-20px {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #AEAEAE;
+}
+
+.p__likes {
+  color: #3B589F;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.p__autor {
+  color: #3B589F;
+  font-size: 12px;
+  margin-right: 5px;
+  font-weight: lighter;
+}
+
+.p__primary {
+  color: #4b4949;
+}
+
+.login-btn {
+  width: 16.875rem;
+  height: 1.875rem;
+  background-color: #89b0eb;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  margin: 1.0625rem 0;
+  padding-top: 5px;
+  cursor: pointer;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+.login-btn:hover {
+  background-color: #0095F6;
+}
+
+.feed {
+  background-color: #fafafa;
+}
+.feed .post {
+  width: 38.4375rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DBDBDB;
+}
+.feed .post .post__header {
+  width: 38.4375rem;
+  background-color: #ffffff;
+  border-right: 1px solid #DBDBDB;
+}
+.feed .post .post__header .post__header__img {
+  width: 30px;
+  margin: 6px;
+}
+.feed .post .post__image {
+  position: relative;
+  width: 615px;
+  left: -1px;
+  border: 1px solid #DBDBDB;
+}
+.feed .post .post__details {
+  margin: 10px;
+}
+
+@media screen and (max-width: 818px) {
+  .header {
+    max-width: 100%;
+  }
+  .header .header__logo {
+    width: 100px;
+    margin-right: 20px;
+  }
+  .header input {
+    width: 60px;
+  }
+
+  .feed {
+    max-width: 100%;
+  }
+
+  .post {
+    max-width: 100%;
+  }
+  .post .post__header {
+    max-width: 100%;
+  }
+
+  .post__image {
+    max-width: 100%;
+  }
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: #fafafa;
+  font-size: 12px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  height: 60px;
+  width: 100%;
+  padding: 0 50px;
+}
+.footer .footer__menu {
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 60%;
+  padding: 10px;
+  color: #3B589F;
+  font-weight: bold;
+}
+.footer .footer__copyright {
+  width: 40%;
+  color: #AEAEAE;
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  position: relative;
+  top: 0;
+  border-bottom: 1px solid #DBDBDB;
+}
+.header .header__controllers {
+  width: 150px;
+}
+
+.post {
+  border: 1px solid #DBDBDB;
+}
+
+.main-content {
+  margin: 5vh;
+}
+.main-content .main-content__mockup {
+  padding: 2.0625rem;
+}
+@media all and (max-width: 900px) {
+  .main-content .main-content__mockup {
+    display: none;
+  }
+}
+.main-content .login {
+  border: 1px solid #DBDBDB;
+  width: 21.875rem;
+  min-height: 23.75rem;
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #ffffff;
+}
+.main-content .login .logo-instagram {
+  width: 184px;
+  margin-bottom: 30px;
+}
+.main-content .login input {
+  margin-bottom: 0.1875rem;
+  height: 2.375rem;
+  width: 16.75rem;
+  background-color: #fafafa;
+  border: 1px solid #DBDBDB;
+  padding: 0 0.875rem;
+  border-radius: 0.1875rem;
+}
+.main-content .login .or {
+  width: 100%;
+}
+.main-content .login .or .left-line {
+  background-color: #AEAEAE;
+  height: 1px;
+  width: 110px;
+}
+.main-content .login .or .right-line {
+  background-color: #AEAEAE;
+  height: 1px;
+  width: 110px;
+}
+.main-content .login .link {
+  margin-top: 1.25rem;
+  color: #3B589F;
+  text-decoration: none;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.main-content .login .link img {
+  margin-right: 10px;
+  border-radius: 3px;
+}
+.main-content .create-account {
+  width: 21.875rem;
+  height: 4rem;
+  background-color: #ffffff;
+  border: 1px solid #DBDBDB;
+  margin-top: 20px;
+}
+
+.--flex-row, .--flex-row-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.--flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.--flex-row-start {
+  align-items: center;
+  width: 40%;
+}
+
+.--flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.--flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.--content-space-evenly {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}/*# sourceMappingURL=index.css.map */

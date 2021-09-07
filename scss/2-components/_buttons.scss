@@ -1,0 +1,19 @@
+@use "../1-base/base-index" as v;
+
+.login-btn {
+  width: 16.875rem;
+  height: 1.875rem;
+  background-color: v.$inactive-action-btn-color;
+  border-radius: v.$btn-border-radius;
+  border: none;
+  color: v.$primary-color;
+  margin: 1.0625rem 0;
+  padding-top: 5px;
+  cursor: pointer;
+  font-family: v.$primary-font;
+  text-decoration: none;
+
+  &:hover {
+    background-color: v.$primary-btn-color
+  }
+}

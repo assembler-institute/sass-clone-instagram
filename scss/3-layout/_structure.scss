@@ -1,0 +1,32 @@
+@use "../1-base/mixins" as a;
+
+
+.--flex-row {
+  display: flex;
+  justify-content: flex-start;
+}
+.--flex-row-center {
+ @include a.flex;
+}
+
+.--flex-row-start {
+  @extend .--flex-row;
+  align-items: center;
+  width: 40%;
+}
+
+.--flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.--flex-space-evenly {
+  @include a.flex(space-evenly,center);
+}
+
+.--content-space-evenly {
+  @include a.flex (space-around, center);
+  flex-direction: column;
+}
+

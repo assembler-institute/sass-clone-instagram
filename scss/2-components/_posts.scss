@@ -1,0 +1,67 @@
+@use "../1-base/base-index" as v;
+
+.feed {
+  background-color: v.$background-color;
+
+.post {
+  width: 38.4375rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid v.$border-color;
+
+  
+
+  .post__header {
+    width: 38.4375rem;
+    background-color: v.$primary-color;
+    border-right: 1px solid v.$border-color;
+
+    .post__header__img {
+      width: 30px;
+      margin: 6px;
+    }
+  }
+
+  .post__image {
+    position: relative;
+    width:  615px;
+    left: -1px;
+    border: 1px solid v.$border-color;
+  }
+
+  .post__details {
+    margin: 10px;
+  }
+}
+}
+
+@media screen and(max-width:818px) {
+  .header {
+    max-width: 100%;
+    .header__logo {
+      width: 100px;
+      margin-right: 20px;
+
+    }
+    input {
+      width: 60px;
+    }
+  }
+
+  .feed {
+    max-width: 100%;
+  }
+  
+  .post {
+    max-width: 100%;
+
+    .post__header {
+      max-width: 100%;
+    }
+  }
+
+  .post__image {
+    max-width: 100%;
+
+  }
+}
