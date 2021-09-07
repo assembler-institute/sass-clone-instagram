@@ -24,13 +24,14 @@ This project aims to improve HTML skils, learn how to work with HTML and SASS, t
 
 ## Table of content
 
-| File / Folder       | Description                                                |
-| ------------------- | ---------------------------------------------------------- |
-| `src`               | Source of files for testing.                               |
-| `test`              | Implement test methods                                     |
-| `package.json`      | List the packages the project depends on                   |
-| `package-lock.json` | Keep track of the exact version of every package installed |
-| `.gitignore`        | Untracked files that Git should ignore                     |
+| File / Folder | Description                            |
+| ------------- | -------------------------------------- |
+| `assets`      | Sass files and other assets            |
+| `css`         | Css files                              |
+| methods       |
+| `home.html`   | Home page                              |
+| `login.html`  | Login page                             |
+| `.gitignore`  | Untracked files that Git should ignore |
 
 ### Installing
 
