@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- -------- HEADER --------- -->
+    <header class="header --flex-space-evenly">
+      <a href="login.html"
+        ><img
+          class="header__logo"
+          src="assets/800px-Instagram_logo.svg.png"
+          alt="Instagram"
+          width="150px"
+        />
+      </a>
+      <input type="search" placeholder="Search" />
+      <div class="header__controllers --flex-space-evenly">
+        <img src="assets/home.png" alt="casita" width="20px" />
+        <img src="assets/add.png" width="20px" />
+        <img src="assets/larrygonzales.png" alt="avatar" width="20px" />
+      </div>
+    </header>
+
+    <!-- -------- FEED --------- -->
+
+    <main class="feed --flex-column">
+      <!-- -------- POST --------- -->
+
+      <div class="post">
+        <div class="post__header --flex-row-start">
+          <img
+            class="post__header__img"
+            src="assets/anagomez.png"
+            alt="avatar"
+          />
+          <p>anagomez</p>
+        </div>
+
+        <!-- -------- POST IMAGE --------- -->
+
+        <div>
+          <img
+            class="post__image"
+            src="assets/pexels-sam-kolder-2387873.jpg"
+            alt="post_image"
+          />
+        </div>
+
+        <!-- -------- POST DETAILS --------- -->
+
+        <div class="post__details">
+          <img src="assets/heart.png" alt="like" width="30px" class="heart" />
+          <img src="assets/speech-bubble.png" alt="comments" width="30px" />
+          <p class="p__likes">258 Me gusta</p>
+        </div>
+
+        <!-- -------- POST COMMENTS --------- -->
+
+        <div class="post__comments post__details --flex-row">
+          <p class="p__autor"><strong>anagomez</strong></p>
+          <p class="p__primary">Iceland Waterfalls</p>
+        </div>
+        <div class="post__comments post__details --flex-row">
+          <p class="p__autor"><strong>larryGonzales </strong></p>
+          <p class="p__primary">Wow! Amazing pic my friend!</p>
+        </div>
+
+        <p class="post__details">Hace 5 días</p>
+      </div>
+
+      <!-- -------- POST --------- -->
+
+      <div class="post">
+        <div class="post__header --flex-row-start">
+          <img
+            class="post__header__img"
+            src="assets/larrygonzales.png"
+            alt="avatar"
+            width="50px"
+          />
+          <p>larryGonzales</p>
+        </div>
+
+        <!-- -------- POST IMAGE --------- -->
+
+        <div>
+          <img
+            id="postImg"
+            class="post__image"
+            src="assets/pexels-pierre-blachÃ©-2901209.jpg"
+            alt="post_image"
+          />
+        </div>
+
+        <!-- -------- POST DETAILS --------- -->
+
+        <div class="post__details">
+          <img
+            src="assets/heart.png"
+            alt="like"
+            width="30px"
+            id="heart"
+            class="like"
+          />
+          <img src="assets/speech-bubble.png" alt="comments" width="30px" />
+          <p class="p__likes">32 Me gusta</p>
+        </div>
+
+        <!-- -------- POST COMMENTS --------- -->
+
+        <div class="post__comments post__details --flex-row">
+          <p class="p__autor"><strong>larryGonzales</strong></p>
+          <p class="p__primary">De ruta por la Rep. Checa</p>
+        </div>
+        <div class="post__comments post__details --flex-row">
+          <p class="p__autor"><strong>Alfredo_Yeah </strong></p>
+          <p class="p__primary">Ossss estás gozando!</p>
+        </div>
+
+        <p class="post__details">Hace 5 días</p>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
