@@ -1,72 +1,263 @@
 `#sass` `#css` `#html` `#master-in-software-engineering`
 
-# SASS - Clone Instagram <!-- omit in toc -->
+## What is SASS? What does SASS stand for?
 
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
 
-> Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more
->
-> The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
+## What is a CSS pre-processor?
 
-## Index <!-- omit in toc -->
+A **CSS preprocessor** is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
 
-- [Requirements](#requirements)
-- [Repository](#repository)
-- [Technologies used](#technologies-used)
-- [Project delivery](#project-delivery)
-- [Resources](#resources)
+## What does a pre-processor have to do with SASS?
 
-## Requirements
+Sass is a pre-processor that compiles a specific syntax into native CSS code.
 
-- You must use variables at least once in the project.
-- You must use nesting.
-- You must use inheritance at least once in the project.
-- You cannot use third party libraries for the development of this pill
+## Why use SASS?
 
-## Repository
+Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.
+Sass allows the use of features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff. 
 
-First of all you must fork this project into your GitHub account.
+## Which are some disadvantages of SASS?
 
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
+* The developer must have enough time to learn new features present in this preprocessor before using it.
+* Using Sass may cause losing benefits of the browser's built-in element inspector.
+* Code has to be compiled previously into CSS because browsers don’t process Sass syntax.
+* Difficult Troubleshooting.
 
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
+## What is a SASS Variable? Explain why they are useful.
 
-### Installing
+A variable is a named reference used to store a value that we could reuse multiple times throughout our stylesheet. Thus, instead of specifying the value, the name of the variable that stores it is typed. Sass uses the reserves the $ symbol to define variables.
+ 
+## Explain the SASS variables property with an example.
 
-In this project you must use the VSCode SASS extension in order to compile SASS into CSS.
+```
+$cyan: #0dcaf0;
 
-First of all you will need to install the extension:
+.my-box {
+  background-color: $cyan;
+}
+```
 
-- [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+## What is a mixin? Why is it important? Give an example.
 
-When the extension is installed correctly, having a SASS file open, you must click on "Watch Sass":
+A __mixin__ is a rule that allows to define styles that can be reused throughout our stylesheet. There are many reasons by which mixins are an important feature:
 
-<img src="https://raw.githubusercontent.com/ritwickdey/vscode-live-sass-compiler/master/images/Screenshot/AnimatedPreview.gif" width="600px">
+* Mixins make it easy to avoid the use of non-semantic classes and to distribute collections of styles in libraries.
+* Mixins encapsulate styles that can be dropped into a single style rule with the use of the __include__ rule. 
+* Mixins can contain style rules of their own, that can be nested in other rules or included at the top level of the stylesheet
+* Mixins be used to modify variables.
+* Mixins are like functions, which can be parameterized and take arguments to customize the behaviour each time they are called with the __include__ rule.
 
-If you want to change some configuration of "Live SASS Compiler" you can check this official resource:
+Example where a custom separator line mixin is defined:
 
-- [Live SASS Compiler Settings](https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md)
+```
+@use "../abstracts/colors";
+@use "sass:map";
 
-## Technologies used
+@mixin separator-template($stroke: 2px, $line-color: gray, $text-color: gray, $text-padding: 0.75rem, $font-size: 1rem, $font-weight: 600) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-\* SASS
+	& > :nth-child(1),
+	& > :nth-child(3) {
+		flex-grow: 1;
+		flex-shrink: 1;
+		background-color: $line-color;
+		height: $stroke;
+	}
 
-\* CSS
+	& > :nth-child(2) {
+		padding: $text-padding;
+		flex-grow: 0;
+		flex-shrink: 0;
+		color: $text-color;
+		font-size: $font-size;
+		font-weight: $font-weight;
+		text-align: center;
+	}
+}
 
-\* HTML
+.login-separator {
+	@include mixins.separator-template(
+		$font-size: 0.8rem,
+		$text-color: map.get(colors.$colors, gray-03),
+		$line-color: map.get(colors.$colors, gray-02),
+		$stroke: 1px,
+	)
+}
+```
 
-## Project delivery
+## What is SCSS? Give an example:
 
-To deliver this project you must follow the steps indicated in the document:
+```
+$font-stack: Helvetica,sans-serif;
+$primary-color: #333;
 
-- [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
+body{
+  font:100% $font-stack;
+  color:$primary-color;
+}
+```
 
-## Resources
+## What is SASS? Give an example:
 
-- [SASS documentation](https://sass-lang.com/)
-- [W3S SASS](https://www.w3schools.com/sass/)
-- [SASS Guidelines](https://sass-guidelin.es/es/)
-- [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
-- [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+```
+$font-stack: Helvetica,sans-serif
+$primary-color: #333
+
+body
+  font:100% $font-stack
+  color:$primary-color
+```
+
+## What is the difference between .scss and .sass syntax?
+
+SCSS uses the .scss file extension whose syntax is fully compliant with CSS, meaning that it uses curly braces to delimit declaration blocks, whereas SASS uses the .sass file extension, it replaces the curly braces with strict indentation and line breaks like in YAML, and doesn’t use the semicolon at the end of a declaration.
+
+## In which cases would we use SCSS? And in which cases would we use SASS?
+
+The use of SCSS or SASS is under personal preference, but many CSS and UI Frameworks use SCSS over SASS by default.
+
+## Can we create functions with SASS? If it is true, give an example.
+
+```
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+```
+
+## What is nesting? Is it useful? Give an example of nesting.
+
+Nesting is a style rule that allows us to write style rules inside another declaration block. Thus, Sass will combine the outer rule’s selector with the inner rule’s. Nested rules are useful to avoid the repetition of the same selector over and over again.
+
+Example in which the styles are defined for .user-table and .user-table__cell selectors:
+
+```
+.user-table {
+  border: 1px solid rgba(0,0,0,10%);
+  border-spacing: 0.125rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 4px rgba(0,0,0,25%);
+
+  &__cell {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,10%);
+    border-radius: 0.25rem;
+  }
+}
+```
+
+## Difference between @use & @import? Give an example:
+
+The new **@use** rule is similar to **@import**. but has some notable differences:
+* With **@use**, the file is only imported once, no matter how many times you @use it in a project.
+* With **@use**, variables, mixins, and functions (what Sass calls “members”) that start with an underscore (_) or hyphen (-) are considered private, and not imported.
+* With **@use**, members from the used file are only made available locally, but not passed along to future imports.
+* With **@use**, all imported members are namespaced by default.
+
+## How can we import other CSS/SASS files in SASS? Give an example:
+
+With the **@use** rule we can load *mixins*, *functions*, and *variables* from other Sass and CSS stylesheets, which allows to combine CSS from multiple stylesheets together. With use, single stylesheet files are loaded as a single __module__.
+
++ To import a module from a URL, it's written __@use "\<url\>"__.
++ To import a built-in Sass module, it's written __@use "sass:\<module\>"__.
+
+Example:
+
+```
+// _base.scss
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+// _utilities.scss
+$colors: (
+	blue:    #0d6efd,
+	indigo:  #6610f2,
+	purple:  #6f42c1,
+	pink:    #d63384,
+	red:     #dc3545,
+	orange:  #fd7e14,
+	yellow:  #ffc107,
+	green:   #198754,
+	teal:    #20c997,
+	cyan:    #0dcaf0,
+);
+
+// styles.scss
+@use 'sass:map';
+@use 'base';
+@use 'utilities';
+
+.add-color {
+  background-color: base.$primary-color;
+  color: map.get(utilities.$colors, blue);
+}
+```
+
+With the __@forward__ rule we can make that module redirects to another Sass stylesheet available when the current stylesheet is loaded with the @use rule from another file. This makes it possible to organize Sass libraries across many files, while allowing to load a single entrypoint file.
+
+Example:
+
+```
+// _base.scss
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+// _utilities.scss
+$colors: (
+	blue:    #0d6efd,
+	indigo:  #6610f2,
+	purple:  #6f42c1,
+	pink:    #d63384,
+	red:     #dc3545,
+	orange:  #fd7e14,
+	yellow:  #ffc107,
+	green:   #198754,
+	teal:    #20c997,
+	cyan:    #0dcaf0,
+);
+
+// _index.scss
+@forward 'base';
+@forward 'utilities';
+
+// styles.scss
+@use 'sass:map';
+@use 'index';
+
+.add-color {
+  background-color: base.$primary-color;
+  color: map.get(utilities.$colors, blue);
+}
+```
+
+## Why use @extend? Give an example:
+
+The purpose of using the **@extend** rule is to maintain the relationships or hierarchical constraints within extended selectors, between rulesets. This gives an alternative to define relationships between selectors with the use of **placeholders**, instead of actual selectors. Placeholder selectors are defined with a **%** character at the beginning.
+
+```
+// 
+%button {
+  display: inline-block;
+  // … button styles
+
+  // Relationship: a %button that is a child of a %modal
+  %modal > & {
+    display: block;
+  }
+}
+
+.button {
+  @extend %button;
+}
+
+.modal {
+  @extend %modal;
+}
+```

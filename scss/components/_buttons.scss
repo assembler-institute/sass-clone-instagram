@@ -1,0 +1,57 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+@use "sass:map";
+
+@mixin button-reset() {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+@mixin button-behaviour() {
+	cursor: pointer;
+
+	&:active {
+		opacity: 0.75;
+	}
+}
+
+.button-fill {
+	@include button-reset();
+	@include button-behaviour();
+	@include mixins.box(
+		$padding: 0.5rem,
+		$margin: 0.5rem 0,
+	);
+
+	font-size: 0.9rem;
+	font-weight: 500;
+	
+	border-radius: 0.2rem;
+	background-color: map.get(colors.$colors, blue-01);
+	color: white;
+}
+
+.button-transparent {
+	@include button-reset();
+	@include button-behaviour();
+	@include mixins.box(
+		$padding: 0.5rem 0,
+	);
+
+	background-color: transparent;
+	font-weight: 500;
+	font-size: 0.9rem;
+	color: map.get(colors.$colors, blue-02);
+
+	&--small {
+		font-weight: 400;
+		font-size: 0.75rem;
+		color: map.get(colors.$colors, blue-03);
+	}
+}
+
+.button-reset {
+	@include button-reset();
+	@include button-behaviour();
+}

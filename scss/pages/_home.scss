@@ -1,0 +1,28 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "../abstracts/breakpoints";
+@use "sass:map";
+
+.post-gallery {
+	max-width: map.get(breakpoints.$breakpoints, "md");
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.user-gallery {
+	max-width: map.get(breakpoints.$breakpoints, "md");
+	margin: 0 auto;
+	padding: 1rem 1.5rem;
+
+	display: flex;
+	gap: 1rem;
+	overflow-x: scroll;
+
+	font-size: 0.8rem;
+	background-color: white;
+	border: 1px solid map.get(colors.$colors, gray-02);
+}

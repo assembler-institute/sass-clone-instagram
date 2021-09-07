@@ -1,0 +1,56 @@
+/* ===== Spacing Config Variables ===== */
+
+$spacer-base: 0.25rem; 
+$spacer-iterations: 10;
+
+/* ===== Padding Classes ===== */
+
+@for $i from 0 through $spacer-iterations {
+	.p-#{$i} {
+		padding: $i * $spacer-base; 
+	} // Full
+
+	.px-#{$i} {
+		padding-left: $i * $spacer-base;
+		padding-right: $i * $spacer-base;
+	} // Horizontal
+
+	.py-#{$i} {
+		padding-top: $i * $spacer-base;
+		padding-bottom: $i * $spacer-base;
+	} // Vertical
+
+	.pl-#{$i} {	padding-left: $i * $spacer-base; } 		// Left
+	.pr-#{$i} {	padding-right: $i * $spacer-base; } 	// Right
+	.pt-#{$i} {	padding-top: $i * $spacer-base; } 		// Top
+	.pb-#{$i} {	padding-bottom: $i * $spacer-base; } 	// Bottom
+}
+
+/* ===== Margin Classes ===== */
+
+@for $i from 0 through $spacer-iterations{
+	.m-#{$i} {
+		margin: $i * $spacer-base;
+	} // Full
+
+	.mx-#{$i} {
+		margin-left: $i * $spacer-base;
+		margin-right: $i * $spacer-base;
+	} // Horizontal
+
+	.my-#{$i} {
+		margin-top: $i * $spacer-base;
+		margin-bottom: $i * $spacer-base;
+	} // Vertical
+
+	.ml-#{$i} {	margin-left: $i * $spacer-base; } 		// Left
+	.mr-#{$i} {	margin-right: $i * $spacer-base; } 		// Right
+	.mt-#{$i} {	margin-top: $i * $spacer-base; } 			// Top
+	.mb-#{$i} {	margin-bottom: $i * $spacer-base; } 	// Bottom
+}
+
+/* ===== Grid/Flexbox Gap Classes ===== */
+
+@for $i from 0 through $spacer-iterations {
+	.gap-#{$i} { gap: $i * $spacer-base; }
+}

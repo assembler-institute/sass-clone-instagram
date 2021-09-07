@@ -1,0 +1,15 @@
+/* ===== Border Radius Config Variables ===== */
+
+$border-radius-base: 0.125rem;
+
+/* ===== Border Radius Classes ===== */
+
+@for $i from 0 through 5 {
+	.br-#{$i} {
+		border-radius: $border-radius-base * $i;
+	}
+}
+
+.br-round {
+	border-radius: 50%;
+}
