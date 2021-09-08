@@ -1,37 +1,26 @@
-`#sass` `#css` `#html` `#master-in-software-engineering`
+`#sass` `#css` `#html`
 
 # SASS - Clone Instagram <!-- omit in toc -->
 
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="login page" src="assets/img/login-page.PNG" />
+</p>
+<p>
+  <img alt="login page" src="assets/img/home-page.PNG" />
 </p>
 
 > Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more
->
-> The purpose of this project is to learn the basics of SASS and put them into practice by building a visual replica of Instagram
 
 ## Index <!-- omit in toc -->
 
-- [Requirements](#requirements)
-- [Repository](#repository)
-- [Technologies used](#technologies-used)
-- [Project delivery](#project-delivery)
+- [Description](#description)
+- [Installation](#installation)
 - [Resources](#resources)
+- [Theory](#theory)
 
-## Requirements
+## Description
 
-- You must use variables at least once in the project.
-- You must use nesting.
-- You must use inheritance at least once in the project.
-- You cannot use third party libraries for the development of this pill
-
-## Repository
-
-First of all you must fork this project into your GitHub account.
-
-To create a fork on GitHub is as easy as clicking the “fork” button on the repository page.
-
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
+This project aims to improve HTML skils, learn how to work with HTML and SASS, to improve front end and SASS knowledge.
 
 ### Installing
 
@@ -57,12 +46,6 @@ If you want to change some configuration of "Live SASS Compiler" you can check t
 
 \* HTML
 
-## Project delivery
-
-To deliver this project you must follow the steps indicated in the document:
-
-- [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
-
 ## Resources
 
 - [SASS documentation](https://sass-lang.com/)
@@ -70,3 +53,18 @@ To deliver this project you must follow the steps indicated in the document:
 - [SASS Guidelines](https://sass-guidelin.es/es/)
 - [Organizing SASS Projects](https://blog.prototypr.io/how-i-organize-sass-projects-e2d7760df86f)
 - [Why don't use @import](https://www.youtube.com/watch?v=CR-a8upNjJ0)
+
+## Theory
+
+- SASS is a tool known as a CSS preprocessor, a scripting language that extend the default capabilities of CSS.
+- SASS stands for Syntactically Awesome Style Sheet.
+- CSS pre-processor is a program that let you generate CSS from the preprocessor’s own unique syntax.
+- Using SASS we can write more readable, maintainable and reusable code.
+- Using SASS variable is a way to store values for colors, fonts or any CSS value that you want to reuse. Use the $ symbol. This becomes extremely powerful when working on large Project.
+- Mixins is a method to group together multiple CSS declarations for reuse throughout your project. To add mixin into our code, use @include directive.
+- Sass functions can receive arguments and return a single value. We can do standard math: +, -, \*, /.
+- Nesting is used nesting to nest child selectors inside of the parent selector as CSS lacks a visual structure to make it easier to read. The code will be cleaner and less repetitive.
+- To import other CSS/SASS files in SASS, we divide up our Sass into separate files representing different components. Then we import the partial using an @import directive.
+- Inheritance allows multiple classes to share a common set of properties with one another. We implement this using the @extend directive.
+- The ampersand & operator is often used when nesting in SASS and is an extremely useful feature.
+- Placeholder selectors are mainly useful when writing a SASS library where each style rule is optional.
