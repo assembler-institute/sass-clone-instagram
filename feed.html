@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="icon" href="./favicon.svg">
+  <script src="./assets/js/feed.js" defer async></script>
+</head>
+
+<body>
+  <div class="feed__page-container">
+    <header id="header" class="feed__header">
+      <a href="/feed.html"><img src="./assets/img/svg-logos/logo-black-instagram.svg" alt="Instagram logo" id="header-logo" class="feed-header__logo"></a>
+      <article class="header__search">
+        <div class="search__container">
+          <input type="text" placeholder="Search" id="search-input" class="search__input"/>
+          <img src="./assets/img/svg-icons/solid-color/search-grey.svg" alt="" class="search-icon">
+        </div>
+      </article>
+      <nav class="header__menu">
+        <img src="./assets/img/svg-icons/solid/home.svg" alt="Home" id="home-icon" class="menu__icon menu__icon--active"></img>
+        <img src="./assets/img/svg-icons/outline/paper-airplane.svg" alt="Messages" class="menu__icon"></img>
+        <img src="./assets/img/svg-icons/outline/compass.svg" alt="Explore" id="explore-icon" class="menu__icon"></img>
+        <img src="./assets/img/svg-icons/outline/heart.svg" alt="Notifications" class="menu__icon"></img>
+        <img src="./assets/img/feed/user-profile-pic.jpg" alt="Profile" id="menu-profile-pic" class="menu__profile-pic">
+      </nav>
+    </header>
+
+    <div class="main-feed-page-container">
+      <main class="feed-main-container">
+        <img src="./assets/img/svg-icons/solid-color/chevron-sign-left.svg" alt="Scroll left" id="stories-left-arrow" class="stories__arrow stories__arrow--left hidden">
+        <img src="./assets/img/svg-icons/solid-color/chevron-sign-right.svg" alt="Scroll right" id="stories-right-arrow" class="stories__arrow stories__arrow--right">
+        <section id="stories-container" class="main__stories"></section>
+
+        <section id="feed" class="feed"></section>
+
+      </main>
+
+      <aside class="aside-info">
+
+        <section class="aside-info__user">
+          <div class="user__info-container">
+            <div class="user__profile-pic-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="User profile pic" class="user__profile-pic"></img>
+            </div>
+            <div class="user__info">
+              <div class="user__info--username">_gobi</div>
+              <div class="user__info--first-name">Carlos</div>
+            </div>
+          </div>
+          <a href="#" class="user__change-user">Switch</a>
+        </section>
+
+        <section id="aside-suggestions" class="aside-info__suggestions">
+          <div  class="suggestions__header">
+            <div class="suggestions__header--tittle">Suggestions For You</div>
+            <a href="#" class="suggestions__header--see-all">See All</a>
+          </div>
+          
+          <!-- <div class="aside-suggestion__user">
+            <div class="suggestion__info-container">
+              <img src="./assets/img/feed/user-profile-pic.jpg" alt="User profile pic" class="suggestion__profile-pic"></img>
+              <div class="suggestion__info">
+                <div class="suggestion__info--username">_gobi</div>
+                <div class="suggestion__info--followed-by">Followed by Mr. Pinnaple + 5 more</div>
+              </div>
+            </div>
+            <a href="#" class="suggestion__follow-user">Follow</a>
+          </div> -->
+
+        </section>
+
+
+
+        <footer id="footer" class="footer">
+            <ul class="links__container">
+              <a href="#" class="links__link"><li>About</li></a>
+              <a href="#" class="links__link"><li>Help</li></a>
+              <a href="#" class="links__link"><li>Press</li></a>
+              <a href="#" class="links__link"><li>API</li></a>
+              <a href="#" class="links__link"><li>Jobs</li></a>
+              <a href="#" class="links__link"><li>Privacy</li></a>
+              <a href="#" class="links__link"><li>Terms</li></a>
+              <a href="#" class="links__link"><li>Locations</li></a>
+              <a href="#" class="links__link"><li>Top Accounts</li></a>
+              <a href="#" class="links__link"><li>Hashtags</li></a>
+              <a href="#" class="links__link"><li>Language</li></a>
+            </ul>
+          </nav>
+          <p id="footer-copyright" class="footer__info">© 2021 INSTAGRAM FROM FACEBOOK</p>
+        </footer>
+
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
