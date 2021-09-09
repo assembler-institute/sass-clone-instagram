@@ -1,0 +1,30 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
+.main__page--nav {
+    @include m.flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: c.$bg-color-contrast;
+    border-bottom: .0625rem solid rgba(var(--b6a, 219, 219, 219), 1);
+    padding: 0.5rem
+}
+
+.nav__icons {
+    @include m.flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.profile__pic {
+    border: 1.5px solid black;
+    border-radius: 100%;
+    background-color: skyblue;
+}
+
+.search__bar {
+    @include m.borders;
+    background-color: c.$bg-color;
+    height: 1.5rem;
+    width: 12rem;
+    text-align: center;
+}

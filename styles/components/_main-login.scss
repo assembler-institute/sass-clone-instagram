@@ -1,0 +1,14 @@
+@use "../abstracts/fonts" as s;
+@use "../abstracts/colors" as c;
+main {
+    display: flex;
+    justify-content: center;
+    margin: 3.125rem;
+}
+
+body {
+    background-color: c.$bg-color;
+    font-family: s.$myfont;
+    font-size: .875rem;
+    line-height: 1.125rem;
+}

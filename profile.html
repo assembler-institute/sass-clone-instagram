@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="main__page--nav">
+            <div>
+                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram" />
+            </div>
+            <div>
+                <input class="search__bar" type="search" placeholder="&#x1F50E&#xFE0E Search" />
+            </div>
+            <div class="nav__icons">
+                <svg aria-label="Home" class="nav__labels" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22">
+            <path
+              d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"
+            ></path>
+          </svg>
+                <svg aria-label="Direct" class="nav__labels" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22">
+            <path
+              d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+            ></path>
+          </svg>
+                <svg aria-label="New Post" class="nav__labels" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22">
+            <path
+              d="M31.8 48H16.2c-6.6 0-9.6-1.6-12.1-4C1.6 41.4 0 38.4 0 31.8V16.2C0 9.6 1.6 6.6 4 4.1 6.6 1.6 9.6 0 16.2 0h15.6c6.6 0 9.6 1.6 12.1 4C46.4 6.6 48 9.6 48 16.2v15.6c0 6.6-1.6 9.6-4 12.1-2.6 2.5-5.6 4.1-12.2 4.1zM16.2 3C10 3 7.8 4.6 6.1 6.2 4.6 7.8 3 10 3 16.2v15.6c0 6.2 1.6 8.4 3.2 10.1 1.6 1.6 3.8 3.1 10 3.1h15.6c6.2 0 8.4-1.6 10.1-3.2 1.6-1.6 3.1-3.8 3.1-10V16.2c0-6.2-1.6-8.4-3.2-10.1C40.2 4.6 38 3 31.8 3H16.2z"
+            ></path>
+            <path
+              d="M36.3 25.5H11.7c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5h24.6c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5z"
+            ></path>
+            <path
+              d="M24 37.8c-.8 0-1.5-.7-1.5-1.5V11.7c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5v24.6c0 .8-.7 1.5-1.5 1.5z"
+            ></path>
+          </svg>
+                <svg aria-label="Find People" class="nav__labels" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22">
+            <path
+              clip-rule="evenodd"
+              d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+                <svg aria-label="Activity Feed" class="nav__labels" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22">
+            <path
+              d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+            ></path>
+          </svg>
+                <img class="profile__pic" src="./assets/71+mDoHG4mL.png" height="22" width="22" />
+            </div>
+        </nav>
+    </header>
+    <main class="page__main">
+        <div class="stories__feed">
+            <div class="main__stories">
+                <ul class="main__stories--list">
+                    <li class="main__stories--story">
+                        <img src="./assets/oogway.jpg" height="60px" width="60px" />
+                        <span>Oogway</span>
+                    </li>
+                    <li class="main__stories--story">
+                        <img src="./assets/mokney.jpg" height="60px" width="60px" />
+                        <span>Monkey</span>
+                    </li>
+                    <li class="main__stories--story">
+                        <img src="./assets/po.jpg" height="60px" width="60px" />
+                        <span>Po</span>
+                    </li>
+                    <li class="main__stories--story">
+                        <img src="./assets/poDad.jpg" height="60px" width="60px" />
+                        <span>Li Shan</span>
+                    </li>
+                    <li class="main__stories--story">
+                        <img src="./assets/shifu.jpg" alt="" height="60px" width="60px" />
+                        <span>Master Shifu</span>
+                    </li>
+                    <li class="main__stories--story">
+                        <img src="./assets/tigress.jpg" alt="" height="60px" width="60px" />
+                        <span>Tigress</span>
+                    </li>
+                    <li class="main__stories--story">
+                        <img src="./assets/tailung.png" alt="" height="60px" width="60px" />
+                        <span>Tai Lung</span>
+                    </li>
+                </ul>
+            </div>
+            <div classs="main__feed">
+                <article class="post__feed">
+                    <header class="post__feed--header">
+                        <div class="post__feed--label">
+                            <img class="post__feed--img" src="./assets/po.jpg" alt="" height="30px" width="30px" /><span class="post__feed--title">PO</span>
+                        </div>
+                        <button>
+                <svg
+                  aria-label="More options"
+                  fill="#262626"
+                  height="16"
+                  role="img"
+                  viewBox="0 0 48 48"
+                  width="16"
+                >
+                  <circle
+                    clip-rule="evenodd"
+                    cx="8"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="24"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="40"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                </svg>
+              </button>
+                    </header>
+                    <main class="post__main">
+                        <div>
+                            <img class="post__main--img" src="./assets/post1.jpg" />
+                        </div>
+                        <nav class="post__main--nav">
+                            <div class="nav__like">
+                                <svg class="like__heart" aria-label="Like" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                    ></path>
+                  </svg>
+                                <svg aria-label="Comment" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      clip-rule="evenodd"
+                      d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                                <svg aria-label="Share Post" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                    ></path>
+                  </svg>
+                            </div>
+                            <div>
+                                <svg aria-label="Save" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"
+                    ></path>
+                  </svg>
+                            </div>
+                        </nav>
+                        <div class="comment-and-likes">
+                            <span>Liked by <span class="bold__username">Master Oogway </span
+                  ><span>and </span><span class="bold__username"> others</span>
+                            </span>
+                        </div>
+
+                        <div class="comment__section">
+                            <div class="comment__section--comment">
+                                <span class="bold__username">Master Oogway</span> <span>There are no accidents, neither are you Po!</span>
+                            </div>
+                            <div class="comment__section--comment">
+                                <span class="bold__username">Tigress</span> <span>This is not how you train to be a Dragon Warrior!!!</span>
+                            </div>
+                            <div class="show__more"><span>View all 295 comments</span></div>
+                        </div>
+                    </main>
+                </article>
+                <article class="post__feed">
+                    <header class="post__feed--header">
+                        <div class="post__feed--label">
+                            <img class="post__feed--img" src="./assets/oogway.jpg" alt="" height="30px" width="30px" /><span class="post__feed--title">Master Oogway</span>
+                        </div>
+                        <button>
+                <svg
+                  aria-label="More options"
+                  fill="#262626"
+                  height="16"
+                  role="img"
+                  viewBox="0 0 48 48"
+                  width="16"
+                >
+                  <circle
+                    clip-rule="evenodd"
+                    cx="8"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="24"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="40"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                </svg>
+              </button>
+                    </header>
+                    <main class="post__main">
+                        <div>
+                            <img class="post__main--img" src="./assets/oogwayPost.jpg" />
+                        </div>
+                        <nav class="post__main--nav">
+                            <div class="nav__like">
+                                <svg aria-label="Like" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                    ></path>
+                  </svg>
+                                <svg aria-label="Comment" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      clip-rule="evenodd"
+                      d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                                <svg aria-label="Share Post" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                    ></path>
+                  </svg>
+                            </div>
+                            <div>
+                                <svg aria-label="Save" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                    <path
+                      d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"
+                    ></path>
+                  </svg>
+                            </div>
+                        </nav>
+                        <div class="comment-and-likes">
+                            <span>Liked by <span class="bold__username">Master Shifu</span
+                  ><span>, </span><span class="bold__username">Tigress </span
+                    ><span> and </span><span class="bold__username"> others</span>
+                            </span>
+                        </div>
+
+                        <div class="comment__section">
+                            <div class="comment__section--comment">
+                                <span class="bold__username">Master Shifu</span> <span>Our great wise Master! But Maybe you chose the wrong dragon Warrior?</span>
+                            </div>
+                            <div class="comment__section--comment">
+                                <span class="bold__username">Tigress</span> <span>I have to agree with Master Shifu. I trained for it my whole life!!</span>
+                            </div>
+                            <div class="comment__section--comment">
+                                <span class="bold__username">PO</span> <span>Dont Worry <span class="comment__section--mention">@Tigress</span> I am just a Fat PANDA!</span>
+                            </div>
+                            <div class="show__more"><span>View all 13,989 comments</span></div>
+                        </div>
+                    </main>
+                </article>
+            </div>
+        </div>
+        <aside class="switch__suggestions">
+            <div class="switch__profile">
+                <div class="switch__profile--exclude--button">
+                    <img class="switch__profile--cat" src="./assets/71+mDoHG4mL.png" alt="" height="50px" width="50px" />
+                    <div class="switch__profile--names">
+                        <span class="switch__profile--user">Master_Cat420</span>
+                        <span class="switch__profile--name">Legendary Warrior Cat</span>
+                    </div>
+                </div>
+                <button>Switch</button>
+            </div>
+            <div class="suggestions">
+                <span class="suggestions__title">Suggestions For You</span>
+                <button class="suggestions__btn">See All</button>
+            </div>
+
+            <div>
+                <ul class="suggestions__list">
+                    <li class="suggested__users">
+                        <img src="./assets/viper.png" alt="" height="30" width="30" />
+                        <div class="ig__users">
+                            <span class="name">Viper</span><span>dragonWarriorVipa</span>
+                        </div>
+                        <button>Follow</button>
+                    </li>
+                    <li class="suggested__users">
+                        <img src="./assets/squirrel.jfif" alt="" height="30" width="30" />
+                        <div class="ig__users">
+                            <span class="name">Squirrel</span><span>notAnAnimal</span>
+                        </div>
+                        <button>Follow</button>
+                    </li>
+                    <li class="suggested__users">
+                        <img src="./assets/crane.jfif" alt="" height="30" width="30" />
+                        <div class="ig__users">
+                            <span class="name">Crane</span><span>dragonWarriorCrane</span>
+                        </div>
+                        <button>Follow</button>
+                    </li>
+                    <li class="suggested__users">
+                        <img src="./assets/mantis.png" alt="" height="30" width="30" />
+                        <div class="ig__users">
+                            <span class="name">Master Mantis</span
+                ><span>LittleDragonWarrior</span>
+                        </div>
+                        <button>Follow</button>
+                    </li>
+                    <li class="suggested__users">
+                        <img src="./assets/KAI.jfif" alt="" height="30" width="30" />
+                        <div class="ig__users">
+                            <span class="name">MASTER KAI</span><span>beScaredofKAI</span>
+                        </div>
+                        <button>Follow</button>
+                    </li>
+                </ul>
+            </div>
+            <footer class="footer__div">
+                <nav class="footer__nav">
+                    <a class="footer__objects" href="">About</a>
+
+                    <a class="footer__objects" href="">Jobs</a>
+                    <a class="footer__objects" href="">Help</a>
+                    <a class="footer__objects" href="">API</a>
+                    <a class="footer__objects" href="">Privacy</a>
+                    <a class="footer__objects" href="">Terms</a>
+                    <a class="footer__objects" href="">Top Accounts</a>
+
+                    <a class="footer__objects" href="">Locations</a>
+                    <a class="footer__objects" href="">Instagram Lite</a>
+                    <a class="footer__objects" href="">Beauty</a>
+                    <a class="footer__objects" href="">Dance</a>
+                    <a class="footer__objects" href="">Fitness</a>
+                </nav>
+            </footer>
+        </aside>
+    </main>
+</body>
+
+</html>

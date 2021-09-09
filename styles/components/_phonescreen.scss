@@ -1,0 +1,30 @@
+@use "../abstracts/colors" as c;
+.smartphone__image {
+    background: url(../assets/iPhoneBackGround.png);
+    width: 454px;
+    height: 618px;
+}
+
+.display__image {
+    position: relative;
+    left: 33.3%;
+    bottom: -99.5px;
+}
+
+@media (max-width: 916px) {
+    .smartphone__image {
+        display: none;
+    }
+    .login__screen {
+        border: none;
+        background-color: c.$bg-color;
+        .login__menu {
+            border: none;
+            background-color: c.$bg-color;
+        }
+    }
+    .new___user {
+        border: none;
+        background-color: c.$bg-color;
+    }
+}
