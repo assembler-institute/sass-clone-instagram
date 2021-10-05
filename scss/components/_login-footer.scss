@@ -1,0 +1,41 @@
+@use "../abstracts" as a;
+
+footer {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+
+}
+.footer {
+    width: 100%;
+}
+.links {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+    a {
+        word-spacing: 1rem;
+        color: a.$grey-font;
+        font-size: smaller;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+.copyright {
+    @include a.flex(row, center, center);
+    gap: 1rem;
+    color: a.$grey-font;
+
+    select {
+    color: a.$grey-font;
+    border:none;
+    outline: none;
+    }
+}

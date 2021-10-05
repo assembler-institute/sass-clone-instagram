@@ -1,0 +1,9 @@
+@use "../abstracts" as a;
+
+.container-home {
+    @include a.flex(column, center, center);
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+}
+

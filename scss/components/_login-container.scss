@@ -1,0 +1,130 @@
+@use "../abstracts" as a;
+
+.login-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 95%;
+}
+
+.login-box {
+    border: 1px solid a.$login-border;
+    height: 30rem;
+}
+
+.login-area {
+    width: 100%;
+    height: 100%;
+    @include a.flex(column, center, center);
+
+    &__facebook {
+        @include a.flex(row, center, center);
+        gap: 0.5rem;
+
+        img {
+            height: 1rem;
+        }
+
+        p {
+            color: a.$facebook-color;
+            font-size: small;
+            font-weight: bold;
+        }
+    }
+
+    &__split {
+        @include a.flex(row, center, center);
+        gap: 1.5rem;
+        margin: auto;
+        width: 73%;
+        color: a.$grey-font;
+    }
+
+    &__forgotpass {
+        color: black;
+        padding: 1rem 0;
+
+    }
+
+    &__signup {
+        border: 1px solid a.$login-border;
+        margin-top: 1rem;
+        @include a.flex(row, center, center);
+        width: 100%;
+        padding: 1rem 0;
+
+        a {
+            font-weight: bold;
+            color: a.$light-blue;
+        }
+    }
+
+    &__app {
+        @include a.flex(column, center, center);
+        height: 100%
+    }
+}
+.apps {
+    @include a.flex(row, center, center);
+    height: 100%;
+
+    img {
+        height: 3rem;
+        width: 10rem
+    }
+}
+
+.login-form {
+    @include a.flex(column, center, center);
+    margin: 0;
+
+    img {
+        width: 50%;
+        margin: 2rem 0;
+    }
+
+    input {
+        width: 70%;
+        font-size: smaller;
+        height: 2rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        padding-left: 0.5rem;
+        border: 1px solid grey;
+        border-radius: 3px;
+        background-color: rgb(245, 245, 245);  
+    }
+
+    &__username {
+        margin-bottom: 0.5rem;
+    }
+
+    &__submit {
+        font-weight: bold;
+        height: 2rem;
+        margin: 1rem 0 0 0;
+        width: 73%;
+        background-color: a.$login-btn-color;
+        color: white;
+        border: none;
+        padding: 0.25rem 0;
+        border-radius: 5px;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 0.05rem;
+    background-color: a.$grey-font;
+}
+
+.login-box {
+    @include a.flex(column, center, center);
+
+}
+form {
+    width: 100%;
+    @include a.flex(column, center, center)
+}
