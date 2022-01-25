@@ -34,56 +34,56 @@
 }
 
 .profile-img-6 {
-  background-image: url("/assets1/img/marc.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117596/projects/sass-instagram-clone/marc_jd3glf.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .profile-img-7 {
-  background-image: url("/assets1/img/mathias.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117598/projects/sass-instagram-clone/mathias_yoqkqj.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .profile-img-8 {
-  background-image: url("/assets1/img/pau.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117604/projects/sass-instagram-clone/pau_ee4sm4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .profile-img-9 {
-  background-image: url("/assets1/img/manu.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117594/projects/sass-instagram-clone/manu_n6aakr.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .profile-img-10 {
-  background-image: url("/assets1/img/hayk.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117590/projects/sass-instagram-clone/hayk_tylssi.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .profile-img-11 {
-  background-image: url("/assets1/img/nacho.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117600/projects/sass-instagram-clone/nacho_fqx0ds.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .profile-img-12 {
-  background-image: url("/assets1/img/hugo.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117592/projects/sass-instagram-clone/hugo_mq4gwn.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .profile-img-13 {
-  background-image: url("/assets1/img/oriol.jpg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117602/projects/sass-instagram-clone/oriol_xtdhzn.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -122,7 +122,7 @@ header div #buscador {
 header div #buscador .serch-icon {
   width: 10px;
   height: 10px;
-  background-image: url("/assets1/img/search.svg");
+  background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117606/projects/sass-instagram-clone/search_em6ilo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -1,7 +1,6 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Consts */
@@ -10,31 +9,16 @@ body {
   width: 100vw;
   overflow-y: hidden;
   background-color: #fafafa;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 85%;
   width: 50%;
 }
@@ -55,19 +39,10 @@ main {
   background-color: white;
   text-align: center;
   margin-top: 1.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -80,12 +55,12 @@ input {
   margin-top: 1.65em;
   background-color: #fafafa;
   border-radius: 4px;
-  font-size: .8em;
+  font-size: 0.8em;
   color: #999797;
 }
 
 .second-input {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .sesion-btn {
@@ -97,25 +72,23 @@ input {
   color: white;
   background-color: #0095f6;
   cursor: pointer;
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
 .hr-style {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-top: 1rem;
 }
 
 .o {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 hr {
   width: 30%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .facebook-sesion {
@@ -127,7 +100,7 @@ hr {
 
 .facebook-sesion2 {
   color: #385185;
-  font-size: .8em;
+  font-size: 0.8em;
   cursor: pointer;
 }
 
@@ -138,15 +111,15 @@ hr {
 .forgotPassword {
   height: 65px;
   width: 100%;
-  margin-top: .8em;
+  margin-top: 0.8em;
   border: 1px solid #c6c6c6;
   background-color: white;
   text-align: center;
 }
 
 .noAccount {
-  padding-top: .5em;
-  font-size: .9em;
+  padding-top: 0.5em;
+  font-size: 0.9em;
 }
 
 .signUp {
@@ -158,21 +131,15 @@ hr {
 .downloadApp {
   margin-top: 1.3em;
   text-align: center;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .appsStoreDiv {
   margin-top: 1.8em;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-store {
@@ -183,40 +150,27 @@ hr {
 .google-play {
   width: 8.5rem;
   cursor: pointer;
-  padding-left: .6rem;
+  padding-left: 0.6rem;
 }
 
 footer {
   height: 15%;
 }
-
 footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: .8em;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
   color: #999797;
   list-style: none;
   cursor: pointer;
 }
 
 .thirdStepFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: .8em;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
   color: #999797;
   list-style: none;
   cursor: pointer;
@@ -228,67 +182,38 @@ footer ul {
   position: absolute;
   left: 32%;
   top: 22%;
-  -webkit-animation: slider 5s linear infinite alternate;
-          animation: slider 5s linear infinite alternate;
+  animation: slider 5s linear infinite alternate;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-@-webkit-keyframes slider {
-  0% {
-    background-image: url(./img/first-slider-img.jpeg);
-  }
-  24% {
-    background-image: url(./img/first-slider-img.jpeg);
-  }
-  25% {
-    background-image: url(./img/second-slider-img.jpeg);
-  }
-  49% {
-    background-image: url(./img/second-slider-img.jpeg);
-  }
-  50% {
-    background-image: url(./img/third-slider-img.jpeg);
-  }
-  74% {
-    background-image: url(./img/third-slider-img.jpeg);
-  }
-  75% {
-    background-image: url(./img/fourth-slider-img.jpeg);
-  }
-  100% {
-    background-image: url(./img/fourth-slider-img.jpeg);
-  }
-}
-
 @keyframes slider {
   0% {
-    background-image: url(./img/first-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117572/projects/sass-instagram-clone/first-slider-img_b9kgre.jpg");
   }
   24% {
-    background-image: url(./img/first-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117572/projects/sass-instagram-clone/first-slider-img_b9kgre.jpg");
   }
   25% {
-    background-image: url(./img/second-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117580/projects/sass-instagram-clone/second-slider-img_hg6jaq.jpg");
   }
   49% {
-    background-image: url(./img/second-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117580/projects/sass-instagram-clone/second-slider-img_hg6jaq.jpg");
   }
   50% {
-    background-image: url(./img/third-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117582/projects/sass-instagram-clone/third-slider-img_gocbng.jpg");
   }
   74% {
-    background-image: url(./img/third-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117582/projects/sass-instagram-clone/third-slider-img_gocbng.jpg");
   }
   75% {
-    background-image: url(./img/fourth-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117573/projects/sass-instagram-clone/fourth-slider-img_obksou.jpg");
   }
   100% {
-    background-image: url(./img/fourth-slider-img.jpeg);
+    background-image: url("https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117573/projects/sass-instagram-clone/fourth-slider-img_obksou.jpg");
   }
 }
-
 .gallery {
   background-image: url(./img/feed-img.png);
   background-repeat: no-repeat;
@@ -297,4 +222,5 @@ footer ul {
   width: 100%;
   background-position: center center;
 }
+
 /*# sourceMappingURL=style.css.map */

@@ -202,49 +202,43 @@ footer{
     left: 32%;
     top: 22%;
     animation: slider 5s linear infinite alternate;
-    // background-image: url(./img/first-slider-img.jpeg);
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-
-.img-4{
-    
-}
-
 @keyframes slider {
     0% {
-        background-image: url(./img/first-slider-img.jpeg);
-      }
-      24% {
-        background-image: url(./img/first-slider-img.jpeg);
-      }
-      25% {
-        background-image: url(./img/second-slider-img.jpeg);
-      }
-      49% {
-        background-image: url(./img/second-slider-img.jpeg);
-      }
-      50% {
-        background-image: url(./img/third-slider-img.jpeg);
-      }
-      74%{
-        background-image: url(./img/third-slider-img.jpeg);
-      }
-      75%{
-        background-image: url(./img/fourth-slider-img.jpeg);
-      }
-      100%{
-        background-image: url(./img/fourth-slider-img.jpeg);
-      }
+        background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117572/projects/sass-instagram-clone/first-slider-img_b9kgre.jpg');
     }
+    24% {
+    background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117572/projects/sass-instagram-clone/first-slider-img_b9kgre.jpg');
+    }
+    25% {
+    background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117580/projects/sass-instagram-clone/second-slider-img_hg6jaq.jpg');
+    }
+    49% {
+    background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117580/projects/sass-instagram-clone/second-slider-img_hg6jaq.jpg');
+    }
+    50% {
+    background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117582/projects/sass-instagram-clone/third-slider-img_gocbng.jpg');
+    }
+    74%{
+    background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117582/projects/sass-instagram-clone/third-slider-img_gocbng.jpg');
+    }
+    75%{
+    background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117573/projects/sass-instagram-clone/fourth-slider-img_obksou.jpg');
+    }
+    100%{
+    background-image: url('https://res.cloudinary.com/miguelperezmartinez-com/image/upload/v1643117573/projects/sass-instagram-clone/fourth-slider-img_obksou.jpg');
+    }
+}
 
-    .gallery{
-        background-image: url(./img/feed-img.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 100%;
-        width: 100%;
-        background-position: center center;
-    }
+.gallery{
+    background-image: url(./img/feed-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+}
