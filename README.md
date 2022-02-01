@@ -30,21 +30,26 @@
 
  What is SASS? What does SASS stand for?
   >Is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster
+  >
  What is a CSS pre-processor?
-  >CSS preprocessors are scripting languages that extend the default capabilities of CSS. They enable us to use logic in our CSS code, such as variables, nesting, inheritance, mixins, functions, and mathematical operations. CSS preprocessors make it easy to automate repetitive tasks
+  >CSS preprocessors are scripting languages that extend the default capabilities of CSS. They enable us to use logic in our CSS code, such as variables, nesting, inheritance, mixins, functions, and mathematical operations. CSS preprocessors make it easy to automate repetitive tasks.
+  >
  What does a pre-processor have to do with SASS?
   >Processes the information and compiles it before sending it to the CSS reader.
+  >
  Why use SASS?
   > -It offers variables for whatever you want
     -It's CSS syntax friendly
     -It uses nested syntax
     -It includes mixins
-    -If you know SASS, you can customize Bootstrap 4
+    -If you know SASS, you can customize Bootstrap 4.
+  >  
  SASS has disadvantages? Which are?
   > -Using Sass may cause losing benefits of browser's built-in element inspector.
     -Code has to be compiled.
     -Difficult Troubleshooting.
     -The developer must have enough time to learn new features present in this preprocessor before using it.
+  >
  What is a SASS Variable? Explain why are useful
   >A variable allows you to store a value or a set of values, and to reuse these variables throughout your SASS files as many times you want and wherever you want. 
  Explain the SASS variables property with an example.
@@ -79,10 +84,13 @@
   ```
  What is SCSS? Give an example
   > SCSS (Sassy CSS) and used throughout this reference, is an extension of the syntax of CSS. This means that every valid CSS stylesheet is a valid SCSS file with the same meaning. This syntax is enhanced with the Sass features described below. Files using this syntax have the .scss extension.
+  > 
  What is SASS? Give an example
   >The second and older syntax, known as the indented syntax (or sometimes just “Sass”), provides a more concise way of writing CSS. It uses indentation rather than brackets to indicate nesting of selectors, and newlines rather than semicolons to separate properties. Files using this syntax have the .sass extension.
+  >
  What is the difference between .scss and .sass syntax.
   >The difference is syntax. in .sass extension you don't have to put brackets, neither ";".
+  >
  In which cases would we use SCSS? And in which cases would we use SASS?
   >We should use SCSS everycase, because SASS will be deprecated soon.
  Explain how traditional CSS and Preprocessed CSS workflows are different.
@@ -121,10 +129,13 @@
   ```
  Difference between @use & @import? Give an example
   >@use will import the file only once, @import will import all the entire document, including other imports in the imported file, it's more usefull the @use.
+  >
  How can we import other CSS/SASS files in SASS? Give an example
   > @import/@use "urlFile";
+  > 
  Explain the concept of inheritance in SASS.
   >Using @extend lets you share a set of CSS properties from one selector to another. In our example we're going to create a simple series of messaging for errors, warnings and successes using another feature which goes hand in hand with extend, placeholder classes. A placeholder class is a special type of class that only prints when it is extended, and can help keep your compiled CSS neat and clean.
+  >
  Why use @extend? Give an example
   >The @extend directive lets you share a set of CSS properties from one selector to another.
 
