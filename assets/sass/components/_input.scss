@@ -1,0 +1,9 @@
+@use "../abstracts/"as a;
+
+form {
+    input {
+        border: 1px solid a.$border-color;
+        background-color: a.$bg-color-default;
+        padding: 10px 5px;
+    }
+}

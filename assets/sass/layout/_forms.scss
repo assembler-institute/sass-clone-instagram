@@ -1,0 +1,16 @@
+@use "../abstracts/"as a;
+
+.formContainer {
+    width: 350px;
+    background-color: a.$bg-white;
+    border: 1px solid a.$border-color;
+}
+
+form {
+    margin: 0px 35px;
+
+    button,
+    input {
+        border-radius: 3px;
+    }
+}

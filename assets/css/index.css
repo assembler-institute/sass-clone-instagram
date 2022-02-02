@@ -1,3 +1,94 @@
+form button {
+  margin-top: 8px;
+  color: #FFFFFF;
+  background-color: #0095F6;
+  border-style: none;
+  padding: 7px;
+  cursor: pointer;
+}
 
+.instaText {
+  padding: 20px 0;
+}
+.instaText img {
+  width: 50%;
+}
+
+#facebookSession img {
+  width: 30%;
+  height: 30%;
+}
+
+.mobileStores img {
+  width: 40%;
+}
+
+form input {
+  border: 1px solid #DBDBDB;
+  background-color: #FAFAFA;
+  padding: 10px 5px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.instaText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+#facebookSession {
+  display: flex;
+  flex-direction: row;
+}
+
+.formContainer {
+  width: 350px;
+  background-color: #FFFFFF;
+  border: 1px solid #DBDBDB;
+}
+
+form {
+  margin: 0px 35px;
+}
+form button,
+form input {
+  border-radius: 3px;
+}
+
+body {
+  background-color: #FAFAFA;
+}
 
 /*# sourceMappingURL=index.css.map */

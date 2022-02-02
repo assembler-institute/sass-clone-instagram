@@ -1,0 +1,15 @@
+@use "./../abstracts"as a;
+
+
+form {
+
+    button {
+        margin-top: 8px;
+        color: a.$bg-white;
+        background-color: a.$blue-light;
+        border-style: none;
+        padding: 7px;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,35 @@
+@use "../abstracts/"as a;
+
+body {
+    @include a.flex-column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    @include a.flex-row;
+    justify-content: center;
+    width: 50%;
+}
+
+.right-container {
+    @include a.flex-column;
+    width: 50%;
+}
+
+.instaText {
+    @include a.flex-row;
+    justify-content: center;
+}
+
+form {
+    @include a.flex-column;
+    gap: 7px;
+}
+
+#facebookSession {
+    @include a.flex-row;
+}
