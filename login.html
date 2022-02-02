@@ -18,24 +18,29 @@
         </article>
         <article class="rightContainer">
             <div class="formContainer">
+
                 <div class="instaText">
                     <img src="assets/img/Instagram.png " alt="Instagram text">
                 </div>
 
 
                 <form action="dashboard.html" method="POST">
-                    <input type="text" name="credential" id="credential" placeholder="Telephone,user or email">
+                    <input type="text" name="credential" id="credential" placeholder="Phone, user or email">
                     <input type="password" name="password" id="password" placeholder="Password">
-                    <button type="submit">Log in</button>
+                    <button type="submit"><span class="btnText">Log In</span></button>
                 </form>
                 <div class="or">
                     <p>OR</p>
                 </div>
-                <div id="facebookSession">
-                    <img src="assets/img/faceLogo.png" alt="Facebook logo">
-                    <p class="facebookColor">Log in with Facebook</p>
+                <div id="facebookContainer">
+                    <button id="facebookBtn">
+                        <span class="logoText">
+                            <img src="assets/img/faceLogo.png" alt="Facebook logo">
+                            <p class="facebookColor">Log in with Facebook</p>
+                        </span>
+                    </button>
                 </div>
-                <div id="ForgottenPass">
+                <div id="forgotPass">
                     <p><a href="dashboard.html">Forgot password?</a></p>
                 </div>
             </div>

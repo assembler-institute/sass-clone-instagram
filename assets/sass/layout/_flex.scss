@@ -30,6 +30,11 @@ form {
     gap: 7px;
 }
 
-#facebookSession {
-    @include a.flex-row;
+#facebookContainer {
+    span {
+        @include a.flex-row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
 }

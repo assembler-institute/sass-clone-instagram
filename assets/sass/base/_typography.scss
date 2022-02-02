@@ -3,3 +3,24 @@
 body {
     font-family: a.$default-font-family;
 }
+
+.btnText {
+    font-weight: 550;
+    font-family: sans-serif;
+}
+
+.or {
+    p {
+        font-size: small;
+    }
+}
+
+#forgotPass {
+    text-align: center;
+    font-size: 12px;
+
+    a {
+        text-decoration: none;
+    }
+
+}
