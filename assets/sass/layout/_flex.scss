@@ -2,9 +2,7 @@
 
 body {
     @include a.flex-column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
     height: 100vh;
     margin: 0;
 }
@@ -12,29 +10,10 @@ body {
 main {
     @include a.flex-row;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
 
 .right-container {
     @include a.flex-column;
     width: 50%;
-}
-
-.instaText {
-    @include a.flex-row;
-    justify-content: center;
-}
-
-form {
-    @include a.flex-column;
-    gap: 7px;
-}
-
-#facebookContainer {
-    span {
-        @include a.flex-row;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
 }

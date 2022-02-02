@@ -5,6 +5,7 @@ form button {
   border-style: none;
   padding: 7px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 #facebookBtn {
@@ -14,11 +15,18 @@ form button {
   color: #385185;
 }
 
-.instaText {
-  padding: 30px 0;
+#mobiles {
+  position: relative;
 }
-.instaText img {
-  width: 55%;
+#mobiles #templateImg {
+  position: absolute;
+  top: 100px;
+  right: 63px;
+}
+@media (max-width: 880px) {
+  #mobiles img {
+    display: none;
+  }
 }
 
 #facebookContainer img {
@@ -26,7 +34,11 @@ form button {
   height: 5%;
 }
 
-.mobileStores img {
+.download {
+  text-align: center;
+  font-size: 14px;
+}
+.download img {
   width: 40%;
 }
 
@@ -34,6 +46,11 @@ form input {
   border: 1px solid #DBDBDB;
   background-color: #FAFAFA;
   padding: 10px 5px;
+  border-radius: 3px;
+}
+form input:focus {
+  outline: none;
+  border: 1px solid #A8A8A8;
 }
 
 .or {
@@ -61,6 +78,28 @@ form input {
   right: 35px;
 }
 
+#facebookContainer span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#facebookContainer img {
+  width: 5%;
+  height: 5%;
+}
+
+.instaText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 0;
+}
+.instaText img {
+  width: 55%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -74,20 +113,39 @@ body {
   font-size: small;
 }
 
+a {
+  text-decoration: none;
+}
+
+#facebookContainer span {
+  font-weight: 600;
+}
+
 #forgotPass {
   text-align: center;
   font-size: 12px;
 }
-#forgotPass a {
-  text-decoration: none;
+#forgotPass a:visited {
+  color: #385185;
+}
+
+.download {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer {
+  font-size: 12px;
+  color: #A8A8A8;
+}
+footer a:visited {
+  color: #A8A8A8;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
   height: 100vh;
   margin: 0;
 }
@@ -96,7 +154,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 
 .right-container {
@@ -105,38 +163,43 @@ main {
   width: 50%;
 }
 
-.instaText {
+footer {
+  width: 100%;
+  justify-self: flex-end;
+}
+footer .row {
   display: flex;
   flex-direction: row;
+  gap: 20px;
   justify-content: center;
+  margin-top: 15px;
+}
+
+.rightContainer {
+  width: 350px;
+}
+
+.formContainer {
+  background-color: #FFFFFF;
+  border: 1px solid #DBDBDB;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  margin: 0px 35px;
 }
 
-#facebookContainer span {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.formContainer {
-  width: 350px;
+.register {
+  margin-top: 10px;
+  padding: 8px;
+  text-align: center;
   background-color: #FFFFFF;
   border: 1px solid #DBDBDB;
 }
-
-form {
-  margin: 0px 35px;
-}
-form button,
-form input {
-  border-radius: 3px;
+.register a {
+  color: #0095F6;
 }
 
 body {

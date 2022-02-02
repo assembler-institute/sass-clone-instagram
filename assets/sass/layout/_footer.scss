@@ -1,0 +1,13 @@
+@use "../abstracts/"as a;
+
+footer {
+    width: 100%;
+    justify-self: flex-end;
+
+    .row {
+        @include a.flex-row;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}

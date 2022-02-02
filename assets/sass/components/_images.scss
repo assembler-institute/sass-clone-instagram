@@ -1,11 +1,4 @@
-//instagram text-img
-.instaText {
-    padding: 30px 0;
-
-    img {
-        width: 55%;
-    }
-}
+@use "../abstracts/"as a;
 
 #facebookContainer {
 
@@ -15,7 +8,12 @@
     }
 }
 
-.mobileStores {
+
+
+.download {
+    text-align: center;
+    font-size: 14px;
+
     img {
         width: 40%;
     }

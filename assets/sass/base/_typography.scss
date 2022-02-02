@@ -15,12 +15,36 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
+#facebookContainer {
+    span {
+        font-weight: 600;
+    }
+
+}
+
 #forgotPass {
     text-align: center;
     font-size: 12px;
 
-    a {
-        text-decoration: none;
+    a:visited {
+        color: a.$blue-text;
     }
+}
 
+.download {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer {
+    font-size: 12px;
+    color: a.$darkGray;
+
+    a:visited {
+        color: a.$darkGray;
+    }
 }

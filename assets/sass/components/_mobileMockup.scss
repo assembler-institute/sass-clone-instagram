@@ -1,0 +1,17 @@
+@use "./../abstracts"as a;
+
+#mobiles {
+    position: relative;
+
+    #templateImg {
+        position: absolute;
+        top: 100px;
+        right: 63px;
+    }
+
+    @include a.breakpoint(mobile) {
+        img {
+            display: none;
+        }
+    }
+}

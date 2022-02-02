@@ -1,20 +1,32 @@
 @use "../abstracts/"as a;
 
-.formContainer {
+.rightContainer {
     width: 350px;
-    background-color: a.$bg-white;
-    border: 1px solid a.$border-color;
 }
+
+.formContainer {
+
+    background-color: a.$bg-white;
+    border: 1px solid a.$gray;
+}
+
 
 form {
+    @include a.flex-column;
+    gap: 7px;
     margin: 0px 35px;
-
-    button,
-    input {
-        border-radius: 3px;
-    }
-
 }
 
+//sign up
 
-//login facebook
+.register {
+    margin-top: 10px;
+    padding: 8px;
+    text-align: center;
+    background-color: a.$bg-white;
+    border: 1px solid a.$gray;
+
+    a {
+        color: a.$blue-light;
+    }
+}
