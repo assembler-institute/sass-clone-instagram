@@ -36,3 +36,14 @@
         outline: none;
     }
 }
+
+#commentToPost {
+    width: 100%;
+    padding: 15px 15px 15px 40px;
+    border: none;
+
+
+    &:focus {
+        outline: none;
+    }
+}
