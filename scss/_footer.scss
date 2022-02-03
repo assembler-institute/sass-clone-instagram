@@ -1,0 +1,31 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  color: gray;
+
+  &__link{
+    display: flex;
+    flex-direction: column;
+
+    .link__item{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      p{
+        padding: 0 0.5em;
+      }
+    }
+  }
+
+  &__language{
+    display: flex;
+    justify-content: center;
+    .language__item{
+      display: flex;
+      align-items: center;
+      p{
+        padding: 0.5em;
+      }
+    }
+  }
+}
