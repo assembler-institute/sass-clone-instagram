@@ -51,7 +51,28 @@ footer {
 
 //dash
 .historiesNav {
-    .profileName {
+    .profileUsername {
         font-size: 12px;
     }
+}
+
+//aside profile data
+.profileName {
+    color: a.$darkGray;
+    font-size: small;
+}
+
+.suggestTitle {
+    @extend .profileName;
+    font-weight: 700;
+}
+
+.smallUsername {
+    font-size: 15px;
+
+}
+
+.infoText {
+    color: a.$darkGray;
+    font-size: 12px;
 }

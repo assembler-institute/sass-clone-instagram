@@ -11,3 +11,11 @@
         margin-top: 15px;
     }
 }
+
+#asideFooter {
+
+    a::after {
+        content: "\00B7";
+        margin: 0 .25em 0 .25em;
+    }
+}

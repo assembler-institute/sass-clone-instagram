@@ -1,11 +1,14 @@
 @use "../abstracts/"as a;
 
-//body
+body {
+    margin: 0;
+}
+
+//body login
 .loginPage {
     @include a.flex-column;
     justify-content: space-around;
     height: 100vh;
-    margin: 0;
 }
 
 .loginMain {
@@ -17,6 +20,13 @@
 .right-container {
     @include a.flex-column;
     width: 50%;
+}
+
+//body dash
+
+.dashboard {
+    @extend .loginMain;
+
 }
 
 //dash

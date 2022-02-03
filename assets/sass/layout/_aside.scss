@@ -1,0 +1,28 @@
+@use "../abstracts/"as a;
+
+aside {
+    @include a.flex-column;
+    width: 25%;
+
+    .asideRow {
+        @include a.flex-row;
+        justify-content: space-between;
+    }
+
+    .userProfile {
+        @include a.flex-row;
+        align-items: center;
+        gap: 15px;
+
+        .userData {
+            @include a.flex-column;
+        }
+    }
+
+    //SUGGESTIONS
+    .suggestions {
+        @include a.flex-column;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+}

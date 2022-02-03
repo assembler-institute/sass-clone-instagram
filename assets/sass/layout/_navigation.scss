@@ -4,10 +4,10 @@
 
     @include a.flex-row;
     gap: 20px;
-    margin: 30px 20px;
+    margin: 0 20px 30px 0;
     border: 1px solid a.$gray;
     border-radius: 5px;
-    padding: 25px;
+    padding: 20px 20px 5px 20px;
 
     .containerHist {
         @include a.flex-column;

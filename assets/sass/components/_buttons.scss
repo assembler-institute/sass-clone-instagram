@@ -15,11 +15,16 @@
 
 }
 
+.noBtn {
+    border-style: none;
+    cursor: pointer;
+    color: a.$blue-light;
+    background-color: inherit;
+}
+
 #facebookContainer {
     #facebookBtn {
-        border-style: none;
-        background-color: a.$bg-white;
-        cursor: pointer;
+        @extend .noBtn;
         color: a.$blue-text;
     }
 
@@ -34,4 +39,8 @@
         width: 5%;
         height: 5%;
     }
+}
+
+.suggestBtn {
+    color: inherit;
 }
