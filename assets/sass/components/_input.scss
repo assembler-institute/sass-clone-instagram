@@ -1,6 +1,6 @@
 @use "../abstracts/"as a;
 
-form {
+#loginForm {
     input {
         border: 1px solid a.$gray;
         background-color: a.$bg-color-default;
@@ -13,4 +13,26 @@ form {
         border: 1px solid a.$darkGray;
     }
 
+}
+
+.searchBar {
+    position: relative;
+
+    //glass icon
+    svg {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+    }
+
+    input {
+        padding: 10px 10px 10px 35px;
+        background-color: #efefef;
+        border-radius: 5px;
+        border-style: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
 }

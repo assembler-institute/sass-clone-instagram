@@ -14,9 +14,8 @@
 
 </head>
 
-<body>
-
-    <main>
+<body class="loginPage">
+    <main class="loginMain">
         <article id="mobiles" class="leftContainer">
             <img src="assets/img/iphones.png" alt="Iphones template">
             <div id="templateImg">
@@ -31,10 +30,10 @@
                 </div>
 
 
-                <form action="dashboard.html" method="POST">
+                <form id="loginForm" action="dashboard.html" method="POST">
                     <input type="text" name="credential" id="credential" placeholder="Phone, user or email">
                     <input type="password" name="password" id="password" placeholder="Password">
-                    <button type="submit"><span class="btnText">Log In</span></button>
+                    <button type="submit"><span class="submitText">Log In</span></button>
                 </form>
                 <div class="or">
                     <p>OR</p>
@@ -54,7 +53,7 @@
             <div class="register">
                 <p>Don't have an account? <a href="dashboard.html">Sign up</a> </p>
             </div>
-            <div class="download">
+            <section class="downloadContainer">
                 <p>Get the app</p>
                 <div class="mobileStores">
                     <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank"><img
@@ -63,10 +62,10 @@
                         target="_blank"><img src="assets/img/googlePlay.png" alt="Google play"></a>
                 </div>
 
-            </div>
+            </section>
         </article>
     </main>
-    <footer>
+    <footer id="logInFooter">
         <div class="row">
             <a href="https://about.facebook.com/meta">Meta</a>
             <a href="https://about.facebook.com/meta">About</a>

@@ -1,13 +1,14 @@
 @use "../abstracts/"as a;
 
-body {
+//body
+.loginPage {
     @include a.flex-column;
     justify-content: space-around;
     height: 100vh;
     margin: 0;
 }
 
-main {
+.loginMain {
     @include a.flex-row;
     justify-content: center;
     width: 100%;
@@ -16,4 +17,11 @@ main {
 .right-container {
     @include a.flex-column;
     width: 50%;
+}
+
+//dash
+.mainContent {
+    @extend .loginPage;
+    align-items: center;
+    height: auto;
 }

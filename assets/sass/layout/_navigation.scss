@@ -1,0 +1,16 @@
+@use "../abstracts/"as a;
+
+.historiesNav {
+
+    @include a.flex-row;
+    gap: 20px;
+    margin: 30px 20px;
+    border: 1px solid a.$gray;
+    border-radius: 5px;
+    padding: 25px;
+
+    .containerHist {
+        @include a.flex-column;
+        align-items: center;
+    }
+}

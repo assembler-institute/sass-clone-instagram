@@ -4,7 +4,7 @@ body {
     font-family: a.$default-font-family;
 }
 
-.btnText {
+.submitText {
     font-weight: 550;
     font-family: sans-serif;
 }
@@ -28,23 +28,30 @@ a {
 
 #forgotPass {
     text-align: center;
-    font-size: 12px;
+    font-size: a.$smallText;
 
     a:visited {
         color: a.$blue-text;
     }
 }
 
-.download {
+.downloadContainer {
     text-align: center;
     font-size: 14px;
 }
 
 footer {
-    font-size: 12px;
+    font-size: a.$smallText;
     color: a.$darkGray;
 
     a:visited {
         color: a.$darkGray;
+    }
+}
+
+//dash
+.historiesNav {
+    .profileName {
+        font-size: 12px;
     }
 }

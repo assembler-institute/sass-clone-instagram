@@ -1,7 +1,7 @@
 @use "./../abstracts"as a;
 
 
-form {
+#loginForm {
 
     button {
         margin-top: 8px;
@@ -15,9 +15,23 @@ form {
 
 }
 
-#facebookBtn {
-    border-style: none;
-    background-color: a.$bg-white;
-    cursor: pointer;
-    color: a.$blue-text;
+#facebookContainer {
+    #facebookBtn {
+        border-style: none;
+        background-color: a.$bg-white;
+        cursor: pointer;
+        color: a.$blue-text;
+    }
+
+    span {
+        @include a.flex-row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    img {
+        width: 5%;
+        height: 5%;
+    }
 }

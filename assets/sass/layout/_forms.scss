@@ -11,7 +11,7 @@
 }
 
 
-form {
+#loginForm {
     @include a.flex-column;
     gap: 7px;
     margin: 0px 35px;

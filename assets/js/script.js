@@ -4,6 +4,7 @@ const templates = [
     "photoWhiteMobile",
     "profileWhiteMobile"
 ];
+var i = 1;
 
 window.onload = () => {
     setInterval(function () {
@@ -11,10 +12,15 @@ window.onload = () => {
         setTimeout(function () {
             $("#templateImg").children().remove();
             $("#templateImg").fadeIn(1000).append(`
-            <img src="assets/img/${templates[templateRandomize()]}.jpg">
+            <img src="assets/img/${templates[i]}.jpg">
         `)
             $('#templateImg').children().hide().fadeIn(300);
         }, 800)
+        if (i < 3) {
+            i++;
+        } else {
+            i = 0;
+        }
 
     }, 5000)
 }

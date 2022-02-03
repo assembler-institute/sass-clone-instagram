@@ -1,0 +1,30 @@
+@use "../abstracts/"as a;
+
+header {
+    @include a.flex-row;
+    justify-content: center;
+    width: 100%;
+    background-color: a.$bg-white;
+    border-bottom: 1px solid a.$gray;
+    padding: 5px;
+
+    .logoHeader {
+        @include a.flex-row;
+        width: 25%;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    .headerNav {
+        @include a.flex-row;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .icons {
+        @include a.flex-row;
+        gap: 20px;
+    }
+}
