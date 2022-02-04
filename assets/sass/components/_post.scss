@@ -10,6 +10,7 @@
     background-color: a.$bg-white;
     border: 1px solid a.$darkGray;
     border-radius: 5px;
+    margin-bottom: 15px;
 
     .headerPost {
         @include a.flex-row;
@@ -75,7 +76,11 @@
         }
     }
 
-    @include a.hide(mobile) {
+    @include a.responsiveDash(mobile) {
+        & {
+            border: none;
+        }
+
         #formComment {
             display: none;
         }

@@ -35,4 +35,11 @@ body {
     align-items: center;
     height: auto;
     margin-right: 40px;
+    max-width: 100%;
+
+    @include a.responsiveDash(mobile) {
+        & {
+            margin: auto;
+        }
+    }
 }

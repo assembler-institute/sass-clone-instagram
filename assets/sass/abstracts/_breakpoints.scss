@@ -14,7 +14,7 @@
     }
 }
 
-@mixin hide($point) {
+@mixin responsiveDash($point) {
     @if $point==mobile {
         @media(max-width:736px) {
             @content;

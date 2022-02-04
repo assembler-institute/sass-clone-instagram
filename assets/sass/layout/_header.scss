@@ -3,7 +3,6 @@
 header {
     @include a.flex-row;
     justify-content: center;
-    width: 100%;
     background-color: a.$bg-white;
     border-bottom: 1px solid a.$gray;
     padding: 5px;
@@ -22,7 +21,11 @@ header {
         }
     }
 
-    @include a.hide(mobile) {
+    @include a.responsiveDash(mobile) {
+        & {
+            justify-content: space-between;
+        }
+
         .searchBar {
             display: none;
         }
