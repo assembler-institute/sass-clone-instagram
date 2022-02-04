@@ -15,6 +15,7 @@
 
     .containerHist {
         @include a.flex-column;
+        gap: 5px;
         align-items: center;
     }
 }

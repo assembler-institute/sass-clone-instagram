@@ -40,11 +40,19 @@ a {
     font-size: 14px;
 }
 
-footer {
+#loginFooter,
+#asideFooter {
     font-size: a.$smallText;
-    color: a.$darkGray;
+
+    a {
+        color: a.$darkGray;
+    }
 
     a:visited {
+        color: a.$darkGray;
+    }
+
+    .copy {
         color: a.$darkGray;
     }
 }

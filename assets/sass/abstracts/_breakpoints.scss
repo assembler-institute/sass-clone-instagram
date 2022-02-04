@@ -1,6 +1,22 @@
-@mixin breakpoint($point) {
+@mixin hideMobiles($point) {
     @if $point==mobile {
         @media (max-width:880px) {
+            @content;
+        }
+    }
+}
+
+@mixin hideAside($point) {
+    @if $point==mobile {
+        @media (max-width:900px) {
+            @content;
+        }
+    }
+}
+
+@mixin hide($point) {
+    @if $point==mobile {
+        @media(max-width:736px) {
             @content;
         }
     }

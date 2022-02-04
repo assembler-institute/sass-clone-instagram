@@ -6,6 +6,8 @@ aside {
     position: -webkit-sticky;
     position: sticky;
 
+
+
     .asideRow {
         @include a.flex-row;
         justify-content: space-between;
@@ -26,5 +28,11 @@ aside {
         @include a.flex-column;
         margin-bottom: 30px;
         gap: 10px;
+    }
+}
+
+@include a.hideAside(mobile) {
+    aside {
+        display: none;
     }
 }

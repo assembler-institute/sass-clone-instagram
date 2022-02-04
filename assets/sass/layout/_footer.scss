@@ -1,12 +1,12 @@
 @use "../abstracts/"as a;
 
-#logInFooter {
+#loginFooter {
     width: 100%;
     justify-self: flex-end;
 
     .row {
         @include a.flex-row;
-        gap: 20px;
+        gap: 10px;
         justify-content: center;
         margin-top: 15px;
     }

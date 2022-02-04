@@ -12,7 +12,7 @@ window.onload = () => {
         setTimeout(function () {
             $("#templateImg").children().remove();
             $("#templateImg").fadeIn(1000).append(`
-            <img src="assets/img/mobilemockup${templates[i]}.jpg">
+            <img src="assets/img/mobilemockup/${templates[i]}.jpg">
         `)
             $('#templateImg').children().hide().fadeIn(300);
         }, 800)
@@ -24,8 +24,3 @@ window.onload = () => {
 
     }, 5000)
 }
-
-function templateRandomize() {
-    return Math.floor(Math.random() * templates.length);
-}
-console.log(templateRandomize());

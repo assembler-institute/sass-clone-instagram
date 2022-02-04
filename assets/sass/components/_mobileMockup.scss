@@ -8,10 +8,10 @@
         top: 100px;
         right: 63px;
     }
+}
 
-    @include a.breakpoint(mobile) {
-        img {
-            display: none;
-        }
+@include a.hideMobiles(mobile) {
+    #mobiles {
+        display: none;
     }
 }
