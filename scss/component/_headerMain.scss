@@ -1,3 +1,7 @@
+body{
+  margin:0px;
+  display:block;
+}
 .Navbar{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
@@ -6,9 +10,8 @@
   .letterIg{
   grid-column: 1/3;
   grid-row: 1/1;
-  // margin: 10% auto auto auto;
-  display: block;
-  width: 50%;
+  width: 20%;
+  margin: 0.5em;
   align-items: center;
   object-fit: contain;
   }
@@ -16,7 +19,7 @@
     grid-column: 2/2;
     font-size: 16px;
     padding: 14px;
-    margin: 2px 3px 2px 8px;
+    margin: 10px 0px 1px 0px;
     border-top: 1px solid #ccc;
     border-radius:3px;
     width: 60%;
@@ -37,9 +40,44 @@
     border: 1px solid transparent;
     border-radius: 500px;
     background: -webkit-linear-gradient(bottom,red, blue);
-    // border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
-    // (to bottom 36deg, rbg(255,201,0) 13%, rbg(255,0,95) 73%, rgb(255,9,237) 100%);
     width: 20%;
     object-fit: cover;
   }
 }
+.container{
+  display: flex;
+  height: 3rem;
+  align-items:center;
+  border: solid 2px #ccc;
+  padding: 40px 0;
+  width: 100%;
+  object-fit: cover;
+  overflow-x:auto;
+  overflow-y: hidden;
+  scroll-behavior: center;
+
+  .stories-section{
+    display: flex;
+    border: 0;
+    cursor: pointer;
+    overflow-y: hidden;
+  }
+  .storie-user-story{
+    padding: 5px;
+    box-sizing: border-box;
+    width:120px;
+    height:120px;
+
+  }
+  .storie-user-story img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    padding: 0;
+    margin: 0;
+    border: 3px solid;
+    border-radius: 500%;
+    background: -webkit-linear-gradient(bottom,red, blue, magenta);
+  }
+}
+
