@@ -170,8 +170,9 @@ body {
   padding: auto;
 }
 .Navbar .user-avatar {
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   border-radius: 500px;
+  background: -webkit-linear-gradient(bottom, red, blue);
   width: 20%;
   object-fit: cover;
 }

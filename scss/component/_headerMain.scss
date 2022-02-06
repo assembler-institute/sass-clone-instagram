@@ -34,8 +34,11 @@
     padding: auto;
   }
   .user-avatar{
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     border-radius: 500px;
+    background: -webkit-linear-gradient(bottom,red, blue);
+    // border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+    // (to bottom 36deg, rbg(255,201,0) 13%, rbg(255,0,95) 73%, rgb(255,9,237) 100%);
     width: 20%;
     object-fit: cover;
   }
