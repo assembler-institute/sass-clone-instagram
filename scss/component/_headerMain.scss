@@ -1,4 +1,4 @@
-body{
+.main-body{
   margin:0px;
   display:block;
 }
@@ -46,15 +46,14 @@ body{
 }
 .container{
   display: flex;
-  height: 3rem;
+  height: 4rem;
   align-items:center;
   border: solid 2px #ccc;
   padding: 40px 0;
   width: 100%;
   object-fit: cover;
-  overflow-x:auto;
+  overflow-x: scroll;
   overflow-y: hidden;
-  scroll-behavior: center;
 
   .stories-section{
     display: flex;
@@ -63,21 +62,63 @@ body{
     overflow-y: hidden;
   }
   .storie-user-story{
-    padding: 5px;
     box-sizing: border-box;
     width:120px;
     height:120px;
+    margin: 1rem;
+    border-radius: 500%;
+    background: -webkit-linear-gradient(bottom,rgb(170, 156, 28), rgb(224, 143, 143) 30%, rgb(156, 37, 211) 50%);
 
   }
   .storie-user-story img{
-    width: 100px;
-    height: 100px;
+    width: 94%;
+    height: 94%;
     object-fit:cover;
-    padding: 0;
-    margin: 0;
-    border: 3px solid;
+    padding: 3% 3% 3% 3%;
+    margin: 0 auto;
+    border: 3px transparent;
     border-radius: 500%;
-    background: -webkit-linear-gradient(bottom,red, blue, magenta);
+  }
+}
+.post-contain{
+  width: 100%;
+  margin-top: 5%;
+
+  .box-card{
+    margin: 5% auto;
+    border:2px solid #ccc;
+    width: 50%;
+  }
+  .ipost{
+    border-bottom: 1px solid #ccc;
+    margin: 2% auto;
+  }
+  .ipost img{
+    border: 2px solid #ccc;
+    border-radius:50%;
+    height:3rem;
+    width:3rem;
+  }
+  .ipost p{
+    display: inline-block;
+    text-decoration: bold;
+    font-size:1.5rem;
+    text-align:center;
+  }
+  .ipost-first img{
+    max-height: 90vh;
+    width:100%;
+    object-fit:cover;
+  }
+  .fa-heart{
+    font-size:160%;
+    color: red;
+  }
+  .fa-comment{
+    font-size:160%;
+  }
+  .ttl{
+    display: inline-block;
   }
 }
 
