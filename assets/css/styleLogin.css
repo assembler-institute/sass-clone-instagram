@@ -1,167 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-:root {
-  --body-bg: #fafafa;
-  --box-bg: #fff;
-  --box-border-color: #dbdbdb;
-  --txt-color: #262626;
-  --txt-second-color: #8e8e8e;
-  --btn-bg: #0095f6;
-  --btn-color: #fff;
-  --fb-color: #385185;
-  --a-color: #00376b;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 9 | @forward "slide-container";
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   SASS-instagram\Login_page\components\_components-index.scss 9:1  @use
+ *   SASS-instagram\Login_page\_main.scss 4:1                         root stylesheet */
 
-.dark {
-  --body-bg: #151515;
-  --box-bg: #151515;
-  --box-border-color: #262626;
-  --txt-color: #d2d2d2;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 9 \2502  @forward \"slide-container\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   SASS-instagram\\Login_page\\components\\_components-index.scss 9:1  @use\a   SASS-instagram\\Login_page\\_main.scss 4:1                         root stylesheet";
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--body-bg);
-  color: var(--txt-color);
-}
-
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-:root {
-  --body-bg: #fafafa;
-  --box-bg: #fff;
-  --box-border-color: #dbdbdb;
-  --txt-color: #262626;
-  --txt-second-color: #8e8e8e;
-  --btn-bg: #0095f6;
-  --btn-color: #fff;
-  --fb-color: #385185;
-  --a-color: #00376b;
-}
-
-.dark {
-  --body-bg: #151515;
-  --box-bg: #151515;
-  --box-border-color: #262626;
-  --txt-color: #d2d2d2;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--body-bg);
-  color: var(--txt-color);
-}
-
-:root {
-  --body-bg: #fafafa;
-  --box-bg: #fff;
-  --box-border-color: #dbdbdb;
-  --txt-color: #262626;
-  --txt-second-color: #8e8e8e;
-  --btn-bg: #0095f6;
-  --btn-color: #fff;
-  --fb-color: #385185;
-  --a-color: #00376b;
-}
-
-.dark {
-  --body-bg: #151515;
-  --box-bg: #151515;
-  --box-border-color: #262626;
-  --txt-color: #d2d2d2;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--body-bg);
-  color: var(--txt-color);
-}
-
-:root {
-  --body-bg: #fafafa;
-  --box-bg: #fff;
-  --box-border-color: #dbdbdb;
-  --txt-color: #262626;
-  --txt-second-color: #8e8e8e;
-  --btn-bg: #0095f6;
-  --btn-color: #fff;
-  --fb-color: #385185;
-  --a-color: #00376b;
-}
-
-.dark {
-  --body-bg: #151515;
-  --box-bg: #151515;
-  --box-border-color: #262626;
-  --txt-color: #d2d2d2;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--body-bg);
-  color: var(--txt-color);
-}
-
-:root {
-  --body-bg: #fafafa;
-  --box-bg: #fff;
-  --box-border-color: #dbdbdb;
-  --txt-color: #262626;
-  --txt-second-color: #8e8e8e;
-  --btn-bg: #0095f6;
-  --btn-color: #fff;
-  --fb-color: #385185;
-  --a-color: #00376b;
-}
-
-.dark {
-  --body-bg: #151515;
-  --box-bg: #151515;
-  --box-border-color: #262626;
-  --txt-color: #d2d2d2;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--body-bg);
-  color: var(--txt-color);
-}
-
-/*# sourceMappingURL=styleLogin.css.map */

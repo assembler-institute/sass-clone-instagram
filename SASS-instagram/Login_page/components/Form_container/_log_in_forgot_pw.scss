@@ -1,0 +1,28 @@
+.forgot-pw {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center;
+    color: var(--a-color);
+    text-decoration: none;
+}
+
+.goto {
+    padding: 10px;
+    margin-bottom: 10px;
+
+    p {
+        font-size: 14px;
+        margin: 15px;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--btn-bg);
+        font-size: inherit;
+        line-height: 18px;
+        font-weight: 600;
+    }
+}

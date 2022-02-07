@@ -1,10 +1,11 @@
 // todo Components Index
+@use "Form_container/form-index";
 
-@use "header/header-index";
-@use "content";
-@use "footer";
-@use "navbar";
-@use "left-section";
-@use "right-section";
-@use "main-section";
-@use "media-queries";
+
+@forward "content";
+@forward "footer";
+@forward "logo-dark";
+@forward "media-queries";
+@forward "slide-container";
+
+// todo insert Folders Components
