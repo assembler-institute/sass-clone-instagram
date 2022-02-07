@@ -145,8 +145,10 @@
 }
 
 .imgProfile {
-  width: 60px;
-  height: 60px;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .imgProfileSmall {
@@ -438,6 +440,8 @@ header .icons {
 .historiesNav .containerHist {
   display: flex;
   flex-direction: column;
+  width: 60px;
+  height: 80px;
   gap: 5px;
   align-items: center;
 }
@@ -486,6 +490,8 @@ aside .userProfile {
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  width: 110px;
+  height: 60px;
 }
 aside .userProfile .userData {
   display: flex;
