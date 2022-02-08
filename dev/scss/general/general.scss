@@ -1,0 +1,71 @@
+@use "../colors/colors.scss";
+
+%standard-box {
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    border: 1px solid $lightGrey;
+    background-color: white;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+%facebook-logo {
+    background-image: $logosBackgroundImage;
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+}
+
+%next_button {
+    background-image: $logosBackgroundImage2;
+    background-repeat: no-repeat;
+    background-position: -294px -273px;
+    height: 45px;
+    width: 45px;
+}
+
+%reset-button {
+    border: 0;
+    display: inline;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+    outline:none;
+}
+
+@mixin main-logo($width) {
+    background-image: $logosBackgroundImage;
+    background-repeat: no-repeat;
+    background-size: 430/175 * $width 401/175 * $width;
+    background-position: 0 -130/175 * $width;
+    height: 51/175 * $width;
+    width: $width;
+}
+
+@mixin profile-picture($width, $isStory: false) {
+    width: $width;
+    height: $width;
+
+    img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+}
+display: inline-block;
+border-radius: 50%;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: block;
+        border: 2px solid white;
+}
+}
