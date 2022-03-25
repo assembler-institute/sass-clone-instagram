@@ -1,6 +1,6 @@
-`#sass` `#css` `#html` `#master-in-software-engineering`
+`#sass` `#css` `#html` `#assembler-institute` `#master-in-software-engineering`
 
-# SASS - Clone Instagram <!-- omit in toc -->
+# Assembler Institute - SASS - Clone Instagram <!-- omit in toc -->
 
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
@@ -39,7 +39,7 @@ In this project you must use the VSCode SASS extension in order to compile SASS 
 
 First of all you will need to install the extension:
 
-- [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+- [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 
 When the extension is installed correctly, having a SASS file open, you must click on "Watch Sass":
 
@@ -47,7 +47,7 @@ When the extension is installed correctly, having a SASS file open, you must cli
 
 If you want to change some configuration of "Live SASS Compiler" you can check this official resource:
 
-- [Live SASS Compiler Settings](https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md)
+- [Live SASS Compiler Settings](https://github.com/glenn2223/vscode-live-sass-compiler/blob/master/docs/settings.md)
 
 ## Technologies used
 
