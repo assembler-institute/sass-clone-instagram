@@ -1,4 +1,4 @@
-`#sass` `#css` `#html` `#master-in-software-engineering` `#assembler-institute` 
+`#sass` `#css` `#html` `#assembler-institute` `#master-in-software-engineering`
 
 # Assembler Institute - SASS - Clone Instagram <!-- omit in toc -->
 
