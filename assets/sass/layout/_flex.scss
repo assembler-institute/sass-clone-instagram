@@ -1,0 +1,45 @@
+@use "../abstracts/"as a;
+
+body {
+    margin: 0;
+}
+
+//body login
+.loginPage {
+    @include a.flex-column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.loginMain {
+    @include a.flex-row;
+    justify-content: center;
+    width: 100%;
+}
+
+.right-container {
+    @include a.flex-column;
+    width: 50%;
+}
+
+//body dash
+
+.dashboard {
+    @extend .loginMain;
+
+}
+
+//dash
+.mainContent {
+    @extend .loginPage;
+    align-items: center;
+    height: auto;
+    margin-right: 40px;
+    max-width: 100%;
+
+    @include a.responsiveDash(mobile) {
+        & {
+            margin: auto;
+        }
+    }
+}

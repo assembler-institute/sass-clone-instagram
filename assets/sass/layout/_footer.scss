@@ -1,0 +1,21 @@
+@use "../abstracts/"as a;
+
+#loginFooter {
+    width: 100%;
+    justify-self: flex-end;
+
+    .row {
+        @include a.flex-row;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+#asideFooter {
+
+    a::after {
+        content: "\00B7";
+        margin: 0 .25em 0 .25em;
+    }
+}

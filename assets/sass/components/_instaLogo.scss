@@ -1,0 +1,13 @@
+@use "../abstracts/"as a;
+
+//instagram text-img login
+.instaText {
+    @include a.flex-row;
+    justify-content: center;
+
+    padding: 30px 0;
+
+    img {
+        width: 55%;
+    }
+}

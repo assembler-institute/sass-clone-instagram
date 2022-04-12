@@ -1,0 +1,107 @@
+@use "../abstracts/"as a;
+
+body {
+    font-family: a.$default-font-family;
+}
+
+.submitText {
+    font-weight: 550;
+    font-family: sans-serif;
+}
+
+.or {
+    p {
+        font-size: small;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+#facebookContainer {
+    span {
+        font-weight: 600;
+    }
+
+}
+
+#forgotPass {
+    text-align: center;
+    font-size: a.$smallText;
+
+    a:visited {
+        color: a.$blue-text;
+    }
+}
+
+.downloadContainer {
+    text-align: center;
+    font-size: 14px;
+}
+
+#loginFooter,
+#asideFooter {
+    font-size: a.$smallText;
+
+    a {
+        color: a.$darkGray;
+    }
+
+    a:visited {
+        color: a.$darkGray;
+    }
+
+    .copy {
+        color: a.$darkGray;
+    }
+}
+
+//dash
+.historiesNav {
+    .profileUsername {
+        font-size: 12px;
+    }
+}
+
+//aside profile data
+.profileName {
+    color: a.$darkGray;
+    font-size: small;
+}
+
+.suggestTitle {
+    @extend .profileName;
+    font-weight: 700;
+}
+
+.smallUsername {
+    font-size: 15px;
+
+}
+
+.infoText {
+    color: a.$darkGray;
+    font-size: 12px;
+}
+
+.usernamePost {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.markedText {
+    font-weight: 600;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.littleText {
+    font-size: 10px;
+}
+
+.grayText {
+    color: a.$darkGray;
+}

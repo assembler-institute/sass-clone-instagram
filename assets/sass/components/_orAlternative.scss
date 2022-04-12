@@ -1,0 +1,30 @@
+//After form
+@use "../abstracts/"as a;
+
+.or {
+    text-align: center;
+    position: relative;
+    color: #8e8e8e;
+
+    p:before {
+        content: "";
+        background-color: a.$gray;
+        height: 5%;
+        position: absolute;
+        width: 30%;
+        top: 10px;
+        left: 35px;
+    }
+
+    p:after {
+        content: "";
+        background-color: a.$gray;
+        width: 30%;
+        position: absolute;
+        height: 5%;
+        top: 10px;
+        right: 35px;
+    }
+
+    margin-bottom:20px;
+}

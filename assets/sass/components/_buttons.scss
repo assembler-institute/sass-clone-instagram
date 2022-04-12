@@ -1,0 +1,46 @@
+@use "./../abstracts"as a;
+
+
+#loginForm {
+
+    button {
+        margin-top: 8px;
+        color: a.$bg-white;
+        background-color: a.$blue-light;
+        border-style: none;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+}
+
+.noBtn {
+    border-style: none;
+    cursor: pointer;
+    color: a.$blue-light;
+    background-color: inherit;
+}
+
+#facebookContainer {
+    #facebookBtn {
+        @extend .noBtn;
+        color: a.$blue-text;
+    }
+
+    span {
+        @include a.flex-row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    img {
+        width: 5%;
+        height: 5%;
+    }
+}
+
+.suggestBtn {
+    color: inherit;
+}

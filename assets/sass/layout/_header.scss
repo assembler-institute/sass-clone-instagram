@@ -1,0 +1,45 @@
+@use "../abstracts/"as a;
+
+header {
+    @include a.flex-row;
+    justify-content: center;
+    background-color: a.$bg-white;
+    border-bottom: 1px solid a.$gray;
+    padding: 5px;
+    margin-bottom: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .logoHeader {
+        @include a.flex-row;
+        width: 20%;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    @include a.responsiveDash(mobile) {
+        & {
+            justify-content: space-between;
+        }
+
+        .searchBar {
+            display: none;
+        }
+
+    }
+
+    .headerNav {
+        @include a.flex-row;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .icons {
+        @include a.flex-row;
+        gap: 20px;
+    }
+}
