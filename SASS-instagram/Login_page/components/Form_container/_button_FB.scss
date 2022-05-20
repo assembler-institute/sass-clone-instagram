@@ -1,0 +1,24 @@
+@use  '../../base/base-index' as *;
+// todo We can use direct in include with  @include base-index.flexCenter();
+
+.btn-fb {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    @include flexCenter();
+    width: 100%;
+    cursor: pointer;
+
+    img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    span {
+        color: var(--fb-color);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+}

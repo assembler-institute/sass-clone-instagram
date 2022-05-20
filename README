@@ -1,0 +1,225 @@
+-This is tha answers to questions do in the project
+
+What is SASS? What does SASS stand for?
+    R: Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+    Sass consists of two syntaxes. The original syntax, called "the indented syntax," uses a syntax similar to Haml. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate rules within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss, respectively.
+
+What is a CSS pre-processor?
+    R: CSS preprocessors are scripting languages that extend the default capabilities of CSS. They enable us to use logic in our CSS code, such as variables, nesting, inheritance, mixins, functions, and mathematical operations. CSS preprocessors make it easy to automate repetitive tasks, reduce the number of errors and code bloat, create reusable code snippets, and ensure backward compatibility
+
+What does a pre-processor have to do with SASS?
+    R: Sass (Syntactically Awesome Style Sheets) is a powerful CSS preprocessor scripting language that helps you to work on your style sheet much faster than ever. Sass allows you to use features such as variables, nestings, modules, etc. that don’t exist in CSS.
+
+Why use SASS?
+    R: With the help of Sass, you can improve DRY (Don’t Repeat Yourself) CSS and make your code more readable. Additionally, it is also totally compatible with all versions of CSS. Once you get familiar with Sass, you will feel more comfortable and easy to handle large scale projects. To play around with Sass CSS preprocessor, you have to create a separate style sheet with the extensions “.scss” or “.sass”. You can then compile it into a normal CSS file. Your browser will read only the finally compiled CSS file to style your website/web application.
+
+SASS has disadvantages? Which are?
+    R:  Requires Minimal Coding – Comparatively, Sass requires very few codes and help the developers to write CSS quickly.
+        Rapid Code Compilation – Unlike other preprocessors, you can easily compile your code using Sass command.
+        Bigger Developer Community – Sass has a massive ecosystem with a huge number of active developers. 
+        Powerful Frameworks – Sass uses Compass for mixins, which contains almost all possible options, including updates for future support.
+
+What is a SASS Variable? Explain why are useful
+    R:Sass Variables are a way to store information that you want to reuse throughout your stylesheet. Variables are coming to CSS, but there’s not much support at the moment and it’s going to be awhile before you can use them. Fortunately they’re available in Sass right now and they’re easy to use.
+
+Explain the SASS variables property with an example.
+    R:  Variables are a way to store information that you can re-use later.
+        With Sass, you can store information in variables, like:
+            strings
+            numbers
+            colors
+            booleans
+            lists
+            nulls
+        Sass uses the $ symbol, followed by a name, to declare variables:
+        Ex: $sectionColor: green;
+            section{
+                background-color: $sectionColor;
+            }
+
+What is a mixin? Why is it important? Give an example
+    R:A Mixin is a block of code that lets us group CSS declarations we may reuse throughout our site.
+    Is important because you can reuse this block as many times as you like, pass parameters  and call this block at a specific time with a @include.
+    Ex: @mixin large-text {
+            font: {
+                family: Arial;
+                size: 20px;
+                weight: bold;
+            }
+            color: #ff0000;
+        }
+        .page-title {
+            @include large-text;
+            padding: 4px;
+            margin-top: 10px;
+        }
+
+What is SCSS? Give an example
+    R:Scss is Sassy Cascading Style Sheets
+      Scss can be separated by a semicolon and run on the same line
+      SCSS is a preprocessor which lets you use features that aren’t a part of the wider CSS standard yet, and provides better workflows for maintaining your stylesheets.
+      With SCSS preprocessor, you can reduce the amount of times you repeat yourself and ensure you’re writing clean, maintainable code for the future.
+      Scss can take css code and work.
+      SCSS is fully compatible with the syntax of CSS, while still supporting the full power of Sass.
+        EX: $white: #ffffff;
+            $ubuntu-font: $ubuntu-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+            body{
+                color: $white;
+                font: $ubuntu-font;
+                font-size: xx-large;
+                padding: 2rem;
+            }
+
+What is SASS? Give an example
+    R:Sass (syntactically awesome style sheets) is a preprocessor scripting language. It is compiled into CSS and is stored with the .sass extension. Sass consists of two syntaxes, the original based on indentations that uses the .sass extension and the newer SCSS with block formatting like CSS that uses the .scss extension
+        EX: $primary-color: #47dff0
+            $secondary-color: darken($primary-color, 50%)
+            $margin: 16px
+[BrakeLine]
+            .highlight
+            [TABS]border-color: $primary-color
+            [TABS]color: $secondary-color
+[BrakeLine]
+            h1
+            [TABS]span
+                [TABS]margin: $margin / 2
+                [TABS]color: $secondary-color
+
+What is the difference between .scss and .sass syntax.
+    R:SASS (Syntactically Awesome Style Sheets) is a pre-processor scripting language that will be compiled or interpreted into CSS. SassScript is itself a scripting language whereas SCSS is the main syntax for the SASS which builds on top of the existing CSS syntax. It makes use of semicolons and brackets like CSS (Cascaded Style Sheets).
+    SASS and SCSS can import each other. Sass actually makes CSS more powerful with math and variable support.
+    In .scss syntax you can use all power of SASS but write as css, With braces { } and the indentation is not important.
+    In .sass syntax  the indentation, brake lines and not using braces {} are mandatory.
+
+In which cases would we use SCSS? And in which cases would we use SASS?
+    R:SASS SCSS are the same, as we explained earlier, and you can choose the one you like best to develop your project.
+
+Explain how traditional CSS and Preprocessed CSS workflows are different.
+R:
+
+Can we create functions with SASS? If it is true, give an example.
+    R:True
+    EX: -SASS
+        @function sum($numbers...) {
+            $sum: 0;
+            @each $number in $numbers {
+                $sum: $sum + $number;
+            }
+            @return $sum;
+        }
+        .micro {
+            width: sum(50px, 30px, 100px);
+        }
+        -CSS
+        .micro {
+            width: 180px;
+        }
+
+What is nesting? Is it useful? Give an example of nesting
+    R:Nesting is a merging process of diverse logic structures. By using SASS, we can integrate numerous CSS rules inside one another. We can also use one selector inside another to generate compound selectors by using the multiple selectors.
+    EX: #sidebar {
+            position: fixed;
+            height: 100%;
+            ul {
+                list-style-type: none;
+                padding: 0;
+                li {
+                    background-color: #F2F2F2;
+                    color: #404040;
+                }
+            }
+        }
+        -Compile result
+        #sidebar {
+            position: fixed;
+            height: 100%; }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0; }
+        #sidebar ul li {
+            background-color: #F2F2F2;
+            color: #404040; }
+
+
+Difference between @use & @import? Give an example
+    R:Fundamentally both rules do the same thing - load members inside another module. The main differences is how they handle members. @import makes everything globally accessible in the target file. This enables an endless chain of imported files where it's difficult to trace where your variables and mixins are coming from. It also allows for overlap and makes it difficult to trace back why your perfect css breaks. This is a problem especially with complex file structures and projects with multiple contributors and global libraries, which is why @import is no longer recommended by Sass.
+    Same as @import, @use rule enables us to break our stylesheet into more practical, smaller sections and load them inside other stylesheets. The key difference is how you access the original files' members. To do this you will need to refer to the namespace of the original file.
+
+How can we import other CSS/SASS files in SASS? Give an example
+    R:SASS has many methods to import other css/sass files, such as:
+        @use:
+            // foundation/_code.scss
+                code {
+                    padding: .25em;
+                    line-height: 0;
+                }
+            // style.scss
+                @use 'foundation/code';
+                @use 'foundation/lists';
+         @import@:
+            // foundation/_code.scss
+                code {
+                    padding: .25em;
+                    line-height: 0;
+                }
+        @forward:
+            // src/_list.scss
+                @mixin list-reset {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+            // bootstrap.scss
+                @forward "src/list";
+            // styles.scss
+                @use "bootstrap";
+                li {
+                    @include bootstrap.list-reset;
+                }
+        @mixin and @include:
+            @mixin reset-list {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                }
+            @mixin horizontal-list {
+                @include reset-list;
+                li {
+                    display: inline-block;
+                    margin: {
+                    left: -2px;
+                    right: 2em;
+                    }
+                }
+            }
+           nav ul {
+                @include horizontal-list;
+            }
+
+Explain the concept of inheritance in SASS.
+    R:Sass allows us to inherit properties from other selectors to reduce the amount of code we have to type and/or combining we have to do.
+    As an example, let’s consider that we have two buttons. They look exactly the same except for the font and background colors.
+    We can define a basic button style, then let each of the two buttons inherit all the properties from it and add their own custom ones.
+
+Why use @extend? Give an example
+    R:To inherit a property from another selector, we use the @extend rule, followed by the name of the selector we want to inherit from.
+    In Sass, @extend is used to share a set of CSS properties from one selector to another. It is a very important and useful feature of Sass.
+    The @extend feature of Sass allows classes to share a set of properties with one another. In complicated CSS where many classes are put together, duplication of properties may occurs. The @extend features makes your code less and facilitates you to rewrite it repeatedly.
+    EX:
+        .message {
+            border: 1px solid #ccc;
+            padding: 10px;
+            color: #333;
+        }
+        .success {
+            @extend .message;
+            border-color: green;
+        }
+        .error {
+            @extend .message;
+            border-color: red;
+        }
+        .warning {
+            @extend .message;
+            border-color: yellow;
+        }

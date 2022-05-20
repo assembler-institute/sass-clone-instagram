@@ -1,0 +1,31 @@
+.divine {
+    padding: 10px 40px 18px;
+    display: flex;
+
+    div{
+        &:nth-child(2) {
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 15px;
+            margin: 0 18px;
+            color: var(--txt-second-color);
+        }
+
+        &:nth-child(2) {
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 15px;
+            margin: 0 18px;
+            color: var(--txt-second-color);
+        }
+
+        &:nth-child(1), &:nth-child(3) {
+            flex-grow: 1;
+            height: 1px;
+            background-color: var(--box-border-color);
+            position: relative;
+            top: 0.45em;
+        }
+
+    }
+}
