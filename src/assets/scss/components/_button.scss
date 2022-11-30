@@ -1,0 +1,12 @@
+@use '../abstract' as var;
+
+.button {
+  display: block;
+  margin: .6rem 0;
+  padding: .4rem;
+  font-weight: var.$font-weight-bold;
+  background-color: var.$color-success;
+  color: var.$color-white;
+  border-radius: 2px;
+  cursor: pointer;
+}

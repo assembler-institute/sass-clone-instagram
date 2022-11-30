@@ -1,0 +1,18 @@
+@use '../abstract' as var;
+
+.input {
+  background: var.$color-grey;
+  border: 1px solid var.$color-grey-border;
+  flex: 1 0 auto;
+  margin: .2rem 0;
+  outline: 0;
+  overflow: hidden;
+  padding: .5rem 0 .5rem .5rem;
+  text-align: center;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+
+  &__search {
+    max-width: 14rem;
+  }
+}

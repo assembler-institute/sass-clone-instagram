@@ -1,0 +1,39 @@
+$display-flex: (
+  'flex': flex,
+	'inline-flex': inline-flex
+) !default;
+
+$space-align: (
+  'start': flex-start,
+  'end': flex-end,
+  'center': center,
+	'between': space-between,
+	'around' : space-around,
+	'evenly' : space-evenly
+) !default;
+
+
+@function has-correct-flex-value($key, $collection: $space-align) {
+  @if ($key != null) {
+    @if (map-has-key($collection, $key)) {
+      @return true;
+    } @else {
+      @error error-message($collection, $key);
+    }
+  }
+  @return false;
+}
+
+@mixin flex( $display: null, $justify-content: null, $align-items: null) {
+  @if (has-correct-flex-value($display, $display-flex)) {
+    display: map_get($display-flex, $display);
+  }
+
+  @if (has-correct-flex-value($justify-content, $space-align)) {
+    justify-content: map_get($space-align, $justify-content);
+  }
+
+  @if (has-correct-flex-value($align-items)) {
+    align-items: map_get($space-align, $align-items);
+  }
+}

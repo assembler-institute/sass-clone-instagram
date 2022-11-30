@@ -1,0 +1,24 @@
+@use '../abstract' as var;
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: var.$font-weight-bold;
+}
+
+.text-grey-dark {
+  color: var.$color-grey-dark;
+}
+
+.text-tag {
+  font-size: var.$font-size-small;
+  color: var.$color-grey-dark;
+}
+
+.text-success {
+  font-size: var.$font-size-small;
+  font-weight: var.$font-weight-bold;
+  color: var.$color-success;
+}

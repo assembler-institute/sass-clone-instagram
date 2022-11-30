@@ -1,0 +1,21 @@
+@use '../abstract' as mixin;
+
+.hide-in-mobile {
+  display: block;
+
+  @include mixin.is-tablet {
+    display: none;
+  }
+}
+
+.hide-in-web {
+  display: none;
+
+  @include mixin.is-tablet {
+    display: block;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

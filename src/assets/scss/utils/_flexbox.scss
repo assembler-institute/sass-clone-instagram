@@ -1,0 +1,43 @@
+@use '../abstract' as mixin;
+
+.flex {
+  @include mixin.flex(flex);
+}
+
+.flex-inline {
+  @include mixin.flex(inline-flex);
+}
+
+.flex-center {
+  @include mixin.flex(flex, center);
+}
+
+.flex-center-center {
+  @include mixin.flex(flex, center, center);
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-around {
+  @include mixin.flex(flex, around);
+}
+
+.flex-between {
+  @include mixin.flex(flex, between);
+}
+
+.flex-between-center {
+  @include mixin.flex(flex, between, center);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}

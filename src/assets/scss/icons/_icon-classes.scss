@@ -1,0 +1,87 @@
+@use '../abstract' as var;
+
+@font-face {
+  font-family: '#{var.$icomoon-font-family}';
+  src:
+    url('../assets/#{var.$icomoon-font-path}/#{var.$icomoon-font-family}.ttf?ew4rwv') format('truetype'),
+    url('../assets/#{var.$icomoon-font-path}/#{var.$icomoon-font-family}.woff?ew4rwv') format('woff'),
+    url('../assets/#{var.$icomoon-font-path}/#{var.$icomoon-font-family}.svg?ew4rwv##{var.$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{var.$icomoon-font-family}' !important;
+  // speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-avatar {
+  &:before {
+    content: var.$icon-avatar;
+    color: #8e8e8e;
+  }
+}
+
+.icon-compass-full {
+  &:before {
+    content: var.$icon-compass-full;
+  }
+}
+.icon-compass {
+  &:before {
+    content: var.$icon-compass;
+  }
+}
+.icon-heart-full {
+  &:before {
+    content: var.$icon-heart-full;
+  }
+}
+.icon-heart-like {
+  &:before {
+    content: var.$icon-heart-like;
+    color: #d7443e;
+  }
+}
+.icon-heart {
+  &:before {
+    content: var.$icon-heart;
+  }
+}
+.icon-home-full {
+  &:before {
+    content: var.$icon-home-full;
+  }
+}
+.icon-home {
+  &:before {
+    content: var.$icon-home;
+  }
+}
+.icon-send-full {
+  &:before {
+    content: var.$icon-send-full;
+  }
+}
+.icon-send {
+  &:before {
+    content: var.$icon-send;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: var.$icon-facebook;
+  }
+}
+
