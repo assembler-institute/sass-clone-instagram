@@ -1,0 +1,19 @@
+@use '../abstract'as a;
+
+.footer {
+    text-align: center;
+
+    &__link {
+        color: a.$color-grey;
+        padding: 0.5rem;
+        font-size: a.$font-size-small;
+        font-weight: 400;
+    }
+
+    &__copyright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+}

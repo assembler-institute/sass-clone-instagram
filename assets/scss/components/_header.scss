@@ -1,0 +1,77 @@
+@use '../abstract/'as a;
+
+.header {
+    max-width: 975px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    &__logo {
+        flex-grow: 1;
+        width: 33.33%;
+
+        &__image--resize {
+            max-width: 100px;
+        }
+    }
+
+    &__search {
+        flex-grow: 1;
+        width: 33.33%;
+        line-height: 2.5;
+        height: 28px;
+        display: none;
+
+        @media (min-width: 576px) {
+            display: block;
+        }
+
+        &>input {
+            border: solid 1px #dbdbdb;
+            border-radius: 3px;
+            outline: 0;
+            padding: 3px 10px 3px 26px;
+            background-color: a.$background-main;
+            text-align: center;
+            padding: 4px;
+            font-weight: 300;
+            font-size: a.$font-size-normal;
+        }
+    }
+
+    &__icons {
+        flex-grow: 1;
+        min-width: 215px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        line-height: 3;
+
+        &__icon {
+            padding: 0 0.5rem;
+        }
+
+        &__icon-span {
+            height: 22px;
+            width: 22px;
+            display: block;
+        }
+
+        &__icon--resize {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0 0 0;
+    border-bottom: 1px solid a.$border-color-navbar;
+    background-color: a.$white;
+    z-index: 100;
+}
