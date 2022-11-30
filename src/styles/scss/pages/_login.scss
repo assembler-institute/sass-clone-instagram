@@ -1,0 +1,20 @@
+// --------------------------------------------------
+// Pages/login
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.login {
+  min-height: 100%;
+  overflow: hidden;
+
+  .article{
+    @include a.flex-direction(row);
+    @include a.flex-grow(1);
+    @include a.justify-content(center);
+    margin: 32px auto 0;
+    max-width: 935px;
+    padding-bottom: 32px;
+    width: 100%;
+  }
+}

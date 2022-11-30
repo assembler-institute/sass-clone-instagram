@@ -1,0 +1,45 @@
+// --------------------------------------------------
+// layout/nav
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.nav{
+  @include a.order(0);
+  background-color: #fafafa;
+  background-color: rgba(var(--b3f,250,250,250),1);
+  padding: 0;
+
+  &__top{
+    @include a.flex-basis(55px);
+  }
+
+  &__wrapper{
+    @include a.align-items(center);
+    background-color: #fff;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+    height: 54px;
+    position: fixed;
+    top: 0;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    width: 100%;
+    z-index: 3;
+  }
+
+  &__content{
+    @include a.flexbox();
+    @include a.align-items(center);
+    @include a.justify-content(center);
+    @include a.flex-direction(row);
+    height: 54px;
+    max-width: 975px;
+    padding: 0 20px;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    width: 100%;
+    z-index: 10;
+  }
+}

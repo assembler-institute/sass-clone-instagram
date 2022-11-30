@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/styles/css/index.css">
+  <title>Instagram Clone</title>
+  <link rel="icon" sizes="192x192" href="src/assets/images/favicon.png">
+</head>
+
+<body>
+
+  <section class="section login">
+    <main class="main" role="main">
+      <article class="article">
+        <div class="carousel">
+          <div class="carousel__list">
+            <img class="carousel__item carousel__item--1 is-visible opacity-1"
+              src="src/assets/images/screenshots/screenshot1-2x.jpeg" alt="screenshot1">
+            <img class="carousel__item carousel__item--2" src="src/assets/images/screenshots/screenshot2-2x.jpeg"
+              alt="screenshot2">
+            <img class="carousel__item carousel__item--3" src="src/assets/images/screenshots/screenshot3-2x.jpeg"
+              alt="screenshot3">
+            <img class="carousel__item carousel__item--4" src="src/assets/images/screenshots/screenshot4-2x.jpeg"
+              alt="screenshot4">
+            <img class="carousel__item carousel__item--5" src="src/assets/images/screenshots/screenshot5-2x.jpeg"
+              alt="screenshot5">
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar__inner">
+            <h1 class="title coreSpriteLoggedOutWordmark">Instagram</h1>
+            <div class="sidebar__inputs">
+              <form class="form" id="loginForm" method="post">
+                <div class="form__inner flex justify-content-start align-items-stretch align-content-stretch">
+                  <div class="form-item">
+                    <div class="form-item__inner">
+                      <label class="form-item__label">
+                        <input aria-label="Teléfono, usuario o correo electrónico" aria-required="true"
+                          autocapitalize="off" autocorrect="off" maxlength="75" name="username" type="text"
+                          class="form-item__input" value="" placeholder="Teléfono, usuario o correo electrónico">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-item__inner">
+                      <label class="form-item__label">
+                        <input aria-label="Contraseña" aria-required="true" autocapitalize="off" autocorrect="off"
+                          name="password" type="password" class="form-item__input" value="" placeholder="Contraseña">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-item--login flex justify-content-start align-items-stretch align-content-stretch">
+                    <button class="btn btn--primary" disabled="" type="submit">
+                      <div class="btn__inner flex justify-content-start align-items-stretch align-content-stretch">
+                        Iniciar sesión</div>
+                    </button>
+                  </div>
+                  <div class="separation flex-row">
+                    <div class="separation__line"></div>
+                    <div class="separation__text">o</div>
+                    <div class="separation__line"></div>
+                  </div>
+                  <div class="form-item--login flex justify-content-start align-items-stretch align-content-stretch">
+                    <button class="btn btn--login" type="button">
+                      <span class="coreSpriteFacebookIcon btn--login__icon"></span>
+                      <span class="btn--login__text">Iniciar sesión con
+                        Facebook</span>
+                    </button>
+                  </div>
+                </div>
+                <a class="form__forget-link" href="/accounts/password/reset/" tabindex="0">
+                  ¿Has olvidado la contraseña?
+                </a>
+              </form>
+            </div>
+          </div>
+          <div class="sidebar__inner">
+            <div class="create-account">
+              <p class="create-account__text ">
+                ¿No tienes una cuenta?
+                <a href="/accounts/emailsignup/" tabindex="0">
+                  <span class="create-account__register">Regístrate</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="download-app">
+            <p class="download-app__text">Descarga la aplicación.</p>
+            <div class="download-app__stores">
+              <a class="download-app__link"
+                href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&amp;ct=igweb.loginPage.badge&amp;mt=8&amp;vt=lo"
+                tabindex="0">
+                <img alt="Disponible en App Store" class="download-app__logo"
+                  src="src/assets/images/logos/app-store-logo.png">
+              </a>
+              <a class="download-app__link"
+                href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DD5BB4BAA-CCAA-46DF-8F2C-D2C760D4E25B%26utm_content%3Dlo%26utm_medium%3Dbadge"
+                tabindex="0">
+                <img alt="Disponible en Google Play" class="download-app__logo"
+                  src="src/assets/images/logos/google-play-logo.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__list">
+            <div class="footer__item">
+              <a href="https://about.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">
+                <div class="footer__text">Información</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="https://about.instagram.com/blog/" rel="nofollow noopener noreferrer" target="_blank">
+                <div class="footer__text">Blog</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/about/jobs/">
+                <div class="footer__text">Empleo</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="https://help.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">
+                <div class="footer__text">Ayuda</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="https://developers.facebook.com/docs/instagram" rel="nofollow noopener noreferrer"
+                target="_blank">
+                <div class="footer__text">API</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/legal/privacy/">
+                <div class="footer__text">Privacidad</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/legal/terms/">
+                <div class="footer__text">Condiciones</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/directory/profiles/">
+                <div class="footer__text">Cuentas destacadas</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/directory/hashtags/">
+                <div class="footer__text">Hashtags</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/explore/locations/">
+                <div class="footer__text">Ubicaciones</div>
+              </a>
+            </div>
+          </div>
+          <div class="footer__list">
+            <div class="footer__item">
+              <a href="/topics/beauty/">
+                <div class="footer__text">Belleza</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/topics/dance-and-performance/">
+                <div class="footer__text">Danza</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/topics/fitness/">
+                <div class="footer__text">Actividad física</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/topics/food-and-drink/">
+                <div class="footer__text">Comida y bebida</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/topics/home-and-garden/">
+                <div class="footer__text">Hogar y jardinería</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/topics/music/">
+                <div class="footer__text">Música</div>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="/topics/visual-arts/">
+                <div class="footer__text">Artes visuales</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="lang">
+            <span class="lang__inner">
+              <div class="lang__title">
+                <span>Español (España)</span>
+                <div class="Igw0E IwRSH eGOV_         _4EzTmWKY0a     ">
+                  <span style="display: display-inline; transform: rotate(180deg);">
+                    <svg aria-label="Icono de comilla angular hacia abajo" class="svg" fill="#8e8e8e" height="12"
+                      role="img" viewBox="0 0 48 48" width="12">
+                      <path
+                        d="M40 33.5c-.4 0-.8-.1-1.1-.4L24 18.1l-14.9 15c-.6.6-1.5.6-2.1 0s-.6-1.5 0-2.1l16-16c.6-.6 1.5-.6 2.1 0l16 16c.6.6.6 1.5 0 2.1-.3.3-.7.4-1.1.4z">
+                      </path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <select aria-label="Cambiar idioma de visualización" class="lang__select">
+                <option value="af">Afrikaans</option>
+                <option value="cs">Čeština</option>
+                <option value="da">Dansk</option>
+                <option value="de">Deutsch</option>
+                <option value="el">Ελληνικά</option>
+                <option value="en">English</option>
+                <option value="en-gb">English (UK)</option>
+                <option value="es">Español (España)</option>
+                <option value="es-la">Español</option>
+                <option value="fi">Suomi</option>
+                <option value="fr">Français</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="ms">Bahasa Melayu</option>
+                <option value="nb">Norsk</option>
+                <option value="nl">Nederlands</option>
+                <option value="pl">Polski</option>
+                <option value="pt-br">Português (Brasil)</option>
+                <option value="pt">Português (Portugal)</option>
+                <option value="ru">Русский</option>
+                <option value="sv">Svenska</option>
+                <option value="th">ภาษาไทย</option>
+                <option value="tl">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="zh-cn">中文(简体)</option>
+                <option value="zh-tw">中文(台灣)</option>
+                <option value="bn">বাংলা</option>
+                <option value="gu">ગુજરાતી</option>
+                <option value="hi">हिन्दी</option>
+                <option value="hr">Hrvatski</option>
+                <option value="hu">Magyar</option>
+                <option value="kn">ಕನ್ನಡ</option>
+                <option value="ml">മലയാളം</option>
+                <option value="mr">मराठी</option>
+                <option value="ne">नेपाली</option>
+                <option value="pa">ਪੰਜਾਬੀ</option>
+                <option value="si">සිංහල</option>
+                <option value="sk">Slovenčina</option>
+                <option value="ta">தமிழ்</option>
+                <option value="te">తెలుగు</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="zh-hk">中文(香港)</option>
+                <option value="bg">Български</option>
+                <option value="fr-ca">Français (Canada)</option>
+                <option value="ro">Română</option>
+                <option value="sr">Српски</option>
+                <option value="uk">Українська</option>
+              </select>
+            </span>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__text">© 2021 Instagram from Facebook</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+// --------------------------------------------------
+// components/comments
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.post-comments{
+  @include a.flex-grow(1);
+  @include a.flex-shrink(1);
+  margin-bottom: 4px;
+  min-height: 0;
+  overflow: auto;
+
+  &__user{
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin-left: -5px;
+  }
+
+  &__text{
+    overflow-wrap: break-word;
+  }
+
+  &__dots{
+    white-space: nowrap;
+  }
+
+  &__more{
+    background: 0 0;
+    border: 0;
+    color: #8e8e8e;
+    color: rgba(var(--f52,142,142,142),1);
+    cursor: pointer;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+}

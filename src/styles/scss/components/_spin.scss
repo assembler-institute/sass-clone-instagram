@@ -1,0 +1,49 @@
+// --------------------------------------------------
+// components/spin
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.spin{
+  margin-top: 40px;
+  height: 48px;
+
+  &__inner{
+    height: 32px;
+    width: 32px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+
+    // -webkit-box-sizing: border-box;
+    // box-sizing: border-box;
+    @include a.box-sizing(border-box);
+
+    .svg{
+      -webkit-animation: IGCoreSpinnerSpin12 1.2s steps(12) infinite;
+      animation: IGCoreSpinnerSpin12 1.2s steps(12) infinite;
+    }
+  }
+}

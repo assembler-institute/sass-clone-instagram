@@ -1,0 +1,24 @@
+// --------------------------------------------------
+// components/logo
+// --------------------------------------------------
+
+@use '../abstracts' as a;
+
+.logo{
+  @include a.flex(1, 9999, 0%);
+  min-width: 40px;
+
+ &__img-wrapper{
+    margin-top: 7px;
+    -webkit-transition: opacity .1s ease-out;
+    transition: opacity .1s ease-out;
+  }
+
+  &__img{
+    max-height: 100%;
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 29px; // @pere
+  }
+}

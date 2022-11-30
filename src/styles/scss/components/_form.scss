@@ -1,0 +1,29 @@
+@use '../abstracts' as a;
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  &__inner{
+    margin-top: 24px;
+  }
+
+  &__forget-link,
+  &__forget-link:hover,
+  &__forget-link:active,
+  &__forget-link:visited{
+    color: #00376b;
+    color: rgba(var(--fe0,0,55,107),1);
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center;
+  }
+}

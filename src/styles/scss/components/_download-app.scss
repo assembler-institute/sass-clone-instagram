@@ -1,0 +1,27 @@
+@use '../abstracts' as a;
+
+.download-app{
+
+  &__text{
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+  }
+
+  &__stores{
+    @include a.flex-direction(row);
+    @include a.justify-content(center);
+    margin: 10px 0 10px 0;
+  }
+
+  &__link{
+    margin-right: 8px;
+  }
+
+  &__logo{
+    height: 40px;
+  }
+}
