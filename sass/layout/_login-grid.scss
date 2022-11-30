@@ -1,0 +1,155 @@
+.login__grid__container{
+  display: grid;
+  grid-template-areas: 'auto auto';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.login__container{
+  &--left{
+       grid-column: 1/1;
+  }
+
+  &--right{
+       grid-column: 2/2; 
+  }
+}
+
+.login__footer{
+  grid-column: 1/3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 15vh;
+}
+
+.login__footer a{
+  font-size: 13px;
+  line-height: 14px;
+  color: #8e8e8e;
+  padding: 10px;
+}
+
+.login__footer--firstLine{
+  padding-bottom: 10px;
+}
+
+.login__footer--secondLine{
+  padding-bottom: 10px;
+}
+
+body{
+    background-color:#fafafa;
+    font-family: "Roboto", sans-serif;
+}
+
+.login__container--right{
+  text-align: center;
+}
+
+.login__container--right--principal{
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 32px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login__container--right--secondary{
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 32px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login__open__facebook{
+  color: #385185;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login__container--download{
+  margin-top: 32px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login__form--button--text{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.login__divisory__line{
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 0.45em;
+    flex-shrink: 1;
+    color: black;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid #dbdbdb;
+
+}
+
+.login__divisor__line--or{
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0 18px;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  font-weight: 500;
+}
+
+.login__divisory {
+    margin: 10px 40px 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+.login__forgot__password{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+  color: #385185;
+}
+
+.login__create__account{
+  color: #262626;
+  font-size: 14px;
+  margin: 15px;
+  text-align: center;
+
+  & a{
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+}
+
+.login__container--download--image--text{
+  padding-bottom: 10px;
+}
+
+.login__container--left{
+  text-align: right;
+  width: 454px;
+  height: 618px;
+}
+
+.login__container--right{
+  text-align: left;
+}
