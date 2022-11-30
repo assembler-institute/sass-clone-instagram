@@ -1,0 +1,135 @@
+@use "../components/componentsIndex" as comp
+@use "../abstracts/abstractsIndex" as abs
+
+
+/*----------------- navBar ------------------*/
+#navGlobalContainer
+    @include abs.size(100%,54px)
+    border-bottom: 1px solid  abs.$lightGray
+
+#navContainer
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    @include abs.size(55%,54px)
+    
+#logoContainer 
+    padding-top: 15px
+    @include abs.size(33%, 36px)
+
+#iconsGlobalContainer
+    padding-top: 15px
+    padding-left: 24px
+    @include abs.size(33%,22px)
+
+#iconsContainer
+    display: flex
+    justify-content: flex-end
+    @include abs.size(100%,36px)
+
+/*------- middleContentMainContainer ------*/
+.main
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    @include abs.size(100%,100%)
+
+.mainContainer
+    @include abs.allPaddings(30px,0,0,0)
+    display: flex
+    justify-content: space-between
+    @include abs.size(55%,100%)
+
+
+/*------- middleContentLeftContainer ------*/
+#leftContainer
+
+    display: flex
+    flex-direction: column
+    width: 66%
+
+/*------ middleContentRightContainer -----*/
+// profile
+#rightContainer
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    @include abs.size(30%, 33%)
+    width: 30%
+
+#yourProfileContainer
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+#yourProfileNameContainer
+    padding-top: 5px
+    width: 55%
+
+#switchContainer
+    display: flex
+    padding-top: 5px
+    align-items: center
+
+// suggestions
+#suggestionsSectionContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+#suggestionsHeader
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+#suggestionsContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.suggestion
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+.suggestionLefContainer
+    display: flex
+    justify-content: flex-start
+    @include abs.size(70%,32px)
+
+.profileSuggestedPicContainer
+    @include abs.size(20%, 32px)
+
+.profileSuggestedPic
+    @include abs.size(32px,32px)
+    border-radius: 15px
+
+.nameAndPopularity
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    @include abs.size(70%,32px)
+
+// footer
+#rightContainerFooter
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    @include abs.size(100%, 30%)
+
+// contentCommentsSection
+.heartCommentContainer
+    display: flex
+    justify-content: flex-end
+    width: 54%
+
+
+
+
+
+
+
+
+
+
+
