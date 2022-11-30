@@ -1,0 +1,38 @@
+@use "../helpers/variables" as *;
+@use "../helpers/extension" as *;
+
+header {
+  @extend %display-flex;
+  border-bottom: $thinBorder;
+  height: 4rem;
+  background-color: white;
+
+  div {
+    max-height: 100%;
+    max-width: 170px;
+    display: flex;
+    align-items: center;
+    .logoHeader {
+      max-width: 100%;
+    }
+  }
+
+  .search {
+    padding: 0 0.3rem;
+    min-width: 200px;
+    height: 24px;
+    border: $globalBorder;
+    background-color: $backgroundColor;
+    border-radius: 3px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      margin-left: 2.5rem;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+}

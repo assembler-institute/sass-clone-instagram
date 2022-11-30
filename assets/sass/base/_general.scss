@@ -1,0 +1,10 @@
+@use "../helpers/variables" as *;
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: $backgroundColor;
+}

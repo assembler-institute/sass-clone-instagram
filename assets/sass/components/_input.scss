@@ -1,0 +1,22 @@
+@use "../helpers/variables" as *;
+@use "../helpers/mixins" as *;
+
+.input {
+  @include generalInput();
+  padding-left: 3%;
+  align-items: center;
+  margin: 2%;
+  width: 74%;
+  margin-left: 13%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  &:focus{
+    border: 1px orange solid;
+  }
+
+  ::placeholder {
+    font-size: 10px;
+    opacity: 1;
+  }
+}

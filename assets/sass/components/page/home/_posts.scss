@@ -1,0 +1,50 @@
+@use "../../../helpers/variables" as *;
+@use "../../../helpers/mixins" as *;
+@use "../../../helpers/extension" as *;
+
+.post {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $yPadding $xPadding;
+    img {
+      @include circleBorderRadius(0px, $brColor);
+      height: 2.5rem;
+      width: 2.5rem;
+      margin-right: 0.5rem;
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+    > p {
+      opacity: 0.6;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+  }
+
+  &__icons {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    div {
+      display: flex;
+      i {
+        margin-right: 1rem;
+      }
+    }
+
+    &__comments {
+      opacity: 0.6;
+    }
+    .fa-heart {
+      font-weight: bold;
+      color: red;
+    }
+  }
+}

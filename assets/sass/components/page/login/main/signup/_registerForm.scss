@@ -1,0 +1,25 @@
+@use "../../../../../helpers/variables" as *;
+
+.registerForm {
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  transform: translateY(-25%);
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 27%;
+  border: $globalBorder;
+  width: 62%;
+  height: 8%;
+  white-space: nowrap;
+
+  padding: 3%;
+  background-color: white;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+
+  #registerText{
+    margin-bottom: 1%;
+  }
+}

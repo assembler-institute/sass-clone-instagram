@@ -1,0 +1,22 @@
+@use "../../helpers/variables" as *;
+@use "../../helpers/mixins" as *;
+@use "../../helpers/extension" as *;
+
+.post {
+  border: $thinBorder;
+  border-radius: 4px;
+  max-width: $widthPosts;
+  margin: 2.2rem auto;
+  background-color: white;
+  cursor: pointer;
+  &__likes {
+    padding: $yPadding $xPadding;
+  }
+  &__message {
+    padding: $yPadding $xPadding;
+  }
+  &__comments {
+    padding: $yPadding $xPadding;
+    opacity: 0.6;
+  }
+}

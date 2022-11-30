@@ -1,0 +1,53 @@
+@use "../../../../../helpers/variables" as *;
+
+
+.loginForm {
+  background-color: white;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 62%;
+  height: 52%;
+  margin: 5%;
+  margin-top: 15%;
+  border: $globalBorder;
+
+  .loginHeader {
+    margin-top: 5%;
+    .logoHeader {
+      height: 100px;
+    }
+  }
+
+  #loginSeparator {
+    color:grey;
+    font-size: 14px;
+    margin-top: 4%;
+
+    #separatorLine{
+      letter-spacing: -3px;
+    }
+
+    
+  }
+
+  #alternativeLogin {
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 8%;
+    color: $fbTextColor;
+
+    #fbIcon{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  #passForbidden {
+    color: $fbTextColor;
+    margin-top: 7%;
+    font-weight: 100;
+    font-size: 13px;
+  }
+}

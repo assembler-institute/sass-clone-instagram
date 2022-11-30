@@ -1,0 +1,12 @@
+
+.downloadButton {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    padding-right: 4%;
+    flex-grow: 2;
+    transform: translateX(-116%);
+    height: 45px;
+    width: 185px;
+    cursor: pointer;
+  }
