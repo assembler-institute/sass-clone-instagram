@@ -1,0 +1,99 @@
+@use "../4-abstracts/variables" as a;
+
+.main__login {
+    position: relative;
+    left: 0px;
+
+    &-space{
+        margin-top: 0;
+        height: auto;
+        max-width: 360px;
+
+        .main__login-card {
+            background-color: a.$white-color;
+            border: 1px a.$borderCard-color solid;
+
+            .principal-image{
+                margin: 2rem;
+            }
+
+            input{
+                width: 75%;
+                margin: 0.15rem;
+                height: 2.5rem;
+                background-color: a.$main-brackground;
+                border: 1px a.$borderCard-color solid;
+                border-radius: 2px;
+                padding-left: 0.5rem;
+                color: a.$borderCard-color;
+            }
+
+            a {
+                width: 75%;
+                margin: 0.8rem;
+                height: 2rem;
+                background-color: a.$button-color;
+                cursor: pointer;
+                border-radius: 5px;
+                border: none;
+                color: a.$white-color;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main__login-facebook{
+                color: a.$facebook-color;
+                font-weight: bold;
+                margin: 1.5rem;
+
+                .fa-facebook-official{
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .password {
+                color: a.$facebook-color;
+                margin-bottom: 2rem;
+            }
+
+
+            .main__login-app{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+.gettheapp{
+    padding: 1rem;
+
+}
+
+.account{
+    color: a.$grey-color;
+}
+
+.signup{
+    font-weight: bold;
+    color: RGB(0, 149, 246);
+}
+
+.flex {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.main__login-account {
+    background-color: a.$white-color;
+    border: 1px a.$borderCard-color solid;
+}
+
+.main__login-app-logo{
+    width: 40%;
+    margin-right: 0.5rem;
+}

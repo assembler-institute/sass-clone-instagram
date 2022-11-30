@@ -1,0 +1,21 @@
+.footer__page{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__list {
+    list-style-type: none;
+    flex-wrap: wrap;
+        &-li {
+        display: inline;
+        margin: 0.5rem;
+        color: rgb(23, 40, 117);
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+}
+
+.footer__copyright {
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+}

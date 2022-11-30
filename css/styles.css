@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: RGB(250, 250, 250);
+}
+
+* {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.footer__page {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__list {
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.footer__list-li {
+  display: inline;
+  margin: 0.5rem;
+  color: #172875;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.footer__copyright {
+  color: #bbbbbb;
+  font-weight: bold;
+}
+
+.main__login {
+  position: relative;
+  left: 0px;
+}
+.main__login-space {
+  margin-top: 0;
+  height: auto;
+  max-width: 360px;
+}
+.main__login-space .main__login-card {
+  background-color: white;
+  border: 1px RGB(219, 219, 219) solid;
+}
+.main__login-space .main__login-card .principal-image {
+  margin: 2rem;
+}
+.main__login-space .main__login-card input {
+  width: 75%;
+  margin: 0.15rem;
+  height: 2.5rem;
+  background-color: RGB(250, 250, 250);
+  border: 1px RGB(219, 219, 219) solid;
+  border-radius: 2px;
+  padding-left: 0.5rem;
+  color: RGB(219, 219, 219);
+}
+.main__login-space .main__login-card a {
+  width: 75%;
+  margin: 0.8rem;
+  height: 2rem;
+  background-color: RGB(178, 223, 252);
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.main__login-space .main__login-card .main__login-facebook {
+  color: RGB(56, 81, 133);
+  font-weight: bold;
+  margin: 1.5rem;
+}
+.main__login-space .main__login-card .main__login-facebook .fa-facebook-official {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.main__login-space .main__login-card .password {
+  color: RGB(56, 81, 133);
+  margin-bottom: 2rem;
+}
+.main__login-space .main__login-card .main__login-app {
+  margin-bottom: 2rem;
+}
+
+.gettheapp {
+  padding: 1rem;
+}
+
+.account {
+  color: gray;
+}
+
+.signup {
+  font-weight: bold;
+  color: RGB(0, 149, 246);
+}
+
+.flex {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.main__login-account {
+  background-color: white;
+  border: 1px RGB(219, 219, 219) solid;
+}
+
+.main__login-app-logo {
+  width: 40%;
+  margin-right: 0.5rem;
+}
+
+.principal-image {
+  float: right;
+  height: auto;
+  max-height: 700px;
+  max-width: 100%;
+}
+
+.header__home {
+  background-color: white;
+}
+.header__home-button {
+  background-color: white;
+  border: 1px RGB(219, 219, 219) solid;
+  color: RGB(219, 219, 219);
+  padding: 0.4rem 5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.header__home .fas {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.main__home-post {
+  border: 1px RGB(219, 219, 219) solid;
+  margin-bottom: 2rem;
+}
+.main__home-post .main__home-header {
+  background-color: white;
+  padding: 0.2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.main__home-post .main__home-header .fas {
+  margin: 0.2rem 0.4rem 0.2rem 0.6rem;
+  font-size: 1.5rem;
+  color: gray;
+}
+.main__home-post .main__home-comments {
+  margin-bottom: 0;
+  padding: 0.8rem;
+}
+.main__home-post .main__home-comments .main__home-icons {
+  margin-bottom: 0.4rem;
+}
+.main__home-post .main__home-comments .main__home-icons .fa-heart, .main__home-post .main__home-comments .main__home-icons .fa-comment {
+  color: #921c1c;
+  font-size: 1.5rem;
+}
+.main__home-post .main__home-comments .main__home-icons .fa-comment {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: black;
+}
+.main__home-post .main__home-comments .like {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.main__home-post .main__home-comments .newComment {
+  margin: 0.7rem 0;
+}
+
+.main__home-comments {
+  background-color: white;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.comment {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.user {
+  font-weight: bold;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.comment-date {
+  color: gray;
+  font-size: 0.6rem;
+}
+
+.header__home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 2%;
+  border-bottom: 1px RGB(219, 219, 219) solid;
+}
+.header__home-logo {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__home-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.main__home, .main__home-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.main__home-header {
+  flex-direction: row;
+}
+
+.main__page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 1rem;
+  align-items: flex-start;
+  align-content: center;
+  margin: 6%;
+}
+
+@media all and (max-width: 900px) {
+  .main__image {
+    display: none;
+  }
+
+  .main__page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    grid-template-columns: none;
+  }
+}
+.main__login-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.main__login-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+
+.main__login-account {
+  width: 100%;
+  text-align: center;
+  padding: 1.7rem 0;
+}
+
+.main__login-app {
+  text-align: center;
+  margin: 1rem;
+}
+
+.main__login-app-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+}/*# sourceMappingURL=styles.css.map */
