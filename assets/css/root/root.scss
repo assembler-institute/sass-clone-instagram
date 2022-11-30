@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.full-height-main {
+  height: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+$blue: #0095f6;
+$black-font: #262626;
+$grey-font: #8e8e8e;
+$bg: #fafafa;
+$border: #dbdbdb;
+$fb: #385185;
+
+.bg-grey {
+  background-color: $bg;
+}
+
+button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  margin: 0;
+  border-radius: 4px;
+  position: relative;
+  color: white;
+  background-color: $blue;
+  padding: 5px 9px;
+  border: 1px solid transparent;
+}
+
+input {
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid $border;
+  padding: 9px 8px 7px 8px;
+  background-color: $bg;
+  color: $black-font;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  color: $fb;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+  text-decoration: none;
+}

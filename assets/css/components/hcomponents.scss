@@ -1,0 +1,161 @@
+@use '../root/root.scss' as root;
+@use '../root/hroot.scss' as hroot;
+
+.story-post {
+  @include hroot.story-post(42px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .whiteb {
+    width: 34px;
+    height: 34px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.postUser {
+  .my-user-info {
+    margin-left: 14px;
+    height: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .info {
+      color: root.$black-font;
+      font-size: 14px;
+      font-weight: 600;
+      max-width: 220px;
+      padding: 2px;
+      top: 1px;
+    }
+
+    .info2 {
+      color: root.$black-font;
+      font-size: 12px;
+      line-height: 15px;
+      padding: 2px;
+      bottom: 1px;
+    }
+  }
+}
+
+.post {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.p-foot {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mb4 {
+  margin-bottom: 4px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.bar-i {
+  display: flex;
+  align-items: center;
+}
+
+.icon-f {
+  padding: 8px;
+  height: 24px;
+  width: 24px;
+  display: block;
+  position: relative;
+}
+
+.icon-c {
+  height: 24px;
+  width: 24px;
+  padding: 8px 16px 8px 0;
+}
+
+.c {
+  width: 100%;
+}
+
+.mneg6 {
+  margin-left: -8px;
+}
+
+.r {
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+.text-f {
+  font-size: 14px;
+  color: root.$black-font;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.grey {
+  color: root.$grey-font;
+}
+
+.text-s {
+  height: 16px;
+  font-size: 10px;
+  color: root.$grey-font;
+  text-transform: uppercase;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.nc-div {
+  border-top: 1px solid root.$border;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.blue {
+  color: root.$blue;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.disabled {
+  opacity: 0.3;
+  justify-self: flex-end;
+}
+
+.icon-h {
+  height: 12px;
+}
+
+.row {
+  display: flex;
+}

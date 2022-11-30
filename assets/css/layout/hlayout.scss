@@ -1,0 +1,259 @@
+@use "../root/hroot.scss" as hroot;
+body {
+  background-color: hroot.$bg;
+}
+.navBar {
+  background-color: hroot.$bg2;
+  height: 54px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include hroot.borders-bottom();
+}
+.navContent {
+  width: 975px;
+  display: flex;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  .logo {
+    width: 103px;
+    height: 29px;
+    background-image: url("../img/logoInsta.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .search {
+    height: 28px;
+    width: 215px;
+    border-radius: 3px;
+    background: rgba(var(--b3f, 250, 250, 250), 1);
+    border: solid 1px rgba(var(--b6a, 219, 219, 219), 1);
+    padding-left: 75px;
+    font-size: 14px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    color: rgb(175, 174, 174);
+  }
+
+  .icons {
+    width: 222px;
+    height: 25px;
+    box-sizing: border-box;
+    display: flex;
+    .icon {
+      width: 22px;
+      height: 22px;
+      padding: 0px 0px 0px 24px;
+      border: 0;
+    }
+    .user-icon {
+      width: 22px;
+      height: 22px;
+      border: 1px solid grey;
+      border-radius: 11px;
+      margin: 0px 0px 0px 24px;
+      box-sizing: border-box;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}
+.container {
+  width: 935px;
+  margin: 0 auto;
+  height: auto;
+  margin-top: hroot.$mt-containers;
+  display: flex;
+}
+.left-section {
+  width: 600px;
+  height: auto;
+  .stories {
+    background-color: hroot.$bg2;
+    width: 95%;
+    height: 100px;
+    margin-left: 2.5%;
+    display: flex;
+    padding-top: 3px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    @include hroot.borders();
+    @include hroot.story(11px);
+    .story-user {
+      width: 66px;
+      height: 13px;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+  }
+  .posts {
+    background-color: white;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    @include hroot.borders();
+    margin-top: hroot.$mt-containers;
+    .postUser {
+      width: 100%;
+      height: 60px;
+      padding: 16px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      @include hroot.borders-bottom();
+      @include hroot.story(0px);
+    }
+    .post {
+      width: 100%;
+      height: max-content;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .postFoot {
+      width: 100%;
+    }
+  }
+}
+.right-section {
+  width: 335px;
+  height: auto;
+  .my-user-suggestions {
+    width: 325px;
+    height: 56px;
+    display: flex;
+    margin-top: hroot.$mt-containers - 14px;
+    margin-left: hroot.$mt-containers / 2;
+    @include hroot.story(0px);
+    .my-user-info {
+      width: 186px;
+      height: 56px;
+      justify-content: center;
+      margin-left: 2%;
+      display: flex;
+      flex-direction: column;
+      .info {
+        margin-bottom: 3px;
+      }
+      .info2 {
+        color: rgb(184, 184, 184);
+      }
+    }
+    .change-user {
+      width: 50px;
+      justify-content: center;
+      p {
+        margin-top: 48%;
+        font-size: 12px;
+        color: rgb(0, 140, 255);
+      }
+    }
+  }
+  .suggestions {
+    width: 325px;
+    height: 300px;
+    margin-top: hroot.$mt-containers - 5px;
+    margin-left: hroot.$mt-containers / 2;
+    .sugg {
+      width: 325px;
+      height: 20px;
+      display: flex;
+      .sfy {
+        width: 246px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+        color: rgb(167, 167, 167);
+        font-weight: bold;
+        font-size: 11px;
+      }
+      .see {
+        width: 80px;
+        height: 20px;
+        margin-right: 15px;
+        margin-top: 5px;
+        font-size: 10px;
+        text-align: center;
+      }
+    }
+    .user-suggestion {
+      width: 320px;
+      height: 48px;
+      .user {
+        width: 279px;
+        height: 42px;
+        display: flex;
+        margin-left: 21px;
+        margin-top: 8px;
+        .image-cont {
+          width: 42px;
+          height: 42px;
+          .user-image {
+            width: 32px;
+            height: 32px;
+            margin-top: 5px;
+            margin-left: 5px;
+            border-radius: 16px;
+            background-color: rgb(0, 0, 0);
+          }
+        }
+        .user-info {
+          width: 202px;
+          height: 42px;
+          padding-top: 3px;
+          box-sizing: border-box;
+          .info-sugg {
+            justify-content: center;
+            margin-left: 2%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3px;
+            font-size: 13px;
+          }
+          .info2-sugg {
+            justify-content: center;
+            margin-left: 2%;
+            display: flex;
+            flex-direction: column;
+            color: rgb(184, 184, 184);
+            font-size: 11px;
+          }
+        }
+        .follow {
+          width: 42px;
+          height: 42px;
+          p {
+            margin-top: 20%;
+            margin-left: 5px;
+            justify-content: center;
+            font-size: 12px;
+            color: rgb(0, 140, 255);
+          }
+        }
+      }
+    }
+  }
+  .information {
+    width: 300px;
+    height: 120px;
+    margin-top: hroot.$mt-containers - 5px;
+    margin-left: 25px;
+    text-align: justify;
+    color: rgb(184, 184, 184);
+    font-size: 12px;
+    text-decoration: none;
+    .fromFaceboock {
+      margin-top: 15px;
+    }
+  }
+}
