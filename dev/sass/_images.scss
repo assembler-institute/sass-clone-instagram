@@ -1,0 +1,20 @@
+
+@mixin img__round {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+// .img__home {
+//     height: 618px;
+//     object-fit: cover;
+//     width: 400px;
+// }
+
+.login__content__downloadApp > img{
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+}

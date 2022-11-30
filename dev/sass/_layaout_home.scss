@@ -1,0 +1,299 @@
+@import "colors";
+@import "images";
+@import "general";
+@import "li";
+@import "border";
+@import "logo";
+
+// $outline1px: solid red 1px;
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-color: $notWhite;
+}
+
+.header {
+  @include flex__row__center;
+  @include border_insta;
+  position: fixed;
+  background-color: White;
+  width: 100vw;
+  min-height: 50px;
+  height: 5vh;
+  justify-content: center;
+  z-index: 1;
+  .nav__home {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 1fr;
+    width: 50vw;
+    min-height: inherit;
+    height: inherit;
+    .nav__home__logo {
+      @include nav_logo;
+    }
+    .nav__home__search {
+      width: 100%;
+      text-align: center;
+      .nav__home__search__bar {
+        width: 209px;
+        height: 24px;
+        border: 1px solid #dbdbdb;
+        background-color: #fafafa;
+        border-radius: 3px;
+        margin-top: 15px;
+      }
+    }
+    .nav__home__iconos__list {
+      @include list_none;
+      margin-top: 15px;
+      width: 100%;
+      gap: 10px;
+      .aside_profile__picture {
+        height: 22px;
+        width: 22px;
+        margin: 0;
+        padding: 0;
+        .img__round {
+          @include img__round;
+        }
+      }
+    }
+  }
+}
+
+.container__home__home {
+  @include flex__row;
+  top: 20px;
+  position: relative;
+  min-height: 100vh;
+  width: 80vw;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 7vh;
+  .feed {
+    width: 30vw;
+    .div__stories {
+      @include border_insta;
+      @include flex__row;
+			position: relative;
+      gap: 10px;
+      height: 100px;
+      margin-bottom: 24px;
+			padding-left: 5px;
+      overflow-x: hidden;
+      align-content: flex-start;
+			align-items: center;
+      .color__border{
+        background: linear-gradient(
+          to bottom left,
+          #833ab4,
+          #c13584,
+          #e1306c,
+          #fd1d1d,
+          #f56040,
+          #f77737,
+          #fcaf45,
+          #ffdc80
+        );
+				border-radius: 50%;
+				min-height: 53px;
+				min-width: 53px;
+				height: 53px;
+				width: 53px;
+				margin-top: -10px;
+				text-align: center;
+				padding: 1.3px;
+				.stories__item{
+					border-radius: 50%;
+					min-height: 50px;
+					min-width: 50px;
+					height: 50px;
+					width: 50px;
+					border: 2px solid white;
+					.img__round {
+						@include img__round;
+					}
+					p{
+						text-align: center;
+						font-size: .7em;
+						font-weight: 200;
+						color: #be005f;
+					}
+				}
+
+      }
+			.stories__next{
+				background-color: #8e8e8e00;
+				border: 0;
+				position: absolute;
+				right: 0;
+			}
+    }
+    .div__feed {
+      .post {
+        @include border_insta;
+        display: grid;
+				background-color: white;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        min-height: 400px;
+        margin-bottom: 50px;
+				align-content: center;
+				align-items: center;
+				justify-content: center;
+        .post__user {
+          height: 50px;
+          display: grid;
+          grid-template-columns: 0.3fr 5fr 0.5fr;
+          grid-template-rows: 1fr;
+          column-gap: 10px;
+          padding: 10px;
+          width: 100%;
+
+          .post__user__picture {
+            height: 30px;
+            width: 30px;
+            .img__round {
+              @include img__round;
+            }
+          }
+          .post__user__opts {
+            margin-top: 5px;
+          }
+        }
+        .img__feed {
+          width: 100%;
+					height: 500px;
+          object-fit: cover;
+					overflow: hidden;
+        }
+        .container__comments {
+					padding: 10px;
+          .iconos__comments {
+            display: grid;
+            grid-template-columns: 0.4fr 0.4fr 5fr 0.4fr;
+            grid-template-rows: 1fr;
+            column-gap: 15px;
+            width: 100%;
+            list-style: none;
+          }
+					.like__comments{
+						margin-bottom: 5px;
+					}
+					.first__comment{
+						display: flex;
+						gap: 10px;
+					}
+					.post__comments{
+						h5{
+							color: $mediumGrey;
+							font-weight: normal;
+						}
+						.flex{
+							h6{
+								font-size: .8em;
+							}
+							.blue__link{
+								color: $facebookBlue;
+							}
+						}
+					}
+          .input__comments {
+            display: grid;
+            grid-template-columns: 0.5fr 5fr 0.5fr;
+            grid-template-rows: 1fr;
+						column-gap: 5px;
+            width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-top: 12px;
+            border-top: 1px solid #dbdbdb;
+            height: 56px;
+            align-items: center;
+            font-size: .8em;
+            color: #8e8e8e;
+            .input__comments__span {
+              color: $facebookBlue;
+              font-weight: 600;
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.stories__next {
+  background-image: url(/public/assets/img/logos2.png);
+  background-repeat: no-repeat;
+  background-position: -294px -273px;
+  height: 45px;
+  width: 45px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.aside {
+  right: 25%;
+  position: fixed;
+  background-color: $notWhite;
+  height: auto;
+  width: 17vw;
+  .div__profile {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    column-gap: 10px;
+    width: inherit;
+    font-size: 0.7em;
+    .aside_profile__picture {
+      height: 50px;
+      width: 50px;
+      .img__round {
+        @include img__round;
+      }
+    }
+  }
+  .sugerencias {
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    margin: 10px 0;
+		span{
+			color:$mediumGrey;
+		}
+    h5 {
+			text-align: end;
+      color: $darkGrey;
+    }
+  }
+  .followers__grid {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    .aside_profile__picture {
+      height: 35px;
+      width: 35px;
+      margin: 0;
+      padding: 0;
+      .img__round {
+        @include img__round;
+      }
+      .ul__home__footer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    h6 {
+      font-size: 1em;
+      color: $activeBlue;
+    }
+  }
+}

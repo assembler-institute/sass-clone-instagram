@@ -1,0 +1,32 @@
+
+@mixin list_none {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.ul__footer {
+  @include list_none;
+  width: 100vw;
+  gap: 20px;
+  color: #8e8e8e;
+}
+.ul__home__footer{
+  @include list_none;
+  gap: 2px;
+  font-size: 10px;
+  color: #8e8e8e;
+}
+.ul__home__footer__credits {
+  @include list_none;
+  gap: 2px;
+  font-size: 10px;
+  color: #8e8e8e;
+  margin-top: 10px;
+}
+.footers_home {
+  display: flex;
+  flex-direction: column;
+}
