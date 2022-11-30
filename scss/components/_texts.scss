@@ -1,0 +1,35 @@
+@use '../abstracts' as a;
+%text-header {
+    font-weight: a.$text-emphasis-color;
+    font-family: a.$font-h1;
+}
+
+.likes__comment1-username {
+    @extend %text-header;
+}
+
+.likes__comment2-username {
+    @extend %text-header;
+}
+
+.post__card-post-details {
+    margin-left: 1rem;
+}
+
+.card__post-date {
+    color: a.$color-tertiary;
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.profiles-stories {
+    font-family: a.$font-h1;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: a.$color-tertiary;
+    text-align: center;
+}
+
+.post__card-1-info-user-img {
+    text-align: center;
+}

@@ -1,0 +1,413 @@
+.btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: #57aee9;
+  border: none;
+  border-radius: 5px;
+}
+
+.form__button-submit {
+  width: 280px;
+  height: 30px;
+  margin: auto;
+}
+
+.form-control {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+  margin: 5px;
+  width: 270px;
+  height: 40px;
+  background-color: #fafafa;
+  border: solid 1px #a5a1a1;
+}
+
+.form__title {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+option {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+  color: #a5a1a1;
+}
+
+select {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  color: #a5a1a1;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.forgot-password > a {
+  color: blue;
+  text-decoration: none;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+}
+
+.btn > a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.sign-up-text > a {
+  color: blue;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.facebook-link {
+  color: darkblue;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+}
+
+.container__a > a {
+  text-decoration: none;
+  padding: auto;
+  margin: 0.125rem;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+  color: #a5a1a1;
+}
+
+.facebook-img {
+  width: 22px;
+  height: 22px;
+  margin: 5px;
+}
+
+.get-app-img {
+  width: 120px;
+  margin: 5px;
+}
+
+.image__static {
+  max-height: 460px;
+}
+
+.profile-size {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.profile-size-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post__card-img {
+  max-width: 760px;
+}
+
+.post__img {
+  width: 100%;
+}
+
+.story-image {
+  border: solid 3px pink;
+}
+
+.post__card-info-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.post__card-info > p {
+  margin-right: 1rem;
+}
+
+.post__card-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: none;
+  background-color: #ffffff;
+  border: solid 1px #a5a1a142;
+  margin-top: 2rem;
+}
+
+.likes__comment2-username, .likes__comment1-username {
+  font-weight: bolder;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+}
+
+.post__card-post-details {
+  margin-left: 1rem;
+}
+
+.card__post-date {
+  color: #a5a1a1;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.profiles-stories {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: #a5a1a1;
+  text-align: center;
+}
+
+.post__card-1-info-user-img {
+  text-align: center;
+}
+
+.icons-size {
+  width: 22px;
+  height: 22px;
+}
+
+.navbar__icons-profile {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  content: inherit;
+}
+
+.like-red {
+  background-color: none;
+}
+.like-red:hover {
+  background-color: #f00;
+}
+
+.comment__section-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: none;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+.instagram-size {
+  width: 6rem;
+  padding-left: 1rem;
+}
+
+.index-instagram-size {
+  width: 12rem;
+  padding: 1rem 3rem;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: none;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  width: 100%;
+}
+
+.container__main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  min-width: 760px;
+  min-height: 590px;
+}
+
+.main__section-right {
+  max-width: 50%;
+  background-color: #fafafa;
+}
+
+.section__login {
+  background-color: #ffffff;
+  border: solid 1px #a5a1a142;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__section-left {
+    display: none;
+  }
+}
+.main__section-left {
+  max-width: 50%;
+}
+
+.section__or {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  color: #a5a1a1;
+  margin: 25px;
+}
+
+.section__or-left-line {
+  width: 100px;
+  height: 1px;
+  background-color: #a5a1a1;
+}
+
+.section__or-right-line {
+  width: 100px;
+  height: 1px;
+  background-color: #a5a1a1;
+}
+
+.section__or-text {
+  margin: 5px;
+}
+
+.section__log-facebook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+
+.forgot-password {
+  text-align: center;
+}
+
+.section__sign-up {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  border: solid 1px #a5a1a142;
+  width: 100%;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+}
+
+.get-app {
+  text-align: center;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+
+.footer__language-copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+
+.container__a {
+  text-align: center;
+  max-width: 533px;
+  max-height: 60px;
+}
+
+.copyright__container {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+  color: #a5a1a1;
+}
+
+.navbar__logo-instagram {
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: none;
+  min-width: 100%;
+  min-height: 3rem;
+  background-color: #ffffff;
+  border: solid 1px #a5a1a142;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar__icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-right: 1rem;
+}
+
+.story-banner {
+  width: 760px;
+  background-color: #ffffff;
+  border: solid 1px #a5a1a142;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.search-content {
+  text-align: center;
+}
+
+.navbar__search {
+  width: 100%;
+}
+
+.post__card-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  margin-left: 1rem;
+}
+
+.home-container {
+  max-width: 760px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+
+.comment__section {
+  background-color: #ffffff;
+  border-top: none;
+  border: solid 1px #a5a1a142;
+  padding: 0 auto;
+}/*# sourceMappingURL=index.css.map */
