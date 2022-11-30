@@ -1,0 +1,23 @@
+.preview_wrapper{
+    background-image: url("../../assets/mobileContainer.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width: 25rem;
+    height: 34rem;
+}
+
+.post{
+    &_user_img{
+        height: 2rem;
+    }
+
+    &_img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.user_img{
+    height: 1.7rem;
+}

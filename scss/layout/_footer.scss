@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.item_footer{
+    margin: 0.5rem;
+}

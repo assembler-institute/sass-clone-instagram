@@ -1,0 +1,71 @@
+@use '../abstracts/index-abstracts' as a;
+
+.main_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.content_area{
+    width: 20rem;
+    height: 30rem;
+}
+
+@mixin column_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin gray_border {
+    
+    border-radius: 1px;
+    padding-bottom: 1rem;
+}
+
+.login_container{
+    @include column_center;
+    margin-top: 2rem;
+
+    &_fb{
+        display: flex;
+        flex-direction: row;
+        height: 1rem;
+        align-items: center;
+        margin: 1rem 0;
+    }
+}
+
+.form_container{
+    @include column_center;
+    @include gray_border;
+    @extend %border;
+    background-color: white;
+        
+}
+
+.log_form{
+    @include column_center;
+}
+
+.q_account{
+    @include gray_border;
+    @extend %border;
+    background-color: white;
+    width: 100%;
+    margin: 0.6rem 0;
+    text-align: center;
+    font-size: 0.82rem;
+    padding: 1.5rem 0;
+}
+
+.download_app{
+    font-size: 0.82rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.btn_container_download{
+    margin-top: 1rem;
+}

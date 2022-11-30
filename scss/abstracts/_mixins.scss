@@ -1,0 +1,19 @@
+.breaker{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #8e8e8e;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.division_line{
+    width: 5.5rem;
+    height: 1px;
+    background-color: #dbdbdb;
+    border-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
