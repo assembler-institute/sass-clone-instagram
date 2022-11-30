@@ -1,0 +1,186 @@
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+$lightWhite: rgb(255, 255, 255);
+$darkWhite: rgb(250, 250, 250);
+$lightGray: rgb(199, 199, 199);
+$darkGray: rgb(142, 142, 142);
+$fbBlue: rgb(60, 81, 129);
+$blue: rgb(61, 149, 239);
+$disabledBlue: rgb(197, 222, 250);
+$instaGradient: linear-gradient(
+  45deg,
+  #feda75,
+  #fa7e1e,
+  #d62976,
+  #962fbf,
+  #4f5bd5
+);
+
+/* -------------------------------------------------------------------------- */
+/*                                    FONTS                                   */
+/* -------------------------------------------------------------------------- */
+/* San Francisco Regular */
+@font-face {
+  font-family: "SF";
+  src: url("../../font/SF-Pro.ttf") format("truetype");
+  font-weight: 1 1000;
+  font-style: normal;
+}
+
+$largeText: 14px;
+$largeLH: 18px;
+
+$mediumText: 12px;
+$mediumLH: 14px;
+
+$smallText: 11px;
+$smallLH: 13px;
+
+.bold-text {
+  font-weight: 800;
+}
+
+.regular-text {
+  font-weight: 400;
+}
+
+.blue-disabled-text {
+  color: $disabledBlue;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.facebook-text {
+  color: $fbBlue;
+}
+
+.light-gray-text {
+  color: $lightGray;
+}
+
+.dark-gray-text {
+  color: $darkGray;
+}
+
+.large-text {
+  font-size: $largeText;
+  line-height: $largeLH;
+}
+
+.medium-text {
+  font-size: $mediumText;
+  line-height: $mediumLH;
+}
+
+.small-text {
+  font-size: $smallText;
+  line-height: $smallLH;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEASUREMENTS                                */
+/* -------------------------------------------------------------------------- */
+$mainWidth: 940px;
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "SF", sans-serif;
+  // outline: 2px solid red;
+}
+
+body {
+  max-height: fit-content;
+  background-color: $darkWhite;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+@mixin elementBorder {
+  border-radius: 3px;
+  border: 1px solid $lightGray;
+  background-color: $lightWhite;
+}
+
+@mixin roundedElement($diameter, $borderWidth, $color) {
+  width: $diameter;
+  height: $diameter;
+  border: $borderWidth solid $color;
+  border-radius: 50%;
+}
+
+@mixin backgroundGradient($diameter) {
+  position: absolute;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  background-image: $instaGradient;
+}
+
+@mixin flexDistribution($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin topContainer {
+  height: 116px;
+  padding: 16px 0 16px 16px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+@mixin photoBlock($borderWidth) {
+  width: 100%;
+  height: auto;
+  border-top: $borderWidth solid $lightGray;
+  border-bottom: $borderWidth solid $lightGray;
+}
+
+@mixin commentBlock($borderWidth) {
+  @include flexDistribution(row, space-between, center);
+  width: 100%;
+  height: 59px;
+  border-top: $borderWidth solid $lightGray;
+}
+
+@mixin bottomPostElement {
+  margin-bottom: 6px;
+  width: 100%;
+  @include flexDistribution(row, flex-start, center);
+}
+
+@mixin loginInput {
+  @include elementBorder;
+  color: $darkGray;
+  font-weight: 400;
+  font-size: $mediumText;
+  background-color: $darkWhite;
+  width: 100%;
+  height: 36px;
+  outline: none;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+@mixin appLogo {
+  width: 145px;
+  height: auto;
+}

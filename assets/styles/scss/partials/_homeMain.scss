@@ -1,0 +1,199 @@
+@use "globals" as g;
+
+#homeMain {
+  max-height: 886px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 30px;
+  @include g.flexDistribution(row, center, flex-start);
+
+  /*--------------------------LEFT------------------------------*/
+  #mainLeft {
+    width: 614px;
+    margin-right: 28px;
+
+    #storiesContainer {
+      @include g.flexDistribution(row, flex-start, center);
+      @include g.elementBorder;
+      @include g.topContainer;
+      overflow: scroll;
+
+      .story-wrapper {
+        @include g.flexDistribution(column, center, center);
+        margin-right: 8px;
+        padding: 4px;
+        position: relative;
+
+        .story-photo-wrapper {
+          @include g.flexDistribution(row, center, center);
+          width: 64px;
+          height: 64px;
+          margin-bottom: 5px;
+
+          img {
+            @include g.roundedElement(60px, 2px, white);
+            position: absolute;
+            z-index: 2;
+          }
+
+          .story-gradient {
+            @include g.backgroundGradient(inherit);
+          }
+        }
+      }
+    }
+
+    #postsContainer {
+      width: 100%;
+
+      .post {
+        @include g.elementBorder;
+        height: fit-content;
+        margin-bottom: 60px;
+        .post-header {
+          padding: 16px;
+          @include g.flexDistribution(row, space-between, center);
+          height: 59px;
+
+          .header-left {
+            @include g.flexDistribution(row, flex-start, center);
+            cursor: pointer;
+          }
+
+          img {
+            @include g.roundedElement(32px, 1px, g.$darkGray);
+            margin-right: 14px;
+          }
+        }
+
+        .post-photo {
+          @include g.photoBlock(1px);
+        }
+
+        .post-text {
+          padding: 16px;
+          @include g.flexDistribution(column, space-between, flex-start);
+
+          .post-icons {
+            width: 100%;
+            height: 24px;
+            margin-bottom: 16px;
+            @include g.flexDistribution(row, space-between, center);
+            cursor: pointer;
+
+            .post-icons-left {
+              width: 120px;
+              @include g.flexDistribution(row, space-between, center);
+              cursor: pointer;
+            }
+          }
+        }
+
+        .description-block {
+          @include g.flexDistribution(column, flex-start, flex-start);
+          width: 100%;
+
+          .likes {
+            width: 100%;
+            margin-bottom: 12px;
+          }
+
+          .desc-wrapper {
+            @include g.bottomPostElement;
+          }
+
+          .user {
+            display: inline-block;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+
+          .comment-left {
+            flex-grow: 1;
+          }
+
+          .post-time {
+            margin-top: 3px;
+          }
+        }
+
+        .post-comment {
+          @include g.commentBlock(1px);
+          @include g.flexDistribution(row, flex-start, center);
+
+          .smiley {
+            margin-left: 16px;
+            margin-right: 16px;
+          }
+
+          .comment-placeholder {
+            flex-grow: 1;
+            border: none;
+            background-color: g.$lightWhite;
+          }
+
+          .post-text {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  /*--------------------------RIGHT------------------------------*/
+  #mainRight {
+    width: 293px;
+
+    .sidebar-user {
+      margin-bottom: 3px;
+      cursor: pointer;
+    }
+
+    #sidebarTop {
+      @include g.topContainer;
+      padding-left: 0;
+      width: 100%;
+
+      #sidebarProfile {
+        @include g.flexDistribution(row, flex-start, center);
+        margin-bottom: 30px;
+
+        #sidebarPhoto {
+          @include g.roundedElement(56px, 1px, g.$lightGray);
+          margin-right: 12px;
+          cursor: pointer;
+        }
+      }
+
+      #sidebarSuggTitle {
+        @include g.flexDistribution(row, space-between, center);
+      }
+    }
+
+    #sidebarBottom {
+      #sidebarSuggestions {
+        margin-bottom: 35px;
+
+        .sidebar-suggestion {
+          @include g.flexDistribution(row, flex-start, center);
+          margin-bottom: 16px;
+
+          .suggestion-photo {
+            @include g.roundedElement(32px, 1px, g.$darkGray);
+            margin-right: 12px;
+            cursor: pointer;
+          }
+
+          .suggestion-text {
+            flex-grow: 1;
+            margin-right: 20px;
+          }
+
+          .follow-text {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

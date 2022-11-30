@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/styles/css/styles.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3bdf30c872.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/img/favicon/favicon.png"
+    />
+    <!-- Title -->
+    <title>Instagram clone | Login</title>
+  </head>
+  <body id="loginBody">
+    <main id="loginMain">
+      <div id="loginLeft">
+        <img
+          class="iphones-photos"
+          src="./assets/img/iphonesHome.png"
+          alt="iphones-view"
+        />
+      </div>
+
+      <div id="loginRight">
+        <div id="loginTopRight">
+          <img
+            id="loginLogotype"
+            src="./assets/img/instagramlogo-login.png"
+            alt="instagram-logotype"
+          />
+          <form id="loginForm" action="">
+            <input
+              type="text"
+              name="phone"
+              id="phoneInput"
+              class="input-element"
+              placeholder="Phone number, username or email"
+            />
+            <input
+              type="text"
+              name="phone"
+              id="passwordInput"
+              class="input-element"
+              placeholder="Password"
+            />
+            <button
+              id="loginButton"
+              class="bold-text large-text pointer"
+              type="submit"
+              value="Submit"
+            >
+              <a href="home.html">Log in</a>
+            </button>
+          </form>
+
+          <!-- OR  -->
+          <div id="orWrapper">
+            <hr class="login-line" />
+            <p class="large-text bold-text dark-gray-text">OR</p>
+            <hr class="login-line" />
+          </div>
+
+          <!-- Facebook login -->
+          <div id="facebookWrapper">
+            <span id="fbLogotype"
+              ><img src="./assets/img/facebookLogo.png" alt="facebook-logotype"
+            /></span>
+            <p class="large-text bold-text facebook-text pointer">
+              Log in with Facebook
+            </p>
+          </div>
+
+          <!-- Forgot password -->
+          <p
+            id="forgottenPassword"
+            class="medium-text regular-text facebook-text pointer"
+          >
+            Forgot password?
+          </p>
+        </div>
+        <div id="loginMediumRight" class="large-text">
+          <p class="no-account">Don't have an account? &emsp;</p>
+          <p class="sign-in-login bold-text pointer">Sign in</p>
+        </div>
+        <div id="loginBottomRight">
+          <!-- Get the app -->
+          <p class="large-text">Get the app.</p>
+          <div id="appLogos">
+            <img
+              class="pointer"
+              src="./assets/img/appStore.png"
+              alt="apple-store"
+            />
+            <img
+              class="pointer"
+              src="./assets/img/googlePlay.png"
+              alt="google-play-store"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="regular-text medium-text dark-gray-text">
+      About &emsp; Blog &emsp; Jobs &emsp; Help &emsp; API &emsp; Privacy &emsp;
+      Terms &emsp; Top &emsp; Accounts &emsp; Hashtags &emsp; Locations
+      <br />
+      Beauty &emsp; Dance & Performance &emsp; Fitness &emsp; Food & Drink
+      &emsp; Home & Garden &emsp; Music &emsp; Visual Arts
+      <br />
+      English &emsp; © 2021 Instagram from Facebook
+    </footer>
+  </body>
+  <!-- JavaScript file -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
+</html>

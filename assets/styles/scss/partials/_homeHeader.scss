@@ -1,0 +1,35 @@
+@use "globals" as g;
+
+header {
+  height: 54px;
+  background-color: g.$lightWhite;
+  border-bottom: 1px solid g.$lightGray;
+  @include g.flexDistribution(row, center, center);
+
+  #headerWrapper {
+    width: g.$mainWidth;
+    @include g.flexDistribution(row, space-between, inherit);
+
+    #logotype {
+      width: 103px;
+      height: auto;
+    }
+
+    input {
+      @include g.elementBorder;
+      text-align: center;
+      width: 215px;
+      height: 28px;
+    }
+
+    #iconsWrapper {
+      @include g.flexDistribution(row, space-between, inherit);
+      width: 198px;
+      height: 22px;
+
+      #headerPhoto {
+        @include g.roundedElement(20px, 1px, g.$lightGray);
+      }
+    }
+  }
+}
