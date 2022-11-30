@@ -1,0 +1,31 @@
+@use "../colors/colors.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 15vh;
+
+    &_line {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    &_item {
+        font-size: 13px;
+        line-height: 14px;
+        margin: 0px 8px 12px;
+        color: $mediumGrey;
+    }
+
+    &_item_icon {
+        font-size: 13px;
+        line-height: 14px;
+        margin-right: 8px;
+        margin-top: -10px;
+        color: $mediumGrey;
+    }
+    }
+}
